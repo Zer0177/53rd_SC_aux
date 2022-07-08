@@ -1676,7 +1676,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
-			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+			""
 		};
         class ItemInfo: ItemInfo
 		{
@@ -1685,12 +1685,12 @@ class cfgWeapons {
             hiddenSelectionsTextures[] = 
             {
                 "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
-			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+                ""
             };
 			hiddenSelectionsMaterials[]=
 			{
 				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
-				""
+				"OPTRE_FC_Units\Marines\data\h3_pilothelmet_Visor_trans.rvmat"
 			};
         };
     };
@@ -1713,7 +1713,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
-			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+			""
 		};
         class ItemInfo: ItemInfo
 		{
@@ -1721,13 +1721,13 @@ class cfgWeapons {
             uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
             hiddenSelectionsTextures[] = 
             {
-            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
-			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+                "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
+                ""
             };
 			hiddenSelectionsMaterials[]=
 			{
 				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
-				""
+				"OPTRE_FC_Units\Marines\data\h3_pilothelmet_Visor_trans.rvmat"
 			};
         };
     };
