@@ -2564,6 +2564,23 @@ class CfgVehicles
         };
     }; 
 
+    
+    class OPTRE_ANPRC_515;
+	class 53rd_ANPRC_515: OPTRE_ANPRC_515
+    {
+        displayName = "[53rd] AN/PRC-515 (LR)";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad=350;
+    };
     class OPTRE_UNSC_Rucksack_53rd_Athena_LR: OPTRE_UNSC_Rucksack
     {
         dlc="53rd AUX";
