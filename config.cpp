@@ -1,0 +1,3423 @@
+#include "BIS_AddonInfo.hpp"
+#include "Functions\CfgFunctions.hpp"
+class CfgPatches {
+	class black_body {
+		units[] = 
+        {
+            "BDU_V_Pegasus_Black",
+            "53rd_BDU_V_Slim",
+			"53rd_Raven",
+			"53rd_Dega"
+        };
+		weapons[] = 
+        {
+            "MEU_M52A_Vulc_Grey",
+            "MEU_M52A_VulcPSG_Black",
+            "MEU_M52A_VulcPSG_Grey",
+            "MEU_M52A_VulcSL_Grey",
+            "MEU_M52A_VulcTL_Grey",
+            "MEU_M52A_VulcCorNCO_Grey",
+			"H_HelmetCrew_B",
+			"53rd_HelmetCrew_B",
+            "MEU_M52A_VulcCor_Grey",
+            "MEU_Peg_Pilot_Armor_Black",
+            "Pegasus_BDU_Bl",
+            "MEU_CH252_GREY_HEV_Sealed_SLV",
+            "MEU_CH252_GREY_HEV_Sealed_GLD",
+            "MEU_CH252_GREY_CORP_Sealed_SLV",
+            "MEU_CH252_GREY_CORP_Sealed_GLD",
+            "MEU_Peg_VX19_Black_Helmet",
+			"MEU_Peg_VX19_Blue_Helmet",
+            "MEU_CH252_GREY_HEV_Sealed_SLV_dp",
+            "MEU_CH252_GREY_HEV_Sealed_GLD_dp",
+            "MEU_CH252_GREY_CORP_Sealed_SLV_dp",
+            "MEU_CH252_GREY_CORP_Sealed_GLD_dp",
+            "MEU_Peg_VX19_Black_Helmet_dp",
+			"53rd_VX19_Black_Helmet",
+			"53rd_VX19_Blue_Helmet", 
+			"53rd_BDU_Slim"
+        };
+		requiredVersion = 0.100000;
+		requiredAddons[] = {};
+	};
+};
+#include "xtdGear.hpp"
+class cfgWeapons {
+    class ItemInfo;
+    class UniformItem;
+	class VestItem;
+	class HeadgearItem;
+	class VES_CH252D;
+	class VES_CH252D_dp;
+	class OPTRE_UNSC_M52A_Armor_Base;
+	class Hands;
+	class Pelvis;
+	class VES_CH252_MAR_Vacuum;
+	class VES_CH252_MAR_Vacuum_dp;
+    class VES_CH252A_dp;
+	class OPTRE_UNSC_CH252D_Helmet_Base;
+
+
+//Base
+
+    class 53rd_Recon_Helmet_Base: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		dlc="OPTRE";
+		scope=2;
+		author="Article 2 Studios";
+		displayName="R/B5 Helmet";
+		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon.paa";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		model="\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"optre_unsc_units\army\data\recon_co.paa",
+			"optre_unsc_units\army\data\recon_visor_co.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"optre_unsc_units\army\data\recon_co.paa",
+				"optre_unsc_units\army\data\recon_visor_co.paa"
+			};
+			class HitpointsProtectionInfo
+            {
+                
+				class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+		};
+	};
+	
+	class 53rd_Armor_Rifleman: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				//"AS_MediumLeft",
+				//"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				//"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+
+	class 53rd_Armor_Specialist: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				//"AS_MediumLeft",
+				//"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				//"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				//"AP_AR",
+				"AP_Pack",
+				//"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				//"AP_Thigh",
+				"AP_Frag",
+				//"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+	
+    class 53rd_Armor_Medic: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				//"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				//"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				//"AP_AR",
+				"AP_BR",
+				//"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				//"AP_AR",
+				"AP_Pack",
+				//"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				//"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+
+    class 53rd_Armor_TL: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				//"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				//"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				//"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				//"AP_Knife",
+				"AP_MGThigh",
+				//"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				//"AP_Thigh",
+				//"AP_Frag",
+				//"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+	
+    class 53rd_Armor_SL: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				//"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				//"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				//"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				//"AP_Knife",
+				//"AP_MGThigh",
+				//"AP_AR",
+				//"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				//"AP_Thigh",
+				//"AP_Frag",
+				//"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+	
+    class 53rd_Armor_Medic_NCO: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				//"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				//"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				//"AP_AR",
+				"AP_BR",
+				//"AP_Canteen",
+				"AP_GL",
+				//"AP_Knife",
+				//"AP_MGThigh",
+				//"AP_AR",
+				//"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				//"AP_Thigh",
+				//"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+	
+    class 53rd_Raider_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				"AS_LargeLeft",
+				//"AS_LargeRight",
+				//"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				//"AP_Pistol",
+				//"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				//"AP_Sniper",
+				//"AP_Thigh",
+				"AP_Frag",
+				//"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+	
+    class 53rd_Raider_Armor_NCO_Base: OPTRE_UNSC_M52A_Armor_Base
+	{
+		author="Article 2 Studios";
+		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		displayName="M52A Body Armor (Heavy) [Woodland]";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+			"optre_unsc_units\army\data\armor_co.paa",
+			"optre_unsc_units\army\data\legs_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft",
+				//"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				//"A_ShinArmorLeft",
+				//"A_ShinArmorRight",
+				"A_TacPad",
+				//"A_ThighArmorLeft",
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft",
+				//"AS_BaseRight",
+				"AS_LargeLeft",
+				//"AS_LargeRight",
+				//"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				//"AP_Knife",
+				//"AP_MGThigh",
+				"AP_AR",
+				//"AP_Pack",
+				"AP_Pistol",
+				//"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				//"AP_Sniper",
+				//"AP_Thigh",
+				//"AP_Frag",
+				//"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
+				"optre_unsc_units\army\data\armor_co.paa",
+				"optre_unsc_units\army\data\legs_co.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\odst_armor_co.paa"
+			};
+		};
+	};
+//End Base
+    
+//Hephaestus Uniform
+    class VES_BDU_Evolved_Slim;
+    class 53rd_BDU_Slim: VES_BDU_Evolved_Slim
+    {
+        dlc="53rd";
+		scope=2;
+		author="Body";
+		displayName="[53rd] Combat Uniform";
+		picture="\optre_unsc_units\army\icons\army_uniform";
+		CBRN_protection=1;
+		class ItemInfo: UniformItem
+		{
+			containerClass="Supply120";
+			mass=40;
+			uniformType="Neopren";
+			uniformModel="";
+			uniformClass="53rd_BDU_V_Slim";
+		};
+	};
+    class 53rd_BDU_Wdl_Slim: 53rd_BDU_Slim
+	{
+		displayName="[53rd] Combat Uniform Woodland";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="53rd_BDU_V_Wdl_Slim";
+		};
+	};
+    class 53rd_BDU_Des_Slim: 53rd_BDU_Slim
+	{
+		displayName="[53rd] Combat Uniform Desert";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="53rd_BDU_V_Des_Slim";
+		};
+	};
+    class 53rd_BDU_Snw_Slim: 53rd_BDU_Slim
+	{
+		displayName="[53rd] Combat Uniform Snow";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="53rd_BDU_V_Snw_Slim";
+		};
+	};
+    class 53rd_BDU_Jgl_Slim: 53rd_BDU_Slim
+	{
+		displayName="[53rd] Combat Uniform Jungle";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="53rd_BDU_V_Jgl_Slim";
+		};
+	};
+
+//Hephaestus Helmets
+    class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV : VES_CH252_MAR_Vacuum
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Rifleman)";
+        author = "53rd AUX TEAM";
+        model="\OPTRE_UNSC_Units\Army\helmet";
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "camo3",
+            "H_Collar",
+            "H_Ghillie"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PFC.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+		class ItemInfo: HeadgearItem
+		{
+            mass=1;
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+			uniformModel="OPTRE_UNSC_Units\Army\helmet";
+			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"H_Collar",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+                "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PFC.paa",
+                "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"
+			};
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp : VES_CH252_MAR_Vacuum_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Rifleman)";
+        model="\OPTRE_UNSC_Units\Army\helmet";
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "camo3",
+            "H_Collar",
+            "H_Ghillie"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PFC.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+		class ItemInfo: HeadgearItem
+		{
+            mass=1;
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+			uniformModel="OPTRE_UNSC_Units\Army\helmet";
+			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"H_Collar",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+                "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PFC.paa",
+                "optre_unsc_units\army\data\helmet_visor_ca.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				""
+			};
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Specialist)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_SPC.paa",
+         	 "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+		};
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Specialist)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_SPC.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_TL_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Team Leader)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_TL.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_TL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Team Leader)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_TL.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_SL_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Squad Leader)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_SL.paa",
+            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_SL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Squad Leader)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_SL.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Platoon Staff)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PLS.paa",
+            "53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Platoon Staff)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PLS.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Medic)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_CORP2.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Medic)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_CORP2.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_GLD : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Medic NCO)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_CORP2.paa",
+            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_GLD_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Medic NCO)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_CORP2.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_PLM : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Platoon Medic)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_PLT.paa",
+            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_PLM_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Platoon Medic)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_CORP_PLT.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Body)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PLWC.paa",
+            "53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Body)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_PLWC.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class LMAO : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (WeGotBeefCuh)";
+        author = "Chef Boyardee";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_Beefaroni.paa",
+            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+        };
+    };
+    class LMAO_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (WeGotBeefCuh)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_Beefaroni.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+
+//Hephaestus Camo Helmet
+	class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet Camo(Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WoodlandCamo.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+    class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo(Woodland)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WoodlandCamo.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	class 53rd_CH252_DES_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet Camo(Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_DesCamo.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+    class 53rd_CH252_DES_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo(Desert)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_DesCamo.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet Camo (Winter)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WinterCamo.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+    class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo (Winter)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WinterCamo.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	class 53rd_CH252_JUG_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet Camo (Jungle)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_JungleCamo.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+    class 53rd_CH252_JUG_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo (Jungle)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_JungleCamo.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	
+//Hephaestus Armors
+    class Armor_Hephaestus_Medic : 53rd_Armor_Medic
+    {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Medic)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_Vulc_CORP_A3.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Platoon_Medic : 53rd_Armor_Medic_NCO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Platoon Medic)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_CORP_PL.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Rifleman : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Rifleman)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_Vulc_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Specialist : 53rd_Armor_Specialist
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Specialist)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_Vulc_Specialist.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Team_Leader : 53rd_Armor_TL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Team Leader)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_Vulc_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Squad_Leader : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Squad Leader)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_Vulc_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+	class Armor_Hephaestus_PL : 53rd_Armor_SL 
+	{ 
+		scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		dlc = "53rd AUX"; 
+		author = "Body"; 
+		displayName = "[53rd] Hephaestus Armor (Body)"; 
+		hiddenSelectionsTextures[] =  
+		{ 
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa", 
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_Body.paa", 
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa", 
+			"optre_unsc_units\army\data\ghillie_woodland_co", 
+			"optre_unsc_units\army\data\odst_armor_co", 
+        }; 
+	};
+    
+// Hephaestus Camo Armor
+    class Armor_Hephaestus_Rifleman_JUG : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Camo Armor (Jungle)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JungleCamo_A4.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\MEU_M52_JUG_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Rifleman_WDL : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Camo Armor (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\MEU_M52_WoodlandCamo_Vulc_A4.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+	class Armor_Hephaestus_Rifleman_DES : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Camo Armor (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DesertCamo_A4.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Rifleman_WIN : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Camo Armor (Winter)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.PAA",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WINCamo_A4.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+//End Hephaestus
+
+/////////////////////Tartarus Helmets /////////////////////////////////
+
+	class 53rd_CH252_Tar_Haz2 : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Tartarus Helmet (Silver)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Tartartus Armor\MEU_CH252Hazard.paa",
+            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+        };
+    };
+	class 53rd_CH252_Tar_Haz2_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Tartarus Helmet (Silver)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Tartartus Armor\MEU_CH252Hazard.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	
+// Tartarus Armor /////////////////////////////////
+//	class H_HelmetCrew_B;
+//	class 53rd_HelmetCrew_B: H_HelmetCrew_B
+//	{
+//		author="$STR_A3_Bohemia_Interactive";
+//		_generalMacro="H_HelmetCrew_I";
+//		displayName="$STR_A3_H_HelmetCrewIA0";
+//		picture="\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_crew_ca.paa";
+//		model="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
+//	hiddenSelectionsTextures[]=
+//		{
+//			"\A3\Characters_F_Beta\Indep\Data\headgear_ia_helmet_crew_co.paa"
+//		};
+//		class ItemInfo: ItemInfo
+//	{
+//			modelSides[]={2,3};
+//			uniformModel="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
+//		};
+//	};
+    class 53rd_M52A_Vulc_Haz : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Tartarus Armor (Rifleman)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\MEU_M52_HAZ_Vulc_A.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\MEU_M52_GREY_L3.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+    };
+    class 53rd_M52A_Vulc_Haz_NCO : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Tartarus Armor (Squad Leader)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\MEU_M52_HAZ_Vulc_A.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\MEU_M52_GREY_L3.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+    };
+//End Tartarus
+    
+//Volare Helmet
+    class OPTRE_FC_VX19_Helmet;
+
+    class 53rd_VX19_Black_Helmet : OPTRE_FC_VX19_Helmet
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        author = "53rd AUX TEAM";
+        weaponPoolAvailable = 1;
+        model="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+		displayName = "[53rd] VX19 Flight Helmet (Black V)";
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.60;
+        optreVarietys[] = {"_dp","","_broken"};
+        optreHUDStyle = "ODST_1";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
+			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+		};
+        class ItemInfo: HeadgearItem
+		{
+            hiddenSelections[] = {"camo","camo2"};
+            uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
+                "53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+            };
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 40;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+    class 53rd_VX19_Black_Helmet_dp : 53rd_VX19_Black_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+		displayName = "[53rd] VX19 Flight Helmet (Black V) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo","camo2"};
+            uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+            };
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				""
+			};
+        };
+    };
+    class 53rd_VX19_Blue_Helmet : 53rd_VX19_Black_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[53rd] VX19 Flight Helmet (Blue V)";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
+			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+		};
+    };
+    class 53rd_VX19_Blue_Helmet_dp : 53rd_VX19_Black_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+		displayName = "[53rd] VX19 Flight Helmet (Blue V) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo","camo2"};
+            uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+            hiddenSelectionsTextures[] = 
+            {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+            };
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				""
+			};
+        };
+    };
+
+    /*class 53rd_VX19_Black_Helmet: OPTRE_FC_VX19_Helmet
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] VX19 Flight Helmet (Black V)";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
+			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+		};
+	};
+    class 53rd_VX19_Black_Helmet_dp: OPTRE_FC_VX19_Helmet_dp
+	{
+        scope = 1;
+        scopeArsenal = 1;
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] VX19 Flight Helmet (Black V) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+	};
+	class 53rd_VX19_Blue_Helmet: 53rd_VX19_Black_Helmet
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		author = "Body";
+		displayName = "[53rd] VX19 Flight Helmet (Blue V)";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
+			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+		};
+	};
+	class 53rd_Peg_VX19_Blue_Helmet_dp: OPTRE_FC_VX19_Helmet_dp
+	{
+        scope = 1;
+        scopeArsenal = 1;
+		author = "Body";
+		displayName = "[53rd] VX19 Flight Helmet (Black V) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+	};*/
+    
+//Volare Armor
+    class OPTRE_FC_M52B_Armor_Rifleman;
+    class OPTRE_FC_M52B_Armor_Teamleader;
+	class OPTRE_FC_Marines_Uniform;
+	class BDU_V_Pegasus_Blue;
+
+    class 53rd_V_Pilot_Armor_Black:OPTRE_FC_M52B_Armor_Rifleman
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Volare Flight Vest (Black)";
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_vest_black_co.paa"};
+    };
+    class 53rd_V_Pilot_Armor_Black_NCO:OPTRE_FC_M52B_Armor_Teamleader
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Volare Flight Vest (NCO\Black)";
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_vest_nco_black_co.paa"};
+    };
+    class 53rd_V_Pilot_Armor_BU_NCO:OPTRE_FC_M52B_Armor_Teamleader
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Volare Flight Vest (NCO\Blue)";
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_vest_nco_black_blue_co.paa"};
+    };
+    class 53rd_M52A_Volare : 53rd_Armor_Specialist
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX";
+        author = "Body";
+        displayName = "[53rd] Volare Armor (Rifleman)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+            "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co",
+            "optre_unsc_units\army\data\odst_armor_co",
+        };
+    };
+    class 53rd_M52A_Volare_NCO : 53rd_Armor_SL
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX";
+        author = "Body";
+        displayName = "[53rd] Volare Armor (Squad Leader)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+            "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co",
+            "optre_unsc_units\army\data\odst_armor_co",
+        };
+    };
+    class Pegasus_BDU_Bl:OPTRE_FC_Marines_Uniform
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Pegasus Flight Suit (Black)";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "BDU_V_Pegasus_Black";
+            uniformType = "Neopren";
+            containerClass = "Supply100";
+            modelSides[] = {6};
+        };
+    };
+    class Pegasus_BDU_Bl_NCO:OPTRE_FC_Marines_Uniform
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Pegasus Flight Suit (NCO\Black)";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "BDU_V_Pegasus_Black_NCO";
+            uniformType = "Neopren";
+            containerClass = "Supply100";
+            modelSides[] = {6};
+        };
+
+    };
+	 class Pegasus_BDU_B2_NCO:OPTRE_FC_Marines_Uniform
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Pegasus Flight Suit (NCO\Blue)";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "BDU_V_Pegasus_Blue_NCO";
+            uniformType = "Neopren";
+            containerClass = "Supply100";
+            modelSides[] = {6};
+        };
+
+    };
+//End Volare
+    
+//Raider Gear
+    class 53rd_Helmet_Lmao: 53rd_Recon_Helmet_Base
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc="53rd AUX";
+		author="Ithias";
+		displayName="[53rd] Raider Helmet (WIP)";
+		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon.paa";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		model="\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Helmet.paa",
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Visor.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Helmet.paa",
+				"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Visor.paa"
+			};
+		};
+	};
+    class 53rd_Raider_Armor : 53rd_Raider_Armor_Base
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias";
+		displayName = "[53rd] Raider Armor (Base WIP)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Vest.paa",
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Armor.paa",
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+        };
+	};
+    class 53rd_Raider_Armor_NCO : 53rd_Raider_Armor_NCO_Base
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias";
+		displayName = "[53rd] Raider Armor (NCO WIP)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Vest.paa",
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Armor.paa",
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+        };
+	};
+//End Raider
+		
+//Stetson
+    class ItemCore;
+    class InventoryItem_Base_F;
+
+	class DAR_Stetson_53rd: ItemCore
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "[53rd] Stetson";
+		author = "Richards.D/Ithias";
+		picture = "\DAR_Stetson\UI\icon_h_stetson_ca.paa";
+		model = "\DAR_Stetson\DAR_Stetson";
+		hiddenSelectionsTextures[] = {"\53rd_SC_Aux\tex\Soft caps\Stetson_co_53rd.paa"};
+		hiddenSelections[] = {"Camo"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 1;
+			uniformmodel = "\DAR_Stetson\DAR_Stetson";
+			modelSides[] = {3,1};
+			armor = 40;
+			passThrough = 0.1;
+			hiddenSelectionsTextures[] = {"\53rd_SC_Aux\tex\Soft caps\Stetson_co_53rd.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+	
+
+//Berets
+    class H_HelmetB;
+
+    class 53rd_Beret_Hephaestus: H_HelmetB
+	{
+		author="Bohemia Interactive";
+		scope=2;
+		scopeArsenal = 2;
+		displayName="[53rd] Beret (Hephaestus)";
+		picture="\A3\characters_f_EPB\BLUFOR\Data\UI\icon_H_beret02_ca";
+		model="a3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Hephaestus.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
+			hiddenSelections[]=
+			{
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName="HitHead";
+					armor=40;
+					passThrough=0.5;
+				};
+			};
+		};
+	};
+	
+    class 53rd_Beret_Athena: H_HelmetB
+	{
+		author="Bohemia Interactive";
+		scope=2;
+		scopeArsenal = 2;
+		displayName="[53rd] Beret (Athena)";
+		picture="\A3\characters_f_EPB\BLUFOR\Data\UI\icon_H_beret02_ca";
+		model="a3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Athena.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
+			hiddenSelections[]=
+			{
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName="HitHead";
+					armor=40;
+					passThrough=0.5;
+				};
+			};
+		};
+	};
+	
+    class 53rd_Beret_Volare: H_HelmetB
+	{
+		author="Bohemia Interactive";
+		scope=2;
+		scopeArsenal = 2;
+		displayName="[53rd] Beret (Volare)";
+		picture="\A3\characters_f_EPB\BLUFOR\Data\UI\icon_H_beret02_ca";
+		model="a3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Volare.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
+			hiddenSelections[]=
+			{
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName="HitHead";
+					armor=40;
+					passThrough=0.5;
+				};
+			};
+		};
+	};	
+};
+
+class CfgVehicles
+{
+	class OPTRE_UNSC_Army_Soldier_WDL;
+	class BDU_V_Pegasus_Black : OPTRE_UNSC_Army_Soldier_WDL 
+    { 
+        model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
+        uniformClass = "Pegasus_BDU_Bl"; 
+        hiddenSelections[] = {"camo1","camo2"}; 
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_black_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
+    }; 
+	class BDU_V_Pegasus_Black_NCO : OPTRE_UNSC_Army_Soldier_WDL 
+    { 
+        model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
+        uniformClass = "Pegasus_BDU_B1_NCO"; 
+        hiddenSelections[] = {"camo1","camo2"}; 
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_black_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
+    };
+	class BDU_V_Pegasus_Blue_NCO : OPTRE_UNSC_Army_Soldier_WDL 
+    { 
+        model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
+        uniformClass = "Pegasus_BDU_B2_NCO"; 
+        hiddenSelections[] = {"camo1","camo2"}; 
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_blue_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
+    };
+//Infantry Uniforms
+	class VES_BDU_V_Urban;	
+	class 53rd_BDU_V_Slim: VES_BDU_V_Urban
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+        uniformclass="53rd_BDU_Slim";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO",
+			"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO"
+		};
+	};
+	class 53rd_BDU_V_Wdl_Slim: 53rd_BDU_V_Slim
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+        uniformclass="53rd_BDU_Wdl_Slim";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Grn_CO.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Grn_CO.paa"
+		};
+	};
+	class 53rd_BDU_V_Des_Slim: 53rd_BDU_V_Slim
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+        uniformclass="53rd_BDU_Des_Slim";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Des_CO.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Des_CO.paa"
+		};
+	};
+	class 53rd_BDU_V_Snw_Slim: 53rd_BDU_V_Slim
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+        uniformclass="53rd_BDU_Snw_Slim";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Snw_CO.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Snw_CO.paa"
+		};
+	};
+	class 53rd_BDU_V_Jgl_Slim: 53rd_BDU_V_Slim
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+        uniformclass="53rd_BDU_Jgl_Slim";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Jgl_CO.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Jgl_CO.paa"
+		};
+	};
+  
+
+  ///////////// VEHICLES ///////////////// 
+	class B_Heli_Attack_01_dynamicLoadout_F;
+	class 53rd_Raven : B_Heli_Attack_01_dynamicLoadout_F
+	{
+		displayName="[53rd] D102 OWL";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_UNSC";
+		editorCategory="53rd_cat_A";
+		editorSubcategory="53rd_sub_rot";
+		side=1;
+		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa"
+		};
+		class TextureSources
+		{
+			class 53rd_base
+			{
+				displayName="Grey";
+				author="Body";
+				textures[]=
+				{
+                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa",
+				};
+			};
+			class 53rd_HEPH
+			{
+				displayName="Athena";
+				author="Body";
+				textures[]=
+				{
+					"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyATH_CO.paa",
+				};
+			};
+			class 53rd_ATH
+			{
+				displayName="Hephaestus";
+				author="Body";
+				textures[]=
+				{
+                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyPLT_CO.paa",
+				};
+			};
+		};
+		class UserActions
+		{
+			class FullAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID=57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID=58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod=5;
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName="<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID=52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID=53;
+			};
+			class Afterburners900Engage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
+				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				userActionID=54;
+			};
+			class Afterburners900Disengage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				userActionID=55;
+			};
+		};		
+	};
+	class DEGA_Heli_Attack_01_dynamicLoadout_F;
+	class 53rd_Dega : DEGA_Heli_Attack_01_dynamicLoadout_F
+	{
+		displayName="[53rd] D102 OWL-D";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_UNSC";
+		editorCategory="53rd_cat_A";
+		editorSubcategory="53rd_sub_rot";
+		side=1;
+		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa"
+		};
+		class TextureSources
+		{
+			class 53rd_base
+			{
+				displayName="Grey";
+				author="Body";
+				textures[]=
+				{
+                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa",
+				};
+			};
+			class 53rd_HEPH
+			{
+				displayName="Athena";
+				author="Body";
+				textures[]=
+				{
+					"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyATH_CO.paa",
+				};
+			};
+			class 53rd_ATH
+			{
+				displayName="Hephaestus";
+				author="Body";
+				textures[]=
+				{
+                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyPLT_CO.paa",
+				};
+			};
+		};
+		class UserActions
+		{
+			class FullAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID=57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID=58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod=5;
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName="<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID=52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID=53;
+			};
+			class Afterburners900Engage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
+				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				userActionID=54;
+			};
+			class Afterburners900Disengage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				userActionID=55;
+			};
+		};		
+	};
+//BackPacks
+	class OPTRE_UNSC_Rucksack;
+	class OPTRE_ANPRC_521_Green;
+	class OPTRE_UNSC_Rucksack_Medic;
+	class OPTRE_UNSC_Rucksack_Heavy;
+	class OPTRE_ONI_Researcher_Suitcase;
+	
+   class OPTRE_UNSC_Rucksack_53rd: OPTRE_UNSC_Rucksack
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] Rucksack (Basic)";
+        maximumLoad=350;
+        mass=40;
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "B_Addons",
+            "B_Medic",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
+        };
+    }; 
+
+    class OPTRE_UNSC_Rucksack_53rd_Athena_LR: OPTRE_UNSC_Rucksack
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] Rucksack (NCO)";
+        maximumLoad=350;
+        mass=40;
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "B_Addons",
+            "B_Medic",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd_Basic_With_LR.paa"
+        };
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+    }; 
+	
+    class OPTRE_ANPRC_521_Green_53rd: OPTRE_ANPRC_521_Green
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] AN/PRC-521 (LR)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa",
+			"53rd_SC_Aux\tex\Backpacks\CommoPack_CO_53rd.paa"
+        };
+        descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        maximumLoad=350;
+    };
+
+    class OPTRE_UNSC_Rucksack_Heavy_53rd: OPTRE_UNSC_Rucksack_Heavy
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] Rucksack (Heavy)";
+        maximumLoad=450;
+        mass=50;
+        hiddenSelections[]=
+        {
+            "camo",
+            "B_Medic",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
+        };
+    }; 
+
+    class OPTRE_UNSC_Rucksack_Medic_53rd: OPTRE_UNSC_Rucksack_Medic
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] Rucksack (Medical)";
+        maximumLoad=400;
+        mass=50;
+        hiddenSelections[]=
+        {
+            "camo",
+            "B_Addons",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
+        };
+    }; 
+
+    class OPTRE_Hardcase_Medic_NCO: OPTRE_ONI_Researcher_Suitcase
+    {
+        scope=2;
+        scopeArsenal=2;
+        displayName="[53rd] Satchel (Medical NCO)";
+        tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\research_bag_CO_Medical.paa"
+        };
+        maximumLoad=400;
+    };
+
+};
+class CfgGlasses
+{
+};
