@@ -18,7 +18,6 @@ class cfgWeapons {
 	class VestItem;
 	class HeadgearItem;
 	class VES_CH252D;
-    class VES_CH252A_dp;
 	class OPTRE_UNSC_M52A_Armor_Base;
 	class 53rd_Armor_Rifleman;
 	class 53rd_Armor_Specialist;
@@ -32,8 +31,10 @@ class cfgWeapons {
 
 class 53rd_Athena_Helmet: VES_CH252D
 	{
+        scope = 1;
+        scopeArsenal = 1;
 		author="Vespade";
-		displayName="[FZ] CH252A Helmet";
+		displayName="[53rd] CH252A Helmet";
 		model="\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[]=
 		{
@@ -74,7 +75,56 @@ class 53rd_Athena_Helmet: VES_CH252D
                 };
             };
         };
-	};	
+	};	class 53rd_Athena_Helmet_dp: 53rd_Athena_Helmet
+	{
+		author="Vespade";
+		displayName="[53rd] CH252A Helmet dp";
+		model="\OPTRE_UNSC_Units\Army\aa_helmet_dp";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
+			"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
+			""
+		};
+		class ItemInfo: HeadgearItem
+			{
+				mass=1;
+				uniformModel="\OPTRE_UNSC_Units\Army\aa_helmet_dp";
+				hiddenSelections[]=
+			{
+				"camo",
+				"camo2"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
+				"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
+			};
+            hiddenSelectionsMaterials[]=
+            {
+                "V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
+                ""
+            };
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+        };
+	};
     class 53rd_Armor_Specialist2: 53rd_Armor_Specialist
 	{
 		author="Article 2 Studios";
@@ -687,7 +737,7 @@ class 53rd_Athena_Helmet_Rifleman : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_Rifleman_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Rifleman_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -711,7 +761,7 @@ class 53rd_Athena_Helmet_NCO : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_GLD_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_NCO_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_NCO_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -735,7 +785,7 @@ class 53rd_Athena_Helmet_Medic : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Red.paa"
         };
     };
-    class 53rd_Athena_Helmet_Medic_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Medic_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -761,7 +811,7 @@ class 53rd_Athena_Helmet_Rifleman_Woodland : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_Rifleman_Woodland_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Rifleman_Woodland_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -785,7 +835,7 @@ class 53rd_Athena_Helmet_NCO_Woodland : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_GLD_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_NCO_Woodland_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_NCO_Woodland_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -809,7 +859,7 @@ class 53rd_Athena_Helmet_Medic_Woodland : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Red.paa"
         };
     };
-    class 53rd_Athena_Helmet_Medic_Woodland_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Medic_Woodland_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -835,7 +885,7 @@ class 53rd_Athena_Helmet_Rifleman_Desert : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_Rifleman_Desert_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Rifleman_Desert_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -859,7 +909,7 @@ class 53rd_Athena_Helmet_NCO_Desert : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_GLD_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_NCO_Desert_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_NCO_Desert_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -883,7 +933,7 @@ class 53rd_Athena_Helmet_Medic_Desert : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Red.paa"
         };
     };
-    class 53rd_Athena_Helmet_Medic_Desert_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Medic_Desert_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -909,7 +959,7 @@ class 53rd_Athena_Helmet_Rifleman_Snow : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_Rifleman_Snow_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Rifleman_Snow_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -933,7 +983,7 @@ class 53rd_Athena_Helmet_NCO_Snow : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_GLD_V_CO.paa"
         };
     };
-    class 53rd_Athena_Helmet_NCO_Snow_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_NCO_Snow_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -957,7 +1007,7 @@ class 53rd_Athena_Helmet_Medic_Snow : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Red.paa"
         };
     };
-    class 53rd_Athena_Helmet_Medic_Snow_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Medic_Snow_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -983,7 +1033,7 @@ class 53rd_Athena_Helmet_Ithias : 53rd_Athena_Helmet
             "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Ithias.paa"
         };
     };
-    class 53rd_Athena_Helmet_Ithias_dp : VES_CH252A_dp
+    class 53rd_Athena_Helmet_Ithias_dp : 53rd_Athena_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
