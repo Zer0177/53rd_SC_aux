@@ -355,7 +355,7 @@ class cfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="(Hephaestus) Rifleman";
-		uniformClass="VES_BDU_Urban";
+		uniformClass="53rd_BDU_Slim";
 		linkedItems[]=
 		{
 			"Armor_Hephaestus_Rifleman",
