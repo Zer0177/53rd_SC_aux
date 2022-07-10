@@ -1649,7 +1649,7 @@ class cfgWeapons {
 			{
 				class Face
 				{
-					armor = 25;
+					armor = 20;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
@@ -1661,7 +1661,7 @@ class cfgWeapons {
 				};
 				class Neck
 				{
-					armor = 25;
+					armor = 15;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};

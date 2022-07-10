@@ -108,12 +108,24 @@ class cfgWeapons {
             mass=1;
             class HitpointsProtectionInfo
             {
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
                 class Head
                 {
                     hitPointName="HitHead";
                     armor=40;
                     passThrough=0.1;
                 };
+				class Neck
+				{
+					armor=15;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
             };
 			uniformModel="OPTRE_UNSC_Units\Army\helmet";
 			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
