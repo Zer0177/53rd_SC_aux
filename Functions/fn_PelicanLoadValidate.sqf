@@ -16,6 +16,11 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
+	case (_veh isKindOf "53rd_IFV76_A"):
+	{
+		_veh attachTo [_pelican,[0,-4.6,-.3]]; 
+		_loaded = true;  
+	};
     case (_veh isKindOf "53rd_UNSC_hornet") : 
 	{
 		_veh attachTo [_pelican,[0,-8, -0.5]];
