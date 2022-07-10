@@ -18,7 +18,7 @@ switch true do {
 	};
 	case (_veh isKindOf "53rd_IFV76_A"):
 	{
-		_veh attachTo [_pelican,[0,-4.6,-.3]]; 
+		_veh attachTo [_pelican,[0,-4.6,-0.3]]; 
 		_loaded = true;  
 	};
     case (_veh isKindOf "53rd_UNSC_hornet") : 
