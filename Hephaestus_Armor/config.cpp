@@ -409,6 +409,29 @@ class cfgWeapons {
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
+	 class 53rd_CH252_GREY_Sealed_Reserve : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Reservist)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_aux\tex\Hephaestus Armor\53RD_Reservist_CH252.paa",
+         	 "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+		};
+    };
+    class 53rd_CH252_GREY_Sealed_Reserve_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Specialist)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_CH252_GREY_SPC.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
 
 //Hephaestus Camo Helmet
 	class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
@@ -534,6 +557,23 @@ class cfgWeapons {
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+	class Armor_Hephaestus_Reservist : 53rd_Armor_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Reservist)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53RD_Reservist_A4.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
