@@ -20,9 +20,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -46,9 +46,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -70,9 +70,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -94,9 +94,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -117,9 +117,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -141,9 +141,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -166,9 +166,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{
@@ -190,9 +190,9 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		side=1;
-		faction="53rd_UNSC";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{

@@ -23,10 +23,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		faction="53rd_UNSC";
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_Mechanized";
-		side=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_APC";
 		
 		hiddenSelections[] =
 		{
@@ -87,10 +85,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		faction="53rd_UNSC";
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_Mechanized";
-		side=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_APC";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
@@ -157,10 +153,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_Mechanized";
-		faction="53rd_UNSC";
-		side=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_APC";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
@@ -226,10 +220,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_Mechanized";
-		side=1;
-		faction="53rd_UNSC";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_APC";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;

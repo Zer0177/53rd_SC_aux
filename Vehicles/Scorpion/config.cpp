@@ -20,14 +20,12 @@ class OPTRE_M808BM_Base;
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_arm";
-		side=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Tank";
 		typicalCargo[]=
 		{
 			"VES_Rifleman_MA5B_MAR"
 		};
-		faction="53rd_UNSC";
 		hiddenSelections[]=
 		{
 			"camo1",

@@ -21,9 +21,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		faction="53rd_UNSC";
-		editorCategory = "53rd_cat_A";
-		side=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_APC";
 		armor=720;
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;

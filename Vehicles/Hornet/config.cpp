@@ -22,8 +22,8 @@ class cfgVehicles {
 		scopeArsenal=2;
 		forceInGarage=1;
 		displayName="[53rd] Hornet (CAP)";
-		editorCategory="53rd_cat_A";
-		editorSubcategory="53rd_sub_rot";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Rotary";
 		crew="VES_Rifleman_MA5B_ODST";
 		mainRotorSpeed=3;
 		backRotorSpeed=3;

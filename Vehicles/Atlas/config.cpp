@@ -15,14 +15,12 @@ class CfgVehicles {
 		{
 		displayName="[53rd] M10 Atlas";
 		author="Seven";
-		dlc = "53rd AUX";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_arm";
-		side=1;
-		faction="53rd_UNSC";
+        side=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Tank";
 		crew="VES_Rifleman_MA5B_MAR";
 		typicalCargo[]=
 		{

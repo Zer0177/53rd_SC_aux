@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Night {
-		units[] = {"53rd_DMNS_Nightingale_base","VES_Rifleman_MA5B_MAR"};
+		units[] = {"53rd_Nightingale"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -19,13 +19,13 @@ class CfgVehicles
 	class 53rd_Nightingale : DMNS_Nightingale_base
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
-		side = 1;
+        side=1;
 		vehicleClass = "Air";
-		editorCategory="53rd_cat_A";
-		editorSubcategory="53rd_sub_rot";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Rotary";
 		author = "Body";
-		faction = "53rd_UNSC";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		displayName = "[53rd] EV-44 Nightingale (Grey)";
 		weapons[]=
@@ -52,6 +52,12 @@ class CfgVehicles
 			"_FireExtinguisher",
 			"_Shovel"
 		};
+        // TFAR Config
+        tf_range = 25000;
+        tf_isolatedAmount = .4;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        enableRadio = 1;
 		hiddenSelectionsTextures[] = { "53rd_SC_aux\Vehicles\EV-44 Nightingale\Nightingale_Base_Grey_co.paa" };
 		class textureSources
 		{
@@ -82,14 +88,7 @@ class CfgVehicles
 					"53rd_SC_aux\Vehicles\EV-44 Nightingale\Nightingale_Base_Green_co.paa"
 				};
 			};
-		
-		// TFAR Config
-				tf_range 											= 25000;
-				tf_isolatedAmount									= .4;
-				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-				tf_hasLRradio	 									= 1;
-				enableRadio											= 1;
-	};
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast
@@ -183,6 +182,5 @@ class CfgVehicles
 				userActionID=55;
 			};
 		};
-		
 	};
 };

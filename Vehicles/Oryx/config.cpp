@@ -20,14 +20,13 @@ class OPTRE_M494;
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		editorCategory = "53rd_cat_A";
-		editorSubcategory="53rd_sub_Mechanized";
-		side=1;
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_IFV";
 		typicalCargo[]=
 		{
 			"VES_Rifleman_MA5B_MAR"
 		};
-		faction="53rd_UNSC";
 		class textureSources
 		{
 			class colorstand

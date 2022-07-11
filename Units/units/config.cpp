@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class 53rd_faction
+	class 53rd_units
 	{
 		author="53rd Aux Team";
 		addonRootClass="53rd_aux";
@@ -11,6 +11,9 @@ class CfgPatches
 		units[]=
 		{
 			"53rd_autorifleman_Hephaestus_unit",
+			"53rd_rifleman_Hephaestus_unit",
+			"53rd_rifleman_aa_Hephaestus_unit",
+			"53rd_rifleman_at_Hephaestus_unit",
 			"53rd_gl_Hephaestus_unit",
 			"53rd_marksman_Hephaestus_unit",
 			"53rd_rto_Hephaestus_unit",
@@ -20,6 +23,9 @@ class CfgPatches
 			"53rd_sniper_Hephaestus_unit",
 			"53rd_recon_Hephaestus_unit",
 			"53rd_autorifleman_Athena_unit",
+			"53rd_rifleman_Athena_unit",
+			"53rd_rifleman_aa_Athena_unit",
+			"53rd_rifleman_at_Athena_unit",
 			"53rd_gl_Athena_unit",
 			"53rd_marksman_Athena_unit",
 			"53rd_rto_Athena_unit",
@@ -130,8 +136,9 @@ class cfgVehicles
 			"OPTRE_M2_Smoke",
 			"OPTRE_M2_Smoke_Green"
 		};
-		editorCategory="53rd_faction";
-		editorSubcategory="53rd_Men_Hephaestus";
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Men_Hephaestus";
 	};
 	class 53rd_rifleman_Athena_unit: 53rd_rifleman_Hephaestus_unit
 	{
@@ -263,7 +270,7 @@ class cfgVehicles
 			"OPTRE_M2_Smoke",
 			"OPTRE_M2_Smoke_Green"
 		};
-		editorSubcategory="53rd_Men_Hephaestus";
+		editorSubCategory = "53rd_Men_Hephaestus";
 		icon="iconManMG";
 	};
 	class 53rd_autorifleman_Athena_unit: 53rd_autorifleman_Hephaestus_unit
@@ -1775,7 +1782,6 @@ class cfgVehicles
 			"OPTRE_M2_Smoke",
 			"OPTRE_M2_Smoke_Green"
 		};
-		editorCategory="53rd_faction";
 		editorSubcategory="53rd_Men_Hephaestus";
 		icon="iconManAT";
 	};
@@ -1879,7 +1885,6 @@ class cfgVehicles
 			"OPTRE_M2_Smoke",
 			"OPTRE_M2_Smoke_Green"
 		};
-		editorCategory="53rd_faction";
 		editorSubcategory="53rd_Men_Hephaestus";
 		icon="iconManEngineer";
 	};
@@ -1926,537 +1931,4 @@ class cfgVehicles
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
-};
-class CfgEditorCategories
-{
-	class 53rd_Men;
-	class 53rd_faction: 53rd_Men
-	{
-	displayName="[53rd] Strike Company";
-	};
-};
-class CfgEditorSubcategories
-{
-	class 53rd_faction;
-	class 53rd_Men_Hephaestus: 53rd_faction
-	{
-		displayName="[53rd] Hephaestus";
-	};
-	class 53rd_Men_Athena: 53rd_faction
-	{
-		displayName="[53rd] Athena";
-	};
-};
-class CfgGroups
-{
-	class West
-	{
-		class 53rd_groups
-		{
-			name="[53rd] Unit Compositions";
-			class 53rd_groups_Hephaestus_Platoon
-			{
-				dlc="53rd";
-				name="Hephaestus";
-				class 53rd_Hephaestus_squad
-				{
-					name="Squad (x3 teams)";
-					side=1;
-					faction="OPTRE_UNSC";
-					rarityGroup=0.30000001;
-					class Group_leader
-					{
-						side=1;
-						vehicle="53rd_sl_Hephaestus_unit";
-						rank="SERGEANT";
-						position[]={0,0,0};
-					};
-					class Group_medic
-					{
-						side=1;
-						vehicle="53rd_corpman_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={5,0,0};
-					};
-					class ft1_leader
-					{
-						side=1;
-						vehicle="53rd_cpl_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={5,-5,0};
-					};
-					class ft1_ar
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={10,-10,0};
-					};
-					class ft1_gl
-					{
-						side=1;
-						vehicle="53rd_gl_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={15,-10,0};
-					};
-					class ft1_at
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={20,-10,0};
-					};
-					class ft2_leader
-					{
-						side=1;
-						vehicle="53rd_cpl_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={25,-5,0};
-					};
-					class ft2_ar
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={30,-10,0};
-					};
-					class ft2_mk
-					{
-						side=1;
-						vehicle="53rd_gl_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={35,-10,0};
-					};
-					class ft2_at
-					{
-						side=1;
-						vehicle="53rd_marksman_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={40,-10,0};
-					};
-					class ft3_leader
-					{
-						side=1;
-						vehicle="53rd_cpl_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={45,-5,0};
-					};
-					class ft3_ar
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={50,-10,0};
-					};
-					class ft3_gl
-					{
-						side=1;
-						vehicle="53rd_gl_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={55,-10,0};
-					};
-					class ft3_aa
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={60,-10,0};
-					};
-				};
-				class 53rd_Hephaestus_sent1
-				{
-					name="Sentry (Marksmen)";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_marksman_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_smg_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Hephaestus_sent2
-				{
-					name="Sentry (Sniper)";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_sniper_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_smg_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Hephaestus_squad_aa
-				{
-					name="x2 AA";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Hephaestus_squad_at
-				{
-					name="x2 AT";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Hephaestus_aa_at
-				{
-					name="x2 AA/x2 AT";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Hephaestus_unit";
-						rank="SERGEANT";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Hephaestus_unit";
-						rank="CORPORAL";
-						position[]={5,-5,0};
-					};
-					class Unit2
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={-5,-5,0};
-					};
-					class Unit3
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Hephaestus_unit";
-						rank="PRIVATE";
-						position[]={10,-10,0};
-					};
-				};
-			};
-			class 53rd_groups_Athena_platoon
-			{
-				dlc="53rd";
-				name="Athena";
-				class 53rd_Athena_squad
-				{
-					name="Squad (x3 teams)";
-					side=1;
-					faction="OPTRE_UNSC";
-					rarityGroup=0.30000001;
-					class Group_leader
-					{
-						side=1;
-						vehicle="53rd_sl_Athena_unit";
-						rank="SERGEANT";
-						position[]={0,0,0};
-					};
-					class Group_medic
-					{
-						side=1;
-						vehicle="53rd_corpman_Athena_unit";
-						rank="CORPORAL";
-						position[]={5,0,0};
-					};
-					class ft1_leader
-					{
-						side=1;
-						vehicle="53rd_cpl_Athena_unit";
-						rank="CORPORAL";
-						position[]={5,-5,0};
-					};
-					class ft1_ar
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Athena_unit";
-						rank="PRIVATE";
-						position[]={10,-10,0};
-					};
-					class ft1_gl
-					{
-						side=1;
-						vehicle="53rd_gl_Athena_unit";
-						rank="PRIVATE";
-						position[]={15,-10,0};
-					};
-					class ft1_at
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Athena_unit";
-						rank="PRIVATE";
-						position[]={20,-10,0};
-					};
-					class ft2_leader
-					{
-						side=1;
-						vehicle="53rd_cpl_Athena_unit";
-						rank="CORPORAL";
-						position[]={25,-5,0};
-					};
-					class ft2_ar
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Athena_unit";
-						rank="PRIVATE";
-						position[]={30,-10,0};
-					};
-					class ft2_mk
-					{
-						side=1;
-						vehicle="53rd_gl_Athena_unit";
-						rank="PRIVATE";
-						position[]={35,-10,0};
-					};
-					class ft2_at
-					{
-						side=1;
-						vehicle="53rd_marksman_Athena_unit";
-						rank="PRIVATE";
-						position[]={40,-10,0};
-					};
-					class ft3_leader
-					{
-						side=1;
-						vehicle="53rd_cpl_Athena_unit";
-						rank="CORPORAL";
-						position[]={45,-5,0};
-					};
-					class ft3_ar
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Athena_unit";
-						rank="PRIVATE";
-						position[]={50,-10,0};
-					};
-					class ft3_gl
-					{
-						side=1;
-						vehicle="53rd_gl_Athena_unit";
-						rank="PRIVATE";
-						position[]={55,-10,0};
-					};
-					class ft3_aa
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Athena_unit";
-						rank="PRIVATE";
-						position[]={60,-10,0};
-					};
-				};
-				class 53rd_Athena_sent1
-				{
-					name="Sentry (Marksmen)";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_marksman_Athena_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_smg_Athena_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Athena_sent2
-				{
-					name="Sentry (Sniper)";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_sniper_Athena_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_smg_Athena_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Athena_recon
-				{
-					name="Recon";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_recon_Athena_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_recon_Athena_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Athena_squad_aa
-				{
-					name="x2 AA";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Athena_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Athena_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Athena_squad_at
-				{
-					name="x2 AT";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Athena_unit";
-						rank="CORPORAL";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Athena_unit";
-						rank="PRIVATE";
-						position[]={5,-5,0};
-					};
-				};
-				class 53rd_Athena_aa_at
-				{
-					name="x2 AA/x2 AT";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Athena_unit";
-						rank="SERGEANT";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Athena_unit";
-						rank="CORPORAL";
-						position[]={5,-5,0};
-					};
-					class Unit2
-					{
-						side=1;
-						vehicle="53rd_rifleman_aa_Athena_unit";
-						rank="PRIVATE";
-						position[]={-5,-5,0};
-					};
-					class Unit3
-					{
-						side=1;
-						vehicle="53rd_rifleman_at_Athena_unit";
-						rank="PRIVATE";
-						position[]={10,-10,0};
-					};
-				};
-				class 53rd_Athena_cqc
-				{
-					name="Breacher Team";
-					side=1;
-					faction="OPTRE_UNSC";
-					class Unit0
-					{
-						side=1;
-						vehicle="53rd_shotgun_Athena_unit";
-						rank="SERGEANT";
-						position[]={0,0,0};
-					};
-					class Unit1
-					{
-						side=1;
-						vehicle="53rd_shotgun_Athena_unit";
-						rank="CORPORAL";
-						position[]={5,-5,0};
-					};
-					class Unit2
-					{
-						side=1;
-						vehicle="53rd_smg_Athena_unit";
-						rank="PRIVATE";
-						position[]={-5,-5,0};
-					};
-					class Unit3
-					{
-						side=1;
-						vehicle="53rd_autorifleman_Athena_unit";
-						rank="PRIVATE";
-						position[]={10,-10,0};
-					};
-				};
-			};
-		};
-	};
-};
 };
