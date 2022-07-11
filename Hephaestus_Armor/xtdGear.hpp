@@ -78,9 +78,14 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt","beret"};
+				values[] = {"res","rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt","beret"};
 				changeingame = 1;
                 changedelay  = 0;
+				class res
+				{
+					label = "Reservist";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class rifle
 				{
 					label = "Rifleman";
@@ -184,9 +189,14 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"rifle","spc","tl","sl","medic","medic_plt"};
+				values[] = {"res","rifle","spc","tl","sl","medic","medic_plt"};
 				changeingame = 1;
                 changedelay  = 0;
+				class res
+				{
+					label = "Reservist";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class rifle
 				{
 					label = "Rifleman";
@@ -248,42 +258,46 @@ class XtdGearInfos
 		environment = "jung";
 		};
         
-        class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+        class 53rd_CH252_GREY_Sealed_Reserve
 		{
 		model = "HephaestusHelm";
 		environment = "def";
-		type = "rifle";
+		type = "res";
 		pol = "on";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV:53rd_CH252_GREY_Sealed_Reserve
+		{
+		type = "rifle";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "spc";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_TL_SLV:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_HEV_Sealed_TL_SLV:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "tl";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_SL_SLV:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_HEV_Sealed_SL_SLV:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "sl";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "plt";
 		};
-		class 53rd_CH252_GREY_CORP_Sealed_SLV:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_CORP_Sealed_SLV:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "medic";
 		};
-		class 53rd_CH252_GREY_CORP_Sealed_GLD:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_CORP_Sealed_GLD:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "medic_nco";
 		};
-		class 53rd_CH252_GREY_CORP_Sealed_PLM:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_CH252_GREY_CORP_Sealed_PLM:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "medic_plt";
 		};
-		class 53rd_Beret_Hephaestus:53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+		class 53rd_Beret_Hephaestus:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "beret";
 		};
@@ -309,38 +323,42 @@ class XtdGearInfos
 		};
         //dp
         
-        class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+        class 53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		model = "HephaestusHelm";
 		environment = "def";
-		type = "rifle";
+		type = "res";
 		pol = "off";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp:53rd_CH252_GREY_Sealed_Reserve_dp
+		{
+		type = "rifle";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "spc";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_TL_SLV_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_HEV_Sealed_TL_SLV_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "tl";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_SL_SLV_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_HEV_Sealed_SL_SLV_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "sl";
 		};
-		class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "plt";
 		};
-		class 53rd_CH252_GREY_CORP_Sealed_SLV_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_CORP_Sealed_SLV_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "medic";
 		};
-		class 53rd_CH252_GREY_CORP_Sealed_GLD_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_CORP_Sealed_GLD_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "medic_nco";
 		};
-		class 53rd_CH252_GREY_CORP_Sealed_PLM_dp:53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+		class 53rd_CH252_GREY_CORP_Sealed_PLM_dp:53rd_CH252_GREY_Sealed_Reserve_dp
 		{
 		type = "medic_plt";
 		};
@@ -365,29 +383,33 @@ class XtdGearInfos
 		environment = "jung";
 		};
         //Armor
-		class Armor_Hephaestus_Rifleman
+		class Armor_Hephaestus_Reservist
 		{
 		model = "HephaestusVest";
 		environment = "def";
+		type = "res";
+		};
+		class Armor_Hephaestus_Rifleman:Armor_Hephaestus_Reservist
+		{
 		type = "rifle";
 		};
-		class Armor_Hephaestus_Specialist:Armor_Hephaestus_Rifleman
+		class Armor_Hephaestus_Specialist:Armor_Hephaestus_Reservist
 		{
 		type = "spc";
 		};
-		class Armor_Hephaestus_Team_Leader:Armor_Hephaestus_Rifleman
+		class Armor_Hephaestus_Team_Leader:Armor_Hephaestus_Reservist
 		{
 		type = "tl";
 		};
-		class Armor_Hephaestus_Squad_Leader:Armor_Hephaestus_Rifleman
+		class Armor_Hephaestus_Squad_Leader:Armor_Hephaestus_Reservist
 		{
 		type = "sl";
 		};
-		class Armor_Hephaestus_Medic:Armor_Hephaestus_Rifleman
+		class Armor_Hephaestus_Medic:Armor_Hephaestus_Reservist
 		{
 		type = "medic";
 		};
-		class Armor_Hephaestus_Platoon_Medic:Armor_Hephaestus_Rifleman
+		class Armor_Hephaestus_Platoon_Medic:Armor_Hephaestus_Reservist
 		{
 		type = "medic_plt";
 		};
