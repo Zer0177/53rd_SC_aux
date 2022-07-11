@@ -4,7 +4,7 @@ class CfgPatches {
 	class black_body {
 		units[] = 
         {
-            "BDU_V_Pegasus_Black",
+            "BDU_V_Volare_Black",
             "53rd_BDU_V_Slim",
 			"53rd_Raven",
 			"53rd_Dega"
@@ -21,7 +21,7 @@ class CfgPatches {
 			"53rd_HelmetCrew_B",
             "MEU_M52A_VulcCor_Grey",
             "MEU_Peg_Pilot_Armor_Black",
-            "Pegasus_BDU_Bl",
+            "Volare_BDU_Bl",
             "MEU_CH252_GREY_HEV_Sealed_SLV",
             "MEU_CH252_GREY_HEV_Sealed_GLD",
             "MEU_CH252_GREY_CORP_Sealed_SLV",
@@ -1634,7 +1634,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
-			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
 		};
         class ItemInfo: HeadgearItem
 		{
@@ -1643,7 +1643,7 @@ class cfgWeapons {
             hiddenSelectionsTextures[] = 
             {
                 "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
-                "53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+                "53rd_SC_Aux\tex\visr_black_CO.paa"
             };
 			class HitpointsProtectionInfo
 			{
@@ -1702,7 +1702,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
-			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
 		};
     };
     class 53rd_VX19_Blue_Helmet_dp : 53rd_VX19_Black_Helmet
@@ -1741,7 +1741,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
-			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
 		};
 	};
     class 53rd_VX19_Black_Helmet_dp: OPTRE_FC_VX19_Helmet_dp
@@ -1765,7 +1765,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_blue_CO.paa",
-			"53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
 		};
 	};
 	class 53rd_Peg_VX19_Blue_Helmet_dp: OPTRE_FC_VX19_Helmet_dp
@@ -1785,7 +1785,6 @@ class cfgWeapons {
     class OPTRE_FC_M52B_Armor_Rifleman;
     class OPTRE_FC_M52B_Armor_Teamleader;
 	class OPTRE_FC_Marines_Uniform;
-	class BDU_V_Pegasus_Blue;
 
     class 53rd_V_Pilot_Armor_Black:OPTRE_FC_M52B_Armor_Rifleman
     {
@@ -1851,53 +1850,53 @@ class cfgWeapons {
             "optre_unsc_units\army\data\odst_armor_co",
         };
     };
-    class Pegasus_BDU_Bl:OPTRE_FC_Marines_Uniform
+    class Volare_BDU_Bl:OPTRE_FC_Marines_Uniform
     {
         scope = 2;
         scopeArsenal = 2;
         scopeEditor = 2;
         dlc = "53rd AUX";
         author = "53rd AUX TEAM";
-        displayName = "[53rd] Pegasus Flight Suit (Black)";
+        displayName = "[53rd] Volare Flight Suit (Black)";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "BDU_V_Pegasus_Black";
+            uniformClass = "BDU_V_Volare_Black";
             uniformType = "Neopren";
             containerClass = "Supply100";
             modelSides[] = {6};
         };
     };
-    class Pegasus_BDU_Bl_NCO:OPTRE_FC_Marines_Uniform
+    class Volare_BDU_Bl_NCO:OPTRE_FC_Marines_Uniform
     {
         scope = 2;
         scopeArsenal = 2;
         scopeEditor = 2;
         dlc = "53rd AUX";
         author = "53rd AUX TEAM";
-        displayName = "[53rd] Pegasus Flight Suit (NCO\Black)";
+        displayName = "[53rd] Volare Flight Suit (NCO\Black)";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "BDU_V_Pegasus_Black_NCO";
+            uniformClass = "BDU_V_Volare_Black_NCO";
             uniformType = "Neopren";
             containerClass = "Supply100";
             modelSides[] = {6};
         };
 
     };
-	 class Pegasus_BDU_B2_NCO:OPTRE_FC_Marines_Uniform
+	 class Volare_BDU_B2_NCO:OPTRE_FC_Marines_Uniform
     {
         scope = 2;
         scopeArsenal = 2;
         scopeEditor = 2;
         dlc = "53rd AUX";
         author = "53rd AUX TEAM";
-        displayName = "[53rd] Pegasus Flight Suit (NCO\Blue)";
+        displayName = "[53rd] Volare Flight Suit (NCO\Blue)";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "BDU_V_Pegasus_Blue_NCO";
+            uniformClass = "BDU_V_Volare_Blue_NCO";
             uniformType = "Neopren";
             containerClass = "Supply100";
             modelSides[] = {6};
@@ -2137,24 +2136,24 @@ class cfgWeapons {
 class CfgVehicles
 {
 	class OPTRE_UNSC_Army_Soldier_WDL;
-	class BDU_V_Pegasus_Black : OPTRE_UNSC_Army_Soldier_WDL 
+	class BDU_V_Volare_Black : OPTRE_UNSC_Army_Soldier_WDL 
     { 
         model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
-        uniformClass = "Pegasus_BDU_Bl"; 
+        uniformClass = "Volare_BDU_Bl"; 
         hiddenSelections[] = {"camo1","camo2"}; 
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_black_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
     }; 
-	class BDU_V_Pegasus_Black_NCO : OPTRE_UNSC_Army_Soldier_WDL 
+	class BDU_V_Volare_Black_NCO : OPTRE_UNSC_Army_Soldier_WDL 
     { 
         model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
-        uniformClass = "Pegasus_BDU_B1_NCO"; 
+        uniformClass = "Volare_BDU_B1_NCO"; 
         hiddenSelections[] = {"camo1","camo2"}; 
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_black_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
     };
-	class BDU_V_Pegasus_Blue_NCO : OPTRE_UNSC_Army_Soldier_WDL 
+	class BDU_V_Volare_Blue_NCO : OPTRE_UNSC_Army_Soldier_WDL 
     { 
         model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
-        uniformClass = "Pegasus_BDU_B2_NCO"; 
+        uniformClass = "Volare_BDU_B2_NCO"; 
         hiddenSelections[] = {"camo1","camo2"}; 
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_blue_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
     };

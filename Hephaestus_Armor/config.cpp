@@ -101,7 +101,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
 		class ItemInfo: HeadgearItem
 		{
@@ -140,7 +140,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
                 "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
-                "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+                "53rd_SC_aux\tex\visr_silver_CO.paa"
 			};
 			hiddenSelectionsMaterials[]=
 			{
@@ -211,7 +211,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
              "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SPC.paa",
-         	 "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
 		};
     };
     class 53rd_CH252_GREY_HEV_Sealed_SPC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -234,7 +234,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_TL.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
     class 53rd_CH252_GREY_HEV_Sealed_TL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -257,7 +257,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL.paa",
-            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
         };
     };
     class 53rd_CH252_GREY_HEV_Sealed_SL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -280,7 +280,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
              "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLS.paa",
-            "53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
         };
     };
     class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -303,7 +303,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP2.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
     class 53rd_CH252_GREY_CORP_Sealed_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -326,7 +326,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP2.paa",
-            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
         };
     };
     class 53rd_CH252_GREY_CORP_Sealed_GLD_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -349,7 +349,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_PLT.paa",
-            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
         };
     };
     class 53rd_CH252_GREY_CORP_Sealed_PLM_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -372,7 +372,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
              "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa",
-            "53rd_SC_Aux\tex\peg_visr_black_CO.paa"
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
         };
     };
     class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -395,7 +395,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_Beefaroni.paa",
-            "53rd_SC_aux\tex\peg_visr_gold_CO.paa"
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
         };
     };
     class LMAO_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -418,7 +418,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
              "53rd_SC_aux\tex\Hephaestus Armor\53RD_Reservist_CH252.paa",
-         	 "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
 		};
     };
     class 53rd_CH252_GREY_Sealed_Reserve_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -443,7 +443,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WoodlandCamo.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
     class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -466,7 +466,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_DesCamo.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
     class 53rd_CH252_DES_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -489,7 +489,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WinterCamo.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
     class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -512,7 +512,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_JungleCamo.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
     class 53rd_CH252_JUG_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
@@ -1092,7 +1092,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
-            "53rd_SC_aux\tex\peg_visr_silver_CO.paa"
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
 	class 53rd_CH252_Tar_Haz2_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
