@@ -539,7 +539,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_CORP_A3.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -590,7 +590,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_GT.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -607,7 +607,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_Specialist.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Specialist.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -624,7 +624,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_GT.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -641,7 +641,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_GT.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -676,7 +676,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_CORP_A3.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -780,7 +780,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_CORP_A3.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -884,7 +884,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_CORP_A3.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -988,7 +988,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_Vulc_CORP_A3.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -1126,7 +1126,7 @@ class cfgWeapons {
 //			uniformModel="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
 //		};
 //	};
-    class 53rd_M52A_Vulc_Haz : 53rd_Armor_Rifleman
+    class 53rd_M52A_Haz : 53rd_Armor_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1143,7 +1143,7 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co",
         };
     };
-    class 53rd_M52A_Vulc_Haz_NCO : 53rd_Armor_SL
+    class 53rd_M52A_Haz_NCO : 53rd_Armor_SL
 	{
 		scope = 2;
         scopeCurator = 2;
