@@ -213,7 +213,7 @@ class CfgVehicles
 				textToolTip="<t color='#FFBF00'>Load Supply Pods";
 				userActionID=9;
 			};
-			class PelLift_LoadVehicle2
+			class PelLift_LoadVehicle1
 			{
 				condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
 				displayName="<t color='#00BF00'>Maglock Cargo";
@@ -223,7 +223,7 @@ class CfgVehicles
 				priority=2;
 				radius=15;
 				showWindow=0;
-				statement="0 = [this,vehicle player] spawn F53rd_fnc_PelicanLoadValidate";
+				statement="0 = [this,vehicle player] spawn F53rd_fnc_PelicanMaglockLoad";
 				textToolTip="<t color='#00BF00'>Maglock Cargo";
 				userActionID=6;
 			};

@@ -1137,7 +1137,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
-			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_Vulc_A.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_A.paa",
 			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -1154,7 +1154,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
-			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_Vulc_A.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_A.paa",
 			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",

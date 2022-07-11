@@ -2116,6 +2116,22 @@ class cfgWeapons {
 			};
 		};
 	};	
+    
+    //Weapons
+    class OPTRE_MA5C;
+	class OPTRE_MA37: OPTRE_MA5C{};
+	class 53rd_MA37: OPTRE_MA37
+	{
+		scope=2;
+		scopeArsenal = 2;
+		displayName="[53rd] MA37X";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"
+		};
+    };
 };
 
 class CfgVehicles
