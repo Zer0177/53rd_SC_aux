@@ -16,6 +16,12 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
+	case (_veh isKindOf "53rd_Merkava_BB"):
+    {
+		_veh attachTo [_pelican,[0,-6,-0.30]];
+		_veh setDir 180;
+		_loaded = true;
+    };
 	case (_veh isKindOf "53rd_IFV76_A"):
 	{
 		_veh attachTo [_pelican,[0,-4.6,-0.3]]; 
@@ -27,7 +33,7 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "53rd_MGS_01D") : 
+	case (_veh isKindOf "53rd_MGS_01D" or _veh isKindOf "53rd_MGS_01E") : 
 	{
 		_veh attachTo [_pelican,[0,-8, -0.5]];
 		_veh setDir 180;
@@ -103,105 +109,12 @@ switch true do {
 		_veh attachTo [_pelican,[0,-5,-0.8]];  
 		_loaded = true;  
 	};
-    //memes start here
-    case (_veh isKindOf "I_APC_Wheeled_03_cannon_F"):
-	{
-		_veh attachTo [_pelican,[0,-3.5,-0.3]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "B_TMBT_01_arty_F" or _veh isKindOf "B_MBT_01_arty_F"):
-	{
-		_veh attachTo [_pelican,[0,-7,-0.6]];
-        _veh setDir 180;
-		_loaded = true;  
-	};
-    case (_veh isKindOf "B_T_APC_Tracked_01_AA_F" or _veh isKindOf "B_APC_Tracked_01_AA_F"):
-    {
-		_veh attachTo [_pelican,[-0.0311756,-6.65556,-0.90342]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "Pandur2_AA_E" or _veh isKindOf "Pandur2_AA_D" or _veh isKindOf "Pandur2_AA_WD"):
-    {
-		_veh attachTo [_pelican,[-0.414768,-4.70731,-0.554724]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "Pandur2_E" or _veh isKindOf "Pandur2_D" or _veh isKindOf "Pandur2_WD"):
-    {
-		_veh attachTo [_pelican,[0,-3.5,-0.6]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "Pandur2_medical_E" or _veh isKindOf "Pandur2_medical_D" or _veh isKindOf "Pandur2_medical_WD"):
-    {
-		_veh attachTo [_pelican,[-0.414768,-4.70731,-0.554724]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "Pandur2_unarmed_E" or _veh isKindOf "Pandur2_unarmed_D" or _veh isKindOf "Pandur2_unarmed_WD"):
-    {
-		_veh attachTo [_pelican,[-0.414768,-4.70731,-0.554724]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "itc_land_b_SPH_Sholef2" or _veh isKindOf "itc_land_b_t_SPH_Sholef2"):
-    {
-		_veh attachTo [_pelican,[-0.0311756,-6.65556,-0.90342]];
-        _veh setDir 180;
-		_loaded = true;
-    };
-    case (_veh isKindOf "B_APC_Tracked_01_CRV_F" or _veh isKindOf "B_T_APC_Tracked_01_CRV_F"):
-    {
-		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
-		_loaded = true;
-    };
-	case (_veh isKindOf "APC_Wheeled_02_base_v2_F" or _veh isKindOf "MEU_Leopard" or _veh isKindOf "MEU_Leopard_Medical_APC"):
-    {
-		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
-		_loaded = true;
-    };
-    case (_veh isKindOf "B_Lifeboat"):
-    {
-		_veh attachTo [_pelican,[0.0181665,-3.41999,0.530018]];
-		_loaded = true;
-    };
 	case (_veh isKindOf "OPTRE_M494"):
     {
 		_veh attachTo [_pelican,[0,-5,-.65]];
 		_veh setDir 180;
 		_loaded = true;
     };
-	case (_veh isKindOf "LM_OPCAN_MBTB_KOS"):
-    {
-		_veh attachTo [_pelican,[0,-6,0.20]];
-		_veh setDir 180;
-		_loaded = true;
-    };
-	case (_veh isKindOf "B_MBT_01_TUSK_F"):
-    {
-		_veh attachTo [_pelican,[0,-6,-0.30]];
-		_veh setDir 180;
-		_loaded = true;
-    };
-	case (_veh isKindOf "MEU_SDV_01"):
-    {
-		_veh attachTo [_pelican,[0,-5,1.2]];
-		_loaded = true;
-    };
-
-	case (
-		_veh isKindOf "LM_OPCAN_MGS_AR_DES" or 
-		_veh isKindOf "53rd_MGS_01E" or
-		_veh isKindOf "LM_OPCAN_MGS_AR_MIX" or 
-		_veh isKindOf "LM_OPCAN_MGS_AR_WDL" or 
-		_veh isKindOf "LM_OPCAN_MGS_MC_WDL" or 
-		_veh isKindOf "B_AFV_Wheeled_01_cannon_F" or 
-		_veh isKindOf "B_AFV_Wheeled_01_up_cannon_F" or 
-		_veh isKindOf "B_T_AFV_Wheeled_01_cannon_F" or 
-		_veh isKindOf "B_T_AFV_Wheeled_01_up_cannon_F"or 
-		_veh isKindOf "MEU_Warrior_Katie"
-	):
-	{
-		_veh attachTo [_pelican,[0,-6,-0.20]]; 
-		_veh setDir 180;
-		_loaded = true;  
-	};
 };
 	
 if (_loaded) then 

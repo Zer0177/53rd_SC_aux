@@ -40,9 +40,6 @@ class CfgPatches
 		};
 	};
 };
-class cfgWeapons
-{
-};
 class cfgVehicles
 {
 	class OPTRE_UNSC_Marine_Soldier_Rifleman_AR;
@@ -61,15 +58,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -80,15 +69,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -145,41 +126,25 @@ class cfgVehicles
 		displayName="(Athena) Rifleman";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -195,15 +160,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -214,15 +171,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -278,48 +227,32 @@ class cfgVehicles
 		displayName="(Athena) Autorifleman";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
 	
 	class 53rd_corpman_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
-		displayName="(Hephaestus) Corpsman";
+		displayName="(Hephaestus) Medic";
 		linkedItems[]=
 		{
 			"Armor_Hephaestus_Medic",
@@ -329,15 +262,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -348,15 +273,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -407,6 +324,33 @@ class cfgVehicles
 		icon="iconManMedic";
 		backpack="OPTRE_UNSC_Rucksack_Medic_53rd";
 	};
+	class 53rd_corpsman_Athena_unit: 53rd_corpman_Hephaestus_unit
+	{
+		displayName="(Athena) Corpsman";
+		linkedItems[]=
+		{
+			"53rd_Athena_Armor_Medic",
+			"53rd_Athena_Helmet_Medic",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_Athena_Armor_Medic",
+			"53rd_Athena_Helmet_Medic",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_NVG"
+		};
+		editorSubcategory="53rd_Men_Athena";
+	};
 	
 	class 53rd_gl_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
@@ -420,15 +364,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -439,15 +375,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -522,22 +450,14 @@ class cfgVehicles
 		displayName="(Athena) Grenadier";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -548,15 +468,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -592,15 +504,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -663,15 +567,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -682,15 +578,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 	};
 
@@ -706,15 +594,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -725,15 +605,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -795,15 +667,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -814,15 +678,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -839,15 +695,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -858,15 +706,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -922,41 +762,25 @@ class cfgVehicles
 		displayName="(Athena) Marksman";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -973,15 +797,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -992,15 +808,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -1058,41 +866,25 @@ class cfgVehicles
 		displayName="(Athena) RTO";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1109,15 +901,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1128,15 +912,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -1191,41 +967,25 @@ class cfgVehicles
 		displayName="(Athena) Shotgun";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1241,15 +1001,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1260,15 +1012,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		backpack="OPTRE_ANPRC_515";
 		editorSubcategory="53rd_Men_Hephaestus";
@@ -1279,40 +1023,24 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"53rd_M52A_Para_Y_SL",
-			"53rd_CH252A_Y_BV_NCO",
+			"53rd_Athena_Helmet_Rifleman_NCO",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
 			"53rd_M52A_Para_Y_SL",
-			"53rd_CH252A_Y_BV_NCO",
+			"53rd_Athena_Helmet_Rifleman_NCO",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1328,15 +1056,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1347,15 +1067,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -1410,41 +1122,25 @@ class cfgVehicles
 		displayName="(Athena) SMG";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1461,15 +1157,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1480,15 +1168,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -1547,41 +1227,25 @@ class cfgVehicles
 		displayName="(Athena) Sniper";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1598,15 +1262,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1617,15 +1273,7 @@ class cfgVehicles
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		weapons[]=
 		{
@@ -1685,41 +1333,25 @@ class cfgVehicles
 		displayName="(Athena) Recon";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1790,41 +1422,25 @@ class cfgVehicles
 		displayName="(Athena) Rifleman AA";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
@@ -1893,41 +1509,25 @@ class cfgVehicles
 		displayName="(Athena) Rifleman AT";
 		linkedItems[]=
 		{
-			"Armor_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_odst_co_Yellow_Shoulder_Rifleman",
-			"53rd_CH252A_Y_BV",
+			"53rd_Athena_Armor_Rifleman",
+			"53rd_Athena_Helmet_Rifleman",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
-			"OPTRE_NVG",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
 	};
