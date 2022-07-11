@@ -737,7 +737,7 @@ class 53rd_Athena_Armor_Ithias: 53rd_Armor_SL
 		hiddenSelectionsTextures[] =  
 		{ 
             "53rd_SC_Aux\tex\Athena Armor\53rd_Athena_Vest.paa", 
-			"53rd_SC_aux\tex\Hephaestus Armor\MEU_M52_GREY_Vulc_test1.paa", 
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_test1.paa", 
 			"53rd_SC_Aux\tex\Athena Armor\53rd_Athena_NCO_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa", 
 			"optre_unsc_units\army\data\odst_armor_co.paa" 
