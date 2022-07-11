@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 #include "Functions\CfgFunctions.hpp"
 class CfgPatches {
 	class black_body {
