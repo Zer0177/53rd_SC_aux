@@ -6,9 +6,6 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
-class cfgWeapons {
-    
-};
 class CfgVehicles
 {
 class OPTRE_M494;

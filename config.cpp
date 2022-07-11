@@ -10,28 +10,9 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-            "MEU_M52A_Vulc_Grey",
-            "MEU_M52A_VulcPSG_Black",
-            "MEU_M52A_VulcPSG_Grey",
-            "MEU_M52A_VulcSL_Grey",
-            "MEU_M52A_VulcTL_Grey",
-            "MEU_M52A_VulcCorNCO_Grey",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
-            "MEU_M52A_VulcCor_Grey",
-            "MEU_Peg_Pilot_Armor_Black",
             "Volare_BDU_Bl",
-            "MEU_CH252_GREY_HEV_Sealed_SLV",
-            "MEU_CH252_GREY_HEV_Sealed_GLD",
-            "MEU_CH252_GREY_CORP_Sealed_SLV",
-            "MEU_CH252_GREY_CORP_Sealed_GLD",
-            "MEU_Peg_VX19_Black_Helmet",
-			"MEU_Peg_VX19_Blue_Helmet",
-            "MEU_CH252_GREY_HEV_Sealed_SLV_dp",
-            "MEU_CH252_GREY_HEV_Sealed_GLD_dp",
-            "MEU_CH252_GREY_CORP_Sealed_SLV_dp",
-            "MEU_CH252_GREY_CORP_Sealed_GLD_dp",
-            "MEU_Peg_VX19_Black_Helmet_dp",
 			"53rd_VX19_Black_Helmet",
 			"53rd_VX19_Blue_Helmet", 
 			"53rd_BDU_Slim"
