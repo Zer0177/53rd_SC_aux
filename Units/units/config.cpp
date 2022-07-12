@@ -868,10 +868,11 @@ class cfgVehicles
 	class 53rd_Volare_airmen_unit: 53rd_rifleman_Hephaestus_unit
 	{
 		displayName="(Volare) Airmen";
+		uniformClass="Volare_BDU_Bl";
 		linkedItems[]=
 		{
-			"Icarus_Cadet_Armor",
-			"Icarus_Helmet_Cadet",
+			"53rd_V_Pilot_Armor_Black",
+			"53rd_VX19_Black_Helmet",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
@@ -881,8 +882,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Icarus_Cadet_Armor",
-			"Icarus_Helmet_Cadet",
+			"53rd_V_Pilot_Armor_Black",
+			"53rd_VX19_Black_Helmet",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
@@ -940,11 +941,12 @@ class cfgVehicles
 	};
 	class 53rd_Volare_SA_unit: 53rd_Volare_airmen_unit
 	{
-		displayName="(Volare) Flight Lead";
+		displayName="(Volare) Airman NCO";
+		uniformClass="Volare_BDU_Bl_NCO";
 		linkedItems[]=
 		{
-			"Icarus_Pilot_Ensign",
-			"Icarus_Helmet_Pilot",
+			"53rd_V_Pilot_Armor_Black_NCO",
+			"53rd_VX19_Black_Helmet",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
@@ -954,8 +956,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Icarus_Pilot_Ensign",
-			"Icarus_Helmet_Pilot",
+			"53rd_V_Pilot_Armor_Black_NCO",
+			"53rd_VX19_Black_Helmet",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
