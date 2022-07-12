@@ -13,7 +13,7 @@ class CfgVehicles {
  class B_MBT_01_TUSK_F;
     class 53rd_Merkava_BB: B_MBT_01_TUSK_F
 	{
-		displayName="[53rd] Merkava";
+		displayName="[53rd] Mk4 Merkava";
 		author="Seven";
 		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\B_T_MBT_01_TUSK_F.jpg";
 		scope=2;

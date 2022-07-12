@@ -27,7 +27,7 @@ class CfgVehicles
 		forceInGarage=1;
 		crewCrashProtection=9.9999997e-005;
 		crewExplosionProtection=9.9999997e-005;
-		displayName="[53rd] Pelican/AV";
+		displayName="[53rd] D77H Pelican/AV";
 		transportSoldier=21;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";

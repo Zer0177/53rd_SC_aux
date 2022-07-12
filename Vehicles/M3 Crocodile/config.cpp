@@ -17,7 +17,7 @@ class CfgVehicles
 	class DMNS_M511_Springbok_AA;
 	class 53rd_Crocodile_APC : DMNS_M511_Springbok_APC
 	{
-		displayName="[53rd] Crocodile APC";
+		displayName="[53rd] M3 Crocodile APC";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -79,7 +79,7 @@ class CfgVehicles
 	};
 	class 53rd_Crocodile_IFV : DMNS_M511_Springbok_IFV
 	{
-		displayName="[53rd] Crocodile IFV";
+		displayName="[53rd] M3 Crocodile IFV";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -147,7 +147,7 @@ class CfgVehicles
 
 	class 53rd_Crocodile_MGS : DMNS_M511_Springbok_MGS
 	{
-		displayName="[53rd] Crocodile MGS";
+		displayName="[53rd] M3 Crocodile MGS";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -214,7 +214,7 @@ class CfgVehicles
 	};
 	class 53rd_Crocodile_AA : DMNS_M511_Springbok_AA
 	{
-		displayName="[53rd] Crocodile AA";
+		displayName="[53rd] M3 Crocodile AA";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;

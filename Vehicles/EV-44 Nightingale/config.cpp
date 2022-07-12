@@ -27,7 +27,7 @@ class CfgVehicles
 		editorSubCategory = "53rd_Rotary";
 		author = "Body";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-		displayName = "[53rd] EV-44 Nightingale (Grey)";
+		displayName = "[53rd] EV-44 Nightingale";
 		weapons[]=
 		{
 			"CMFlareLauncher",
