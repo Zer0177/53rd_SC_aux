@@ -59,7 +59,7 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         enableRadio = 1;
-		hiddenSelectionsTextures[] = { "53rd_SC_aux\Vehicles\EV-44 Nightingale\Nightingale_Base_Grey_co.paa" };
+		hiddenSelectionsTextures[] = { "53rd_SC_aux\Vehicles\Nightingale\Nightingale_Base_Grey_co.paa" };
 		class textureSources
 		{
 			class 53rd_Grey
@@ -68,7 +68,7 @@ class CfgVehicles
 				author="Body";
 				textures[]=
 				{
-					"53rd_SC_aux\Vehicles\EV-44 Nightingale\Nightingale_Base_Black_co.paa"
+					"53rd_SC_aux\Vehicles\Nightingale\Nightingale_Base_Black_co.paa"
 				};
 			};
 			class 53rd_DGrey
@@ -77,7 +77,7 @@ class CfgVehicles
 				author="Body";
 				textures[]=
 				{
-					"53rd_SC_aux\Vehicles\EV-44 Nightingale\Nightingale_Base_Grey_co.paa"
+					"53rd_SC_aux\Vehicles\Nightingale\Nightingale_Base_Grey_co.paa"
 				};
 			};
 			class 53rd_Green
@@ -86,7 +86,7 @@ class CfgVehicles
 				displayName="Green";
 				textures[]=
 				{
-					"53rd_SC_aux\Vehicles\EV-44 Nightingale\Nightingale_Base_Green_co.paa"
+					"53rd_SC_aux\Vehicles\Nightingale\Nightingale_Base_Green_co.paa"
 				};
 			};
         };
