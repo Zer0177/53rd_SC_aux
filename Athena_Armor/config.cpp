@@ -79,12 +79,6 @@ class 53rd_Athena_Helmet: VES_CH252D
                     armor=40;
                     passThrough=0.1;
                 };
-				class Neck
-				{
-					armor=15;
-					hitpointName="HitNeck";
-					passThrough=0.1;
-				};
             };
         };
 	};	class 53rd_Athena_Helmet_dp: 53rd_Athena_Helmet
@@ -140,12 +134,6 @@ class 53rd_Athena_Helmet: VES_CH252D
                     armor=40;
                     passThrough=0.1;
                 };
-				class Neck
-				{
-					armor=15;
-					hitpointName="HitNeck";
-					passThrough=0.1;
-				};
             };
         };
 	};
