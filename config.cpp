@@ -2152,7 +2152,8 @@ class CfgVehicles
         hiddenSelections[] = {"camo1","camo2"}; 
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_blue_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
     };
-//Infantry Uniforms
+    
+    //Infantry Uniforms
 	class VES_BDU_V_Urban;	
 	class 53rd_BDU_V_Slim: VES_BDU_V_Urban
 	{

@@ -30,6 +30,10 @@ class cfgVehicles {
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.40000001;
 		tf_range=12000;
+        hiddenSelectionsTextures[]=
+        {
+            "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_URB.paa"
+        };
 		weapons[]=
 		{
 			"CMFlareLauncher",
@@ -192,10 +196,6 @@ class cfgVehicles {
 					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3.paa"
 				};
 			};
-		};
-		hiddenSelectionstextures[]=
-		{
-			"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3.paa"
 		};
 		textureList[]=
 		{

@@ -35,10 +35,10 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa",
-			"A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa",
-			"A3\Armor_F_Exp\MBT_01\data\mbt_addons_olive_CO.paa",
-			"a3\Armor_F\Data\camonet_NATO_Green_CO.paa"
+            "53rd_SC_aux\Vehicles\merkava\MBT_01_body_white_CO.paa",
+            "53rd_SC_aux\Vehicles\merkava\MBT_01_tow_white_CO.paa",
+            "53rd_SC_aux\Vehicles\merkava\mbt_addons_white_CO.paa",
+            "53rd_SC_aux\Vehicles\merkava\camonet_NATO_Tundra_CO.paa"
 		};
 		class TextureSources
 		{

@@ -28,10 +28,10 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\Atlas\Olive_Body.paa",
-			"53rd_SC_aux\Vehicles\Atlas\Olive_Gun.paa",
-			"53rd_SC_aux\Vehicles\Atlas\Olive_Back.paa",
-			"a3\Armor_F\Data\camonet_NATO_Green_CO.paa"
+            "53rd_SC_aux\Vehicles\Atlas\White_Body.paa",
+            "53rd_SC_aux\Vehicles\Atlas\White_Gun.paa",
+            "53rd_SC_aux\Vehicles\Atlas\White_Back.paa",
+            "53rd_SC_aux\Vehicles\merkava\camonet_NATO_Tundra_CO.paa"
 		};
 		class TransportWeapons
 		{
@@ -74,7 +74,7 @@ class CfgVehicles {
 					"53rd_SC_aux\Vehicles\Atlas\White_Body.paa",
 					"53rd_SC_aux\Vehicles\Atlas\White_Gun.paa",
 					"53rd_SC_aux\Vehicles\Atlas\White_Back.paa",
-					"1st_meu_vehicles\_textures\Vehicles\camonet_NATO_Tundra_CO.paa"
+					"53rd_SC_aux\Vehicles\merkava\camonet_NATO_Tundra_CO.paa"
 				};
 			};
 			class meu_winter_5_3
@@ -86,7 +86,7 @@ class CfgVehicles {
 					"53rd_SC_aux\Vehicles\Atlas\White_Body_5-3.paa",
 					"53rd_SC_aux\Vehicles\Atlas\White_Gun_5-3.paa",
 					"53rd_SC_aux\Vehicles\Atlas\White_Back_5-3.paa",
-					"1st_meu_vehicles\_textures\Vehicles\camonet_NATO_Tundra_CO.paa"
+					"53rd_SC_aux\Vehicles\merkava\Vehicles\camonet_NATO_Tundra_CO.paa"
 				};
 			};
 			class meu_lemon
