@@ -385,13 +385,13 @@ class cfgVehicles
 		displayName="(Hephaestus) Recon";
 		weapons[]=
 		{
-			"MEU_OPTRE_M58S_AI",
+			"OPTRE_M58S",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"MEU_OPTRE_M58S_AI",
+			"OPTRE_M58S",
 			"Throw",
 			"Put"
 		};
@@ -440,13 +440,13 @@ class cfgVehicles
 		displayName="(Hephaestus) Sniper";
 		weapons[]=
 		{
-			"MEU_OPTRE_SRS99D_AI",
+			"OPTRE_SRS99D",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"MEU_OPTRE_SRS99D_AI",
+			"OPTRE_SRS99D",
 			"Throw",
 			"Put"
 		};
@@ -494,13 +494,13 @@ class cfgVehicles
 		displayName="(Hephaestus) SMG";
 		weapons[]=
 		{
-			"MEU_OPTRE_M7_AI",
+			"OPTRE_M7",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"MEU_OPTRE_M7_AI",
+			"OPTRE_M7",
 			"Throw",
 			"Put"
 		};
@@ -571,13 +571,13 @@ class cfgVehicles
 		displayName="(Hephaestus) Shotgun";
 		weapons[]=
 		{
-			"MEU_OPTRE_M45TAC_AI",
+			"OPTRE_M45TAC",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"MEU_OPTRE_M45TAC_AI",
+			"OPTRE_M45TAC",
 			"Throw",
 			"Put"
 		};
@@ -744,13 +744,13 @@ class cfgVehicles
 		displayName="(Hephaestus) Marksman";
 		weapons[]=
 		{
-			"MEU_OPTRE_Commando_Black_AI",
+			"OPTRE_Commando_Black",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"MEU_OPTRE_Commando_Black_AI",
+			"OPTRE_Commando_Black",
 			"Throw",
 			"Put"
 		};
@@ -817,13 +817,13 @@ class cfgVehicles
 		};
 		weapons[]=
 		{
-			"MEU_OPTRE_M6G_AI",
+			"OPTRE_M6G",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"MEU_OPTRE_M6G_AI",
+			"OPTRE_M6G",
 			"Throw",
 			"Put"
 		};
