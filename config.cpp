@@ -10,6 +10,7 @@ class CfgPatches {
         };
 		weapons[] = 
         {
+			"53rd_MA37",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
             "Volare_BDU_Bl",
@@ -2097,18 +2098,32 @@ class cfgWeapons {
 	};	
     
     //Weapons
-    class OPTRE_MA5C;
-	class OPTRE_MA37: OPTRE_MA5C{};
+	class OPTRE_MA37;
 	class 53rd_MA37: OPTRE_MA37
 	{
-		scope=2;
-		scopeArsenal = 2;
-		displayName="[53rd] MA37X";
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA37A";
+		baseWeapon="53rd_MA37";
+		cursor="OPTRE_MA37";
 		magazines[]=
 		{
 			"OPTRE_60Rnd_762x51_Mag",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
 		};
     };
 };
