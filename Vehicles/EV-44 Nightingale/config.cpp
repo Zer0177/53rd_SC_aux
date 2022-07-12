@@ -22,6 +22,7 @@ class CfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side=1;
+        icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";
 		vehicleClass = "Air";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
