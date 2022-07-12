@@ -333,13 +333,13 @@ class cfgVehicles
 		};
 		weapons[]=
 		{
-			"OPTRE_M7",
+			"OPTRE_M7S",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"OPTRE_M7",
+			"OPTRE_M7S",
 			"Throw",
 			"Put"
 		};
@@ -440,13 +440,13 @@ class cfgVehicles
 		displayName="(Hephaestus) Sniper";
 		weapons[]=
 		{
-			"OPTRE_SRS99D",
+			"OPTRE_SRS99C_SC_LS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"OPTRE_SRS99D",
+			"OPTRE_SRS99C_SC_LS",
 			"Throw",
 			"Put"
 		};
@@ -494,13 +494,13 @@ class cfgVehicles
 		displayName="(Hephaestus) SMG";
 		weapons[]=
 		{
-			"OPTRE_M7",
+			"OPTRE_M7S",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"OPTRE_M7",
+			"OPTRE_M7S",
 			"Throw",
 			"Put"
 		};
