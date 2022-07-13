@@ -4,9 +4,7 @@ class CfgPatches {
 		units[] = 
         {
             "BDU_V_Volare_Black",
-            "53rd_BDU_V_Slim",
-			"53rd_Raven",
-			"53rd_Dega"
+            "53rd_BDU_V_Slim"
         };
 		weapons[] = 
         {
