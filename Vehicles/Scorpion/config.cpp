@@ -22,9 +22,10 @@ class OPTRE_M808BM_Base;
 		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelections[]=
 		{

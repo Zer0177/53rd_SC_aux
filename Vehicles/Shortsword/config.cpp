@@ -24,7 +24,7 @@ class cfgVehicles {
 		displayName="[53rd] B-62 Shortsword (CAP)";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_FixedWing";
-		crew="VES_Rifleman_MA5B_ODST";
+		crew="53rd_Volare_airmen_unit";
 		mainRotorSpeed=3;
 		backRotorSpeed=3;
 		tf_hasLRradio=1;
