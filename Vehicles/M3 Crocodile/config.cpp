@@ -17,7 +17,7 @@ class CfgVehicles
 	class DMNS_M511_Springbok_AA;
 	class 53rd_Crocodile_APC : DMNS_M511_Springbok_APC
 	{
-		displayName="[53rd] Crocodile APC";
+		displayName="[53rd] M3 Crocodile APC";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -25,7 +25,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_APC";
-		
+		crew="53rd_crewman_unit";
 		hiddenSelections[] =
 		{
 			"Camo1",
@@ -79,7 +79,7 @@ class CfgVehicles
 	};
 	class 53rd_Crocodile_IFV : DMNS_M511_Springbok_IFV
 	{
-		displayName="[53rd] Crocodile IFV";
+		displayName="[53rd] M3 Crocodile IFV";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -90,7 +90,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_crewman_unit";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		
@@ -147,7 +147,7 @@ class CfgVehicles
 
 	class 53rd_Crocodile_MGS : DMNS_M511_Springbok_MGS
 	{
-		displayName="[53rd] Crocodile MGS";
+		displayName="[53rd] M3 Crocodile MGS";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -158,7 +158,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_crewman_unit";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		
@@ -214,7 +214,7 @@ class CfgVehicles
 	};
 	class 53rd_Crocodile_AA : DMNS_M511_Springbok_AA
 	{
-		displayName="[53rd] Crocodile AA";
+		displayName="[53rd] M3 Crocodile AA";
 		author="53rd";
 		dlc = "53rd";
 		scope=2;
@@ -225,7 +225,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_crewman_unit";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		

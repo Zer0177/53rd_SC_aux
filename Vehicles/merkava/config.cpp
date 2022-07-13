@@ -13,7 +13,7 @@ class CfgVehicles {
  class B_MBT_01_TUSK_F;
     class 53rd_Merkava_BB: B_MBT_01_TUSK_F
 	{
-		displayName="[53rd] Merkava";
+		displayName="[53rd] Mk4 Merkava";
 		author="Seven";
 		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\B_T_MBT_01_TUSK_F.jpg";
 		scope=2;
@@ -22,10 +22,10 @@ class CfgVehicles {
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_IFV";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		class TransportWeapons
 		{
@@ -35,10 +35,10 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa",
-			"A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa",
-			"A3\Armor_F_Exp\MBT_01\data\mbt_addons_olive_CO.paa",
-			"a3\Armor_F\Data\camonet_NATO_Green_CO.paa"
+            "53rd_SC_aux\Vehicles\merkava\MBT_01_body_white_CO.paa",
+            "53rd_SC_aux\Vehicles\merkava\MBT_01_tow_white_CO.paa",
+            "53rd_SC_aux\Vehicles\merkava\mbt_addons_white_CO.paa",
+            "53rd_SC_aux\Vehicles\merkava\camonet_NATO_Tundra_CO.paa"
 		};
 		class TextureSources
 		{

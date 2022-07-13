@@ -10,6 +10,7 @@ class CfgPatches {
         };
 		weapons[] = 
         {
+			"53rd_MA37",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
             "Volare_BDU_Bl",
@@ -1806,9 +1807,9 @@ class cfgWeapons {
         displayName = "[53rd] Volare Armor (Rifleman)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -1823,9 +1824,9 @@ class cfgWeapons {
         displayName = "[53rd] Volare Armor (Squad Leader)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -2097,18 +2098,32 @@ class cfgWeapons {
 	};	
     
     //Weapons
-    class OPTRE_MA5C;
-	class OPTRE_MA37: OPTRE_MA5C{};
+	class OPTRE_MA37;
 	class 53rd_MA37: OPTRE_MA37
 	{
-		scope=2;
-		scopeArsenal = 2;
-		displayName="[53rd] MA37X";
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA37A";
+		baseWeapon="53rd_MA37";
+		cursor="OPTRE_MA37";
 		magazines[]=
 		{
 			"OPTRE_60Rnd_762x51_Mag",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
 		};
     };
 };
@@ -2137,7 +2152,8 @@ class CfgVehicles
         hiddenSelections[] = {"camo1","camo2"}; 
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_blue_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
     };
-//Infantry Uniforms
+    
+    //Infantry Uniforms
 	class VES_BDU_V_Urban;	
 	class 53rd_BDU_V_Slim: VES_BDU_V_Urban
 	{
@@ -2235,299 +2251,10 @@ class CfgVehicles
 		};
 	};
   
-
-  ///////////// VEHICLES ///////////////// 
-	class B_Heli_Attack_01_dynamicLoadout_F;
-	class 53rd_Raven : B_Heli_Attack_01_dynamicLoadout_F
-	{
-		displayName="[53rd] D102 OWL";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"Camo2",
-			"Camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa"
-		};
-		class TextureSources
-		{
-			class 53rd_base
-			{
-				displayName="Grey";
-				author="Body";
-				textures[]=
-				{
-                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa",
-				};
-			};
-			class 53rd_HEPH
-			{
-				displayName="Athena";
-				author="Body";
-				textures[]=
-				{
-					"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyATH_CO.paa",
-				};
-			};
-			class 53rd_ATH
-			{
-				displayName="Hephaestus";
-				author="Body";
-				textures[]=
-				{
-                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyPLT_CO.paa",
-				};
-			};
-		};
-		class UserActions
-		{
-			class FullAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID=57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID=58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName="<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID=52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID=53;
-			};
-			class Afterburners900Engage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName="<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
-				textToolTip="<t color='#04B45F'>Engage Afterburners";
-				userActionID=54;
-			};
-			class Afterburners900Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Afterburners";
-				userActionID=55;
-			};
-		};		
-	};
-	class DEGA_Heli_Attack_01_dynamicLoadout_F;
-	class 53rd_Dega : DEGA_Heli_Attack_01_dynamicLoadout_F
-	{
-		displayName="[53rd] D102 OWL-D";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"Camo2",
-			"Camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa"
-		};
-		class TextureSources
-		{
-			class 53rd_base
-			{
-				displayName="Grey";
-				author="Body";
-				textures[]=
-				{
-                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa",
-				};
-			};
-			class 53rd_HEPH
-			{
-				displayName="Athena";
-				author="Body";
-				textures[]=
-				{
-					"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyATH_CO.paa",
-				};
-			};
-			class 53rd_ATH
-			{
-				displayName="Hephaestus";
-				author="Body";
-				textures[]=
-				{
-                    "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyPLT_CO.paa",
-				};
-			};
-		};
-		class UserActions
-		{
-			class FullAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID=57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID=58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName="<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID=52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID=53;
-			};
-			class Afterburners900Engage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName="<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
-				textToolTip="<t color='#04B45F'>Engage Afterburners";
-				userActionID=54;
-			};
-			class Afterburners900Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Afterburners";
-				userActionID=55;
-			};
-		};		
-	};
-//BackPacks
+    //BackPacks
 	class OPTRE_UNSC_Rucksack;
 	class OPTRE_ANPRC_521_Green;
+    class OPTRE_ANPRC_515;
 	class OPTRE_UNSC_Rucksack_Medic;
 	class OPTRE_UNSC_Rucksack_Heavy;
 	class OPTRE_ONI_Researcher_Suitcase;
@@ -2556,7 +2283,6 @@ class CfgVehicles
     }; 
 
     
-    class OPTRE_ANPRC_515;
 	class 53rd_ANPRC_515: OPTRE_ANPRC_515
     {
         displayName = "[53rd] AN/PRC-515 (LR)";

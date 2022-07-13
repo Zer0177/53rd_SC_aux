@@ -27,13 +27,13 @@ class CfgVehicles
 		forceInGarage=1;
 		crewCrashProtection=9.9999997e-005;
 		crewExplosionProtection=9.9999997e-005;
-		displayName="[53rd] Pelican/AV";
+		displayName="[53rd] D77H Pelican/AV";
 		transportSoldier=21;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		fuelCapacity=200;
 		tf_range=120000;
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_Volare_airmen_unit";
 		typicalCargo[]=
 		{
 			"VES_Rifleman_MA5B_MAR"
@@ -215,6 +215,36 @@ class CfgVehicles
 				statement="0 = [this,vehicle player] spawn F53rd_fnc_PelicanMaglockLoad";
 				textToolTip="<t color='#00BF00'>Maglock Cargo";
 				userActionID=6;
+			};
+			class FullAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID=57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID=58;
 			};
 		};
 		class pilotCamera
