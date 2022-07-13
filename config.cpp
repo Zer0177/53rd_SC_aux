@@ -1807,9 +1807,9 @@ class cfgWeapons {
         displayName = "[53rd] Volare Armor (Rifleman)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -1824,9 +1824,9 @@ class cfgWeapons {
         displayName = "[53rd] Volare Armor (Squad Leader)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\MEU_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -2251,11 +2251,10 @@ class CfgVehicles
 		};
 	};
   
-
-  ///////////// VEHICLES ///////////////// 
-//BackPacks
+    //BackPacks
 	class OPTRE_UNSC_Rucksack;
 	class OPTRE_ANPRC_521_Green;
+    class OPTRE_ANPRC_515;
 	class OPTRE_UNSC_Rucksack_Medic;
 	class OPTRE_UNSC_Rucksack_Heavy;
 	class OPTRE_ONI_Researcher_Suitcase;
@@ -2284,7 +2283,6 @@ class CfgVehicles
     }; 
 
     
-    class OPTRE_ANPRC_515;
 	class 53rd_ANPRC_515: OPTRE_ANPRC_515
     {
         displayName = "[53rd] AN/PRC-515 (LR)";
