@@ -36,7 +36,7 @@ class cfgWeapons{
 		//picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Chest_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Chest_WEA.paa"
 		};
 	};
 	class WEA_Vest: V_CarrierRigKBT_01_base_F
@@ -49,7 +49,7 @@ class cfgWeapons{
 		//picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Chest_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Chest_WEA.paa"
 		};
 	};
 	class WEA_Heavy: V_CarrierRigKBT_01_heavy_base_F
@@ -62,7 +62,7 @@ class cfgWeapons{
 		//picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Chest_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Chest_WEA.paa"
 		};
 	};
 
@@ -84,7 +84,7 @@ class cfgWeapons{
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Uniform_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Uniform_WEA.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -108,7 +108,7 @@ class cfgWeapons{
 		//picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Helmet_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Helmet_WEA.paa"
 		};
 	};
 };
@@ -124,7 +124,7 @@ class CfgVehicles{
 		uniformClass="WEA_Uniform_thing_2";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Uniform_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Uniform_WEA.paa"
 		};
 	};
 	
@@ -138,7 +138,7 @@ class CfgVehicles{
 		//picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Kitbag_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Kitbag_WEA.paa"
 		};
 	};
 };
@@ -162,8 +162,8 @@ class WEA_Gasmask_Base: G_CBRN_S10
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Gasmask_WEA.paa",
-			"West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_WEA.paa",
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
 		};
 	};
 
@@ -179,8 +179,8 @@ class WEA_Gasmask_Base: G_CBRN_S10
 		//picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"West_Enia_Army\Tex\Gasmask_WEA.paa",
-			"West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_WEA.paa",
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
 		};
 	};
 };
