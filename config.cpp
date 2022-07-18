@@ -1920,6 +1920,18 @@ class cfgWeapons {
 			};
 		};
 	};
+    class 53rd_Helmet_Lmao_dp : 53rd_Helmet_Lmao 
+    {
+		scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Helmet.paa",
+			""
+		};
+        
+    };
     class 53rd_Raider_Armor : 53rd_Raider_Armor_Base
 	{
 		scope = 2;
