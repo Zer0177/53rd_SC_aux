@@ -27,7 +27,7 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		author = "Body";
-		crew = "53rd_Volare_airmen_unit";
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		displayName = "[53rd] EV-44 Nightingale";
 		weapons[]=
 		{

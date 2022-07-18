@@ -20,10 +20,9 @@ class OPTRE_M494;
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_IFV";
-		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"53rd_crewman_unit"
+			"VES_Rifleman_MA5B_MAR"
 		};
 		class textureSources
 		{
