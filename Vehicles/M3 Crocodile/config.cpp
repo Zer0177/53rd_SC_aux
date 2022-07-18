@@ -25,7 +25,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_APC";
-		crew="53rd_crewman_unit";
+		
 		hiddenSelections[] =
 		{
 			"Camo1",
@@ -90,7 +90,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="53rd_crewman_unit";
+		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		
@@ -158,7 +158,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="53rd_crewman_unit";
+		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		
@@ -225,7 +225,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="53rd_crewman_unit";
+		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		

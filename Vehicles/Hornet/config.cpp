@@ -24,7 +24,7 @@ class cfgVehicles {
 		displayName="[53rd] AV-14 Hornet (CAP)";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
-		crew="53rd_Volare_airmen_unit";
+		crew="VES_Rifleman_MA5B_ODST";
 		mainRotorSpeed=3;
 		backRotorSpeed=3;
 		tf_hasLRradio=1;

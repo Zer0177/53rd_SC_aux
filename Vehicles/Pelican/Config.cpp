@@ -33,7 +33,7 @@ class CfgVehicles
 		editorSubCategory = "53rd_Rotary";
 		fuelCapacity=200;
 		tf_range=120000;
-		crew="53rd_Volare_airmen_unit";
+		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
 		typicalCargo[]=
 		{
 			"VES_Rifleman_MA5B_MAR"
