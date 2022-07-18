@@ -12,6 +12,84 @@ class cfgWeapons {
 class CfgVehicles
 {
 class OPTRE_M808BM_Base;
+	class 53rd_ONI_Scorpion: OPTRE_M808BM_Base
+	{
+		displayName="[ONI] M808BM";
+		author="53rd & Seven";
+		dlc = "53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="ONI_faction";
+		editorCategory = "ONI_cat_faction";
+		editorSubCategory = "ONI_Motor";
+		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		typicalCargo[]=
+		{
+			"OPTRE_UNSC_ONI_Soldier_Operative"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Scorpion\ONI_Tank_CO.paa",
+			"53rd_SC_aux\tex\Scorpion\ONI_tank_Turret.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_ONI_co.paa"
+		};
+	};
+	class 53rd_CORP_Scorpion: OPTRE_M808BM_Base
+	{
+		displayName="[CORP] M808BM";
+		author="53rd & Seven";
+		dlc = "53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="CORP_faction";
+		editorCategory = "CORP_cat_faction";
+		editorSubCategory = "CORP_Motor";
+		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		typicalCargo[]=
+		{
+			"OPTRE_UNSC_ONI_Soldier_Operative"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Scorpion\Corp\Scorp_base_Corp_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Corp\Scorp_tur_Corp_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Corp\Scorpion_mg_Corp_co.paa"
+		};
+	};
 	class 53rd_Scorpion: OPTRE_M808BM_Base
 	{
 		displayName="[53rd] M808BM";
@@ -40,14 +118,14 @@ class OPTRE_M808BM_Base;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\Scorpion\Scorp_base_grey_co.paa",
-			"53rd_SC_aux\Vehicles\Scorpion\Scorp_tur_grey_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorp_base_grey_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorp_tur_grey_co.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
-			"53rd_SC_aux\Vehicles\Scorpion\Scorpion_mg_grey_co.paa"
+			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_grey_co.paa"
 		};
 		class TextureSources
         {
@@ -137,14 +215,14 @@ class OPTRE_M808BM_Base;
 				author="Sgt. Body";
 				textures[]=
 				{
-					"53rd_SC_aux\Vehicles\Scorpion\Scorp_base_grey_co.paa",
-					"53rd_SC_aux\Vehicles\Scorpion\Scorp_tur_grey_co.paa",
-					"OPTRE_Vehicles\Scorpion\data\texture\camo\det_3_black_co.paa",
+					"53rd_SC_aux_Repo\53rd_SC_aux\tex\Scorpion\Scorp_base_grey_co.paa",
+					"53rd_SC_aux_Repo\53rd_SC_aux\tex\Scorpion\Scorp_tur_grey_co.paa",
+					"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
 					"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
-					"OPTRE_Vehicles\Scorpion\data\texture\Scorp_net_wood_ca.paa",
-					"OPTRE_Vehicles\Scorpion\data\texture\Scorp_net_wood_ca.paa",
-					"OPTRE_Vehicles\Scorpion\data\texture\camo\mine_roller_black_co.paa",
-					"53rd_SC_aux\Vehicles\Scorpion\Scorpion_mg_grey_co.paa"
+					"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+					"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+					"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
+					"53rd_SC_aux_Repo\53rd_SC_aux\tex\Scorpion\Scorpion_mg_grey_co.paa"
 				};
 			};
 			

@@ -91,8 +91,8 @@ class CfgVehicles
 		{	
 			class ves_DGRY
 			{
-				author="Vespade";
-				displayName="Dark Grey";
+				author="Body";
+				displayName="53rd Dark Grey";
 				textures[]=
 				{
 					"53rd_SC_aux\Vehicles\HoneyBadger\V_IFV76_BGRY_CO.paa",
@@ -220,6 +220,19 @@ class CfgVehicles
 					"V_FZ_Vehicles\data\Honeybadger\V_IFV76_OD3_CO.paa",
 					"V_FZ_Vehicles\data\Honeybadger\V_IFV76_OD3_A_CO.paa",
 					"V_FZ_Vehicles\data\Honeybadger\V_IFV76_OD3_T_CO.paa",
+					"a3\armor_f\data\camonet_NATO_Green_CO.paa",
+					"a3\armor_f\data\cage_olive_CO.paa"
+				};
+			};
+			class Heph_14
+			{
+				author="Body";
+				displayName="Hephaestus 1-4";
+				textures[]=
+				{
+					"53rd_SC_aux\Vehicles\HoneyBadger\V_IFV76_1-4_Body_CO.paa",
+					"53rd_SC_aux\Vehicles\HoneyBadger\V_IFV76_DGray_A_CO.paa",
+					"53rd_SC_aux\Vehicles\HoneyBadger\V_IFV76_T_1-4_CO.paa",
 					"a3\armor_f\data\camonet_NATO_Green_CO.paa",
 					"a3\armor_f\data\cage_olive_CO.paa"
 				};

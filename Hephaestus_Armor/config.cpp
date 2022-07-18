@@ -271,6 +271,29 @@ class cfgWeapons {
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
+	class 53rd_CH252_GREY_HEV_RYU_SL_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Ryu)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_1-4_SL.paa",
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_RYU_SL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Squad Leader)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
     class 53rd_CH252_GREY_HEV_Sealed_PLS_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 2;
@@ -642,6 +665,40 @@ class cfgWeapons {
 		{
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_GT.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+	 class Armor_Hephaestus_Ryu : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Ryu)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-4_Vulc_A4.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+	class Armor_Hephaestus_Joker : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Joker)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
 			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
@@ -1106,6 +1163,29 @@ class cfgWeapons {
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
+	class 53rd_CH252_Tar_Haz3 : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Tartarus Helmet (Gold)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
+        };
+    };
+	class 53rd_CH252_Tar_Haz3_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Tartarus Helmet (Silver)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
 	
 // Tartarus Armor /////////////////////////////////
 //	class H_HelmetCrew_B;
@@ -1155,6 +1235,23 @@ class cfgWeapons {
 		{
             "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
 			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_A.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+    };
+	class 53rd_M52A_Rose_NCO : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Tartarus Armor (Roseiry)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_Rose_A.paa",
 			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
