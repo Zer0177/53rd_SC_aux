@@ -2110,6 +2110,9 @@ class cfgWeapons {
     //Weapons
 	class OPTRE_MA37;
 	class OPTRE_MA32;
+	class OPTRE_MA37GL;
+	class OPTRE_MA32GL;
+    
 	class WeaponSlotsInfo;
 	class MuzzleSlot;
 	class CowsSlot;
@@ -2122,6 +2125,40 @@ class cfgWeapons {
 		author="53rd Aux Team";
 		displayName="[53rd] MA37A";
 		baseWeapon="53rd_MA37";
+		cursor="OPTRE_MA37";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]={};
+			};
+		};
+    };
+	class 53rd_MA37GL: OPTRE_MA37GL
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA37A + GL";
+		baseWeapon="53rd_MA37GL";
 		cursor="OPTRE_MA37";
 		magazines[]=
 		{
@@ -2251,6 +2288,33 @@ class cfgWeapons {
 			{
 				compatibleitems[]={};
 			};
+		};
+    };
+	class 53rd_MA32GL: OPTRE_MA32GL
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA32A + GL";
+		baseWeapon="53rd_MA32GL";
+		cursor="OPTRE_MA32";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
 		};
     };
 };
