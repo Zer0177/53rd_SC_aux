@@ -1920,6 +1920,18 @@ class cfgWeapons {
 			};
 		};
 	};
+    class 53rd_Helmet_Lmao_dp : 53rd_Helmet_Lmao 
+    {
+		scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Helmet.paa",
+			""
+		};
+        
+    };
     class 53rd_Raider_Armor : 53rd_Raider_Armor_Base
 	{
 		scope = 2;
@@ -2097,6 +2109,16 @@ class cfgWeapons {
     
     //Weapons
 	class OPTRE_MA37;
+	class OPTRE_MA32;
+	class OPTRE_MA37GL;
+	class OPTRE_MA32GL;
+    
+	class WeaponSlotsInfo;
+	class MuzzleSlot;
+	class CowsSlot;
+	class PointerSlot;
+	class UnderBarrelSlot;
+    
 	class 53rd_MA37: OPTRE_MA37
 	{
 		dlc="53rdAux";
@@ -2104,6 +2126,177 @@ class cfgWeapons {
 		displayName="[53rd] MA37A";
 		baseWeapon="53rd_MA37";
 		cursor="OPTRE_MA37";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]={};
+			};
+		};
+    };
+	class 53rd_MA37GL: OPTRE_MA37GL
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA37A + GL";
+		baseWeapon="53rd_MA37GL";
+		cursor="OPTRE_MA37";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]={};
+			};
+		};
+    };
+	class 53rd_MA32: OPTRE_MA32
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA32A";
+		baseWeapon="53rd_MA32";
+		cursor="OPTRE_MA32";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=60;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"muzzle_snds_65_TI_blk_F",
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+                {
+					"optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+					"OPTRE_M392_Scope",
+					"OPTRE_BR55HB_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_Scope",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"OPTRE_MA5_BUIS",
+					"OPTRE_MA5_SmartLink",
+					"OPTRE_MA5C_SmartLink",
+					"OPTRE_BR45_Scope"
+                };
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"acc_pointer_IR"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleitems[]={};
+			};
+		};
+    };
+	class 53rd_MA32GL: OPTRE_MA32GL
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA32A + GL";
+		baseWeapon="53rd_MA32GL";
+		cursor="OPTRE_MA32";
 		magazines[]=
 		{
 			"OPTRE_60Rnd_762x51_Mag",
