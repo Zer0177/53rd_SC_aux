@@ -20,10 +20,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 
 		hiddenSelectionsTextures[]=
@@ -46,10 +46,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -70,10 +70,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -94,10 +94,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -117,10 +117,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -141,10 +141,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -166,10 +166,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -190,10 +190,10 @@ class CfgVehicles
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Motor";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{

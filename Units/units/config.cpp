@@ -34,6 +34,9 @@ class CfgPatches
 			"53rd_smg_Athena_unit",
 			"53rd_sniper_Athena_unit",
 			"53rd_recon_Athena_unit",
+			"53rd_Volare_airmen_unit",
+			"53rd_Volare_SA_unit",
+			"53rd_crewman_unit"
 		};
 		weapons[]=
 		{
@@ -1346,5 +1349,34 @@ class cfgVehicles
 			"OPTRE_NVG"
 		};
 		editorSubcategory="53rd_Men_Athena";
+	};
+    
+    //Crew
+	class 53rd_crewman_unit: 53rd_smg_Hephaestus_unit
+	{
+		displayName="(Hephaestus) Crewman";
+		uniformClass="VES_BDU_SS_Evolved_Slim";
+		linkedItems[]=
+		{
+			"Armor_Hephaestus_Rifleman",
+			"H_MilCap_gry",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"Armor_Hephaestus_Rifleman",
+			"H_MilCap_gry",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_NVG"
+		};
 	};
 };

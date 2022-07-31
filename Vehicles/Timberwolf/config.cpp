@@ -44,7 +44,7 @@ class CfgVehicles
             "LM_OPCAN3.0\BLU\UNSC\VEH\MGS1.rvmat",
             "LM_OPCAN3.0\BLU\UNSC\VEH\MGS2.rvmat"
         };
-        crew="LM_OPCAN_UNSCA_Crewman_WDL";
+        crew="53rd_crewman_unit";
         textureList[]=
         {
             "Army",
@@ -106,7 +106,7 @@ class CfgVehicles
             "LM_OPCAN3.0\BLU\UNSC\VEH\MGS1.rvmat",
             "LM_OPCAN3.0\BLU\UNSC\VEH\MGS2.rvmat"
         };
-        crew="LM_OPCAN_UNSCA_Crewman_WDL";
+        crew="53rd_crewman_unit";
         textureList[]=
         {
             "Army",
