@@ -9,6 +9,9 @@ class CfgPatches {
 		weapons[] = 
         {
 			"53rd_MA37",
+			"53rd_MA37GL",
+			"53rd_MA32",
+			"53rd_MA32GL",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
             "Volare_BDU_Bl",
@@ -21,6 +24,14 @@ class CfgPatches {
 	};
 };
 #include "xtdGear.hpp"
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class WeaponSlotsInfo;
+class MuzzleSlot;
+class CowsSlot;
+class PointerSlot;
+class UnderBarrelSlot;
 class cfgWeapons {
     class ItemInfo;
     class UniformItem;
@@ -2108,16 +2119,23 @@ class cfgWeapons {
 	};	
     
     //Weapons
-	class OPTRE_MA37;
-	class OPTRE_MA32;
-	class OPTRE_MA37GL;
-	class OPTRE_MA32GL;
+	class OPTRE_MA37
+	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_MA32
+	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_MA37GL
+	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_MA32GL
+	{
+		class WeaponSlotsInfo;
+	};
     
-	class WeaponSlotsInfo;
-	class MuzzleSlot;
-	class CowsSlot;
-	class PointerSlot;
-	class UnderBarrelSlot;
     
 	class 53rd_MA37: OPTRE_MA37
 	{
@@ -2144,13 +2162,6 @@ class cfgWeapons {
 			"OPTRE_32Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag_SS",
 			"OPTRE_32Rnd_762x51_Mag_SST"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]={};
-			};
 		};
     };
 	class 53rd_MA37GL: OPTRE_MA37GL
@@ -2179,13 +2190,6 @@ class cfgWeapons {
 			"OPTRE_32Rnd_762x51_Mag_SS",
 			"OPTRE_32Rnd_762x51_Mag_SST"
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]={};
-			};
-		};
     };
 	class 53rd_MA32: OPTRE_MA32
 	{
@@ -2213,82 +2217,6 @@ class cfgWeapons {
 			"OPTRE_32Rnd_762x51_Mag_SS",
 			"OPTRE_32Rnd_762x51_Mag_SST"
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=60;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_65_TI_blk_F",
-					"OPTRE_MA5Suppressor"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-                {
-					"optic_Nightstalker",
-					"optic_tws",
-					"optic_tws_mg",
-					"optic_NVS",
-					"optic_DMS",
-					"optic_LRPS",
-					"optic_ams",
-					"optic_AMS_snd",
-					"optic_AMS_khk",
-					"optic_KHS_blk",
-					"optic_KHS_tan",
-					"optic_KHS_hex",
-					"optic_KHS_old",
-					"optic_SOS",
-					"optic_MRCO",
-					"optic_Arco",
-					"optic_aco",
-					"optic_ACO_grn",
-					"optic_aco_smg",
-					"optic_ACO_grn_smg",
-					"optic_hamr",
-					"optic_Holosight",
-					"optic_Holosight_smg",
-					"optic_Hamr_khk_F",
-					"optic_SOS_khk_F",
-					"optic_Arco_ghex_F",
-					"optic_Arco_blk_F",
-					"optic_DMS_ghex_F",
-					"optic_ERCO_blk_F",
-					"optic_ERCO_khk_F",
-					"optic_ERCO_snd_F",
-					"optic_LRPS_ghex_F",
-					"optic_LRPS_tna_F",
-					"optic_Holosight_blk_F",
-					"optic_Holosight_khk_F",
-					"optic_Holosight_smg_blk_F",
-					"optic_Holosight_smg_khk_F",
-					"OPTRE_M392_Scope",
-					"OPTRE_BR55HB_Scope",
-					"OPTRE_M7_Sight",
-					"OPTRE_M393_Scope",
-					"OPTRE_M393_ACOG",
-					"OPTRE_M393_EOTECH",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_MA5_SmartLink",
-					"OPTRE_MA5C_SmartLink",
-					"OPTRE_BR45_Scope"
-                };
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_IR"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[]={};
-			};
-		};
     };
 	class 53rd_MA32GL: OPTRE_MA32GL
 	{
@@ -2296,7 +2224,7 @@ class cfgWeapons {
 		author="53rd Aux Team";
 		displayName="[53rd] MA32A + GL";
 		baseWeapon="53rd_MA32GL";
-		cursor="OPTRE_MA32";
+		cursor="OPTRE_MA37";
 		magazines[]=
 		{
 			"OPTRE_60Rnd_762x51_Mag",
