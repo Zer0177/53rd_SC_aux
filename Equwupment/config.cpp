@@ -37,14 +37,40 @@ class ace_medical_treatment_actions
 		condition="ace_medical_treatment_advancedMedication";
 		allowedSelections[]=
 		{
-			"Head"
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
 		};
 		items[]=
 		{
 			"53rd_Copium"
 		};
+		litter[]=
+		{
+			
+			{
+				"53rd_CopiumLitter"
+			}
+		};
 	};
     
+};
+
+class cfgModels
+{
+    class cope
+    {
+        sectionsInherit="";
+        sections[]={"camo"};
+        skeletonName="";
+    };
+    class Unused_Cope
+    {
+        sectionsInherit="";
+        sections[]={"camo"};
+        skeletonName="";
+    };
 };
 
 class cfgWeapons 
@@ -60,7 +86,9 @@ class cfgWeapons
 		author="53rd Aux";
 		displayName="[53rd] Copium";
 		picture="\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
-		model="\z\ace\addons\medical_treatment\data\morphine.p3d";
+		model="\53rd_SC_aux\Equwupment\Unused_Cope";
+        hiddenSelections[]={"camo"};
+        hiddenSelectionsTextures[]={"\53rd_SC_aux\Equwupment\Copium_CO.paa"};
 		descriptionShort="Desc_Short";
 		descriptionUse="Desc_Use";
 		class ItemInfo: CBA_MiscItem_ItemInfo
@@ -75,6 +103,7 @@ class CfgVehicles
 {
     //medical
     class Item_Base_F;
+    class ACE_MedicalLitterBase;
 	class 53rd_CopiumItem: Item_Base_F
 	{
 		scope=2;
@@ -90,5 +119,11 @@ class CfgVehicles
 				count=1;
 			};
 		};
+	};
+	class 53rd_CopiumLitter: ACE_MedicalLitterBase
+	{
+		model="\53rd_SC_aux\Equwupment\cope";
+        hiddenSelections[]={"camo"};
+        hiddenSelectionsTextures[]={"\53rd_SC_aux\Equwupment\Copium_CO.paa"};
 	};
 };
