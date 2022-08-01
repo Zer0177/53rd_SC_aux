@@ -15,6 +15,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		armor=50;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
@@ -159,6 +160,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		armor=50;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		crew="OPTRE_UNSC_Airforce_Soldier_Airman";

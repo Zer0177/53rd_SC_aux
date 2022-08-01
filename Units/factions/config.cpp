@@ -26,6 +26,24 @@ class CfgFactionClasses
 		side=1;
 		primaryLanguage="EN";
 	};
+	class 53rd_Dortman
+	{
+        displayName="[53rd] Liang Dortman";
+		icon="\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag="\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		priority=1;
+		side=1;
+		primaryLanguage="EN";
+	};
+	class 53rd_ONI
+	{
+        displayName="[53rd] Office of Naval Intelligence";
+		icon="\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag="\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		priority=1;
+		side=1;
+		primaryLanguage="EN";
+	};
 };
 class CfgEditorCategories
 {
@@ -33,9 +51,33 @@ class CfgEditorCategories
 	{ 
         displayName="[53rd] Strike Company";
 	};
+	class 53rd_Dortman_cat_faction
+	{ 
+        displayName="[53rd] Liang Dortman";
+	};
+	class 53rd_ONI_cat_faction
+	{ 
+        displayName="[53rd] Office of Naval Intelligence";
+	};
 };
 class CfgEditorSubcategories
 {
+	class Dortman_Motor
+	{
+		displayName="Motorized";
+	};
+	class Dortman_Tank
+	{
+		displayName="Tanks";
+	}
+	class ONI_Motor
+	{
+		displayName="Motorized";
+	};
+	class ONI_Tank
+	{
+		displayName="Tanks";
+	};
 	class 53rd_Men_Hephaestus
 	{
 		displayName="Men (Hephaestus)";
