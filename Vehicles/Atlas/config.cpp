@@ -21,10 +21,10 @@ class CfgVehicles {
         side=1;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		crew="VES_Rifleman_MA5B_MAR";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"VES_Rifleman_MA5B_MAR"
+			"53rd_crewman_unit"
 		};
 		hiddenSelectionsTextures[]=
 		{

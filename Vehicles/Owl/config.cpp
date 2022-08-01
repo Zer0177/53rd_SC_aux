@@ -18,7 +18,7 @@ class CfgVehicles
 		armor=50;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_Volare_airmen_unit";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -40,7 +40,7 @@ class CfgVehicles
                     "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa",
 				};
 			};
-			class 53rd_HEPH
+			class 53rd_ATH
 			{
 				displayName="Athena";
 				author="Body";
@@ -49,7 +49,7 @@ class CfgVehicles
 					"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyATH_CO.paa",
 				};
 			};
-			class 53rd_ATH
+			class 53rd_HEPH
 			{
 				displayName="Hephaestus";
 				author="Body";
@@ -163,7 +163,7 @@ class CfgVehicles
 		armor=50;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_Volare_airmen_unit";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -185,7 +185,7 @@ class CfgVehicles
                     "53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_Grey_CO.paa",
 				};
 			};
-			class 53rd_HEPH
+			class 53rd_ATH
 			{
 				displayName="Athena";
 				author="Body";
@@ -194,7 +194,7 @@ class CfgVehicles
 					"53rd_SC_aux\tex\AttackHeli\Heli_Attack_01_GreyATH_CO.paa",
 				};
 			};
-			class 53rd_ATH
+			class 53rd_HEPH
 			{
 				displayName="Hephaestus";
 				author="Body";

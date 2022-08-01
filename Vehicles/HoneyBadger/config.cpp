@@ -27,7 +27,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;
-		crew="OPTRE_UNSC_Airforce_Soldier_Airman";
+		crew="53rd_crewman_unit";
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.050000001;
 		class EventHandlers;

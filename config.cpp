@@ -9,6 +9,9 @@ class CfgPatches {
 		weapons[] = 
         {
 			"53rd_MA37",
+			"53rd_MA37GL",
+			"53rd_MA32",
+			"53rd_MA32GL",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
             "Volare_BDU_Bl",
@@ -21,6 +24,14 @@ class CfgPatches {
 	};
 };
 #include "xtdGear.hpp"
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class WeaponSlotsInfo;
+class MuzzleSlot;
+class CowsSlot;
+class PointerSlot;
+class UnderBarrelSlot;
 class cfgWeapons {
     class ItemInfo;
     class UniformItem;
@@ -1920,6 +1931,18 @@ class cfgWeapons {
 			};
 		};
 	};
+    class 53rd_Helmet_Lmao_dp : 53rd_Helmet_Lmao 
+    {
+		scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_Aux\tex\Raider Armor\53rd_Raider_Helmet.paa",
+			""
+		};
+        
+    };
     class 53rd_Raider_Armor : 53rd_Raider_Armor_Base
 	{
 		scope = 2;
@@ -2096,13 +2119,111 @@ class cfgWeapons {
 	};	
     
     //Weapons
-	class OPTRE_MA37;
+	class OPTRE_MA37
+	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_MA32
+	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_MA37GL
+	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_MA32GL
+	{
+		class WeaponSlotsInfo;
+	};
+    
+    
 	class 53rd_MA37: OPTRE_MA37
 	{
 		dlc="53rdAux";
 		author="53rd Aux Team";
 		displayName="[53rd] MA37A";
 		baseWeapon="53rd_MA37";
+		cursor="OPTRE_MA37";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+    };
+	class 53rd_MA37GL: OPTRE_MA37GL
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA37A + GL";
+		baseWeapon="53rd_MA37GL";
+		cursor="OPTRE_MA37";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+    };
+	class 53rd_MA32: OPTRE_MA32
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA32A";
+		baseWeapon="53rd_MA32";
+		cursor="OPTRE_MA32";
+		magazines[]=
+		{
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_AP",
+			"OPTRE_60Rnd_762x51_Mag_APT",
+			"OPTRE_60Rnd_762x51_Mag_JHP",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST"
+		};
+    };
+	class 53rd_MA32GL: OPTRE_MA32GL
+	{
+		dlc="53rdAux";
+		author="53rd Aux Team";
+		displayName="[53rd] MA32A + GL";
+		baseWeapon="53rd_MA32GL";
 		cursor="OPTRE_MA37";
 		magazines[]=
 		{
