@@ -237,6 +237,29 @@ class cfgWeapons {
             "53rd_SC_aux\tex\visr_silver_CO.paa"
         };
     };
+    class 53rd_CH252_GREY_HEV_Primal_TL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Primal)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	class 53rd_CH252_GREY_HEV_Primal_TL_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Primal)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
+        };
+    };
     class 53rd_CH252_GREY_HEV_Sealed_TL_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
     {
         scope = 1;
