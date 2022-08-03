@@ -229,6 +229,85 @@ class XtdGearModels
 				};
 			};
 		};
+		class HephaestusHelmPro
+		{
+			label = "/w Hearing Protection";
+			author = "Seven";
+			options[] = {"pro","pol"};
+			
+			class pro
+			{
+				label = "Protection";
+				values[] = {"40","45","50","55","60","65","70","75","80","100"};
+				class 40
+				{
+					label = "40%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 45
+				{
+					label = "45%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 50
+				{
+					label = "50%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 55
+				{
+					label = "55%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 60
+				{
+					label = "60%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 65
+				{
+					label = "65%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 70
+				{
+					label = "70%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 75
+				{
+					label = "75%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 80
+				{
+					label = "80%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class 100
+				{
+					label = "100%-0%";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+			class pol
+			{
+				label = "Polarization";
+				values[] = {"on","off"};
+				changeingame = 1;
+                changedelay  = 0;
+				class on
+				{
+					label = "On";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class off
+				{
+					label = "Off";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+        };
 	};
 };
 class XtdGearInfos
@@ -382,6 +461,94 @@ class XtdGearInfos
 		{
 		environment = "jung";
 		};
+        
+        //Protection
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		model = "HephaestusHelmPro";
+		pro = "40";
+		pol = "on";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_45_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "45";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_50_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "50";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_55_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "55";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_60_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "60";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_65_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "65";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_70_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "70";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_75_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "75";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_80_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "80";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_100_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
+		{
+		pro = "100";
+		};
+        
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		model = "HephaestusHelmPro";
+		pro = "40";
+		pol = "off";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_45_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "45";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_50_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "50";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_55_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "55";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_60_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "60";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_65_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "65";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_70_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "70";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_75_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "75";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_80_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "80";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_100_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		{
+		pro = "100";
+		};
+        
         //Armor
 		class Armor_Hephaestus_Reservist
 		{

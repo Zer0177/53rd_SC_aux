@@ -54,6 +54,8 @@ class cfgWeapons {
 	{
 		dlc="OPTRE";
 		scope=2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
 		author="Article 2 Studios";
 		displayName="R/B5 Helmet";
 		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon.paa";

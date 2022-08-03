@@ -33,6 +33,8 @@ class 53rd_Athena_Helmet: VES_CH252D
 	{
         scope = 1;
         scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
 		author="Vespade";
 		displayName="[53rd] CH252A Helmet";
 		model="\OPTRE_UNSC_Units\Army\aa_helmet";
@@ -83,6 +85,8 @@ class 53rd_Athena_Helmet: VES_CH252D
         };
 	};	class 53rd_Athena_Helmet_dp: 53rd_Athena_Helmet
 	{
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
 		author="Vespade";
 		displayName="[53rd] CH252A Helmet dp";
 		model="\OPTRE_UNSC_Units\Army\aa_helmet_dp";

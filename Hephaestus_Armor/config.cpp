@@ -6,10 +6,20 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-            "WIP"
+            "53rd_CH252_GREY_HEV_Sealed_100_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_85_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_80_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_75_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_70_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_65_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_60_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_55_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_50_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_45_Pro",
+            "53rd_CH252_GREY_HEV_Sealed_40_Pro"
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = {"ace_volume"};
 	};
 };
 #include "xtdGear.hpp"
@@ -87,6 +97,8 @@ class cfgWeapons {
     {
         scope = 2;
         scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
         displayName = "[53rd] Hephaestus Helmet (Rifleman)";
         author = "53rd AUX TEAM";
         model="\OPTRE_UNSC_Units\Army\helmet";
@@ -147,6 +159,8 @@ class cfgWeapons {
     {
         scope = 1;
         scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
         displayName = "[53rd] Hephaestus Helmet (Rifleman) dp";
         model="\OPTRE_UNSC_Units\Army\helmet";
         hiddenSelections[]=
@@ -417,7 +431,7 @@ class cfgWeapons {
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa",
             "53rd_SC_Aux\tex\visr_black_CO.paa"
         };
     };
@@ -1281,6 +1295,286 @@ class cfgWeapons {
         };
     };
 //End Tartarus
+    //Def helms
+    class 53rd_CH252_GREY_HEV_Sealed_40_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
+        displayName = "[53rd] Hephaestus Helmet (40% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
+        displayName = "[53rd] Hephaestus Helmet (40% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_45_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.45;
+        displayName = "[53rd] Hephaestus Helmet (45% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_45_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.45;
+        displayName = "[53rd] Hephaestus Helmet (45% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_50_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.50;
+        displayName = "[53rd] Hephaestus Helmet (50% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_50_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.50;
+        displayName = "[53rd] Hephaestus Helmet (50% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_55_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.55;
+        displayName = "[53rd] Hephaestus Helmet (55% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_55_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.55;
+        displayName = "[53rd] Hephaestus Helmet (55% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_60_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.60;
+        displayName = "[53rd] Hephaestus Helmet (60% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_60_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.60;
+        displayName = "[53rd] Hephaestus Helmet (60% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_65_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.65;
+        displayName = "[53rd] Hephaestus Helmet (65% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_65_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.65;
+        displayName = "[53rd] Hephaestus Helmet (65% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_70_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.70;
+        displayName = "[53rd] Hephaestus Helmet (70% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_70_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.70;
+        displayName = "[53rd] Hephaestus Helmet (70% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_75_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.75;
+        displayName = "[53rd] Hephaestus Helmet (75% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_75_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.75;
+        displayName = "[53rd] Hephaestus Helmet (75% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_80_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.80;
+        displayName = "[53rd] Hephaestus Helmet (80% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_80_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.80;
+        displayName = "[53rd] Hephaestus Helmet (80% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    
+    class 53rd_CH252_GREY_HEV_Sealed_100_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 1;
+        displayName = "[53rd] Hephaestus Helmet (100% Pro)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\visr_black_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_Sealed_100_Pro_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0;
+        displayName = "[53rd] Hephaestus Helmet (100% Pro)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
 };
 
 class CfgVehicles
