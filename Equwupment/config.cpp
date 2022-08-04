@@ -37,10 +37,7 @@ class ace_medical_treatment_actions
 		condition="ace_medical_treatment_advancedMedication";
 		allowedSelections[]=
 		{
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
+			"All"
 		};
 		items[]=
 		{
