@@ -151,7 +151,6 @@ class CfgVehicles
 			delete _xx_ACE_Fortify;
 			delete _xx_OPTRE_Biofoam;
 			delete _xx_ACE_morphine;
-			class _xx_MEU_Biofoam_Light
 			class _xx_ACE_plasmaIV_1000
 			{
 				name="ACE_plasmaIV_1000";
