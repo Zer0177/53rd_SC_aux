@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Hogs {
-		units[] = {"53rd_M12_FAV_APC","53rd_M813_TT","53rd_M12A1_LRV","53rd_M12G1_LRV","53rd_M12R_AA","53rd_M12_FAV_APC","53rd_M914_RV"};
+		units[] = {"53rd_M12_FAV_APC","53rd_M813_TT","53rd_M12A1_LRV","53rd_M12_FAV","53rd_M12G1_LRV","53rd_M12R_AA","53rd_M914_RV"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
