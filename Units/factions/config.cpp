@@ -70,6 +70,10 @@ class CfgEditorSubcategories
 	{
 		displayName="Tanks";
 	}
+	class Dortman_Rotary
+	{
+		displayName="Rotary";
+	}
 	class ONI_Motor
 	{
 		displayName="Motorized";

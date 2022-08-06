@@ -14,7 +14,7 @@ class cfgFactionClasses
   class 53rd_Ackersons_Rebellion
   {
     icon="";
-    displayName="Ackerson's_Rebellion";
+    displayName="Ackerson's Rebellion";
     side=2;
     priority=1;
   };

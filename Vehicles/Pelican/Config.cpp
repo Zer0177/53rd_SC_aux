@@ -19,6 +19,49 @@ class CfgVehicles
 	class DefaultVehicleSystemsDisplayManagerLeft;
 	class DefaultVehicleSystemsDisplayManagerRight;
 	class components;
+	class 53rd_CORP_Pelican: VES_D77HTCI_A
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		forceInGarage=1;
+		crewCrashProtection=9.9999997e-005;
+		crewExplosionProtection=9.9999997e-005;
+		displayName="[53rd] Dortman Pelican";
+		transportSoldier=21;
+		editorCategory = "53rd_Dortman_cat_faction";
+		editorSubCategory = "Dortman_Rotary";
+		fuelCapacity=100;
+		tf_range=120000;
+		crew="53rd_Volare_airmen_unit";
+		typicalCargo[]=
+		{
+			"VES_Rifleman_MA5B_MAR"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Pelican\V_D77_CORP_CO.paa"
+		};
+		weapons[]=
+		{
+			"OPTRE_GUA23A",
+			"Icarus_CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"11_400Rnd_CMFlare_Chaff_Magazine"
+		};
+		ace_cargo_space=10;
+		ace_cargo_hasCargo=1;
+		class ACE_Cargo
+		{
+			class Cargo
+			{
+				
+			};
+		};
+	};
 	class 53rd_Pelican: VES_D77HTCI_A
 	{
 		scope=2;
@@ -151,7 +194,6 @@ class CfgVehicles
 			delete _xx_ACE_Fortify;
 			delete _xx_OPTRE_Biofoam;
 			delete _xx_ACE_morphine;
-			class _xx_MEU_Biofoam_Light
 			class _xx_ACE_plasmaIV_1000
 			{
 				name="ACE_plasmaIV_1000";

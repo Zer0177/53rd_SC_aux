@@ -16,7 +16,8 @@ class CfgPatches {
 			"53rd_HelmetCrew_B",
             "Volare_BDU_Bl",
 			"53rd_VX19_Black_Helmet",
-			"53rd_VX19_Blue_Helmet", 
+			"53rd_VX19_Blue_Helmet",
+			"53rd_VX19_Red_Helmet",			
 			"53rd_BDU_Slim"
         };
 		requiredVersion = 0.100000;
@@ -1723,6 +1724,43 @@ class cfgWeapons {
 			};
         };
     };
+	class 53rd_VX19_Red_Helmet : 53rd_VX19_Black_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[53rd] VX19 Flight Helmet (Red V)";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_red_CO.paa",
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
+		};
+    };
+    class 53rd_VX19_Red_Helmet_dp : 53rd_VX19_Black_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+		displayName = "[53rd] VX19 Flight Helmet (Red V) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_red_CO.paa",
+			""
+		};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo","camo2"};
+            uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_aux\tex\Volare Armor\h3_pilothelmet_red_CO.paa",
+                ""
+            };
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				"OPTRE_FC_Units\Marines\data\h3_pilothelmet_Visor_trans.rvmat"
+			};
+        };
+    };
 
     /*class 53rd_VX19_Black_Helmet: OPTRE_FC_VX19_Helmet
 	{
@@ -1808,6 +1846,16 @@ class cfgWeapons {
         displayName = "[53rd] Volare Flight Vest (NCO\Blue)";
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_vest_nco_black_blue_co.paa"};
     };
+	 class 53rd_V_Pilot_Armor_Red_NCO:OPTRE_FC_M52B_Armor_Teamleader
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeEditor = 2;
+        dlc = "53rd AUX";
+        author = "53rd AUX TEAM";
+        displayName = "[53rd] Volare Flight Vest (NCO\Red)";
+        hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_vest_nco_red_co.paa"};
+    };
     class 53rd_M52A_Volare : 53rd_Armor_Specialist
     {
         scope = 2;
@@ -1877,7 +1925,7 @@ class cfgWeapons {
         };
 
     };
-	 class Volare_BDU_B2_NCO:OPTRE_FC_Marines_Uniform
+	class Volare_BDU_B2_NCO:OPTRE_FC_Marines_Uniform
     {
         scope = 2;
         scopeArsenal = 2;
