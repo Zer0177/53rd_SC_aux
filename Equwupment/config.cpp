@@ -6,7 +6,9 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-			"53rd_Copium"
+			"53rd_Copium",
+			"53rd_r_biofoam",
+			"53rd_r_medigel"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -15,6 +17,13 @@ class CfgPatches {
 
 class ace_medical_treatment
 {
+    class Bandaging
+    {
+        class OPTRE_Biofoam;
+        class OPTRE_Medigel;
+        class r_biofoam: OPTRE_Biofoam {};
+        class r_medigel: OPTRE_Medigel {};
+    };
     class Medication
     {
 		class Copium
@@ -30,6 +39,8 @@ class ace_medical_treatment
 class ace_medical_treatment_actions
 {
     class Morphine;
+    class OPTRE_Biofoam;
+    class OPTRE_Medigel;
 	class Copium: Morphine
 	{
 		displayName="Copium";
@@ -37,10 +48,7 @@ class ace_medical_treatment_actions
 		condition="ace_medical_treatment_advancedMedication";
 		allowedSelections[]=
 		{
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
+			"All"
 		};
 		items[]=
 		{
@@ -52,6 +60,24 @@ class ace_medical_treatment_actions
 			{
 				"53rd_CopiumLitter"
 			}
+		};
+	};
+	class r_biofoam: OPTRE_Biofoam
+	{
+		displayName="[R] Biofoam";
+		consumeItem=0;
+		items[]=
+		{
+			"53rd_r_biofoam"
+		};
+	};
+	class r_medigel: OPTRE_Medigel
+	{
+		displayName="[R] Medigel";
+		consumeItem=0;
+		items[]=
+		{
+			"53rd_r_medigel"
 		};
 	};
     
@@ -79,6 +105,8 @@ class cfgWeapons
     
     //medical
     class ACE_ItemCore;
+    class OPTRE_Medigel;
+    class OPTRE_Biofoam;
     class CBA_MiscItem_ItemInfo;
 	class 53rd_Copium: ACE_ItemCore
 	{
@@ -95,6 +123,18 @@ class cfgWeapons
 		{
 			mass=1;
 		};
+	};
+	class 53rd_r_biofoam: OPTRE_Biofoam
+	{
+		scope=2;
+		author="53rd Aux";
+		displayName="[53rd](R) Biofoam";
+	};
+	class 53rd_r_medigel: OPTRE_Medigel
+	{
+		scope=2;
+		author="53rd Aux";
+		displayName="[53rd](R) Medigel";
 	};
 };
 
