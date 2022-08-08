@@ -238,7 +238,12 @@ class XtdGearModels
 			class pro
 			{
 				label = "Protection";
-				values[] = {"40","45","50","55","60","65","70","75","80","100"};
+				values[] = {"Primal","40","45","50","55","60","65","70","75","80","100"};
+				class Primal
+				{
+					label = "Primal";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class 40
 				{
 					label = "40%";
@@ -463,11 +468,15 @@ class XtdGearInfos
 		};
         
         //Protection
-		class 53rd_CH252_GREY_HEV_Sealed_40_Pro
+		class 53rd_CH252_GREY_HEV_Sealed_Primal
 		{
 		model = "HephaestusHelmPro";
-		pro = "40";
+		pro = "Primal";
 		pol = "on";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro:53rd_CH252_GREY_HEV_Sealed_Primal
+		{
+		pro = "40";
 		};
 		class 53rd_CH252_GREY_HEV_Sealed_45_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
 		{
@@ -506,11 +515,15 @@ class XtdGearInfos
 		pro = "100";
 		};
         
-		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		class 53rd_CH252_GREY_HEV_Sealed_Primal_dp
 		{
 		model = "HephaestusHelmPro";
-		pro = "40";
+		pro = "Primal";
 		pol = "off";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp:53rd_CH252_GREY_HEV_Sealed_Primal_dp
+		{
+		pro = "40";
 		};
 		class 53rd_CH252_GREY_HEV_Sealed_45_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
 		{
