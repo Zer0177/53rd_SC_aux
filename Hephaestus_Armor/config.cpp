@@ -1558,7 +1558,7 @@ class cfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = .60;
+		ace_hearing_lowerVolume = 0.50;
         displayName = "[53rd] Hephaestus Helmet (Primal)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
