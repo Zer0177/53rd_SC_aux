@@ -36,7 +36,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"rifle","nco","medic","plt","beret"};
+				values[] = {"rifle","nco","medic","plt"};
 				changeingame = 1;
                 changedelay  = 0;
 				class rifle
@@ -57,11 +57,6 @@ class XtdGearModels
 				class plt
 				{
 					label = "Plt";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class beret
-				{
-					label = "Beret";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -158,13 +153,6 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-		class 53rd_Beret_Athena
-		{
-		model = "AthenaHelm";
-		environment = "def";
-		type = "beret";
-		pol = "on";
-		};
         //helmuts
 		class 53rd_Athena_Helmet_Rifleman
 		{

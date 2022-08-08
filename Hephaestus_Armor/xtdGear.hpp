@@ -78,7 +78,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"res","rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt","beret"};
+				values[] = {"res","rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt"};
 				changeingame = 1;
                 changedelay  = 0;
 				class res
@@ -124,11 +124,6 @@ class XtdGearModels
 				class medic_plt
 				{
 					label = "Plt Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class beret
-				{
-					label = "Beret";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -380,10 +375,6 @@ class XtdGearInfos
 		class 53rd_CH252_GREY_CORP_Sealed_PLM:53rd_CH252_GREY_Sealed_Reserve
 		{
 		type = "medic_plt";
-		};
-		class 53rd_Beret_Hephaestus:53rd_CH252_GREY_Sealed_Reserve
-		{
-		type = "beret";
 		};
         
 		class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV

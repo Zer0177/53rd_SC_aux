@@ -19,7 +19,7 @@ class CfgPatches {
             "53rd_CH252_GREY_HEV_Sealed_40_Pro"
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"ace_volume"};
+		requiredAddons[] = {"ace_volume","black_body"};
 	};
 };
 #include "xtdGear.hpp"
