@@ -1,6 +1,6 @@
 class CfgPatches {
-	class 53rd_Viper {
-		units[] = {"53rd_Viper"};
+	class 53rd_Bushmaster {
+		units[] = {"Bushmaster_IFV"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -11,18 +11,22 @@ class cfgWeapons {
 };
 class CfgVehicles
 {
-class B_APC_Wheeled_03_cannon_F;
-	class 53rd_Viper_AFV: B_APC_Wheeled_03_cannon_F
+class I_APC_tracked_03_cannon_F;
+	class Bushmaster_IFV : I_APC_tracked_03_cannon_F
 	{
-		displayName="[MSR] Viper AFV";
-		author="53rd & Seven";
-		dlc = "53rd";
+		displayName="[MSR] Bushmaster IFV";
+		author="Body";
+		dlc = "53rd AUX";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		side=1;
 		faction="53rd_MSR";
 		editorCategory = "53rd_MSR_cat_faction";
 		editorSubCategory = "MSR_Motor";
+		tf_hasLRradio=1;
+		tf_isolatedAmount=0.64999998;
+		tf_range=10000;
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -30,22 +34,17 @@ class B_APC_Wheeled_03_cannon_F;
 		};
 		hiddenSelections[]=
 		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
+			"Camo1",
+			"Camo2",
 			"CamoNet",
 			"CamoSlat"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\Viper IFV\APC_MSR_CO.paa",
-			"53rd_SC_aux\Vehicles\Viper IFV\APC_Wheeled_MSR_Ext2_CO.paa",
-			"53rd_SC_aux\Vehicles\Viper IFV\RCWS30_MSR_CO.paa",
-			"53rd_SC_aux\Vehicles\Viper IFV\APC_Wheeled_MSR_Ext_alpha_CO.paa",
+			"53rd_SC_aux\Vehicles\Bushmaster IFV\warrior_ext_01_wd.paa",
+			"53rd_SC_aux\Vehicles\Bushmaster IFV\warrior_ext_02_wd.paa",
 			"A3\Armor_F\Data\camonet_green_CO.paa",
 			"A3\armor_f\data\cage_olive_co.paa"
 		};
 	};
 };
-

@@ -44,6 +44,15 @@ class CfgFactionClasses
 		side=1;
 		primaryLanguage="EN";
 	};
+	class 53rd_MSR
+	{
+        displayName="[53rd] Misriah Armory";
+		icon="\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag="\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		priority=1;
+		side=1;
+		primaryLanguage="EN";
+	};
 };
 class CfgEditorCategories
 {
@@ -59,9 +68,25 @@ class CfgEditorCategories
 	{ 
         displayName="[53rd] Office of Naval Intelligence";
 	};
+	class 53rd_MSR_cat_faction
+	{ 
+        displayName="[53rd] Misriah Armory";
+	};
 };
 class CfgEditorSubcategories
 {
+	class MSR_Motor
+	{
+		displayName="Motorized";
+	};
+	class MSR_Tank
+	{
+		displayName="Tanks";
+	}
+	class MSR_Rotary
+	{
+		displayName="Rotary";
+	}
 	class Dortman_Motor
 	{
 		displayName="Motorized";

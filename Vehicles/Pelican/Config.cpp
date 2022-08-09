@@ -44,13 +44,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"OPTRE_GUA23A",
-			"Icarus_CMFlareLauncher"
+			"OPTRE_GUA23B",
+			"CMFlareLauncher"
 		};
 		magazines[]=
 		{
 			"OPTRE_2000Rnd_20mm_HEIAP",
-			"11_400Rnd_CMFlare_Chaff_Magazine"
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"168Rnd_CMFlare_Chaff_Magazine"
 		};
 		ace_cargo_space=10;
 		ace_cargo_hasCargo=1;
@@ -87,13 +88,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"OPTRE_GUA23A",
-			"Icarus_CMFlareLauncher"
+			"OPTRE_GUA23B",
+			"CMFlareLauncher"
 		};
 		magazines[]=
 		{
 			"OPTRE_2000Rnd_20mm_HEIAP",
-			"11_400Rnd_CMFlare_Chaff_Magazine"
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"168Rnd_CMFlare_Chaff_Magazine"
 		};
 		ace_cargo_space=10;
 		ace_cargo_hasCargo=1;

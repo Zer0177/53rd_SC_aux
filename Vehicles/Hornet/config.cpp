@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Hornet {
-		units[] = {"53rd_UNSC_Hornet"};
+		units[] = {"53rd_UNSC_Hornet","53rd_FL_Hornet"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
