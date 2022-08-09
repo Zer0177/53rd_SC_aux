@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Land_Scorpion {
-		units[] = {"53rd_Scorpion"};
+		units[] = {"53rd_Scorpion","53rd_ONI_Scorpion","53rd_CORP_Scorpion"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

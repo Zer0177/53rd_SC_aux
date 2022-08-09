@@ -22,7 +22,7 @@ class CfgVehicles
         scopeCurator=2;
         scopeArsenal=2;
         editorCategory = "53rd_cat_faction";
-        editorSubCategory = "53rd_Tank";
+        editorSubCategory = "53rd_IFV";
         hiddenSelections[]=
         {
             "camo1",
@@ -80,7 +80,7 @@ class CfgVehicles
         scopeCurator=2;
         scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Tank";
+		editorSubCategory = "53rd_IFV";
         hiddenSelections[]=
         {
             "camo1",
