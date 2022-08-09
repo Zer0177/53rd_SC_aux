@@ -66,6 +66,7 @@ class ace_medical_treatment_actions
 	{
 		displayName="[R] Biofoam";
 		consumeItem=0;
+		medicRequired="ace_medical_treatment_medicIV";
 		items[]=
 		{
 			"53rd_r_biofoam"
@@ -75,6 +76,7 @@ class ace_medical_treatment_actions
 	{
 		displayName="[R] Medigel";
 		consumeItem=0;
+		medicRequired="ace_medical_treatment_medicIV";
 		items[]=
 		{
 			"53rd_r_medigel"

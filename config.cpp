@@ -2095,76 +2095,44 @@ class cfgWeapons {
 			};
 		};
 	};
-	
-    class 53rd_Beret_Athena: H_HelmetB
+    class 53rd_Beret_Hephaestus_med: 53rd_Beret_Hephaestus
 	{
-		author="Bohemia Interactive";
-		scope=2;
-		scopeArsenal = 2;
-		displayName="[53rd] Beret (Athena)";
-		picture="\A3\characters_f_EPB\BLUFOR\Data\UI\icon_H_beret02_ca";
-		model="a3\characters_f_epb\BLUFOR\headgear_beret02";
-		hiddenSelections[]=
+		displayName="[53rd] Beret (Medical)";
+		hiddenSelectionsTextures[]=
 		{
-			"Camo"
+			"\53rd_SC_Aux\tex\Soft caps\Hephaestus_Medical_Beret_V1.paa"
 		};
+	};
+    class 53rd_Beret_Hephaestus_med_led: 53rd_Beret_Hephaestus
+	{
+		displayName="[53rd] Beret (Medical Leader)";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_SC_Aux\tex\Soft caps\Hephaestus_Medical_Beret_Leader_V1.paa"
+		};
+	};
+    class 53rd_Beret_Athena: 53rd_Beret_Hephaestus
+	{
+		displayName="[53rd] Beret (Athena)";
 		hiddenSelectionsTextures[]=
 		{
 			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Athena.paa"
 		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=1;
-			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
-			hiddenSelections[]=
-			{
-				"Camo"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitPointName="HitHead";
-					armor=40;
-					passThrough=0.5;
-				};
-			};
-		};
 	};
-	
-    class 53rd_Beret_Volare: H_HelmetB
+    class 53rd_Beret_Tart: 53rd_Beret_Hephaestus
 	{
-		author="Bohemia Interactive";
-		scope=2;
-		scopeArsenal = 2;
-		displayName="[53rd] Beret (Volare)";
-		picture="\A3\characters_f_EPB\BLUFOR\Data\UI\icon_H_beret02_ca";
-		model="a3\characters_f_epb\BLUFOR\headgear_beret02";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
+		displayName="[53rd] Beret (Tartarus)";
 		hiddenSelectionsTextures[]=
 		{
 			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Volare.paa"
 		};
-		class ItemInfo: HeadgearItem
+	};	
+    class 53rd_Beret_Volare: 53rd_Beret_Hephaestus
+	{
+		displayName="[53rd] Beret (Volare)";
+		hiddenSelectionsTextures[]=
 		{
-			mass=1;
-			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
-			hiddenSelections[]=
-			{
-				"Camo"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitPointName="HitHead";
-					armor=40;
-					passThrough=0.5;
-				};
-			};
+			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Volare.paa"
 		};
 	};	
     

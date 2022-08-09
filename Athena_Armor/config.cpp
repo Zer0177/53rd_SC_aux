@@ -9,7 +9,7 @@ class CfgPatches {
             "WIP"
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = {"black_body"};
 	};
 };
 #include "xtdGear.hpp"

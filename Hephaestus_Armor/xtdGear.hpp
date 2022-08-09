@@ -78,7 +78,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"res","rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt","beret"};
+				values[] = {"res","rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt"};
 				changeingame = 1;
                 changedelay  = 0;
 				class res
@@ -124,11 +124,6 @@ class XtdGearModels
 				class medic_plt
 				{
 					label = "Plt Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class beret
-				{
-					label = "Beret";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -238,7 +233,12 @@ class XtdGearModels
 			class pro
 			{
 				label = "Protection";
-				values[] = {"40","45","50","55","60","65","70","75","80","100"};
+				values[] = {"Primal","40","45","50","55","60","65","70","75","80","100"};
+				class Primal
+				{
+					label = "Primal";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class 40
 				{
 					label = "40%";
@@ -376,10 +376,6 @@ class XtdGearInfos
 		{
 		type = "medic_plt";
 		};
-		class 53rd_Beret_Hephaestus:53rd_CH252_GREY_Sealed_Reserve
-		{
-		type = "beret";
-		};
         
 		class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV
 		{
@@ -463,11 +459,15 @@ class XtdGearInfos
 		};
         
         //Protection
-		class 53rd_CH252_GREY_HEV_Sealed_40_Pro
+		class 53rd_CH252_GREY_HEV_Sealed_Primal
 		{
 		model = "HephaestusHelmPro";
-		pro = "40";
+		pro = "Primal";
 		pol = "on";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro:53rd_CH252_GREY_HEV_Sealed_Primal
+		{
+		pro = "40";
 		};
 		class 53rd_CH252_GREY_HEV_Sealed_45_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
 		{
@@ -506,11 +506,15 @@ class XtdGearInfos
 		pro = "100";
 		};
         
-		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
+		class 53rd_CH252_GREY_HEV_Sealed_Primal_dp
 		{
 		model = "HephaestusHelmPro";
-		pro = "40";
+		pro = "Primal";
 		pol = "off";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp:53rd_CH252_GREY_HEV_Sealed_Primal_dp
+		{
+		pro = "40";
 		};
 		class 53rd_CH252_GREY_HEV_Sealed_45_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
 		{
