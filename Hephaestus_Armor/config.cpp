@@ -1564,7 +1564,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
-            "53rd_SC_Aux\tex\visr_black_CO.paa"
+            "53rd_SC_Aux\tex\peg_visr_teef_CO.paa"
         };
     };
     class 53rd_CH252_GREY_HEV_Sealed_Primal_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
