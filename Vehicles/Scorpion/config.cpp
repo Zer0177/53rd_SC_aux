@@ -22,7 +22,7 @@ class OPTRE_M808BM_Base;
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Tank";
+		editorSubCategory = "53rd_Tank";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -61,7 +61,7 @@ class OPTRE_M808BM_Base;
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Tank";
+		editorSubCategory = "53rd_Tank";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{

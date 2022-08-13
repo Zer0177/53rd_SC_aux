@@ -23,7 +23,7 @@ class I_APC_tracked_03_cannon_F;
 		side=1;
 		faction="53rd_MSR";
 		editorCategory = "53rd_MSR_cat_faction";
-		editorSubCategory = "MSR_Motor";
+		editorSubCategory = "53rd_Motor";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.64999998;
 		tf_range=10000;

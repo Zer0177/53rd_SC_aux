@@ -75,38 +75,6 @@ class CfgEditorCategories
 };
 class CfgEditorSubcategories
 {
-	class MSR_Motor
-	{
-		displayName="Motorized";
-	};
-	class MSR_Tank
-	{
-		displayName="Tanks";
-	}
-	class MSR_Rotary
-	{
-		displayName="Rotary";
-	}
-	class Dortman_Motor
-	{
-		displayName="Motorized";
-	};
-	class Dortman_Tank
-	{
-		displayName="Tanks";
-	}
-	class Dortman_Rotary
-	{
-		displayName="Rotary";
-	}
-	class ONI_Motor
-	{
-		displayName="Motorized";
-	};
-	class ONI_Tank
-	{
-		displayName="Tanks";
-	};
 	class 53rd_Men_Hephaestus
 	{
 		displayName="Men (Hephaestus)";

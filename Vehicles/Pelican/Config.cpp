@@ -30,7 +30,7 @@ class CfgVehicles
 		displayName="[53rd] Dortman Pelican";
 		transportSoldier=21;
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Rotary";
+		editorSubCategory = "53rd_Rotary";
 		fuelCapacity=100;
 		tf_range=120000;
 		crew="53rd_Volare_airmen_unit";

@@ -214,7 +214,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -237,7 +237,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -259,7 +259,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -283,7 +283,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -305,7 +305,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -328,7 +328,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "ONI_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -352,7 +352,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -375,7 +375,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -397,7 +397,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -421,7 +421,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -443,7 +443,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
@@ -466,7 +466,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "Dortman_Motor";
+		editorSubCategory = "53rd_Motor";
 		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
