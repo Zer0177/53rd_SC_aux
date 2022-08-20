@@ -2124,7 +2124,7 @@ class cfgWeapons {
 		displayName="[53rd] Beret (Tartarus)";
 		hiddenSelectionsTextures[]=
 		{
-			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Volare.paa"
+			"53rd_SC_aux\tex\Soft caps\53rd_Beret_Tartarus.paa"
 		};
 	};	
     class 53rd_Beret_Volare: 53rd_Beret_Hephaestus
