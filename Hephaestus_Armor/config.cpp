@@ -1152,7 +1152,7 @@ class cfgWeapons {
 	};
 //End Hephaestus
 
-/////////////////////Tartarus Helmets /////////////////////////////////
+//Tartarus Helmets 
 
 	class 53rd_CH252_Tar_Haz2 : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
