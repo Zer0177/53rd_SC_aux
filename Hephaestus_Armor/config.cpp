@@ -53,7 +53,7 @@ class cfgWeapons {
 		{
 			containerClass="Supply120";
 			mass=40;
-			uniformType="Neopren";
+			uniformType = "Neopren";
 			uniformModel="";
 			uniformClass="53rd_BDU_V_Slim";
 		};

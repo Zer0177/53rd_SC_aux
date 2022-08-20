@@ -172,6 +172,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -360,6 +361,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -548,6 +550,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -736,6 +739,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -924,6 +928,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -1112,6 +1117,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -1300,6 +1306,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
@@ -1488,6 +1495,7 @@ class cfgWeapons {
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
+			vestType = "Rebreather";
 			mass=80;
 			class HitpointsProtectionInfo
             {
