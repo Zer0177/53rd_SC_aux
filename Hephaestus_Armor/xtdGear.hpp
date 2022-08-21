@@ -459,15 +459,11 @@ class XtdGearInfos
 		};
         
         //Protection
-		class 53rd_CH252_GREY_HEV_Sealed_Primal
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro
 		{
 		model = "HephaestusHelmPro";
-		pro = "Primal";
-		pol = "on";
-		};
-		class 53rd_CH252_GREY_HEV_Sealed_40_Pro:53rd_CH252_GREY_HEV_Sealed_Primal
-		{
 		pro = "40";
+		pol = "on";
 		};
 		class 53rd_CH252_GREY_HEV_Sealed_45_Pro:53rd_CH252_GREY_HEV_Sealed_40_Pro
 		{
@@ -505,16 +501,12 @@ class XtdGearInfos
 		{
 		pro = "100";
 		};
-        
-		class 53rd_CH252_GREY_HEV_Sealed_Primal_dp
+
+		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
 		{
 		model = "HephaestusHelmPro";
-		pro = "Primal";
-		pol = "off";
-		};
-		class 53rd_CH252_GREY_HEV_Sealed_40_Pro_dp:53rd_CH252_GREY_HEV_Sealed_Primal_dp
-		{
 		pro = "40";
+		pol = "off";
 		};
 		class 53rd_CH252_GREY_HEV_Sealed_45_Pro_dp:53rd_CH252_GREY_HEV_Sealed_40_Pro_dp
 		{

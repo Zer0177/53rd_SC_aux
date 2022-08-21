@@ -95,6 +95,90 @@ class XtdGearModels
 				};
             };
 		};
+		class CustomArmor
+		{
+			label = "53rd Customs";
+			author = "Seven";
+			options[] = {"person"};
+			
+			class person
+			{
+				label = "Name";
+				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer"};
+				class body
+				{
+					label = "Body";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class ithias
+				{
+					label = "Ithias";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class ryu
+				{
+					label = "Ryu";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class joker
+				{
+					label = "Joker";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class panzer
+				{
+					label = "Panzer";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class rose
+				{
+					label = "Rose";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class fixer
+				{
+					label = "Fixer";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+            };
+		};
+		class CustomHelm
+		{
+			label = "53rd Customs";
+			author = "Seven";
+			options[] = {"person"};
+			
+			class person
+			{
+				label = "Name";
+				values[] = {"body","ithias","ryu","primal","fixer"};
+				class body
+				{
+					label = "Body";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class ithias
+				{
+					label = "Ithias";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class ryu
+				{
+					label = "Ryu";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class primal
+				{
+					label = "Primal";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class fixer
+				{
+					label = "Fixer";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+            };
+		};
 	};
 };
 class XtdGearInfos
@@ -153,6 +237,56 @@ class XtdGearInfos
 		class 53rd_VX19_Blue_Helmet_dp:53rd_VX19_Black_Helmet_dp
 		{
 		type = "blu";
+		};
+        //custom start
+        //custom armor
+        class Armor_Hephaestus_PL
+		{
+		model = "CustomArmor";
+		person = "body";
+		};
+		class 53rd_Athena_Armor_Ithias:Armor_Hephaestus_PL
+		{
+		person = "ithias";
+		};
+		class Armor_Hephaestus_Ryu:Armor_Hephaestus_PL
+		{
+		person = "ryu";
+		};
+		class Armor_Hephaestus_Joker:Armor_Hephaestus_PL
+		{
+		person = "joker";
+		};
+		class Armor_Hephaestus_Panzer:Armor_Hephaestus_PL
+		{
+		person = "panzer";
+		};
+		class 53rd_M52A_Rose_NCO:Armor_Hephaestus_PL
+		{
+		person = "rose";
+		};
+		class 53rd_M52A_Fixer_NCO:Armor_Hephaestus_PL
+		{
+		person = "fixer";
+		};
+        
+        //custom helm
+        class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		model = "CustomHelm";
+		person = "body";
+		};
+		class 53rd_Athena_Helmet_Ithias:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "ithias";
+		};
+		class 53rd_CH252_GREY_HEV_RYU_SL_SLV:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "ryu";
+		};
+		class 53rd_CH252_GREY_HEV_Sealed_Primal:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "primal";
 		};
 	};
 };

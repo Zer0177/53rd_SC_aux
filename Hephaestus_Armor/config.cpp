@@ -684,6 +684,42 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co",
         };
 	};
+    
+//Custom Armors
+	class Armor_Hephaestus_PL : 53rd_Armor_SL 
+	{ 
+		scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		dlc = "53rd AUX"; 
+		author = "Body"; 
+		displayName = "[53rd] Hephaestus Armor (Body)"; 
+		hiddenSelectionsTextures[] =  
+		{ 
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa", 
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_Body.paa", 
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa", 
+			"optre_unsc_units\army\data\ghillie_woodland_co", 
+			"optre_unsc_units\army\data\odst_armor_co", 
+        }; 
+	};
+    class Armor_Hephaestus_Panzer : 53rd_Armor_Medic_NCO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Platoon Medic)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
     class Armor_Hephaestus_Ryu : 53rd_Armor_SL
 	{
 		scope = 2;
@@ -950,23 +986,8 @@ class cfgWeapons {
             };
 		};
 	};
-	class Armor_Hephaestus_PL : 53rd_Armor_SL 
-	{ 
-		scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
-		dlc = "53rd AUX"; 
-		author = "Body"; 
-		displayName = "[53rd] Hephaestus Armor (Body)"; 
-		hiddenSelectionsTextures[] =  
-		{ 
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa", 
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_Body.paa", 
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa", 
-			"optre_unsc_units\army\data\ghillie_woodland_co", 
-			"optre_unsc_units\army\data\odst_armor_co", 
-        }; 
-	};
+    
+    
 //Hephaestus Woodland Armors
     class Armor_Hephaestus_WDL_Medic : 53rd_Armor_Medic
     {
@@ -1425,7 +1446,7 @@ class cfgWeapons {
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[53rd] Tartarus Helmet (Silver)";
+        displayName = "[53rd] Tartarus Helmet (Gold)";
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
@@ -1433,25 +1454,7 @@ class cfgWeapons {
         };
     };
 	
-// Tartarus Armor /////////////////////////////////
-//	class H_HelmetCrew_B;
-//	class 53rd_HelmetCrew_B: H_HelmetCrew_B
-//	{
-//		author="$STR_A3_Bohemia_Interactive";
-//		_generalMacro="H_HelmetCrew_I";
-//		displayName="$STR_A3_H_HelmetCrewIA0";
-//		picture="\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_crew_ca.paa";
-//		model="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
-//	hiddenSelectionsTextures[]=
-//		{
-//			"\A3\Characters_F_Beta\Indep\Data\headgear_ia_helmet_crew_co.paa"
-//		};
-//		class ItemInfo: ItemInfo
-//	{
-//			modelSides[]={2,3};
-//			uniformModel="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
-//		};
-//	};
+// Tartarus Armor
     class 53rd_M52A_Haz : 53rd_Armor_Rifleman
 	{
 		scope = 2;
@@ -1486,6 +1489,7 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co",
         };
     };
+//Custom Armor
 	class 53rd_M52A_Rose_NCO : 53rd_Armor_SL
 	{
 		scope = 2;
@@ -1919,6 +1923,7 @@ class cfgWeapons {
         };
     };
     
+//Primal
     class 53rd_CH252_GREY_HEV_Sealed_Primal : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 2;

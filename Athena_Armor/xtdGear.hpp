@@ -36,7 +36,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"rifle","nco","medic","plt"};
+				values[] = {"rifle","nco","medic"};
 				changeingame = 1;
                 changedelay  = 0;
 				class rifle
@@ -52,11 +52,6 @@ class XtdGearModels
 				class medic
 				{
 					label = "Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class plt
-				{
-					label = "Plt";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -112,7 +107,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"rifle","spc","tl","sl","nco","medic"};
+				values[] = {"rifle","spc","tl","sl","medic"};
 				changeingame = 1;
                 changedelay  = 0;
 				class rifle
@@ -140,11 +135,6 @@ class XtdGearModels
 					label = "Medic";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class nco
-				{
-					label = "NCO";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
 			};
 		};
     };
@@ -164,10 +154,6 @@ class XtdGearInfos
 		class 53rd_Athena_Helmet_NCO:53rd_Athena_Helmet_Rifleman
 		{
 		type = "nco";
-		};
-		class 53rd_Athena_Helmet_Ithias:53rd_Athena_Helmet_Rifleman
-		{
-		type = "plt";
 		};
 		class 53rd_Athena_Helmet_Medic:53rd_Athena_Helmet_Rifleman
 		{
@@ -232,10 +218,6 @@ class XtdGearInfos
 		class 53rd_Athena_Helmet_NCO_dp:53rd_Athena_Helmet_Rifleman_dp
 		{
 		type = "nco";
-		};
-		class 53rd_Athena_Helmet_Ithias_dp:53rd_Athena_Helmet_Rifleman_dp
-		{
-		type = "plt";
 		};
 		class 53rd_Athena_Helmet_Medic_dp:53rd_Athena_Helmet_Rifleman_dp
 		{
@@ -308,10 +290,6 @@ class XtdGearInfos
 		class 53rd_Athena_Armor_SL:53rd_Athena_Armor_Rifleman
 		{
 		type = "sl";
-		};
-		class 53rd_Athena_Armor_Ithias:53rd_Athena_Armor_Rifleman
-		{
-		type = "nco";
 		};
 		class 53rd_Athena_Armor_Medic:53rd_Athena_Armor_Rifleman
 		{
