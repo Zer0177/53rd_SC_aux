@@ -1655,7 +1655,7 @@ class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
+			containerClass="Supply120";
 			mass=80;
 			class HitpointsProtectionInfo
             {
