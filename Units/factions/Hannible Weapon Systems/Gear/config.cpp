@@ -19,7 +19,7 @@ class cfgWeapons {
 	class HeadgearItem;
 	class UniformItem;
 
-	class OPTRE_UNSC_Soldier_Base;
+	class OPTRE_UNSC_Army_Uniform_OLI;
 	
 	class 53rd_Hannible_Uniform: OPTRE_UNSC_Army_Uniform_OLI
 	{

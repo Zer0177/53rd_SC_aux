@@ -219,8 +219,7 @@ class cfgWeapons
 	};
 
 
-//ODST HELMETS
-	class 53rd_CHC252D_Helmet: OPTRE_UNSC_CH252D_Helmet
+/*class 53rd_CHC252D_Helmet: OPTRE_UNSC_CH252D_Helmet
 	{
 		scope=2;
 		author = "53rd AUX TEAM & 37th Aux Team";
@@ -277,7 +276,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class 53rd_CH252D_RED_REACH: OPTRE_UNSC_CH252D_Helmet
+	class 53rd_CH252D_ODST_HELMET: OPTRE_UNSC_CH252D_Helmet
 	{
 		author = "53rd AUX TEAM & 37th Aux Team";
 		scope=2;
@@ -297,7 +296,55 @@ class cfgWeapons
 			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
 		};
 	};
-	class 53rd_CH252D_RED_REACH_dp: OPTRE_UNSC_CH252D_Helmet
+	class 53rd_CH252D_ODST_HELMET_dp: OPTRE_UNSC_CH252D_Helmet
+	{
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
+		author = "53rd AUX TEAM & 37th Aux Team";
+		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa"
+			};
+		};
+	};*/
+	class 53rd_CH252D_ODST: OPTRE_UNSC_CH252D_Helmet
+	{
+		author = "53rd AUX TEAM & 37th Aux Team";
+		scope=2;
+		displayName="[53rd] CH252D Helmet";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"LM_OPCAN3.0\BLU\UNSC\H\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+		};
+	};
+	class 53rd_CH252D_ODST_dp: OPTRE_UNSC_CH252D_Helmet
 	{
 		scope=1;
 		scopeArsenal=1;
@@ -325,57 +372,8 @@ class cfgWeapons
 			};
 		};
 	};
-	class 53rd_CH252D_REACH: OPTRE_UNSC_CH252D_Helmet
-	{
-		author = "53rd AUX TEAM & 37th Aux Team";
-		scope=2;
-		displayName="[53rd] CH252D Helmet";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"LM_OPCAN3.0\BLU\UNSC\H\ODST_OP.rvmat"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hades Armor\ODST_HR.paa",
-			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
-		};
-	};
-	class 53rd_CH252D_REACH_dp: OPTRE_UNSC_CH252D_Helmet
-	{
-		scope=1;
-		scopeArsenal=1;
-		scopeCurator=1;
-		author = "53rd AUX TEAM & 37th Aux Team";
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hades Armor\ODST_HR.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-			hiddenSelections[]=
-			{
-				"camo"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\tex\Hades Armor\ODST_HR.paa"
-			};
-		};
-	};
 //  ODST ARMOR
-    class 53rd_ODST_BASE : 53rd_ODST_Armor_Rifleman
-    class 53rd_ODST_Green : OPTRE_UNSC_M52D_Armor_Demolitions
+/*    class 53rd_ODST_Green : OPTRE_UNSC_M52D_Armor_Demolitions
     {
 		scope = 2;
         scopeCurator = 2;
@@ -392,7 +390,7 @@ class cfgWeapons
             "53rd_SC_aux\tex\Hades Armor\53rd_ODST_OD.paa"
         };
     };
-	class 53rd_ODST_HR : OPTRE_UNSC_M52D_Armor_Demolitions
+	class 53rd_ODST_HR : 53rd_ODST_Armor_Rifleman
     {
 		scope = 2;
         scopeCurator = 2;
@@ -408,8 +406,8 @@ class cfgWeapons
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "53rd_SC_aux\tex\Hades Armor\53rd_ODST_OD.paa"
         };
-    };
-	class 53rd_ODST_RED : OPTRE_UNSC_M52D_Armor
+    };*/
+	class 53rd_ODST_RED : 53rd_ODST_Armor_Rifleman
     {
 		scope = 2;
         scopeCurator = 2;
