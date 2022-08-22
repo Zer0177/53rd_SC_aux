@@ -985,52 +985,52 @@ class cfgWeapons {
 				//"A_Base",
 				//"A_ChestArmor",
 				"A_Ghillie",
-				//"A_KneesLeft",
+				//"A_KneesLeft", //hard knees
 				//"A_KneesRight",
-				"A_KneesMarLeft",
+				"A_KneesMarLeft", //soft knees
 				"A_KneesMarRight",
-				"A_ODST",
-				//"A_ShinArmorLeft",
+				"A_ODST", 
+				//"A_ShinArmorLeft", //Shin Plates
 				//"A_ShinArmorRight",
-				"A_TacPad",
-				//"A_ThighArmorLeft",
+				"A_TacPad", //Small screen on left wrist
+				//"A_ThighArmorLeft", //Thigh Plate
 				//"A_ThighArmorRight",
-				//"AS_BaseLeft",
+				//"AS_BaseLeft", //Under pad that sits on the uniform
 				//"AS_BaseRight",
-				//"AS_LargeLeft",
+				//"AS_LargeLeft", //Tall plate
 				"AS_LargeRight",
-				"AS_MediumLeft",
-				//"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
+				"AS_MediumLeft", //Mid sized plate 
+				//"AS_MediumRight", 
+				"AS_ODSTCQBLeft", //V plate that points down
+				"AS_ODSTCQBRight", 
+				"AS_ODSTLeft", //Standard ODST
 				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperLeft", //Tall pauldron, short lower
 				"AS_ODSTSniperRight",
-				"AS_SmallLeft",
+				"AS_SmallLeft", //Small Oval shaped
 				"AS_SmallRight",
-				//"AP_AR",
-				"AP_BR",
-				"AP_Canteen",
-				"AP_GL",
-				//"AP_Knife",
-				//"AP_MGThigh",
-				//"AP_AR",
-				//"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				//"AP_Thigh",
-				//"AP_Frag",
-				//"AP_Smoke",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
+				//"AP_AR", //Front AR packs, Need both to work <<
+				"AP_BR", //Front 3 BR pouches
+				"AP_Canteen", //Left Hip
+				"AP_GL", //40mm belt on front
+				//"AP_Knife", //Chest knife
+				//"AP_MGThigh", //Right thigh ammo pouch
+				//"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_Pack", //Center Chest Pouch
+				"AP_Pistol", //Right Hip, ammo pouch
+				"AP_Rounds", //Sniper rounds On Left Sholder
+				"AP_SG", //Shotgun Shells on right of chestplate
+				"AP_SMG", //Lower SMG ammo pouches
+				"AP_Sniper", //2 large pouches on front
+				//"AP_Thigh", //Left Thigh ammo pouch
+				//"AP_Frag", //Right hip
+				//"AP_Smoke", //Left Hip
+				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
+				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
+				"APO_Knife", //Back Knife
+				"APO_SMG", // Upper SMG ammo pouches
+				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
+				"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
 			};
 			hiddenSelectionsTextures[]=
 			{

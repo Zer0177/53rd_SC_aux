@@ -684,40 +684,8 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co",
         };
 	};
-	 class Armor_Hephaestus_Ryu : 53rd_Armor_SL
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Ryu)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-4_Vulc_A4.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
-        };
-	};
-	class Armor_Hephaestus_Joker : 53rd_Armor_SL
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Joker)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
-        };
-	};
+    
+//Custom Armors
 	class Armor_Hephaestus_PL : 53rd_Armor_SL 
 	{ 
 		scope = 2; 
@@ -735,6 +703,291 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co", 
         }; 
 	};
+    class Armor_Hephaestus_Panzer : 53rd_Armor_Medic_NCO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Platoon Medic)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+	};
+    class Armor_Hephaestus_Ryu : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Ryu)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-4_Vulc_A4.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft", //hard knees
+				//"A_KneesRight",
+				"A_KneesMarLeft", //soft knees
+				"A_KneesMarRight",
+				"A_ODST", 
+				//"A_ShinArmorLeft", //Shin Plates
+				//"A_ShinArmorRight",
+				//"A_TacPad", //Small screen on left wrist
+				//"A_ThighArmorLeft", //Thigh Plate
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft", //Under pad that sits on the uniform
+				//"AS_BaseRight",
+				//"AS_LargeLeft", //Tall plate
+				"AS_LargeRight",
+				"AS_MediumLeft", //Mid sized plate 
+				//"AS_MediumRight", 
+				"AS_ODSTCQBLeft", //V plate that points down
+				"AS_ODSTCQBRight", 
+				"AS_ODSTLeft", //Standard ODST
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft", //Tall pauldron, short lower
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft", //Small Oval shaped
+				"AS_SmallRight",
+				"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_BR", //Front 3 BR pouches
+				"AP_Canteen", //Left Hip
+				//"AP_GL", //40mm belt on front
+				//"AP_Knife", //Chest knife
+				"AP_MGThigh", //Right thigh ammo pouch
+				/"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_Pack", //Center Chest Pouch
+				"AP_Pistol", //Right Hip, ammo pouch
+				//"AP_Rounds", //Sniper rounds On Left Sholder
+				"AP_SG", //Shotgun Shells on right of chestplate
+				"AP_SMG", //Lower SMG ammo pouches
+				"AP_Sniper", //2 large pouches on front
+				//"AP_Thigh", //Left Thigh ammo pouch
+				//"AP_Frag", //Right hip
+				//"AP_Smoke", //Left Hip
+				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
+				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
+				//"APO_Knife", //Back Knife
+				"APO_SMG", // Upper SMG ammo pouches
+				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
+				"CustomKit_Scorch"
+			};
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+                "53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
+                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+                "optre_unsc_units\army\data\ghillie_woodland_co",
+                "optre_unsc_units\army\data\odst_armor_co"
+            };
+		};
+	};
+	class Armor_Hephaestus_Joker : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Joker)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+        };
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft", //hard knees
+				//"A_KneesRight",
+				"A_KneesMarLeft", //soft knees
+				"A_KneesMarRight",
+				"A_ODST", 
+				//"A_ShinArmorLeft", //Shin Plates
+				//"A_ShinArmorRight",
+				"A_TacPad", //Small screen on left wrist
+				//"A_ThighArmorLeft", //Thigh Plate
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft", //Under pad that sits on the uniform
+				//"AS_BaseRight",
+				//"AS_LargeLeft", //Tall plate
+				"AS_LargeRight",
+				"AS_MediumLeft", //Mid sized plate 
+				//"AS_MediumRight", 
+				"AS_ODSTCQBLeft", //V plate that points down
+				"AS_ODSTCQBRight", 
+				"AS_ODSTLeft", //Standard ODST
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft", //Tall pauldron, short lower
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft", //Small Oval shaped
+				"AS_SmallRight",
+				//"AP_AR", //Front AR packs, Need both to work <<
+				"AP_BR", //Front 3 BR pouches
+				"AP_Canteen", //Left Hip
+				"AP_GL", //40mm belt on front
+				//"AP_Knife", //Chest knife
+				//"AP_MGThigh", //Right thigh ammo pouch
+				//"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_Pack", //Center Chest Pouch
+				"AP_Pistol", //Right Hip, ammo pouch
+				"AP_Rounds", //Sniper rounds On Left Sholder
+				//"AP_SG", //Shotgun Shells on right of chestplate
+				"AP_SMG", //Lower SMG ammo pouches
+				"AP_Sniper", //2 large pouches on front
+				//"AP_Thigh", //Left Thigh ammo pouch
+				//"AP_Frag", //Right hip
+				//"AP_Smoke", //Left Hip
+				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
+				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
+				"APO_Knife", //Back Knife
+				"APO_SMG", // Upper SMG ammo pouches
+				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
+				"CustomKit_Scorch"
+			};
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+                "53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
+                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+                "optre_unsc_units\army\data\ghillie_woodland_co",
+                "optre_unsc_units\army\data\odst_armor_co"
+            };
+		};
+	};
+    
+    
 //Hephaestus Woodland Armors
     class Armor_Hephaestus_WDL_Medic : 53rd_Armor_Medic
     {
@@ -1193,7 +1446,7 @@ class cfgWeapons {
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[53rd] Tartarus Helmet (Silver)";
+        displayName = "[53rd] Tartarus Helmet (Gold)";
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
@@ -1201,25 +1454,7 @@ class cfgWeapons {
         };
     };
 	
-// Tartarus Armor /////////////////////////////////
-//	class H_HelmetCrew_B;
-//	class 53rd_HelmetCrew_B: H_HelmetCrew_B
-//	{
-//		author="$STR_A3_Bohemia_Interactive";
-//		_generalMacro="H_HelmetCrew_I";
-//		displayName="$STR_A3_H_HelmetCrewIA0";
-//		picture="\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_crew_ca.paa";
-//		model="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
-//	hiddenSelectionsTextures[]=
-//		{
-//			"\A3\Characters_F_Beta\Indep\Data\headgear_ia_helmet_crew_co.paa"
-//		};
-//		class ItemInfo: ItemInfo
-//	{
-//			modelSides[]={2,3};
-//			uniformModel="\A3\Characters_F_Beta\INDEP\headgear_ia_helmet_crew";
-//		};
-//	};
+// Tartarus Armor
     class 53rd_M52A_Haz : 53rd_Armor_Rifleman
 	{
 		scope = 2;
@@ -1254,6 +1489,7 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co",
         };
     };
+//Custom Armor
 	class 53rd_M52A_Rose_NCO : 53rd_Armor_SL
 	{
 		scope = 2;
@@ -1271,6 +1507,140 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\odst_armor_co",
         };
     };
+	class 53rd_M52A_Fixer_NCO : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Tartarus Armor (Fixer)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_A.paa",
+			"53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+            "53rd_SC_aux\tex\Hades Armor\53rd_ODST_OD.paa"
+        };
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass="Supply100";
+			mass=80;
+			class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 45;
+                    passThrough = 0.1;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                    armor = 40;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 40;
+                    passThrough = 0.1;
+                };
+            };
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft", //hard knees
+				//"A_KneesRight",
+				"A_KneesMarLeft", //soft knees
+				"A_KneesMarRight",
+				"A_ODST", 
+				//"A_ShinArmorLeft", //Shin Plates
+				//"A_ShinArmorRight",
+				//"A_TacPad", //Small screen on left wrist
+				//"A_ThighArmorLeft", //Thigh Plate
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft", //Under pad that sits on the uniform
+				//"AS_BaseRight",
+				"AS_LargeLeft", //Tall plate
+				//"AS_LargeRight",
+				"AS_MediumLeft", //Mid sized plate 
+				"AS_MediumRight", 
+				"AS_ODSTCQBLeft", //V plate that points down
+				"AS_ODSTCQBRight", 
+				//"AS_ODSTLeft", //Standard ODST
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft", //Tall pauldron, short lower
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft", //Small Oval shaped
+				"AS_SmallRight",
+				"AP_AR", //Front AR packs, Need both to work <<
+				"AP_BR", //Front 3 BR pouches
+				//"AP_Canteen", //Left Hip
+				//"AP_GL", //40mm belt on front
+				"AP_Knife", //Chest knife
+				//"AP_MGThigh", //Right thigh ammo pouch
+				"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_Pack", //Center Chest Pouch
+				//"AP_Pistol", //Right Hip, ammo pouch
+				"AP_Rounds", //Sniper rounds On Left Sholder
+				"AP_SG", //Shotgun Shells on right of chestplate
+				"AP_SMG", //Lower SMG ammo pouches
+				"AP_Sniper", //2 large pouches on front
+				//"AP_Thigh", //Left Thigh ammo pouch
+				"AP_Frag", //Right hip
+				"AP_Smoke", //Left Hip
+				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
+				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
+				"APO_Knife", //Back Knife
+				//"APO_SMG", // Upper SMG ammo pouches
+				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
+				//"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
+			};
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
+                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_A.paa",
+                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
+                "optre_unsc_units\army\data\ghillie_woodland_co",
+                "53rd_SC_aux\tex\Hades Armor\53rd_ODST_OD.paa"
+            };
+		};
+    };
+    
 //End Tartarus
     //Def helms
     class 53rd_CH252_GREY_HEV_Sealed_40_Pro : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
@@ -1553,6 +1923,7 @@ class cfgWeapons {
         };
     };
     
+//Primal
     class 53rd_CH252_GREY_HEV_Sealed_Primal : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 2;
