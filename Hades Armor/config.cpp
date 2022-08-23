@@ -343,34 +343,97 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
 			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
 		};
+		class ItemInfo: HeadgearItem
+		{
+            mass=1;
+            class HitpointsProtectionInfo
+            {
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+                class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet";
+			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+            hiddenSelections[]=
+            {
+                "camo",
+                "camo2"
+            };
+            hiddenSelectionsMaterials[]=
+            {
+                "LM_OPCAN3.0\BLU\UNSC\H\ODST_OP.rvmat"
+            };
+            hiddenSelectionsTextures[]=
+            {
+                "53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+                "optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+            };
+        };
 	};
-	class 53rd_CH252D_ODST_dp: OPTRE_UNSC_CH252D_Helmet
+	class 53rd_CH252D_ODST_dp: 53rd_CH252D_ODST
 	{
 		scope=1;
 		scopeArsenal=1;
-		scopeCurator=1;
+		displayName="[53rd] CH252D Helmet";
 		author = "53rd AUX TEAM & 37th Aux Team";
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelections[]=
 		{
-			"camo"
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"LM_OPCAN3.0\BLU\UNSC\H\ODST_OP.rvmat"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa"
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"optre_unsc_units\army\data\ODST_Helmet_Visor_ca.paa"
 		};
-		class ItemInfo: ItemInfo
+		class ItemInfo: HeadgearItem
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-			hiddenSelections[]=
-			{
-				"camo"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa"
-			};
-		};
+            mass=1;
+            class HitpointsProtectionInfo
+            {
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+                class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet_dp";
+			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+            hiddenSelections[]=
+            {
+                "camo",
+                "camo2"
+            };
+            hiddenSelectionsMaterials[]=
+            {
+                "LM_OPCAN3.0\BLU\UNSC\H\ODST_OP.rvmat"
+            };
+            hiddenSelectionsTextures[]=
+            {
+                "53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+                "optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+            };
+        };
 	};
 //  ODST ARMOR
 /*    class 53rd_ODST_Green : OPTRE_UNSC_M52D_Armor_Demolitions
