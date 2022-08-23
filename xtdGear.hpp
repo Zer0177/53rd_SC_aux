@@ -288,5 +288,9 @@ class XtdGearInfos
 		{
 		person = "primal";
 		};
+		class 53rd_CH252_Tar_Fixer:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "fixer";
+		};
 	};
 };
