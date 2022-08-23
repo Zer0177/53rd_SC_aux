@@ -158,6 +158,8 @@ class cfgWeapons {
     };
 	class 53rd_Army_Heavy: VES_CH252_WDL_Heavy
 	{
+        scope = 1;
+        scopeArsenal = 1;
 		author="Body";
 		ace_hearing_protection=0.85000002;
 		ace_hearing_lowerVolume=0.5;
