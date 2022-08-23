@@ -103,7 +103,7 @@ class cfgWeapons
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply100";
-			mass=80;
+			mass=1;
 			vestType = "Rebreather";
 			class HitpointsProtectionInfo
             {
@@ -326,17 +326,14 @@ class cfgWeapons
 	};*/
 	class 53rd_CH252D_ODST: OPTRE_UNSC_CH252D_Helmet
 	{
-		author = "53rd AUX TEAM & 37th Aux Team";
+		dlc="OPTRE";
 		scope=2;
-		displayName="[53rd] CH252D Helmet";
+		author="Article 2 Studios";
+		displayName="CH252D Helmet [Basic]";
 		hiddenSelections[]=
 		{
 			"camo",
 			"camo2"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"LM_OPCAN3.0\BLU\UNSC\H\ODST_OP.rvmat"
 		};
 		hiddenSelectionsTextures[]=
 		{

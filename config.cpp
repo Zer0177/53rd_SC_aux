@@ -2412,7 +2412,7 @@ class CfgVehicles
         scopeCurator=2;
         displayName="[53rd] Rucksack (Basic)";
         maximumLoad=350;
-        mass=40;
+        mass=1;
         hiddenSelections[]=
         {
             "camo",
