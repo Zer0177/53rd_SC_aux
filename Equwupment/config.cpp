@@ -23,6 +23,8 @@ class ace_medical_treatment
         class OPTRE_Medigel;
         class r_biofoam: OPTRE_Biofoam {};
         class r_medigel: OPTRE_Medigel {};
+        class nr_biofoam: OPTRE_Biofoam {};
+        class nr_medigel: OPTRE_Medigel {};
     };
     class Medication
     {
@@ -67,7 +69,7 @@ class ace_medical_treatment_actions
 		displayName="[R] Biofoam";
 		consumeItem=0;
 		medicRequired="ace_medical_treatment_medicIV";
-		callbackSuccess="OPTRE_fnc_treatmentBandageAndPainReduction";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
 		items[]=
 		{
 			"53rd_r_biofoam"
@@ -78,10 +80,28 @@ class ace_medical_treatment_actions
 		displayName="[R] Medigel";
 		consumeItem=0;
 		medicRequired="ace_medical_treatment_medicIV";
-		callbackSuccess="OPTRE_fnc_treatmentBandageAndPainReduction";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
 		items[]=
 		{
 			"53rd_r_medigel"
+		};
+	};
+	class nr_biofoam: OPTRE_Biofoam
+	{
+		displayName="Biofoam";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
+		items[]=
+		{
+			"53rd_biofoam"
+		};
+	};
+	class nr_medigel: OPTRE_Medigel
+	{
+		displayName="Medigel";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
+		items[]=
+		{
+			"53rd_medigel"
 		};
 	};
     
@@ -139,6 +159,18 @@ class cfgWeapons
 		scope=2;
 		author="53rd Aux";
 		displayName="[53rd](R) Medigel";
+	};
+	class 53rd_biofoam: OPTRE_Biofoam
+	{
+		scope=2;
+		author="53rd Aux";
+		displayName="[53rd] Biofoam";
+	};
+	class 53rd_medigel: OPTRE_Medigel
+	{
+		scope=2;
+		author="53rd Aux";
+		displayName="[53rd] Medigel";
 	};
 };
 

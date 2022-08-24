@@ -78,7 +78,6 @@ class CfgEditorSubcategories
 	class 53rd_Men_Hephaestus
 	{
 		displayName="Men (Hephaestus)";
-        
 	};
 	class 53rd_Men_Athena
 	{
