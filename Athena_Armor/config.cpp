@@ -718,23 +718,6 @@ class 53rd_Athena_Armor_Ithias: 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
-	class 53rd_Athena_Armor_IMP : 53rd_Armor_SL 
-	{ 
-		scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
-		dlc = "53rd AUX"; 
-		author = "Ithias/53rd AUX TEAM"; 
-		displayName = "[53rd]Horny Armor (simpai)"; 
-		hiddenSelectionsTextures[] =  
-		{ 
-            "53rd_SC_Aux\tex\Athena Armor\53rd_Athena_Vest.paa", 
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_test1.paa", 
-			"53rd_SC_Aux\tex\Athena Armor\53rd_Athena_NCO_Legs.paa", 
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa", 
-			"optre_unsc_units\army\data\odst_armor_co.paa" 
-        }; 
-	}; 
     
 	
 //Athena Helmets

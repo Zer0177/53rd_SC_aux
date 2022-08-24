@@ -2403,6 +2403,10 @@ class CfgVehicles
 	class OPTRE_UNSC_Rucksack_Medic;
 	class OPTRE_UNSC_Rucksack_Heavy;
 	class OPTRE_ONI_Researcher_Suitcase;
+	class OPTRE_ILCS_Rucksack_Black;
+	class OPTRE_ILCS_Rucksack_Medical;
+	class OPTRE_ILCS_Rucksack_Heavy;
+	
 	
    class OPTRE_UNSC_Rucksack_53rd: OPTRE_UNSC_Rucksack
     {
@@ -2441,7 +2445,7 @@ class CfgVehicles
         tf_range = 120000;
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad=350;
+        maximumLoad=400;
     };
     class OPTRE_UNSC_Rucksack_53rd_Athena_LR: OPTRE_UNSC_Rucksack
     {
@@ -2450,8 +2454,8 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (NCO)";
-        maximumLoad=350;
-        mass=40;
+        maximumLoad=400;
+        mass=1;
         hiddenSelections[]=
         {
             "camo",
@@ -2493,17 +2497,16 @@ class CfgVehicles
         tf_range=120000;
         tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio=1;
-        maximumLoad=350;
+        maximumLoad=400;
     };
-
     class OPTRE_UNSC_Rucksack_Heavy_53rd: OPTRE_UNSC_Rucksack_Heavy
     {
+		author="53rd AUX Team";
         dlc="53rd AUX";
-        author="Ithias";
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Heavy)";
-        maximumLoad=450;
+        maximumLoad=500;
         mass=50;
         hiddenSelections[]=
         {
@@ -2516,7 +2519,6 @@ class CfgVehicles
             "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
         };
     }; 
-
     class OPTRE_UNSC_Rucksack_Medic_53rd: OPTRE_UNSC_Rucksack_Medic
     {
         dlc="53rd AUX";
@@ -2524,7 +2526,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical)";
-        maximumLoad=400;
+        maximumLoad=450;
         mass=50;
         hiddenSelections[]=
         {
@@ -2538,8 +2540,10 @@ class CfgVehicles
         };
     }; 
 
-    class OPTRE_Hardcase_Medic_NCO: OPTRE_ONI_Researcher_Suitcase
+    class 53rd_Hardcase_Medic_NCO: OPTRE_ONI_Researcher_Suitcase
     {
+		author="53rd AUX Team";
+        dlc="53rd AUX";
         scope=2;
         scopeArsenal=2;
         displayName="[53rd] Satchel (Medical NCO)";
@@ -2558,9 +2562,97 @@ class CfgVehicles
         {
             "53rd_SC_Aux\tex\Backpacks\research_bag_CO_Medical.paa"
         };
-        maximumLoad=400;
+        maximumLoad=450;
     };
-
+	class 53rd_Rucksack_Black: OPTRE_ILCS_Rucksack_Black
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		isbackpack=1;
+		picture="\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
+		displayName="[53rd] ILCS Rucksack [Black]";
+		model="\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+		vehicleClass="OPTRE_UNSC_Backpack_class";
+		allowedSlots[]={901};
+		maximumLoad=400;
+		mass=1;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"AP_Heavy",
+			"biofoam"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"
+		};
+		transportMaxWeapons=10;
+		transportMaxMagazines=100;
+		class DestructionEffects
+		{
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportItems
+		{
+		};
+	};
+	class 53rd_ILCS_Rucksack_Medical: OPTRE_ILCS_Rucksack_Medical
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		displayName="[53rd] ILCS Backpack [Medic]";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"AP_Heavy"
+		};
+	};
+	class 53rd_ILCS_Rucksack_Heavy: OPTRE_ILCS_Rucksack_Heavy
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		maximumLoad=500;
+		mass=1;
+		displayName="[53rd] ILCS Rucksack [Heavy]";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"biofoam"
+		};
+	};
+	class 53rd_ANPRC_ODST_515: OPTRE_ANPRC_515
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		picture="\OPTRE_weapons\backpacks\icons\como_pack.paa";
+		displayName="[53rd] AN/PRC-515";
+		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
+		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
+		maximumLoad=400;
+		mass=1;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_Weapons\Backpacks\data\como_pack_co.paa"
+		};
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
 };
 class CfgGlasses
 {
