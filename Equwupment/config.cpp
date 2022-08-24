@@ -80,7 +80,7 @@ class ace_medical_treatment_actions
 		displayName="[R] Biofoam";
 		consumeItem=0;
 		medicRequired="ace_medical_treatment_medicIV";
-		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction3";
 		items[]=
 		{
 			"53rd_r_biofoam"
@@ -91,7 +91,7 @@ class ace_medical_treatment_actions
 		displayName="[R] Medigel";
 		consumeItem=0;
 		medicRequired="ace_medical_treatment_medicIV";
-		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction3";
 		items[]=
 		{
 			"53rd_r_medigel"
@@ -100,7 +100,7 @@ class ace_medical_treatment_actions
 	class nr_biofoam: OPTRE_Biofoam
 	{
 		displayName="Biofoam";
-		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction2";
 		items[]=
 		{
 			"53rd_biofoam"
@@ -109,7 +109,7 @@ class ace_medical_treatment_actions
 	class nr_medigel: OPTRE_Medigel
 	{
 		displayName="Medigel";
-		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction2";
 		items[]=
 		{
 			"53rd_medigel"
