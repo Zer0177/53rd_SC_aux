@@ -1,8 +1,19 @@
+/// https://community.bistudio.com/wiki/Arma_3:_Characters_And_Gear_Encoding_Guide ///
+/// Equipment list macros definition ///
+
+#define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
+#define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
+#define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define pack_xx(a,b) class _xx_##a {backpack = a; count = b;}
+
 class CfgPatches {
 	class 53rd_equwupment {
 		units[] = 
         {
-			"53rd_CopiumItem"
+			"53rd_CopiumItem",
+			"53rd_Hardbox_Medical",
+			"53rd_Hardbox_Resupply",
+			"53rd_SupplyPod_Medical"
         };
 		weapons[] = 
         {
@@ -202,4 +213,116 @@ class CfgVehicles
         hiddenSelections[]={"camo"};
         hiddenSelectionsTextures[]={"\53rd_SC_aux\Equwupment\Copium_CO.paa"};
 	};
+    //Cargo Boxes
+    class Box_NATO_Support_F;
+	class 53rd_Hardbox_Medical: Box_NATO_Support_F
+	{
+		editorCategory = "53rd_cat_faction";
+		scope=2;
+		author="53rd aux";
+		displayName="[53rd] Medical Hardbox";
+		model="\A3\weapons_F\AmmoBoxes\AmmoBox_F";
+		maximumLoad=1500;
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_MedicLR_53rd,2);
+		};
+		class TransportItems
+		{
+            item_xx(ACE_PlasmaIV,20);
+            item_xx(ACE_plasmaIV_500,20);
+            item_xx(53rd_Copium,40);
+            item_xx(ACE_Tourniquet,20);
+            item_xx(ACE_splint,20);
+            item_xx(53rd_r_biofoam,3);
+            item_xx(53rd_r_medigel,3);
+            item_xx(ACE_packingBandage,50);
+            item_xx(ACE_elasticBandage,50);
+            item_xx(ACE_epinephrine,10);
+            item_xx(ACE_adenosine,10);
+            item_xx(ACE_surgicalKit,2);
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+		};
+	};
+	class 53rd_Hardbox_Resupply: Box_NATO_Support_F
+	{
+		editorCategory = "53rd_cat_faction";
+		scope=1;
+		author="53rd aux";
+		displayName="[53rd] Resupply Hardbox";
+		model="\A3\weapons_F\AmmoBoxes\AmmoBox_F";
+		maximumLoad=1500;
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
+		};
+		class TransportItems
+		{
+            item_xx(ACE_PlasmaIV,20);
+            item_xx(ACE_plasmaIV_500,20);
+            item_xx(53rd_Copium,40);
+            item_xx(ACE_Tourniquet,20);
+            item_xx(ACE_splint,20);
+            item_xx(53rd_r_biofoam,3);
+            item_xx(53rd_r_medigel,3);
+            item_xx(ACE_packingBandage,50);
+            item_xx(ACE_elasticBandage,50);
+            item_xx(ACE_epinephrine,10);
+            item_xx(ACE_adenosine,10);
+            item_xx(ACE_surgicalKit,2);
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+		};
+	};
+    
+    class OPTRE_Ammo_SupplyPod_Empty;
+    class 53rd_SupplyPod_Medical: OPTRE_Ammo_SupplyPod_Empty
+    {
+		editorCategory = "53rd_cat_faction";
+		scope=2;
+        displayName = "[53rd] Supply Pod (Medical)";
+		model="\OPTRE_misc\crates\Supply_pod.p3d";
+		hiddenSelections[]=
+		{
+			"attach_Cover"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\53rd_Medical_SupplyPod_co.paa"
+        };
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_MedicLR_53rd,2);
+		};
+		class TransportItems
+		{
+            item_xx(ACE_PlasmaIV,20);
+            item_xx(ACE_plasmaIV_500,20);
+            item_xx(53rd_Copium,40);
+            item_xx(ACE_Tourniquet,20);
+            item_xx(ACE_splint,20);
+            item_xx(53rd_r_biofoam,3);
+            item_xx(53rd_r_medigel,3);
+            item_xx(ACE_packingBandage,50);
+            item_xx(ACE_elasticBandage,50);
+            item_xx(ACE_epinephrine,10);
+            item_xx(ACE_adenosine,10);
+            item_xx(ACE_surgicalKit,2);
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+		};
+    };
 };

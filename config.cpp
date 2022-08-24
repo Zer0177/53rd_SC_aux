@@ -2406,6 +2406,7 @@ class CfgVehicles
 	class OPTRE_ILCS_Rucksack_Black;
 	class OPTRE_ILCS_Rucksack_Medical;
 	class OPTRE_ILCS_Rucksack_Heavy;
+	class B_Parachute;
 	
 	
    class OPTRE_UNSC_Rucksack_53rd: OPTRE_UNSC_Rucksack
@@ -2476,6 +2477,39 @@ class CfgVehicles
         tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio=1;
     }; 
+    class OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA: OPTRE_UNSC_Rucksack
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] Rucksack (NCO+Chute)";
+        maximumLoad=400;
+        mass=1;
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "B_Addons",
+            "B_Medic",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd_Basic_With_LR.paa"
+        };
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+		backpackSimulation="ParachuteSteerable";
+		ParachuteClass="Steerable_Parachute_F";
+        ace_reserveParachute = "OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA";
+        ace_hasReserveParachute = 1;
+    }; 
 	
     class OPTRE_ANPRC_521_Green_53rd: OPTRE_ANPRC_521_Green
     {
@@ -2537,6 +2571,33 @@ class CfgVehicles
         hiddenSelectionsTextures[]=
         {
             "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
+        };
+    }; 
+    class OPTRE_UNSC_Rucksack_MedicLR_53rd: OPTRE_UNSC_Rucksack_Medic
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] Rucksack (Medical LR)";
+        maximumLoad=450;
+        mass=50;
+        tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        hiddenSelections[]=
+        {
+            "camo",
+            "B_Addons",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd_Basic_With_LR.paa"
         };
     }; 
 
@@ -2653,6 +2714,26 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	class 53rd_LR_Parachute: B_Parachute
+	{
+		author="53rd Aux";
+		scope=2;
+		displayName="[53rd] Parachute (LR)";
+		maximumLoad=0;
+		mass=1;
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+		backpackSimulation="ParachuteSteerable";
+		ParachuteClass="Steerable_Parachute_F";
+        ace_reserveParachute = "53rd_LR_Parachute";
+        ace_hasReserveParachute = 1;
+	};
+
 };
 class CfgGlasses
 {

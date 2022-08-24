@@ -107,4 +107,8 @@ class CfgEditorSubcategories
 	{
 		displayName="Motorized";
 	};
+	class 53rd_Crates
+	{
+		displayName="Storage/Pods";
+	};
 };
