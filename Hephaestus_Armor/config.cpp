@@ -178,8 +178,7 @@ class cfgWeapons {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO",
-			"optre_unsc_units\army\data\helmet_visor_ca"
+			"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -205,8 +204,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO",
-				"optre_unsc_units\army\data\helmet_visor_ca"
+				"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO"
 			};
 			class HitpointsProtectionInfo
 			{
@@ -522,8 +520,31 @@ class cfgWeapons {
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
+    
 //Hephaestus NON-VAC Helmets
-class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
+	 class 53rd_CH252_GREY_NOTSEALED_Reserve : 53rd_Army_Heavy
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet MKI (Reservist)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_aux\tex\Hephaestus Armor\53RD_Reservist_CH252.paa"
+		};
+    };
+	 class 53rd_CH252_GREY_NOTSEALED_PFC : 53rd_Army_Heavy
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet MKI (Rifleman)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa"
+        };
+    };
+    class 53rd_CH252_GREY_HEV_NOTSEALED_SPC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -531,11 +552,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SPC.paa",
-         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
+             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SPC.paa"
 		};
     };
-    class 53rd_CH252_GREY_HEV_NOTSEALED_TL_SLV : 53rd_Army_Heavy
+    class 53rd_CH252_GREY_HEV_NOTSEALED_TL : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -543,11 +563,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_TL.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_TL.paa"
         };
     };
-    class 53rd_CH252_GREY_HEV_NOTSEALED_SL_SLV : 53rd_Army_Heavy
+    class 53rd_CH252_GREY_HEV_NOTSEALED_SL : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -555,11 +574,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL.paa",
-            "53rd_SC_aux\tex\visr_gold_CO.paa"
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL.paa"
         };
     };
-	class 53rd_CH252_GREY_NOTSEALED_RYU_SL_SLV : 53rd_Army_Heavy
+	class 53rd_CH252_GREY_NOTSEALED_RYU_SL : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -567,11 +585,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_1-4_SL.paa",
-            "53rd_SC_aux\tex\visr_gold_CO.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_1-4_SL.paa"
         };
     };
-    class 53rd_CH252_GREY_HEV_NOTSEALED_PLS_SLV : 53rd_Army_Heavy
+    class 53rd_CH252_GREY_HEV_NOTSEALED_PLS : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -579,11 +596,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLS.paa",
-            "53rd_SC_Aux\tex\visr_black_CO.paa"
+             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLS.paa"
         };
     };
-    class 53rd_CH252_GREY_CORP_NOTSEALED_SLV : 53rd_Army_Heavy
+    class 53rd_CH252_GREY_CORP_NOTSEALED : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -591,11 +607,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP2.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP2.paa"
         };
     };
-    class 53rd_CH252_GREY_CORP_NOTSEALED_GLD : 53rd_Army_Heavy
+    class 53rd_CH252_GREY_CORP_NCO_NOTSEALED : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -603,8 +618,7 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP2.paa",
-            "53rd_SC_aux\tex\visr_gold_CO.paa"
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP2.paa"
         };
     };
     class 53rd_CH252_GREY_CORP_NOTSEALED_PLM : 53rd_Army_Heavy
@@ -615,23 +629,10 @@ class 53rd_CH252_GREY_HEV_NOTSEALED_SPC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_PLT.paa",
-            "53rd_SC_aux\tex\visr_gold_CO.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_PLT.paa"
         };
     };
-	 class 53rd_CH252_GREY_NOTSEALED_Reserve : 53rd_Army_Heavy
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Hephaestus Helmet MKI (Reservist)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-             "53rd_SC_aux\tex\Hephaestus Armor\53RD_Reservist_CH252.paa",
-         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
-		};
-    };
-class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
+    class 53rd_CH252_GREY_NOTSEALED_PLC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -639,13 +640,12 @@ class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa",
-            "53rd_SC_Aux\tex\visr_black_CO.paa"
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa"
         };
     };
 
 //Hephaestus Camo Helmet
-	class 53rd_CH252_Wood_HEV_NOTSealed_PFC_SLV : 53rd_Army_Heavy
+	class 53rd_CH252_Wood_HEV_NOTSealed_PFC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -653,11 +653,10 @@ class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WoodlandCamo.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WoodlandCamo.paa"
         };
     };
-	class 53rd_CH252_DES_HEV_NOTSealed_PFC_SLV : 53rd_Army_Heavy
+	class 53rd_CH252_DES_HEV_NOTSealed_PFC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -665,11 +664,10 @@ class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_DesCamo.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_DesCamo.paa"
         };
     };
-	class 53rd_CH252_WIN_HEV_NOTSealed_PFC_SLV : 53rd_Army_Heavy
+	class 53rd_CH252_WIN_HEV_NOTSealed_PFC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -677,11 +675,10 @@ class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WinterCamo.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WinterCamo.paa"
         };
     };
-	class 53rd_CH252_JUG_HEV_NOTSealed_PFC_SLV : 53rd_Army_Heavy
+	class 53rd_CH252_JUG_HEV_NOTSealed_PFC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -689,8 +686,7 @@ class 53rd_CH252_GREY_NOTSEALED_PLC_SLV : 53rd_Army_Heavy
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_JungleCamo.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_JungleCamo.paa"
         };
     };
 //Camo Open Helmets
