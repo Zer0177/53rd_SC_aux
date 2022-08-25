@@ -100,6 +100,7 @@ class cfgWeapons {
 	
 	class 53rd_Armor_Rifleman: OPTRE_UNSC_M52A_Armor_Base
 	{
+        scope=1
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
@@ -287,127 +288,13 @@ class cfgWeapons {
 		};
 	};
 
-	class 53rd_Armor_Specialist: OPTRE_UNSC_M52A_Armor_Base
+	class 53rd_Armor_Specialist: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -465,138 +352,16 @@ class cfgWeapons {
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
-			};
 		};
 	};
 	
-    class 53rd_Armor_Medic: OPTRE_UNSC_M52A_Armor_Base
+    class 53rd_Armor_Medic: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -654,138 +419,16 @@ class cfgWeapons {
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
-			};
 		};
 	};
 
-    class 53rd_Armor_TL: OPTRE_UNSC_M52A_Armor_Base
+    class 53rd_Armor_TL: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -843,138 +486,16 @@ class cfgWeapons {
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
-			};
 		};
 	};
 	
-    class 53rd_Armor_SL: OPTRE_UNSC_M52A_Armor_Base
+    class 53rd_Armor_SL: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -1032,138 +553,16 @@ class cfgWeapons {
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
 				"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
 			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
-			};
 		};
 	};
 	
-    class 53rd_Armor_Medic_NCO: OPTRE_UNSC_M52A_Armor_Base
+    class 53rd_Armor_Medic_NCO: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -1221,138 +620,16 @@ class cfgWeapons {
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
-			};
 		};
 	};
 	
-    class 53rd_Raider_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
+    class 53rd_Raider_Armor_Base: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -1410,138 +687,16 @@ class cfgWeapons {
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
-			};
 		};
 	};
 	
-    class 53rd_Raider_Armor_NCO_Base: OPTRE_UNSC_M52A_Armor_Base
+    class 53rd_Raider_Armor_NCO_Base: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
+		class ItemInfo: ItemInfo
 		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			vestType = "Rebreather";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -1598,14 +753,6 @@ class cfgWeapons {
 				"APO_SMG",
 				"APO_Sniper",
 				"CustomKit_Scorch"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
 			};
 		};
 	};

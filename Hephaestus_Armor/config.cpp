@@ -863,56 +863,8 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co",
         };
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -970,14 +922,6 @@ class cfgWeapons {
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
 				"CustomKit_Scorch"
 			};
-            hiddenSelectionsTextures[] = 
-            {
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-                "53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
-                "optre_unsc_units\army\data\ghillie_woodland_co",
-                "optre_unsc_units\army\data\odst_armor_co"
-            };
 		};
 	};
 	class Armor_Hephaestus_Joker : 53rd_Armor_SL
@@ -996,56 +940,8 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -1103,14 +999,6 @@ class cfgWeapons {
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
 				"CustomKit_Scorch"
 			};
-            hiddenSelectionsTextures[] = 
-            {
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
-                "53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_1-1_Vulc_A4.paa",
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
-                "optre_unsc_units\army\data\ghillie_woodland_co",
-                "optre_unsc_units\army\data\odst_armor_co"
-            };
 		};
 	};
     
@@ -1665,56 +1553,9 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
             "53rd_SC_aux\tex\Hades Armor\53rd_ODST_OD.paa"
         };
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass="Supply120";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -1772,14 +1613,6 @@ class cfgWeapons {
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
 				//"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
 			};
-            hiddenSelectionsTextures[] = 
-            {
-                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
-                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_A.paa",
-                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_GREY_L3.paa",
-                "optre_unsc_units\army\data\ghillie_woodland_co",
-                "53rd_SC_aux\tex\Hades Armor\53rd_ODST_OD.paa"
-            };
 		};
     };
     

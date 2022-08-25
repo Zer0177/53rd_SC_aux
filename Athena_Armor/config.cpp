@@ -143,66 +143,10 @@ class 53rd_Athena_Helmet: VES_CH252D
 	};
     class 53rd_Armor_Specialist2: 53rd_Armor_Specialist
 	{
+        scope=1
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_Base",
-			"A_ChestArmor",
-			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
-			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
-			"AS_BaseLeft",
-			"AS_BaseRight",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTCQBLeft",
-			"AS_ODSTCQBRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_GL",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"AP_Thigh",
-			"AP_Frag",
-			"AP_Smoke",
-			"APO_AR",
-			"APO_BR",
-			"APO_Knife",
-			"APO_SMG",
-			"APO_Sniper",
-			"CustomKit_Scorch"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
@@ -211,56 +155,8 @@ class 53rd_Athena_Helmet: VES_CH252D
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass="Supply100";
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 45;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                    armor = 40;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 40;
-                    passThrough = 0.1;
-                };
-            };
 			hiddenSelections[]=
 			{
 				"camo",
@@ -317,14 +213,6 @@ class 53rd_Athena_Helmet: VES_CH252D
 				"APO_SMG",
 				"APO_Sniper",
 				"CustomKit_Scorch"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-				"optre_unsc_units\army\data\armor_co.paa",
-				"optre_unsc_units\army\data\legs_co.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\odst_armor_co.paa"
 			};
 		};
 	};
