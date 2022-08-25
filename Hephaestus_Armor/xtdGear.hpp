@@ -41,7 +41,7 @@ class XtdGearModels
 		};
 		class HephaestusHelm
 		{
-			label = "Hephaestus Helmets";
+			label = "Hephaestus Vac";
 			author = "Seven";
 			options[] = {"environment","type","pol"};
 			
@@ -141,6 +141,95 @@ class XtdGearModels
 				class off
 				{
 					label = "Off";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+		class HephaestusNonSeal
+		{
+			label = "Hephaestus MK1";
+			author = "Seven";
+			options[] = {"environment","type"};
+			
+			class environment
+			{
+				label = "Camo";
+				values[] = {"def","wood","des","snow","jung"};
+				class def
+				{
+					label = "Default";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class wood
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class des
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+				class jung
+				{
+					label = "Jungle";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+			};
+			class type
+			{
+				label = "Type";
+				values[] = {"res","rifle","spc","tl","sl","plt","medic","medic_nco","medic_plt"};
+				changeingame = 1;
+                changedelay  = 0;
+				class res
+				{
+					label = "Reservist";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class rifle
+				{
+					label = "Rifleman";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class spc
+				{
+					label = "Spc";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class tl
+				{
+					label = "TL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class sl
+				{
+					label = "SL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class plt
+				{
+					label = "Plt";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class medic
+				{
+					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class medic_nco
+				{
+					label = "NCO Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class medic_plt
+				{
+					label = "Plt Medic";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -333,6 +422,63 @@ class XtdGearInfos
 		environment = "snow";
 		};
 		class 53rd_BDU_Jgl_Slim:53rd_BDU_Slim
+		{
+		environment = "jung";
+		};
+        
+        class 53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		model = "HephaestusNonSeal";
+		environment = "def";
+		type = "res";
+		};
+		class 53rd_CH252_GREY_NOTSEALED_PFC:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "rifle";
+		};
+		class 53rd_CH252_GREY_HEV_NOTSEALED_SPC:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "spc";
+		};
+		class 53rd_CH252_GREY_HEV_NOTSEALED_TL:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "tl";
+		};
+		class 53rd_CH252_GREY_HEV_NOTSEALED_SL:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "sl";
+		};
+		class 53rd_CH252_GREY_HEV_NOTSEALED_PLS:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "plt";
+		};
+		class 53rd_CH252_GREY_CORP_NOTSEALED:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "medic";
+		};
+		class 53rd_CH252_GREY_CORP_NCO_NOTSEALED:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "medic_nco";
+		};
+		class 53rd_CH252_GREY_CORP_NOTSEALED_PLM:53rd_CH252_GREY_NOTSEALED_Reserve
+		{
+		type = "medic_plt";
+		};
+		class 53rd_CH252_Wood_HEV_NOTSealed_PFC
+		{
+		model = "HephaestusNonSeal";
+		environment = "wood";
+		type = "rifle";
+		};
+		class 53rd_CH252_DES_HEV_NOTSealed_PFC:53rd_CH252_Wood_HEV_NOTSealed_PFC
+		{
+		environment = "des";
+		};
+		class 53rd_CH252_WIN_HEV_NOTSealed_PFC:53rd_CH252_Wood_HEV_NOTSealed_PFC
+		{
+		environment = "snow";
+		};
+		class 53rd_CH252_JUG_HEV_NOTSealed_PFC:53rd_CH252_Wood_HEV_NOTSealed_PFC
 		{
 		environment = "jung";
 		};

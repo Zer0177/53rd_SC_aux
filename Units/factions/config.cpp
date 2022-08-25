@@ -78,7 +78,6 @@ class CfgEditorSubcategories
 	class 53rd_Men_Hephaestus
 	{
 		displayName="Men (Hephaestus)";
-        
 	};
 	class 53rd_Men_Athena
 	{
@@ -107,5 +106,9 @@ class CfgEditorSubcategories
 	class 53rd_Motor
 	{
 		displayName="Motorized";
+	};
+	class 53rd_Crates
+	{
+		displayName="Storage/Pods";
 	};
 };
