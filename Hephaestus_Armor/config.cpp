@@ -94,68 +94,6 @@ class cfgWeapons {
 //Hephaestus Helmets
     class VES_CH252_MAR_Vacuum;
 	class VES_CH252_WDL_Heavy;
-    class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV : VES_CH252_MAR_Vacuum
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.40;
-        displayName = "[53rd] Hephaestus Helmet (Rifleman)";
-        author = "53rd AUX TEAM";
-        model="\OPTRE_UNSC_Units\Army\helmet";
-        hiddenSelections[]=
-        {
-            "camo",
-            "camo2",
-            "camo3",
-            "H_Collar",
-            "H_Ghillie"
-        };
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
-            "53rd_SC_aux\tex\visr_silver_CO.paa"
-        };
-		class ItemInfo: HeadgearItem
-		{
-            mass=1;
-            class HitpointsProtectionInfo
-            {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-                class Head
-                {
-                    hitPointName="HitHead";
-                    armor=40;
-                    passThrough=0.1;
-                };
-            };
-			uniformModel="OPTRE_UNSC_Units\Army\helmet";
-			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"H_Collar",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
-                "53rd_SC_aux\tex\visr_silver_CO.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
-				"V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"
-			};
-        };
-    };
 	class 53rd_Army_Heavy: VES_CH252_WDL_Heavy
 	{
         scope = 1;
@@ -229,6 +167,68 @@ class cfgWeapons {
 			};
 		};
 	};
+    class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV : VES_CH252_MAR_Vacuum
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.40;
+        displayName = "[53rd] Hephaestus Helmet (Rifleman)";
+        author = "53rd AUX TEAM";
+        model="\OPTRE_UNSC_Units\Army\helmet";
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "camo3",
+            "H_Collar",
+            "H_Ghillie"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
+            "53rd_SC_aux\tex\visr_silver_CO.paa"
+        };
+		class ItemInfo: HeadgearItem
+		{
+            mass=1;
+            class HitpointsProtectionInfo
+            {
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+                class Head
+                {
+                    hitPointName="HitHead";
+                    armor=40;
+                    passThrough=0.1;
+                };
+            };
+			uniformModel="OPTRE_UNSC_Units\Army\helmet";
+			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"H_Collar",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
+                "53rd_SC_aux\tex\visr_silver_CO.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"
+			};
+        };
+    };
     class 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 1;

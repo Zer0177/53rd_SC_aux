@@ -2560,13 +2560,6 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical)";
-		tf_isolatedAmount=0.64999998;
-        tf_encryptionCode="tf_west_radio_code";
-        tf_dialog="anarc210_radio_dialog";
-        tf_subtype="digital_lr";
-        tf_range=120000;
-        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio=1;
         maximumLoad=450;
         mass=50;
         hiddenSelections[]=
@@ -2682,6 +2675,23 @@ class CfgVehicles
 			"camo1",
 			"AP_Heavy"
 		};
+	};
+	class 53rd_ILCS_Rucksack_Medical_LR: OPTRE_ILCS_Rucksack_Medical
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		displayName="[53rd] ILCS Backpack [Medic LR]";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"AP_Heavy"
+		};
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
 	};
 	class 53rd_ILCS_Rucksack_Heavy: OPTRE_ILCS_Rucksack_Heavy
 	{
