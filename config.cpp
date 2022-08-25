@@ -2526,6 +2526,13 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical)";
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
         maximumLoad=450;
         mass=50;
         hiddenSelections[]=
@@ -2633,7 +2640,7 @@ class CfgVehicles
 		author="53rd AUX Team";
         dlc="53rd AUX";
 		picture="\OPTRE_weapons\backpacks\icons\como_pack.paa";
-		displayName="[53rd] AN/PRC-515";
+		displayName="[53rd] AN/PRC-515 (Black)";
 		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
 		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
 		maximumLoad=400;
@@ -2644,7 +2651,32 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"OPTRE_Weapons\Backpacks\data\como_pack_co.paa"
+			"53rd_SC_aux\tex\Equipment\como_pack_ODST_CO.paa"
+		};
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+	class 53rd_ANPRC_Body_515: OPTRE_ANPRC_515
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		picture="\OPTRE_weapons\backpacks\icons\como_pack.paa";
+		displayName="[53rd] AN/PRC-515 (Body)";
+		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
+		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
+		maximumLoad=400;
+		mass=1;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Equipment\como_pack_Body_CO.paa"
 		};
 		tf_encryptionCode="tf_west_radio_code";
 		tf_dialog="rt1523g_radio_dialog";

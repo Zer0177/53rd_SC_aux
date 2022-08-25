@@ -554,30 +554,30 @@ class cfgWeapons
 				//"A_ThighArmorRight",
 				//"AS_BaseLeft", //Under pad that sits on the uniform
 				//"AS_BaseRight",
-				//"AS_LargeLeft", //Tall plate
+				"AS_LargeLeft", //Tall plate
 				"AS_LargeRight",
 				"AS_MediumLeft", //Mid sized plate 
 				"AS_MediumRight", 
 				"AS_ODSTCQBLeft", //V plate that points down
 				"AS_ODSTCQBRight", 
-				"AS_ODSTLeft", //Standard ODST
+				//"AS_ODSTLeft", //Standard ODST
 				//"AS_ODSTRight",
 				"AS_ODSTSniperLeft", //Tall pauldron, short lower
 				"AS_ODSTSniperRight",
 				"AS_SmallLeft", //Small Oval shaped
 				"AS_SmallRight",
-				//"AP_AR", //Front AR packs, Need both to work <<
+				"AP_AR", //Front AR packs, Need both to work <<
 				"AP_BR", //Front 3 BR pouches
 				"AP_Canteen", //Left Hip
 				"AP_GL",
 				//"AP_Knife", //Chest knife
 				"AP_MGThigh", //Right thigh ammo pouch
-				//"AP_AR", //Front AR packs, Need both to work <<
+				"AP_AR", //Front AR packs, Need both to work <<
 				"AP_Pack", //Center Chest Pouch
 				//"AP_Pistol", //Right Hip, ammo pouch
 				"AP_Rounds", //Sniper rounds On Left Sholder
 				"AP_SG", //Shotgun Shells on right of chestplate
-				"AP_SMG", //Lower SMG ammo pouches
+				//"AP_SMG", //Lower SMG ammo pouches
 				"AP_Sniper", //2 large pouches on front
 				//"AP_Thigh", //Left Thigh ammo pouch
 				"AP_Frag", //Right hip
@@ -585,9 +585,9 @@ class cfgWeapons
 				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
 				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
 				"APO_Knife", //Back Knife
-				//"APO_SMG", // Upper SMG ammo pouches
+				"APO_SMG", // Upper SMG ammo pouches
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
-				//"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
+				"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
 			};
             hiddenSelectionsTextures[] = 
             {
@@ -1135,7 +1135,7 @@ class cfgWeapons
             };
 		};		
     };
-	class 53rd_ODST_Heavy : 53rd_ODST_Armor_Rifleman
+	class 53rd_ODST_Heavy : 53rd_ODST_NRM
      {
 		scope = 2;
         scopeCurator = 2;
@@ -1238,26 +1238,26 @@ class cfgWeapons
 				"AS_SmallRight",
 				"AP_AR", //Front AR packs, Need both to work <<
 				"AP_BR", //Front 3 BR pouches
-				//"AP_Canteen", //Left Hip
+				"AP_Canteen", //Left Hip
 				"AP_GL",
 				"AP_Knife", //Chest knife
-				//"AP_MGThigh", //Right thigh ammo pouch
+				"AP_MGThigh", //Right thigh ammo pouch
 				"AP_AR", //Front AR packs, Need both to work <<
 				"AP_Pack", //Center Chest Pouch
 				//"AP_Pistol", //Right Hip, ammo pouch
 				"AP_Rounds", //Sniper rounds On Left Sholder
 				"AP_SG", //Shotgun Shells on right of chestplate
-				"AP_SMG", //Lower SMG ammo pouches
+				//"AP_SMG", //Lower SMG ammo pouches
 				"AP_Sniper", //2 large pouches on front
 				//"AP_Thigh", //Left Thigh ammo pouch
-				//"AP_Frag", //Right hip
+				"AP_Frag", //Right hip
 				//"AP_Smoke", //Left Hip
 				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
 				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
 				"APO_Knife", //Back Knife
 				"APO_SMG", // Upper SMG ammo pouches
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
-				//"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
+				"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
 			};
             hiddenSelectionsTextures[] = 
             {
