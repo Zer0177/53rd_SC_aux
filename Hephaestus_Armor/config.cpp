@@ -1580,7 +1580,7 @@ class cfgWeapons {
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
-	class 53rd_CH252_Tar_Fixer : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+	class 53rd_CH252_Tar_Fixer : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -1588,107 +1588,11 @@ class cfgWeapons {
         author = "53rd AUX TEAM";
         hiddenSelections[]=
         {
-            "camo",
-            "camo2",
-            "H_Ghillie"
+            "camo"
         };
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
-            "53rd_SC_aux\tex\visr_black_CO.paa"
-        };
-		class ItemInfo: HeadgearItem
-		{
-            mass=1;
-            class HitpointsProtectionInfo
-            {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-                class Head
-                {
-                    hitPointName="HitHead";
-                    armor=40;
-                    passThrough=0.1;
-                };
-            };
-			uniformModel="OPTRE_UNSC_Units\Army\helmet";
-			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
-                "53rd_SC_aux\tex\visr_silver_CO.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
-				"V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"
-			};
-        };
-    };
-	class 53rd_CH252_Tar_Fixer_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        displayName = "[53rd] Tartarus Helmet (Fixer)";
-        hiddenSelections[]=
-        {
-            "camo",
-            "camo2",
-            "H_Ghillie"
-        };
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa",
-            "optre_unsc_units\army\data\helmet_visor_ca.paa",
-			//"optre_unsc_units\army\data\ghillie_woodland_co"
-        };
-		class ItemInfo: HeadgearItem
-		{
-            mass=1;
-            class HitpointsProtectionInfo
-            {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-                class Head
-                {
-                    hitPointName="HitHead";
-                    armor=40;
-                    passThrough=0.1;
-                };
-            };
-			uniformModel="OPTRE_UNSC_Units\Army\helmet";
-			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-                "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PFC.paa",
-                "53rd_SC_aux\tex\visr_silver_CO.paa",
-                //"optre_unsc_units\army\data\ghillie_woodland_co"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
-				"V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"
-			};
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_CH252Hazard.paa"
         };
     };
 	
