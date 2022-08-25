@@ -1089,7 +1089,7 @@ class cfgWeapons {
 				//"AP_AR", //Front AR packs, Need both to work <<
 				//"AP_Pack", //Center Chest Pouch
 				"AP_Pistol", //Right Hip, ammo pouch
-				"AP_Rounds", //Sniper rounds On Left Sholder
+				//"AP_Rounds", //Sniper rounds On Left Sholder
 				//"AP_SG", //Shotgun Shells on right of chestplate
 				"AP_SMG", //Lower SMG ammo pouches
 				"AP_Sniper", //2 large pouches on front
