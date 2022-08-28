@@ -154,6 +154,13 @@ class WEA_Gasmask_Base: G_CBRN_S10
 		author="Ithias";
 		displayname="Base thing";
 		//picture="";
+		optreVarietys[]=
+		{
+			"",
+			"",
+			""
+		};
+        optreHUDStyle = "ODST_1";
 		hiddenSelections[]=
 		{
 			"camo",
