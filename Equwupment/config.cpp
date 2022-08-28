@@ -13,16 +13,18 @@ class CfgPatches {
 			"53rd_CopiumItem",
 			"53rd_Hardbox_Medical",
 			"53rd_Hardbox_Resupply",
-			"53rd_SupplyPod_Medical"
+			"53rd_SupplyPod_Medical",
+            "Item_53rd_anprc152l"
         };
 		weapons[] = 
         {
 			"53rd_Copium",
 			"53rd_r_biofoam",
-			"53rd_r_medigel"
+			"53rd_r_medigel",
+            "53rd_anprc152l"
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = {"task_force_radio_items"};
 	};
 };
 
@@ -134,6 +136,8 @@ class cfgModels
     };
 };
 
+#include "\task_force_radio_items\radio_ids.hpp"
+
 class cfgWeapons 
 {
     
@@ -183,6 +187,15 @@ class cfgWeapons
 		author="53rd Aux";
 		displayName="[53rd] Medigel";
 	};
+	class tf_anprc152;
+    class 53rd_anprc152l: tf_anprc152
+    {
+        author = "Raspu & Fixer";
+        displayName = "[53rd] AN/PRC-152 w/ Link";
+        descriptionShort = "AN/PRC-152 with Link to LR Pack";
+        tf_range=120000;
+    };
+    TF_RADIO_IDS(53rd_anprc152l,[53rd] AN/PRC-152 w/ Link)
 };
 
 
@@ -213,6 +226,25 @@ class CfgVehicles
         hiddenSelections[]={"camo"};
         hiddenSelectionsTextures[]={"\53rd_SC_aux\Equwupment\Copium_CO.paa"};
 	};
+    //Radios
+    
+    class Item_tf_anprc152;
+    class Item_53rd_anprc152l: Item_tf_anprc152
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[53rd] AN/PRC-152 w/ Link";
+        author = "Nkey";
+        vehicleClass = "Items";
+        class TransportItems
+        {
+            class 53rd_anprc152l
+            {
+                name="53rd_anprc152l";
+                count=1;
+            };
+        };
+    };
     //Cargo Boxes
     class Box_NATO_Support_F;
 	class 53rd_Hardbox_Medical: Box_NATO_Support_F
