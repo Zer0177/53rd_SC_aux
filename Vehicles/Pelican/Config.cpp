@@ -99,13 +99,17 @@ class CfgVehicles
 		};
 		ace_cargo_space=10;
 		ace_cargo_hasCargo=1;
-		class ACE_Cargo
-		{
-			class Cargo
-			{
-				
-			};
-		};
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;

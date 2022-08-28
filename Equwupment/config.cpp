@@ -248,6 +248,9 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
 	};
 	class 53rd_Hardbox_Resupply: Box_NATO_Support_F
 	{
@@ -282,6 +285,9 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
 	};
     
     class OPTRE_Ammo_SupplyPod_Empty;
@@ -324,5 +330,8 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
     };
 };

@@ -1,3 +1,11 @@
+/// https://community.bistudio.com/wiki/Arma_3:_Characters_And_Gear_Encoding_Guide ///
+/// Equipment list macros definition ///
+
+#define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
+#define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
+#define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define pack_xx(a,b) class _xx_##a {backpack = a; count = b;}
+
 class CfgPatches {
 	class 53rd_Hogs {
 		units[] = {"53rd_M12_FAV_APC","53rd_M813_TT","53rd_M12A1_LRV","53rd_M12_LRV","53rd_M12_FAV","53rd_M12G1_LRV","53rd_M12R_AA","53rd_M914_RV","53rd_ONI_M12","53rd_ONI_M12R","53rd_M12G1_ONI_LRV","53rd_M12R_AA","53rd_ONI_M914","53rd_ONI_M1813","53rd_ONI_M12_Recon","53rd_CORP_M12","53rd_CORP_M12R","53rd_M12G1_CORP_LRV","53rd_CORP_M914","53rd_CORP_M1813","53rd_CORP_M12_Recon"};
@@ -202,6 +210,52 @@ class CfgVehicles
 		};
 		ace_rearm_defaultSupply=1200;
 		ace_refuel_fuelCargo=1000;
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
+		};
+		class TransportItems
+		{
+            item_xx(53rd_Copium,20);
+            item_xx(ITC_Land_B_AR2i_Packed,2);
+            item_xx(OPTRE_Biofoam,20);
+            item_xx(ChemicalDetector_01_watch_F,2);
+            item_xx(Chemlight_blue,10);
+            item_xx(ACE_Chemlight_HiBlue,10);
+            item_xx(ACE_Chemlight_HiWhite,2);
+            item_xx(ACE_Chemlight_IR,2);
+            item_xx(ACE_EntrenchingTool,2);
+            item_xx(ACE_Fortify,2);
+            item_xx(OPTRE_Smartfinder,2);
+            item_xx(OPTRE_M8_Flare_Blue,10);
+            item_xx(Toolkit,2);
+            item_xx(ACE_UAVBattery,2);
+            item_xx(B_UavTerminal,2);
+            item_xx(ACE_DefusalKit,2);
+		};
+		class TransportMagazines
+		{
+            mag_xx(DMNS_400Rnd_762x51_Mag_Tracer,2);
+            mag_xx(APERSMineDispenser_Mag,3);
+            mag_xx(C7_Remote_Mag,5);
+            mag_xx(C12_Remote_Mag,2);
+		};
+		class TransportWeapons
+		{
+		};  
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+            };
+        };      
 	};
 //ONI HOGS
 	class 53rd_ONI_M12: 53rd_M12_LRV
