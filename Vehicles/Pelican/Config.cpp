@@ -18,6 +18,7 @@ class CfgVehicles
     };
 	class DefaultVehicleSystemsDisplayManagerLeft;
 	class DefaultVehicleSystemsDisplayManagerRight;
+	class SensorTemplateActiveRadar;
 	class components;
 	class 53rd_CORP_Pelican: VES_D77HTCI_A
 	{
@@ -62,6 +63,12 @@ class CfgVehicles
 				
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 	};
 	class 53rd_Pelican: VES_D77HTCI_A
 	{
@@ -108,6 +115,12 @@ class CfgVehicles
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
                 };
+            };
+        };
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
             };
         };
 		class TransportMagazines

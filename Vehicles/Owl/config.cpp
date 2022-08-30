@@ -8,6 +8,8 @@ class CfgPatches {
 };
 class CfgVehicles
 {
+	class Components;
+	class SensorTemplateActiveRadar;
 	class B_Heli_Attack_01_dynamicLoadout_F;
 	class 53rd_Raven : B_Heli_Attack_01_dynamicLoadout_F
 	{
@@ -59,6 +61,12 @@ class CfgVehicles
 				};
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast
@@ -204,6 +212,12 @@ class CfgVehicles
 				};
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast

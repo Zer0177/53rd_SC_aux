@@ -11,7 +11,7 @@ class cfgWeapons {
 };
 class cfgVehicles {
     class Components;
-	
+    class SensorTemplateActiveRadar;	
 	class DMNS_Shortsword_01_F;
 	class 53rd_UNSC_Shortsword: DMNS_Shortsword_01_F
 	{
@@ -104,6 +104,12 @@ class cfgVehicles {
 				count=8;
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 		hiddenSelectionsTextures[] = 			// changes of textures to distinguish variants in same order as hiddenSelections[]
 		{
 			"dmns\DMNS_Air\b_62_shortsword\data\shortsword_wings_co.paa",

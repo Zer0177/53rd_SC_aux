@@ -9,23 +9,24 @@ class CfgPatches {
 class cfgWeapons {
     
 };
-class cfgVehicles {
+class cfgVehicles 
+{
     class Components;
-	
-	class OPTRE_UNSC_hornet;
-	class 53rd_FL_Hornet: OPTRE_UNSC_hornet
-	{
-		dlc="53rd";
-		author="Skywalker";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		displayName="[53rd] AV-14 HQ (CAP)";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		crew="53rd_Volare_airmen_unit";
-		mainRotorSpeed=3;
+    class SensorTemplateActiveRadar;    
+    class OPTRE_UNSC_hornet;
+    class 53rd_FL_Hornet: OPTRE_UNSC_hornet
+    {
+        dlc="53rd";
+        author="Skywalker";
+        scope=2;
+        scopeCurator=2;
+        scopeArsenal=2;
+        forceInGarage=1;
+        displayName="[53rd] AV-14 HQ (CAP)";
+        editorCategory = "53rd_cat_faction";
+        editorSubCategory = "53rd_Rotary";
+        crew="53rd_Volare_airmen_unit";
+        mainRotorSpeed=3;
 		backRotorSpeed=3;
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.40000001;
@@ -56,6 +57,12 @@ class cfgVehicles {
 				count=2;
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast
@@ -334,6 +341,12 @@ class cfgVehicles {
 				};
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast
