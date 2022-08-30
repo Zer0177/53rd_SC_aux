@@ -136,7 +136,7 @@ class cfgModels
     };
 };
 
-#include "\task_force_radio_items\radio_ids.hpp"
+#include "\53rd_SC_aux\Equwupment\radio_ids.hpp"
 
 class cfgWeapons 
 {
