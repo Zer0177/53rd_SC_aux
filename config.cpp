@@ -1453,11 +1453,215 @@ class CfgVehicles
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\gey-bulldog.paa"
+            "53rd_SC_aux\tex\bulldog\gey-bulldog.paa"
         };
         ace_repair_canRepair = 1;
 		ace_rearm_defaultSupply=1200;
 		ace_refuel_fuelCargo=1000;
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
+		};
+		class TransportItems
+		{
+            item_xx(53rd_Copium,20);
+            item_xx(ITC_Land_B_AR2i_Packed,2);
+            item_xx(OPTRE_Biofoam,20);
+            item_xx(ChemicalDetector_01_watch_F,2);
+            item_xx(Chemlight_blue,10);
+            item_xx(ACE_Chemlight_HiBlue,10);
+            item_xx(ACE_Chemlight_HiWhite,2);
+            item_xx(ACE_Chemlight_IR,2);
+            item_xx(ACE_EntrenchingTool,2);
+            item_xx(ACE_Fortify,2);
+            item_xx(OPTRE_Smartfinder,2);
+            item_xx(OPTRE_M8_Flare_Blue,10);
+            item_xx(Toolkit,2);
+            item_xx(ACE_UAVBattery,2);
+            item_xx(B_UavTerminal,2);
+            item_xx(ACE_DefusalKit,2);
+		};
+		class TransportMagazines
+		{
+            mag_xx(DMNS_400Rnd_762x51_Mag_Tracer,2);
+            mag_xx(APERSMineDispenser_Mag,3);
+            mag_xx(C7_Remote_Mag,5);
+            mag_xx(C12_Remote_Mag,2);
+		};
+		class TransportWeapons
+		{
+		};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+            };
+        };
+	};
+	class 53rd_Bulldog_Grey: DMNS_Bulldog_FAV
+	{
+		dlc = "53rd";
+		displayName="[53rd] Bulldog (Grey)";
+		author="Fixer";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
+		crew="53rd_crewman_unit";
+		typicalCargo[]=
+		{
+			"53rd_crewman_unit"
+		};
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\bulldog\grey-bulldog.paa"
+        };
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
+		};
+		class TransportItems
+		{
+            item_xx(53rd_Copium,20);
+            item_xx(ITC_Land_B_AR2i_Packed,2);
+            item_xx(OPTRE_Biofoam,20);
+            item_xx(ChemicalDetector_01_watch_F,2);
+            item_xx(Chemlight_blue,10);
+            item_xx(ACE_Chemlight_HiBlue,10);
+            item_xx(ACE_Chemlight_HiWhite,2);
+            item_xx(ACE_Chemlight_IR,2);
+            item_xx(ACE_EntrenchingTool,2);
+            item_xx(ACE_Fortify,2);
+            item_xx(OPTRE_Smartfinder,2);
+            item_xx(OPTRE_M8_Flare_Blue,10);
+            item_xx(Toolkit,2);
+            item_xx(ACE_UAVBattery,2);
+            item_xx(B_UavTerminal,2);
+            item_xx(ACE_DefusalKit,2);
+		};
+		class TransportMagazines
+		{
+            mag_xx(DMNS_400Rnd_762x51_Mag_Tracer,2);
+            mag_xx(APERSMineDispenser_Mag,3);
+            mag_xx(C7_Remote_Mag,5);
+            mag_xx(C12_Remote_Mag,2);
+		};
+		class TransportWeapons
+		{
+		};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+            };
+        };
+	};
+	class 53rd_Bulldog_Heph: DMNS_Bulldog_LRV_AGL
+	{
+		dlc = "53rd";
+		displayName="[53rd] Bulldog (Heph)";
+		author="Fixer";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
+		crew="53rd_crewman_unit";
+		typicalCargo[]=
+		{
+			"53rd_crewman_unit"
+		};
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\bulldog\heph-bulldog.paa"
+        };
+		class TransportBackpacks
+		{
+            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
+		};
+		class TransportItems
+		{
+            item_xx(53rd_Copium,20);
+            item_xx(ITC_Land_B_AR2i_Packed,2);
+            item_xx(OPTRE_Biofoam,20);
+            item_xx(ChemicalDetector_01_watch_F,2);
+            item_xx(Chemlight_blue,10);
+            item_xx(ACE_Chemlight_HiBlue,10);
+            item_xx(ACE_Chemlight_HiWhite,2);
+            item_xx(ACE_Chemlight_IR,2);
+            item_xx(ACE_EntrenchingTool,2);
+            item_xx(ACE_Fortify,2);
+            item_xx(OPTRE_Smartfinder,2);
+            item_xx(OPTRE_M8_Flare_Blue,10);
+            item_xx(Toolkit,2);
+            item_xx(ACE_UAVBattery,2);
+            item_xx(B_UavTerminal,2);
+            item_xx(ACE_DefusalKit,2);
+		};
+		class TransportMagazines
+		{
+            mag_xx(DMNS_400Rnd_762x51_Mag_Tracer,2);
+            mag_xx(APERSMineDispenser_Mag,3);
+            mag_xx(C7_Remote_Mag,5);
+            mag_xx(C12_Remote_Mag,2);
+		};
+		class TransportWeapons
+		{
+		};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+            };
+        };
+	};
+	class 53rd_Bulldog_1_3: DMNS_Bulldog_FAV
+	{
+		dlc = "53rd";
+		displayName="[53rd] Bulldog (1-3)";
+		author="Fixer";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
+		crew="53rd_crewman_unit";
+		typicalCargo[]=
+		{
+			"53rd_crewman_unit"
+		};
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\bulldog\1-3-bulldog.paa"
+        };
 		class TransportBackpacks
 		{
             pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
@@ -1524,7 +1728,7 @@ class CfgVehicles
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\moron-bulldog.paa"
+            "53rd_SC_aux\tex\bulldog\moron-bulldog.paa"
         };
 		class TransportBackpacks
 		{
@@ -1627,7 +1831,7 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};     
-        ace_cargo_space = 4;
+        ace_cargo_space = 16;
         ace_cargo_hasCargo = 1;
         class ACE_Cargo
         {
