@@ -119,6 +119,11 @@ class CfgVehicles{
 	class OPTRE_Pelican_armed;
 	class OPTRE_M494;
 	class OPTRE_UNSC_hornet;
+	class OPTRE_M12_Base;
+	class OPTRE_M12_LRV;
+	class Turrets;
+	class NewTurret;
+	class OPTRE_M12_FAV;
 	
 	class WEA_Uniform_thing: B_G_Soldier_LAT_F
 	{
@@ -281,6 +286,138 @@ class CfgVehicles{
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 		enableRadio=1;
+	};
+
+	class 53rd_WEA_M12_LRV: OPTRE_M12_LRV
+	{
+		displayName="M12 LRV (MG) [WEA]";
+		author="Article 2 Studios";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\M12HogMaav_extupper_innie2_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\m12_turret_ins3_co.paa"
+		};
+		class textureSources
+		{
+			class Sand
+			{
+				displayName="Sand";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\M12HogMaav_extupper_innie_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\sand\M12HogMaav_extunder_sand_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\sand\m12_turret_sand_co.paa"
+				};
+			};
+			class Guerrilla
+			{
+				displayName="Guerrilla";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\gen_warthog_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\ins\m12_turret_ins_co.paa"
+				};
+			};
+			class Green
+			{
+				displayName="Green";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\grn_warthog_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\ins\m12_turret_ins2_co.paa"
+				};
+			};
+			class Innie
+			{
+				displayName="Innie";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\M12HogMaav_extupper_innie2_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\ins\m12_turret_ins3_co.paa"
+				};
+			};
+		};
+		vehicleClass="OPTRE_Ins_Vehicle_class";
+		side=0;
+		crew="OPTRE_Ins_URF_Rifleman_BR";
+		faction="OPTRE_Ins";
+	};
+
+	class 53rd_WEA_M12_FAV: OPTRE_M12_FAV
+	{
+		displayName="M12-FAV [WEA]";
+		author="Article 2 Studios";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\M12HogMaav_extupper_innie2_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa"
+		};
+		vehicleClass="OPTRE_Ins_Vehicle_class";
+		side=0;
+		crew="OPTRE_Ins_URF_Rifleman_AR";
+		faction="OPTRE_Ins";
+		class textureSources
+		{
+			class Sand
+			{
+				displayName="Sand";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\M12HogMaav_extupper_innie_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\sand\M12HogMaav_extunder_sand_co.paa"
+				};
+			};
+			class Guerrilla
+			{
+				displayName="Guerrilla";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\gen_warthog_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa"
+				};
+			};
+			class Green
+			{
+				displayName="Green";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\grn_warthog_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa"
+				};
+			};
+			class Innie
+			{
+				displayName="Innie";
+				author="Article 2 Studios";
+				textures[]=
+				{
+					"\OPTRE_Vehicles\Warthog\data\ins\M12HogMaav_extupper_innie2_co.paa",
+					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa"
+				};
+			};
+		};
 	};
 
 
