@@ -124,6 +124,7 @@ class CfgVehicles{
 	class Turrets;
 	class NewTurret;
 	class OPTRE_M12_FAV;
+	class B_Plane_Fighter_01_F;
 	
 	class WEA_Uniform_thing: B_G_Soldier_LAT_F
 	{
@@ -157,7 +158,7 @@ class CfgVehicles{
 		scopeCurator=2;
 		side=0;
 		faction="OPTRE_INS";
-		displayName="M808B Scorpion MBT (WEA)";
+		displayName="Scorpion MBT (WEA)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -201,7 +202,7 @@ class CfgVehicles{
 	class 53rd_WEA_Pelican_armed: OPTRE_Pelican_armed
 	{
 		author="Article 2 Studios";
-		displayName="D77H-TCI/AV Pelican (WEA)";
+		displayName="Pelican (WEA)";
 		side=0;
 		faction="OPTRE_Ins";
 		crew="OPTRE_Ins_URF_Crewman";
@@ -223,7 +224,7 @@ class CfgVehicles{
 		dlc="OPTRE";
 		scope=2;
 		scopeCurator=2;
-		displayName="M494 Oryx IFV [WEA]";
+		displayName="Oryx IFV (WEA)";
 		faction="OPTRE_Ins";
 		crew="OPTRE_Ins_URF_Crewman";
 		side=0;
@@ -271,7 +272,7 @@ class CfgVehicles{
 		crew="OPTRE_Ins_URF_Crewman";
 		vehicleClass="OPTRE_Ins_Air_class";
 		side=0;
-		displayName="AV-14 Hornet (WEA)";
+		displayName="Hornet (WEA)";
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Hornet.paa"
@@ -290,7 +291,7 @@ class CfgVehicles{
 
 	class 53rd_WEA_M12_LRV: OPTRE_M12_LRV
 	{
-		displayName="M12 LRV (MG) [WEA]";
+		displayName="LAAG Warthog (WEA)";
 		author="Article 2 Studios";
 		hiddenSelections[]=
 		{
@@ -359,7 +360,7 @@ class CfgVehicles{
 
 	class 53rd_WEA_M12_FAV: OPTRE_M12_FAV
 	{
-		displayName="M12-FAV [WEA]";
+		displayName="Transport Warthog (WEA)";
 		author="Article 2 Studios";
 		hiddenSelections[]=
 		{
@@ -420,6 +421,25 @@ class CfgVehicles{
 		};
 	};
 
+	class 53rd_WEA_bayonet: B_Plane_Fighter_01_F
+	{
+		displayName="Bayonet (WEA)";
+		scope=2;
+		scopeCurator=2;
+		faction="OPTRE_INS";
+		side=0;
+		crew="OPTRE_Ins_URF_Pilot";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Bayonet_02_fuselage_01_co.paa",
+			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Bayonet_02_fuselage_02_co.paa"
+		};
+	};
 
 };
 
