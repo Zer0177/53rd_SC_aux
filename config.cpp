@@ -1497,7 +1497,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
@@ -1565,7 +1565,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
@@ -1633,7 +1633,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
@@ -1701,7 +1701,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
@@ -1762,7 +1762,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
@@ -1837,7 +1837,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;

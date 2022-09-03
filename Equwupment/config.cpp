@@ -138,8 +138,109 @@ class cfgModels
 
 #include "\53rd_SC_aux\Equwupment\radio_ids.hpp"
 
+class cfgAmmo
+{
+    class GrenadeHand;
+	class c12_thrown_ammo: GrenadeHand
+	{
+		hit=5500;
+		indirectHit=3500;
+		indirectHitRange=8;
+		dangerRadiusHit=60;
+		suppressionRadiusHit=24;
+		typicalspeed=18;
+		model="\OPTRE_Weapons\charges\c12.p3d";
+		picture="\OPTRE_weapons\charges\icons\c12.paa";
+		ExplosionEffects="MineNondirectionalExplosion";
+		CraterEffects="MineNondirectionalCrater";
+		simulation="shotNVGMarker";
+		visibleFire=0.5;
+		audibleFire=0.050000001;
+		visibleFireTime=1;
+		fuseDistance=0;
+		timeToLive=11;
+	};
+	class c7_thrown_ammo: GrenadeHand
+	{
+		hit=2500;
+		indirectHit=2500;
+		indirectHitRange=0.5;
+		dangerRadiusHit=60;
+		suppressionRadiusHit=24;
+		typicalspeed=18;
+		model="\OPTRE_Weapons\charges\C7Can.p3d";
+		picture="\OPTRE_weapons\charges\icons\c7.paa";
+		ExplosionEffects="MineNondirectionalExplosion";
+		CraterEffects="MineNondirectionalCrater";
+		simulation="shotNVGMarker";
+		visibleFire=0.5;
+		audibleFire=0.050000001;
+		visibleFireTime=1;
+		fuseDistance=0;
+		timeToLive=11;
+	};
+};
+
+class CfgMagazines
+{
+    class HandGrenade;
+	class c12_thrown_mag: HandGrenade
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		mass=90;
+		scope=2;
+		value=1;
+		displayName="Throwable C12";
+		model="\OPTRE_Weapons\charges\c12.p3d";
+		picture="\OPTRE_weapons\charges\icons\c12.paa";
+		type=256;
+		ammo="c12_thrown_ammo";
+		count=1;
+		initSpeed=18;
+		nameSoundWeapon="satchelcharge";
+		nameSound="satchelcharge";
+		maxLeadSpeed=7;
+		descriptionShort="Throwable C12";
+		displayNameShort="Throwable C12";
+	};
+	class c7_thrown_mag: HandGrenade
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		mass=40;
+		scope=2;
+		value=1;
+		displayName="Throwable C7";
+		model="\OPTRE_Weapons\charges\C7Can.p3d";
+		picture="\OPTRE_weapons\charges\icons\c7.paa";
+		type=256;
+		ammo="c7_thrown_ammo";
+		count=1;
+		initSpeed=18;
+		nameSoundWeapon="satchelcharge";
+		nameSound="satchelcharge";
+		maxLeadSpeed=7;
+		descriptionShort="Throwable C7";
+		displayNameShort="Throwable C7";
+	};
+};
+
 class cfgWeapons 
 {
+    //alright here we go
+	class GrenadeLauncher;
+	class Throw : GrenadeLauncher 
+	{
+		muzzles[] += {"c12_throwable","c7_throwable"};
+		class ThrowMuzzle: GrenadeLauncher{};
+		class c12_throwable: ThrowMuzzle
+		{
+			magazines[] = {"c12_thrown_mag"};
+		};
+		class c7_throwable: ThrowMuzzle
+		{
+			magazines[] = {"c7_thrown_mag"};
+		};
+	};
     
     
     //medical
