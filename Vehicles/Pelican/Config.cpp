@@ -6,6 +6,26 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
+
+class Components;
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeftSensors
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRightSensors
+{
+	class components;
+};
+
 class CfgVehicles
 {
 	class Turrets;
@@ -16,9 +36,6 @@ class CfgVehicles
     {
 		class UserActions;
     };
-	class DefaultVehicleSystemsDisplayManagerLeft;
-	class DefaultVehicleSystemsDisplayManagerRight;
-	class components;
 	class 53rd_CORP_Pelican: VES_D77HTCI_A
 	{
 		scope=2;
@@ -62,6 +79,12 @@ class CfgVehicles
 				
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 	};
 	class 53rd_Pelican: VES_D77HTCI_A
 	{
@@ -103,12 +126,137 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
                 };
             };
+        }; 
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2500;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=90;
+						maxTrackableSpeed=400;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=15000;
+							maxRange=15000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=8000;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=8000;
+						angleRangeHorizontal=45;
+						angleRangeVertical=45;
+						groundNoiseDistanceCoef=0.2;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=60;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeftSensors
+			{
+				class Components: components
+				{
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						range=8000;
+						resource="RscTransportCameraComponentDriver";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRightSensors
+			{
+				class Components: components
+				{
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range=16000;
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
         };
 		class TransportMagazines
 		{

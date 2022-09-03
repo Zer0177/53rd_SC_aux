@@ -9,23 +9,42 @@ class CfgPatches {
 class cfgWeapons {
     
 };
-class cfgVehicles {
-    class Components;
-	
-	class OPTRE_UNSC_hornet;
-	class 53rd_FL_Hornet: OPTRE_UNSC_hornet
-	{
-		dlc="53rd";
-		author="Skywalker";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		displayName="[53rd] AV-14 HQ (CAP)";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		crew="53rd_Volare_airmen_unit";
-		mainRotorSpeed=3;
+
+class Components;
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeftSensors
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRightSensors
+{
+	class components;
+};
+
+class cfgVehicles 
+{
+    class OPTRE_UNSC_hornet;
+    class 53rd_FL_Hornet: OPTRE_UNSC_hornet
+    {
+        dlc="53rd";
+        author="Skywalker";
+        scope=2;
+        scopeCurator=2;
+        scopeArsenal=2;
+        forceInGarage=1;
+        displayName="[53rd] AV-14 HQ (CAP)";
+        editorCategory = "53rd_cat_faction";
+        editorSubCategory = "53rd_Rotary";
+        crew="53rd_Volare_airmen_unit";
+        mainRotorSpeed=3;
 		backRotorSpeed=3;
 		tf_hasLRradio=1;
 		tf_isolatedAmount=0.40000001;
@@ -56,6 +75,131 @@ class cfgVehicles {
 				count=2;
 			};
 		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2500;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=90;
+						maxTrackableSpeed=400;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=15000;
+							maxRange=15000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=8000;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=8000;
+						angleRangeHorizontal=45;
+						angleRangeVertical=45;
+						groundNoiseDistanceCoef=0.2;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=60;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeftSensors
+			{
+				class Components: components
+				{
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						range=8000;
+						resource="RscTransportCameraComponentDriver";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRightSensors
+			{
+				class Components: components
+				{
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range=16000;
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast
@@ -334,6 +478,12 @@ class cfgVehicles {
 				};
 			};
 		};
+        class Components : Components
+        {
+            class SensorsManagerComponent : SensorTemplateActiveRadar
+            {
+            };
+        };
 		class UserActions
 		{
 			class FullAirbrakeEngageFast
