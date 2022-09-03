@@ -50,23 +50,23 @@ class cfgWeapons {
 			"53rd_SC_aux\tex\Factions\M52A_LD_U.paa"
 		};
 	};
-	
-	class OPTRE_ONI_Researcher_Headgear;
-	class LD_Headgear: OPTRE_ONI_Researcher_Headgear
-	{
-		dlc="OPTRE";
-		scope=2;
-		author="Article 2 Studios";
-		displayName="[53rd] Liang Dortman Rebreather";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Factions\research_helmet_CO.paa"
-		};
-	};
+	class OPTRE_ONI_Researcher_Headgear; 
+	class LD_Headgear: OPTRE_ONI_Researcher_Headgear 
+	{ 
+		dlc="OPTRE"; 
+		scope=2; 
+		author="Article 2 Studios"; 
+		displayName="[53rd] Liang Dortman Rebreather"; 
+		hiddenSelections[]= 
+		{ 
+			"camo" 
+		}; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\tex\Factions\research_helmet_CO.paa" 
+		}; 
+	}; 
+
 };
 class CfgVehicles
 {

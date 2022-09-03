@@ -1702,8 +1702,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Grn_CO.paa",
-			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Grn_CO.paa"
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Jgl_CO.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Jgl_CO.paa"
 		};
 	};
 	class 53rd_BDU_V_Des_Slim: 53rd_BDU_V_Slim
@@ -1721,8 +1721,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Des_CO.paa",
-			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Des_CO.paa"
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Grn_CO.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Grn_CO.paa"
 		};
 	};
 	class 53rd_BDU_V_Snw_Slim: 53rd_BDU_V_Slim
@@ -1742,25 +1742,6 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Snw_CO.paa",
 			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Snw_CO.paa"
-		};
-	};
-	class 53rd_BDU_V_Jgl_Slim: 53rd_BDU_V_Slim
-	{
-		scope=1;
-		model="\OPTRE_UNSC_Units\Army\uniform";
-        uniformclass="53rd_BDU_Jgl_Slim";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"insignia",
-			"clan",
-			"A_BaseLeg"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Jgl_CO.paa",
-			"53rd_SC_aux\tex\Uniforms\53rd_BDU_Jgl_CO.paa"
 		};
 	};
   
@@ -1784,7 +1765,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Basic)";
-        maximumLoad=350;
+        maximumLoad=400;
         mass=1;
         hiddenSelections[]=
         {
@@ -1909,7 +1890,7 @@ class CfgVehicles
         scopeCurator=2;
         displayName="[53rd] Rucksack (Heavy)";
         maximumLoad=500;
-        mass=50;
+        mass=1;
         hiddenSelections[]=
         {
             "camo",
@@ -1929,7 +1910,7 @@ class CfgVehicles
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical)";
         maximumLoad=450;
-        mass=50;
+        mass=1;
         hiddenSelections[]=
         {
             "camo",
@@ -1949,7 +1930,7 @@ class CfgVehicles
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical LR)";
         maximumLoad=450;
-        mass=50;
+        mass=1;
         tf_isolatedAmount=0.64999998;
         tf_encryptionCode="tf_west_radio_code";
         tf_dialog="anarc210_radio_dialog";
@@ -1992,6 +1973,7 @@ class CfgVehicles
             "53rd_SC_Aux\tex\Backpacks\research_bag_CO_Medical.paa"
         };
         maximumLoad=450;
+		mass=1;
     };
 	class 53rd_Rucksack_Black: OPTRE_ILCS_Rucksack_Black
 	{
@@ -2037,6 +2019,8 @@ class CfgVehicles
 	{
 		author="53rd AUX Team";
         dlc="53rd AUX";
+		maximumLoad=450;
+		mass=1;
 		displayName="[53rd] ILCS Backpack [Medic]";
 		hiddenSelections[]=
 		{
@@ -2060,6 +2044,8 @@ class CfgVehicles
         tf_range = 120000;
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
+		maximumLoad=450;
+		mass=1;
 	};
 	class 53rd_ILCS_Rucksack_Heavy: OPTRE_ILCS_Rucksack_Heavy
 	{

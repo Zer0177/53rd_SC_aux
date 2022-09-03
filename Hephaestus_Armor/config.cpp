@@ -577,17 +577,6 @@ class cfgWeapons {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL.paa"
         };
     };
-	class 53rd_CH252_GREY_NOTSEALED_RYU_SL : 53rd_Army_Heavy
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Hephaestus Helmet MKI (Ryu)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_1-4_SL.paa"
-        };
-    };
     class 53rd_CH252_GREY_HEV_NOTSEALED_PLS : 53rd_Army_Heavy
     {
         scope = 2;
@@ -632,19 +621,79 @@ class cfgWeapons {
             "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_PLT.paa"
         };
     };
-    class 53rd_CH252_GREY_NOTSEALED_PLC : 53rd_Army_Heavy
+
+//Hephaestus Camo Helmet
+	class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[53rd] Hephaestus Helmet MKI (Body)";
+        displayName = "[53rd] Hephaestus Helmet Camo MKII (Woodland)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa"
+             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH252_Solid_Wood.paa",
+         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
+		};
+    };
+    class 53rd_CH252_Wood_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo MKII (Woodland)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH252_Solid_Wood.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
-
-//Hephaestus Camo Helmet
+	class 53rd_CH252_DES_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet Camo MKII (Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_Camo_Des.paa",
+         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
+		};
+    };
+    class 53rd_CH252_DES_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo MKII (Desert)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_Camo_Des.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet Camo MKII (Winter)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+             "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_Camo_Snow.paa",
+         	 "53rd_SC_aux\tex\visr_silver_CO.paa"
+		};
+    };
+    class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet Camo MKII(Winter)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_Camo_Snow.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+	
+//Camo Open Helmets
 	class 53rd_CH252_Wood_HEV_NOTSealed_PFC : 53rd_Army_Heavy
     {
         scope = 2;
@@ -653,18 +702,18 @@ class cfgWeapons {
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WoodlandCamo.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH252_Solid_Wood.paa"
         };
     };
 	class 53rd_CH252_DES_HEV_NOTSealed_PFC : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[53rd] Hephaestus Helmet Camo MKI(Desert)";
+        displayName = "[53rd] Hephaestus Helmet Camo MKII (Desert)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_DesCamo.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_Camo_Des.paa"
         };
     };
 	class 53rd_CH252_WIN_HEV_NOTSealed_PFC : 53rd_Army_Heavy
@@ -675,22 +724,9 @@ class cfgWeapons {
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_WinterCamo.paa"
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_Camo_Snow.paa"
         };
     };
-	class 53rd_CH252_JUG_HEV_NOTSealed_PFC : 53rd_Army_Heavy
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Hephaestus Helmet Camo MKI (Jungle)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_CH52_JungleCamo.paa"
-        };
-    };
-//Camo Open Helmets
-	
 //Hephaestus Armors
     class Armor_Hephaestus_Medic : 53rd_Armor_Medic
     {
@@ -1014,11 +1050,11 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Medic)(Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
+			"optre_unsc_units\army\data\odst_armor_co"
         };
 	};
     class Armor_Hephaestus_WDL_Platoon_Medic : 53rd_Armor_Medic_NCO
@@ -1031,11 +1067,11 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Platoon Medic)(Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
+			"optre_unsc_units\army\data\odst_armor_co"
         };
 	};
     class Armor_Hephaestus_WDL_Rifleman : 53rd_Armor_Rifleman
@@ -1048,9 +1084,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Rifleman)(Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1065,9 +1101,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Specialist)(Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1082,9 +1118,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Team Leader)(Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1099,9 +1135,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Squad Leader)(Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WDL_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Wood_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1118,11 +1154,11 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Medic)(Desert)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
+			"optre_unsc_units\army\data\odst_armor_co"
         };
 	};
     class Armor_Hephaestus_DES_Platoon_Medic : 53rd_Armor_Medic_NCO
@@ -1135,11 +1171,11 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Platoon Medic)(Desert)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
+			"optre_unsc_units\army\data\odst_armor_co"
         };
 	};
     class Armor_Hephaestus_DES_Rifleman : 53rd_Armor_Rifleman
@@ -1152,9 +1188,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Rifleman)(Desert)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1169,9 +1205,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Specialist)(Desert)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1186,9 +1222,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Team Leader)(Desert)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1203,9 +1239,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Squad Leader)(Desert)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1222,11 +1258,11 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Medic)(Winter)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
+			"optre_unsc_units\army\data\odst_armor_co"
         };
 	};
     class Armor_Hephaestus_WIN_Platoon_Medic : 53rd_Armor_Medic_NCO
@@ -1239,11 +1275,11 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Platoon Medic)(Winter)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
+			"optre_unsc_units\army\data\odst_armor_co"
         };
 	};
     class Armor_Hephaestus_WIN_Rifleman : 53rd_Armor_Rifleman
@@ -1256,9 +1292,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Rifleman)(Winter)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
+           "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1273,9 +1309,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Specialist)(Winter)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1290,9 +1326,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Team Leader)(Winter)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };
@@ -1307,113 +1343,9 @@ class cfgWeapons {
 		displayName = "[53rd] Hephaestus Armor (Squad Leader)(Winter)";
 		hiddenSelectionsTextures[] = 
 		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co"
-        };
-	};
-    
-//Hephaestus Jungle Armors
-    class Armor_Hephaestus_JUG_Medic : 53rd_Armor_Medic
-    {
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Medic)(Jungle)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_A3.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
-        };
-	};
-    class Armor_Hephaestus_JUG_Platoon_Medic : 53rd_Armor_Medic_NCO
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Platoon Medic)(Jungle)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_M52_GREY_CORP_PL.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co",
-        };
-	};
-    class Armor_Hephaestus_JUG_Rifleman : 53rd_Armor_Rifleman
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Rifleman)(Jungle)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co"
-        };
-	};
-    class Armor_Hephaestus_JUG_Specialist : 53rd_Armor_Specialist
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Specialist)(Jungle)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co"
-        };
-	};
-    class Armor_Hephaestus_JUG_Team_Leader : 53rd_Armor_TL
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Team Leader)(Jungle)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co"
-        };
-	};
-    class Armor_Hephaestus_JUG_Squad_Leader : 53rd_Armor_SL
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "53rd AUX TEAM";
-		displayName = "[53rd] Hephaestus Armor (Squad Leader)(Jungle)";
-		hiddenSelectionsTextures[] = 
-		{
-            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_V.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_A4.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_JUG_L2.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Camo_A4_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
         };

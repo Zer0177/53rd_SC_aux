@@ -11,7 +11,7 @@ class XtdGearModels
 			class environment
 			{
 				label = "Camo";
-				values[] = {"def","wood","des","snow","jung"};
+				values[] = {"def","wood","des","snow"};
 				class def
 				{
 					label = "Default";
@@ -31,11 +31,6 @@ class XtdGearModels
 				{
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-				class jung
-				{
-					label = "Jungle";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
 				};
             };
 		};
@@ -48,7 +43,7 @@ class XtdGearModels
 			class environment
 			{
 				label = "Camo";
-				values[] = {"def","wood","des","snow","jung"};
+				values[] = {"def","wood","des","snow"};
 				class def
 				{
 					label = "Default";
@@ -68,11 +63,6 @@ class XtdGearModels
 				{
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-				class jung
-				{
-					label = "Jungle";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
 				};
 			};
 			class type
@@ -154,7 +144,7 @@ class XtdGearModels
 			class environment
 			{
 				label = "Camo";
-				values[] = {"def","wood","des","snow","jung"};
+				values[] = {"def","wood","des","snow"};
 				class def
 				{
 					label = "Default";
@@ -174,11 +164,6 @@ class XtdGearModels
 				{
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-				class jung
-				{
-					label = "Jungle";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
 				};
 			};
 			class type
@@ -243,7 +228,7 @@ class XtdGearModels
 			class environment
 			{
 				label = "Camo";
-				values[] = {"def","wood","des","snow","jung"};
+				values[] = {"def","wood","des","snow"};
 				class def
 				{
 					label = "Default";
@@ -263,11 +248,6 @@ class XtdGearModels
 				{
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-				class jung
-				{
-					label = "Jungle";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
 				};
 			};
 			class type
@@ -478,10 +458,6 @@ class XtdGearInfos
 		{
 		environment = "snow";
 		};
-		class 53rd_CH252_JUG_HEV_NOTSealed_PFC:53rd_CH252_Wood_HEV_NOTSealed_PFC
-		{
-		environment = "jung";
-		};
         
         class 53rd_CH252_GREY_Sealed_Reserve
 		{
@@ -537,10 +513,6 @@ class XtdGearInfos
 		class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV:53rd_CH252_Wood_HEV_Sealed_PFC_SLV
 		{
 		environment = "snow";
-		};
-		class 53rd_CH252_JUG_HEV_Sealed_PFC_SLV:53rd_CH252_Wood_HEV_Sealed_PFC_SLV
-		{
-		environment = "jung";
 		};
         //dp
         
@@ -598,10 +570,6 @@ class XtdGearInfos
 		class 53rd_CH252_WIN_HEV_Sealed_PFC_SLV_dp:53rd_CH252_Wood_HEV_Sealed_PFC_SLV_dp
 		{
 		environment = "snow";
-		};
-		class 53rd_CH252_JUG_HEV_Sealed_PFC_SLV_dp:53rd_CH252_Wood_HEV_Sealed_PFC_SLV_dp
-		{
-		environment = "jung";
 		};
         
         //Protection
