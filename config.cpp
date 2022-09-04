@@ -15,6 +15,7 @@ class CfgPatches {
             "53rd_BDU_V_Slim",
             "53rd_Bulldog_RV",
             "53rd_M1015_RV_mule"
+			"53rd_Bulldog_Panzer"
         };
 		weapons[] = 
         {
@@ -1969,7 +1970,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Basic)";
-        maximumLoad=400;
+        maximumLoad=300;
         mass=1;
         hiddenSelections[]=
         {
@@ -1999,7 +2000,7 @@ class CfgVehicles
         tf_range = 120000;
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad=400;
+        maximumLoad=300;
     };
     class OPTRE_UNSC_Rucksack_53rd_Athena_LR: OPTRE_UNSC_Rucksack
     {
@@ -2008,7 +2009,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (NCO)";
-        maximumLoad=400;
+        maximumLoad=300;
         mass=1;
         hiddenSelections[]=
         {
@@ -2037,7 +2038,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (NCO+Chute)";
-        maximumLoad=400;
+        maximumLoad=300;
         mass=1;
         hiddenSelections[]=
         {
@@ -2084,7 +2085,7 @@ class CfgVehicles
         tf_range=120000;
         tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio=1;
-        maximumLoad=400;
+        maximumLoad=300;
     };
     class OPTRE_UNSC_Rucksack_Heavy_53rd: OPTRE_UNSC_Rucksack_Heavy
     {
@@ -2093,7 +2094,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Heavy)";
-        maximumLoad=500;
+        maximumLoad=450;
         mass=1;
         hiddenSelections[]=
         {
@@ -2113,7 +2114,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical)";
-        maximumLoad=450;
+        maximumLoad=400;
         mass=1;
         hiddenSelections[]=
         {
@@ -2133,7 +2134,7 @@ class CfgVehicles
         scope=2;
         scopeCurator=2;
         displayName="[53rd] Rucksack (Medical LR)";
-        maximumLoad=450;
+        maximumLoad=400;
         mass=1;
         tf_isolatedAmount=0.64999998;
         tf_encryptionCode="tf_west_radio_code";
@@ -2176,7 +2177,7 @@ class CfgVehicles
         {
             "53rd_SC_Aux\tex\Backpacks\research_bag_CO_Medical.paa"
         };
-        maximumLoad=450;
+        maximumLoad=400;
 		mass=1;
     };
 	class 53rd_Rucksack_Black: OPTRE_ILCS_Rucksack_Black
@@ -2223,7 +2224,7 @@ class CfgVehicles
 	{
 		author="53rd AUX Team";
         dlc="53rd AUX";
-		maximumLoad=450;
+		maximumLoad=400;
 		mass=1;
 		displayName="[53rd] ILCS Backpack [Medic]";
 		hiddenSelections[]=
@@ -2248,14 +2249,14 @@ class CfgVehicles
         tf_range = 120000;
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-		maximumLoad=450;
+		maximumLoad=400;
 		mass=1;
 	};
 	class 53rd_ILCS_Rucksack_Heavy: OPTRE_ILCS_Rucksack_Heavy
 	{
 		author="53rd AUX Team";
         dlc="53rd AUX";
-		maximumLoad=500;
+		maximumLoad=450;
 		mass=1;
 		displayName="[53rd] ILCS Rucksack [Heavy]";
 		hiddenSelections[]=
@@ -2272,7 +2273,7 @@ class CfgVehicles
 		displayName="[53rd] AN/PRC-515 (Black)";
 		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
 		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
-		maximumLoad=400;
+		maximumLoad=300;
 		mass=1;
 		hiddenSelections[]=
 		{
@@ -2297,7 +2298,7 @@ class CfgVehicles
 		displayName="[53rd] AN/PRC-515 (Body)";
 		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
 		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
-		maximumLoad=400;
+		maximumLoad=300;
 		mass=1;
 		hiddenSelections[]=
 		{
