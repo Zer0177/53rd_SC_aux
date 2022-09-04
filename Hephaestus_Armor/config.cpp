@@ -1841,7 +1841,7 @@ class cfgWeapons {
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL_Primal.paa",
             "53rd_SC_Aux\tex\peg_visr_teef_CO.paa"
         };
     };
@@ -1854,7 +1854,7 @@ class cfgWeapons {
         displayName = "[53rd] Hephaestus Helmet (Primal)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53RD_TL_Primal_CH252.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL_Primal.paa",
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
