@@ -17,6 +17,7 @@ class cfgWeapons {
 	class VestItem;
 	class HeadgearItem;
 	class UniformItem;
+	class OPTRE_UNSC_CH252A_Helmet;
 //Uniform
 	class OPTRE_FC_Marines_Uniform;
 	class 53rd_Ackerson_Uniform: OPTRE_FC_Marines_Uniform
@@ -68,7 +69,7 @@ class 53rd_Rebel_Armor: OPTRE_FC_M52B_Armor_Vest
 		{
 			uniformModel="\OPTRE_FC_Units\Marines\h3_vest.p3d";
 			containerClass="Supply160";
-			mass=65;
+			mass=20;
 			passThrough=0.15000001;
 			modelSides[]={6};
 			hiddenSelectionsTextures[]=
@@ -154,6 +155,29 @@ class 53rd_Rebel_Armor: OPTRE_FC_M52B_Armor_Vest
 	};
 // Helmets
 class OPTRE_FC_CH255_Helmet;
+class 53rd_Ackerson_Helmet_SF : OPTRE_UNSC_CH252A_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Ackerson Airborne Helmet";
+        author = "Ithias/53rd AUX Team";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\Units\factions\Ackerson\Gear\53rd_Ackerson_SF_Helmet.paa",
+            "53rd_SC_aux\Units\factions\Ackerson\Gear\AA_Helmet_Visor_CO.paa"
+        };
+    };
+	class 53rd_Ackerson_Helmet_SF_DP : OPTRE_UNSC_CH252A_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Athena Helmet (Rifleman)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\Units\factions\Ackerson\Gear\53rd_Ackerson_SF_Helmet.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
 class 53rd_Rebel_Helmet: OPTRE_FC_CH255_Helmet
 	{
 		scope=2;
