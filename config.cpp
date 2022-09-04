@@ -14,7 +14,7 @@ class CfgPatches {
             "BDU_V_Volare_Black",
             "53rd_BDU_V_Slim",
             "53rd_Bulldog_RV",
-            "53rd_M1015_RV_mule"
+            "53rd_M1015_RV_mule",
 			"53rd_Bulldog_Panzer"
         };
 		weapons[] = 

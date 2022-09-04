@@ -60,8 +60,6 @@ switch true do {
 		_veh attachTo [_pelican,[0,-5,-0.4]];  
 		_loaded = true;  
 	};
-    
-    
 	case (_veh isKindOf "OPTRE_M12A1_LRV" or _veh isKindOf "OPTRE_M12_LRV" or _veh isKindOf "OPTRE_M12G1_LRV" or _veh isKindOf "OPTRE_M12R_AA" or _veh isKindOf "OPTRE_M12_FAV_APC" or _veh isKindOf "OPTRE_M12_FAV"):
 	{
 		_veh attachTo [_pelican,[0.15,-5,.44]]; 
@@ -114,6 +112,21 @@ switch true do {
 		_veh attachTo [_pelican,[0,-5,-.65]];
 		_veh setDir 180;
 		_loaded = true;
+    };
+	case (_veh isKindOf "DMNS_Bulldog_FAV"):
+    {
+		_veh attachTo [_pelican,[0,-5,-0.4]];  
+		_loaded = true;  
+    };
+	case (_veh isKindOf "OPTRE_M1015_mule_repair_ins"):
+    {
+		_veh attachTo [_pelican,[0,-5,-0.4]];  
+		_loaded = true;  
+    };
+	case (_veh isKindOf "DMNS_Bulldog_LRV_AGL"):
+    {
+		_veh attachTo [_pelican,[0,-5,-0.4]];  
+		_loaded = true;  
     };
 };
 	
