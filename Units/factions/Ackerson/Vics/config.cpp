@@ -43,7 +43,7 @@ class CfgVehicles
 			{
 				"53rd_SC_aux\Units\factions\Ackerson\Vics\53rd_Akerson_green_body_CO.paa",
 				"53rd_SC_aux\Units\factions\Ackerson\Vics\53rd_Akerson_green_CO.paa",
-				"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa"
+				"53rd_SC_aux\Units\factions\Ackerson\Vics\Turret_CO.paa"
 			};
 		};
 		class 53rd_MWRAP_AM: O_T_MRAP_02_hmg_ghex_F
@@ -68,7 +68,7 @@ class CfgVehicles
 			{
 				"53rd_SC_aux\Units\factions\Ackerson\Vics\53rd_Akerson_green_body_CO.paa",
 				"53rd_SC_aux\Units\factions\Ackerson\Vics\53rd_Akerson_green_CO.paa",
-				"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa"
+				"53rd_SC_aux\Units\factions\Ackerson\Vics\Turret_CO.paa"
 			};
 		};
 		class 53rd_MWRAP_AG: O_T_MRAP_02_gmg_ghex_F
@@ -93,7 +93,7 @@ class CfgVehicles
 				{
 					"53rd_SC_aux\Units\factions\Ackerson\Vics\53rd_Akerson_green_body_CO.paa",
 					"53rd_SC_aux\Units\factions\Ackerson\Vics\53rd_Akerson_green_CO.paa",
-					"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa"
+					"53rd_SC_aux\Units\factions\Ackerson\Vics\Turret_CO.paa"
 				};
 		};
 	};
