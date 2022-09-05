@@ -1037,6 +1037,83 @@ class cfgWeapons {
 			};
 		};
 	};
+    class Armor_Hephaestus_Primal : 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX TEAM";
+		displayName = "[53rd] Hephaestus Armor (Primal)";
+		hiddenSelectionsTextures[] = 
+		{
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_GT_Primal2.paa",
+			"53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co",
+        };
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft", //hard knees
+				//"A_KneesRight",
+				"A_KneesMarLeft", //soft knees
+				"A_KneesMarRight",
+				"A_ODST", 
+				//"A_ShinArmorLeft", //Shin Plates
+				//"A_ShinArmorRight",
+				"A_TacPad", //Small screen on left wrist
+				"A_ThighArmorLeft", //Thigh Plate
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft", //Under pad that sits on the uniform
+				//"AS_BaseRight",
+				"AS_LargeLeft", //Tall plate
+				//"AS_LargeRight",
+				//"AS_MediumLeft", //Mid sized plate 
+				"AS_MediumRight", 
+				"AS_ODSTCQBLeft", //V plate that points down
+				"AS_ODSTCQBRight", 
+				"AS_ODSTLeft", //Standard ODST
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft", //Tall pauldron, short lower
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft", //Small Oval shaped
+				"AS_SmallRight",
+				"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_BR", //Front 3 BR pouches
+				"AP_Canteen", //Left Hip
+				//"AP_GL", //40mm belt on front
+				//"AP_Knife", //Chest knife
+				"AP_MGThigh", //Right thigh ammo pouch
+				"AP_AR", //Front AR packs, Need both to work <<
+				"AP_Pack", //Center Chest Pouch
+				"AP_Pistol", //Right Hip, ammo pouch
+				//"AP_Rounds", //Sniper rounds On Left Sholder
+				"AP_SG", //Shotgun Shells on right of chestplate
+				"AP_SMG", //Lower SMG ammo pouches
+				"AP_Sniper", //2 large pouches on front
+				"AP_Thigh", //Left Thigh ammo pouch
+				"AP_Frag", //Right hip
+				//"AP_Smoke", //Left Hip
+				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
+				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
+				"APO_Knife", //Back Knife
+				"APO_SMG", // Upper SMG ammo pouches
+				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
+				"CustomKit_Scorch"
+			};
+		};
+	};
     
     
 //Hephaestus Woodland Armors
@@ -1830,7 +1907,7 @@ class cfgWeapons {
         };
     };
     
-//Primal
+//Custom Helmets
     class 53rd_CH252_GREY_HEV_Sealed_Primal : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 2;
@@ -1855,6 +1932,29 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL_Primal.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_Panzer : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet (Panzer)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_Panzer.paa",
+            "53rd_SC_aux\tex\visr_gold_CO.paa"
+        };
+    };
+    class 53rd_CH252_GREY_CORP_Sealed_Panzer_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Hephaestus Helmet (Panzer)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_CORP_Panzer.paa",
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };

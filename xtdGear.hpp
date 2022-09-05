@@ -104,7 +104,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer"};
+				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer","primal"};
 				class body
 				{
 					label = "Body";
@@ -140,6 +140,11 @@ class XtdGearModels
 					label = "Fixer";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
+				class primal
+				{
+					label = "Primal";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
             };
 		};
 		class CustomHelm
@@ -151,7 +156,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","primal","fixer"};
+				values[] = {"body","ithias","ryu","primal","fixer","panzer"};
 				class body
 				{
 					label = "Body";
@@ -175,6 +180,11 @@ class XtdGearModels
 				class fixer
 				{
 					label = "Fixer";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class panzer
+				{
+					label = "Panzer";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
             };
@@ -269,6 +279,10 @@ class XtdGearInfos
 		{
 		person = "fixer";
 		};
+		class Armor_Hephaestus_Primal:Armor_Hephaestus_PL
+		{
+		person = "primal";
+		};
         
         //custom helm
         class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
@@ -291,6 +305,10 @@ class XtdGearInfos
 		class 53rd_CH252_Tar_Fixer:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
 		{
 		person = "fixer";
+		};
+		class 53rd_CH252_GREY_CORP_Sealed_Panzer:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "panzer";
 		};
 	};
 };
