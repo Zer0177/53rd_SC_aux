@@ -2031,7 +2031,7 @@ class CfgVehicles
         tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio=1;
     }; 
-    class OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA: OPTRE_UNSC_Rucksack
+   /* class OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA: OPTRE_UNSC_Rucksack
     {
         dlc="53rd AUX";
         author="Ithias";
@@ -2064,7 +2064,7 @@ class CfgVehicles
         ace_reserveParachute = "OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA";
         ace_hasReserveParachute = 1;
     }; 
-	
+	*/
     class OPTRE_ANPRC_521_Green_53rd: OPTRE_ANPRC_521_Green
     {
         dlc="53rd AUX";
@@ -2193,7 +2193,7 @@ class CfgVehicles
 		model="\OPTRE_weapons\backpacks\ODST_ruck.p3d";
 		vehicleClass="OPTRE_UNSC_Backpack_class";
 		allowedSlots[]={901};
-		maximumLoad=400;
+		maximumLoad=300;
 		mass=1;
 		hiddenSelections[]=
 		{
