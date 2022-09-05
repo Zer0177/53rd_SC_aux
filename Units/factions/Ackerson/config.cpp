@@ -2,7 +2,7 @@ class cfgPatches
 	{
   class AKR_Ackersons_Rebellion
 	{
-    units[]={"AKR_MEDIC","AKR_AA_RIFLEMAN","AKR_AT_RIFLEMAN","AKR_Sniper","AKR_RIFLEMAN","AKR_OFFICER","AKR_AUTO_RIFLEMAN","AKR_Squad_Leader","AKR_Special_Warfare_Operator","AKR_Special_Weapons_Operator","AKR_Special_Warfare_Commander","AKR_Pilot","AKR_AT_GUN","AKR_UH_144A_FALCON","AKR_D77H_TCI_Pelican","AKR_ZAMAK_MRL","AKR_Tusk","AKR_KATATEL_HMG","AKR_Karatel","AKR_M12_LRV_MG","AKR_M1015_Mule_Medical"};
+    units[]={"AKR_MEDIC","AKR_AA_RIFLEMAN","AKR_AT_RIFLEMAN","AKR_Sniper","AKR_RIFLEMAN","AKR_OFFICER","AKR_AUTO_RIFLEMAN","AKR_Squad_Leader","AKR_Special_Warfare_Operator","AKR_Special_Weapons_Operator","AKR_Special_Warfare_Commander","AKR_Pilot","AKR_AT_GUN","AKR_UH_144A_FALCON","AKR_D77H_TCI_Pelican","AKR_ZAMAK_MRL","AKR_Tusk","AKR_M12_LRV_MG","AKR_M1015_Mule_Medical"};
     weapons[]={};
     requiredVersion=0.1;
     requiredAddons[]={"OPTRE_Weapons_Items","A3_Weapons_F","A3_Weapons_F_Enoch_Rifles_MSBS","A3_Characters_F_Enoch","A3_Weapons_F_Enoch_Launchers_Titan","OPTRE_Weapons_Rockets","OPTRE_Weapons_SRM77","A3_Weapons_F_Mod_SMGs_SMG_03","OPTRE_Weapons_Pistol","OPTRE_Weapons_MG","A3_Weapons_F_Exp_Rifles_AK12","OPTRE_Weapons_GL","A3_Weapons_F_Enoch_Machineguns_M200","OPTRE_UNSC_Units_Army"};
@@ -286,26 +286,6 @@ class cfgVehicles
     side=0;
     displayName="Tusk MBT";
     hiddenSelectionsTextures[]={"a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa","a3\armor_f_epb\mbt_03\data\mbt_03_ext02_co.paa","a3\armor_f_epb\mbt_03\data\mbt_03_rcws_co.paa","a3\armor_f\data\camonet_aaf_digi_green_co.paa"};
-    crew="AKR_MEDIC";
-    typicalCargo[]={"AKR_MEDIC"};
-  };
-
-  class AKR_KATATEL_HMG: O_T_MRAP_02_hmg_ghex_F
-  {
-    faction="AKR_Ackersons_Rebellion";
-    side=0;
-    displayName="Ifrit (HMG)";
-    hiddenSelectionsTextures[]={"a3\soft_f_exp\mrap_02\data\mrap_02_ext_01_ghex_co.paa","a3\soft_f_exp\mrap_02\data\mrap_02_ext_02_ghex_co.paa","a3\data_f_exp\vehicles\turret_ghex_co.paa"};
-    crew="AKR_MEDIC";
-    typicalCargo[]={"AKR_MEDIC"};
-  };
-
-  class AKR_Karatel: O_T_MRAP_02_ghex_F
-  {
-    faction="AKR_Ackersons_Rebellion";
-    side=0;
-    displayName="Ifrit";
-    hiddenSelectionsTextures[]={"a3\soft_f_exp\mrap_02\data\mrap_02_ext_01_ghex_co.paa","a3\soft_f_exp\mrap_02\data\mrap_02_ext_02_ghex_co.paa","a3\data_f_exp\vehicles\turret_ghex_co.paa"};
     crew="AKR_MEDIC";
     typicalCargo[]={"AKR_MEDIC"};
   };
