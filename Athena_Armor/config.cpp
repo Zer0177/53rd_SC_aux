@@ -13,7 +13,8 @@ class CfgPatches {
 	};
 };
 #include "xtdGear.hpp"
-class cfgWeapons {
+class cfgWeapons 
+{
     class ItemInfo;
 	class VestItem;
 	class HeadgearItem;
@@ -25,56 +26,57 @@ class cfgWeapons {
 	class 53rd_Armor_TL;
 	class 53rd_Armor_SL;
 	class 53rd_Armor_Medic_NCO;
+	class 53rd_Armor_RTO;
 
 
 //Base
 
-class 53rd_Athena_Helmet: VES_CH252D
-	{
+    class 53rd_Athena_Helmet: VES_CH252D
+    {
         scope = 1;
         scopeArsenal = 1;
         ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.40;
-		author="Vespade";
-		displayName="[53rd] CH252A Helmet";
-		model="\OPTRE_UNSC_Units\Army\aa_helmet";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
-			"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
-			"V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"
-		};
-		class ItemInfo: HeadgearItem
-			{
-				mass=1;
-				uniformModel="\OPTRE_UNSC_Units\Army\aa_helmet";
-				hiddenSelections[]=
-			{
-				"camo",
-				"camo2"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
-				"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
-			};
+        ace_hearing_lowerVolume = 0.40;
+        author="Vespade";
+        displayName="[53rd] CH252A Helmet";
+        model="\OPTRE_UNSC_Units\Army\aa_helmet";
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
+            "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
+        };
+        hiddenSelectionsMaterials[]=
+        {
+            "V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
+            "V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"
+        };
+        class ItemInfo: HeadgearItem
+        {
+            mass=1;
+            uniformModel="\OPTRE_UNSC_Units\Army\aa_helmet";
+            hiddenSelections[]=
+            {
+                "camo",
+                "camo2"
+            };
+            hiddenSelectionsTextures[]=
+            {
+                "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
+                "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
+            };
             class HitpointsProtectionInfo
             {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
+                class Face
+                {
+                    armor=20;
+                    hitpointName="HitFace";
+                    passThrough=0.1;
+                };
                 class Head
                 {
                     hitPointName="HitHead";
@@ -83,42 +85,43 @@ class 53rd_Athena_Helmet: VES_CH252D
                 };
             };
         };
-	};	class 53rd_Athena_Helmet_dp: 53rd_Athena_Helmet
-	{
+    };	
+    class 53rd_Athena_Helmet_dp: 53rd_Athena_Helmet
+    {
         ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.40;
-		author="Vespade";
-		displayName="[53rd] CH252A Helmet dp";
-		model="\OPTRE_UNSC_Units\Army\aa_helmet_dp";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
-			"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
-			""
-		};
-		class ItemInfo: HeadgearItem
-			{
-				mass=1;
-				uniformModel="\OPTRE_UNSC_Units\Army\aa_helmet_dp";
-				hiddenSelections[]=
-			{
-				"camo",
-				"camo2"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
-				"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
-			};
+        ace_hearing_lowerVolume = 0.40;
+        author="Vespade";
+        displayName="[53rd] CH252A Helmet dp";
+        model="\OPTRE_UNSC_Units\Army\aa_helmet_dp";
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
+            "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
+        };
+        hiddenSelectionsMaterials[]=
+        {
+            "V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
+            ""
+        };
+        class ItemInfo: HeadgearItem
+        {
+            mass=1;
+            uniformModel="\OPTRE_UNSC_Units\Army\aa_helmet_dp";
+            hiddenSelections[]=
+            {
+                "camo",
+                "camo2"
+            };
+            hiddenSelectionsTextures[]=
+            {
+                "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO",
+                "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"
+            };
             hiddenSelectionsMaterials[]=
             {
                 "V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",
@@ -126,12 +129,12 @@ class 53rd_Athena_Helmet: VES_CH252D
             };
             class HitpointsProtectionInfo
             {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
+                class Face
+                {
+                    armor=20;
+                    hitpointName="HitFace";
+                    passThrough=0.1;
+                };
                 class Head
                 {
                     hitPointName="HitHead";
@@ -140,22 +143,22 @@ class 53rd_Athena_Helmet: VES_CH252D
                 };
             };
         };
-	};
+    };
     class 53rd_Armor_Specialist2: 53rd_Armor_Specialist
-	{
+    {
         scope=1
-		author="Article 2 Studios";
-		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
-		displayName="M52A Body Armor (Heavy) [Woodland]";
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_UNSC_Units\Army\data\vest_co.paa",
-			"optre_unsc_units\army\data\armor_co.paa",
-			"optre_unsc_units\army\data\legs_co.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\odst_armor_co.paa"
-		};
-		class ItemInfo: ItemInfo
+        author="Article 2 Studios";
+        picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+        displayName="M52A Body Armor (Heavy) [Woodland]";
+        hiddenSelectionsTextures[]=
+        {
+            "OPTRE_UNSC_Units\Army\data\vest_co.paa",
+            "optre_unsc_units\army\data\armor_co.paa",
+            "optre_unsc_units\army\data\legs_co.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "optre_unsc_units\army\data\odst_armor_co.paa"
+        };
+        class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
 			{
@@ -608,7 +611,7 @@ class 53rd_Athena_Armor_SL_Snow: 53rd_Armor_SL
 
 //Custom
 	
-class 53rd_Athena_Armor_Ithias: 53rd_Armor_SL
+    class 53rd_Athena_Armor_Ithias: 53rd_Armor_SL
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -626,7 +629,7 @@ class 53rd_Athena_Armor_Ithias: 53rd_Armor_SL
 		};
 	};
     
-class 53rd_Athena_Armor_Kuzyk: 53rd_Armor_SL
+    class 53rd_Athena_Armor_Kuzyk: 53rd_Armor_SL
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -641,6 +644,66 @@ class 53rd_Athena_Armor_Kuzyk: 53rd_Armor_SL
 			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_Kuzyk.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				//"A_ChestArmor",
+				"A_Ghillie",
+				//"A_KneesLeft", //hard knees
+				//"A_KneesRight",
+				"A_KneesMarLeft", //soft knees
+				"A_KneesMarRight",
+				"A_ODST", 
+				//"A_ShinArmorLeft", //Shin Plates
+				//"A_ShinArmorRight",
+				"A_TacPad", //Small screen on left wrist
+				//"A_ThighArmorLeft", //Thigh Plate
+				//"A_ThighArmorRight",
+				//"AS_BaseLeft", //Under pad that sits on the uniform
+				//"AS_BaseRight",
+				//"AS_LargeLeft", //Tall plate
+				"AS_LargeRight",
+				"AS_MediumLeft", //Mid sized plate 
+				//"AS_MediumRight", 
+				"AS_ODSTCQBLeft", //V plate that points down
+				"AS_ODSTCQBRight", 
+				"AS_ODSTLeft", //Standard ODST
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft", //Tall pauldron, short lower
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft", //Small Oval shaped
+				"AS_SmallRight",
+				"AP_AR", //Front AR packs, Need both to work <<
+				//"AP_BR", //Front 3 BR pouches
+				"AP_Canteen", //Left Hip
+				"AP_GL", //40mm belt on front
+				//"AP_Knife", //Chest knife
+				"AP_MGThigh", //Right thigh ammo pouch
+				"AP_AR", //Front AR packs, Need both to work <<
+				"AP_Pack", //Center Chest Pouch
+				"AP_Pistol", //Right Hip, ammo pouch
+				"AP_Rounds", //Sniper rounds On Left Sholder
+				"AP_SG", //Shotgun Shells on right of chestplate
+				"AP_SMG", //Lower SMG ammo pouches
+				"AP_Sniper", //2 large pouches on front
+				"AP_Thigh", //Left Thigh ammo pouch
+				//"AP_Frag", //Right hip
+				//"AP_Smoke", //Left Hip
+				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
+				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
+				"APO_Knife", //Back Knife
+				"APO_SMG", // Upper SMG ammo pouches
+				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
+				"CustomKit_Scorch" //Twin back knifes and 2 AR pouches
+			};
 		};
 	};
 
