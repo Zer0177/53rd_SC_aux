@@ -293,7 +293,7 @@ class 53rd_Athena_Armor_TL: 53rd_Armor_TL
 		};
 	};
 
-class 53rd_Athena_Armor_SL: 53rd_Armor_SL
+class 53rd_Athena_Armor_SL: 53rd_Armor_SL 
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -310,6 +310,25 @@ class 53rd_Athena_Armor_SL: 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+	
+class 53rd_Athena_Armor_RTO: 53rd_Armor_RTO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias/53rd AUX Team";
+		displayName="[53rd] Athena Armor (RTO)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Vest.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_Specialist.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_Rifleman.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+
 
 //Woodland
 

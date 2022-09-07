@@ -768,7 +768,7 @@ class cfgWeapons {
 		};
 	};
 
-	class 53rd_Armor_Specialist: 53rd_Armor_Rifleman
+	class 53rd_Armor_RTO: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
@@ -797,10 +797,10 @@ class cfgWeapons {
 				//"A_ThighArmorRight",
 				//"AS_BaseLeft",
 				//"AS_BaseRight",
-				"AS_LargeLeft",
+				//"AS_LargeLeft",
 				"AS_LargeRight",
-				//"AS_MediumLeft",
-				//"AS_MediumRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
 				"AS_ODSTCQBLeft",
 				"AS_ODSTCQBRight",
 				"AS_ODSTLeft",
@@ -834,8 +834,7 @@ class cfgWeapons {
 			};
 		};
 	};
-
-	};
+};
 //End Base
     
 //Volare Helmet
