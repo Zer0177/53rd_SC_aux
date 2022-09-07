@@ -104,7 +104,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer","primal","kuzyk","dublin"};
+				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer","primal"};
 				class body
 				{
 					label = "Body";
@@ -145,16 +145,6 @@ class XtdGearModels
 					label = "Primal";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
-				class kuzyk
-				{
-					label = "Kuzyk";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class dublin
-				{
-					label = "Dublin";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
             };
 		};
 		class CustomHelm
@@ -166,7 +156,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin"};
+				values[] = {"body","ithias","ryu","primal","fixer","panzer"};
 				class body
 				{
 					label = "Body";
@@ -195,16 +185,6 @@ class XtdGearModels
 				class panzer
 				{
 					label = "Panzer";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class kuzyk
-				{
-					label = "Kuzyk";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class dublin
-				{
-					label = "Dublin";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
             };
@@ -303,10 +283,6 @@ class XtdGearInfos
 		{
 		person = "primal";
 		};
-		class 53rd_Athena_Armor_Kuzyk:Armor_Hephaestus_PL
-		{
-		person = "kuzyk";
-		};
         
         //custom helm
         class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
@@ -333,14 +309,6 @@ class XtdGearInfos
 		class 53rd_CH252_GREY_CORP_Sealed_Panzer:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
 		{
 		person = "panzer";
-		};
-		class 53rd_Athena_Helmet_Kuzyk:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
-		{
-		person = "kuzyk";
-		};
-		class 53rd_Athena_Helmet_Dublin:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
-		{
-		person = "dublin";
 		};
 	};
 };
