@@ -107,7 +107,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"rifle","spc","tl","sl","medic"};
+				values[] = {"rifle","spc","tl","sl","medic","RTO"};
 				changeingame = 1;
                 changedelay  = 0;
 				class rifle
@@ -133,6 +133,11 @@ class XtdGearModels
 				class medic
 				{
 					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class RTO
+				{
+					label = "RTO";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -295,7 +300,11 @@ class XtdGearInfos
 		{
 		type = "medic";
 		};
-        
+		class 53rd_Athena_Armor_RTO:53rd_Athena_Armor_Rifleman
+		{
+		type = "RTO";
+		};
+
 		class 53rd_Athena_Armor_Rifleman_Woodland
 		{
 		model = "AthenaVest";
@@ -318,6 +327,11 @@ class XtdGearInfos
 		{
 		type = "medic";
 		};
+		class 53rd_Athena_Armor_RTO_Woodland:53rd_Athena_Armor_Rifleman_Woodland
+		{
+		type = "RTO";
+		};
+
         
 		class 53rd_Athena_Armor_Rifleman_Desert
 		{
@@ -341,6 +355,11 @@ class XtdGearInfos
 		{
 		type = "medic";
 		};
+		class 53rd_Athena_Armor_RTO_Desert:53rd_Athena_Armor_Rifleman_Desert
+		{
+		type = "RTO";
+		};
+
         
 		class 53rd_Athena_Armor_Rifleman_Snow
 		{
@@ -363,6 +382,10 @@ class XtdGearInfos
 		class 53rd_Athena_Armor_Medic_Snow:53rd_Athena_Armor_Rifleman_Snow
 		{
 		type = "medic";
+		};
+		class 53rd_Athena_Armor_RTO_Snow:53rd_Athena_Armor_Rifleman_Snow
+		{
+		type = "RTO";
 		};
 	};
 };
