@@ -834,7 +834,6 @@ class cfgWeapons {
 			};
 		};
 	};
-};
 //End Base
     
 //Volare Helmet
