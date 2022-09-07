@@ -44,7 +44,8 @@ class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
 class UnderBarrelSlot;
-class cfgWeapons {
+class cfgWeapons 
+{
     class ItemInfo;
     class UniformItem;
 	class VestItem;
@@ -834,7 +835,6 @@ class cfgWeapons {
 			};
 		};
 	};
-};
 //End Base
     
 //Volare Helmet
