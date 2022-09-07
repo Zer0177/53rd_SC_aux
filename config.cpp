@@ -835,8 +835,9 @@ class cfgWeapons
 			};
 		};
 	};
+
 //End Base
-    
+  
 //Volare Helmet
     class OPTRE_FC_VX19_Helmet;
 

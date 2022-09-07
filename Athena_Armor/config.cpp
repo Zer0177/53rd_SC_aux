@@ -325,7 +325,7 @@ class 53rd_Athena_Armor_RTO: 53rd_Armor_RTO
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Vest.paa",
-			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_Specialist.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_RTO.paa",
 			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_Rifleman.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\odst_armor_co.paa"
@@ -424,6 +424,25 @@ class 53rd_Athena_Armor_SL_Woodland: 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+	
+class 53rd_Athena_Armor_RTO_Woodland: 53rd_Armor_RTO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias/53rd AUX Team";
+		displayName="[53rd] Athena Armor (RTO / Woodland)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Vest_Woodland.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_RTO_Woodland.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_Rifleman_Woodland.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+
 
 //Desert
 
@@ -516,6 +535,25 @@ class 53rd_Athena_Armor_SL_Desert: 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+	
+class 53rd_Athena_Armor_RTO_Desert: 53rd_Armor_RTO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias/53rd AUX Team";
+		displayName="[53rd] Athena Armor (RTO / Desert)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Vest_Desert.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_RTO_Desert.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_Rifleman_Desert.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+
 
 //Snow
 
@@ -608,6 +646,25 @@ class 53rd_Athena_Armor_SL_Snow: 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+	
+class 53rd_Athena_Armor_RTO_Snow: 53rd_Armor_RTO
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias/53rd AUX Team";
+		displayName="[53rd] Athena Armor (RTO / Snow)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Vest_Snow.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_RTO_Snow.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_Rifleman_Snow.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+
 
 //Custom
 	
