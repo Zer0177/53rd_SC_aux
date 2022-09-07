@@ -1081,7 +1081,7 @@ class 53rd_Athena_Helmet_Ithias : 53rd_Athena_Helmet
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[Body] Para CH252A (Yellow)";
+        displayName = "[53rd] Athena Helmet (Ithias)";
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Ithias.paa",
@@ -1105,10 +1105,33 @@ class 53rd_Athena_Helmet_Kuzyk : 53rd_Athena_Helmet
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[Body] Para CH252A (Yellow)";
+        displayName = "[53rd] Athena Helmet (Kuzyk)";
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Kuzyk.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+    class 53rd_Athena_Helmet_Dublin : 53rd_Athena_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Athena Helmet (Dublin)";
+        author = "Ithias/53rd AUX Team";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Dublin.paa",
+            "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Dublin.paa"
+        };
+    };
+    class 53rd_Athena_Helmet_Dublin_dp : 53rd_Athena_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Athena Helmet (Dublin)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Dublin.paa",
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
