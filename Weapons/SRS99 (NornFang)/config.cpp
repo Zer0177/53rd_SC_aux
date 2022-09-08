@@ -24,8 +24,8 @@ class CfgWeapons
 		displayName="[53rd] SRS-99 (Fang)";
 		baseWeapon="53rd_Fang";
 		cursor="OPTRE_SRS99";
-		hiddenSelections[] = {"camo"}; 
-		hiddenSelectionsTextures[]={"53rd_SC_aux\Weapons\SRS99 (NornFang)\Norn_MainBody_CO.paa"};
+		hiddenSelections[] = {"camo","camo1"}; 
+		hiddenSelectionsTextures[]={"53rd_SC_aux\Weapons\SRS99 (NornFang)\Norn_MainBody_CO.paa","53rd_SC_aux\Weapons\SRS99 (NornFang)\Mag_CO.paa"};
 		magazines[]=
 		{
 			"OPTRE_4Rnd_145x114_APFSDS_Mag",

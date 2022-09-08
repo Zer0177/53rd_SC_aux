@@ -13,7 +13,7 @@ class cfgWeapons {
 class cfgVehicles 
 { 
     class OPTRE_UNSC_falcon;
-/*    class 53rd_UNSC_falcon_AMA: OPTRE_UNSC_falcon
+    class 53rd_UNSC_falcon_AMA: OPTRE_UNSC_falcon
     {
         dlc="53rd";
         author="Skywalker";
@@ -129,7 +129,7 @@ class cfgVehicles
                 textToolTip="<t color='#FCE205'>Disengage Afterburners";
                 userActionID=55;
             };
-        };*/
+        };
         class 53rd_UNSC_falcon: OPTRE_UNSC_falcon
         {
             dlc="53rd";
@@ -146,7 +146,7 @@ class cfgVehicles
             {
                 "53rd_SC_aux\Vehicles\Falcon\Falcon_Hull_Standard_CO.paa",
                 "53rd_SC_aux\Vehicles\Falcon\Falcon_HullExtra_Standard_CO.paa",
-                "optre_vehicles\falcon\data\falcon_wingtips_standard_co.paa",
+                "53rd_SC_aux\Vehicles\Falcon\Falcon_Wingtips_Standard_CO.paa",
                 "53rd_SC_aux\Vehicles\Falcon\Falcon_Skid_Standard_CO.paa"
             };
             tf_range=25000;

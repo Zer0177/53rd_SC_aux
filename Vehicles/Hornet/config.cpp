@@ -146,7 +146,7 @@ class cfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack="B_Parachute";
-				count=2;
+				count=8;
 			};
 		};
 	};
@@ -190,7 +190,7 @@ class cfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack="B_Parachute";
-				count=2;
+				count=8;
 			};
 		};
 		class TransportItems
