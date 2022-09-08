@@ -24,11 +24,11 @@ class cfgWeapons {
 	{
 		author="Sgt. Body";
 		scope=2;
-		displayName="'Rebel Marine BDU";
+		displayName="'Ackerson - Marine BDU";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
-			uniformClass="53rd_Arkerson_Base";
+			uniformClass="53rd_Ackerson_Base";
 			containerClass="Supply80";
 			mass=1;
 			
@@ -41,7 +41,7 @@ class 53rd_Rebel_Armor: OPTRE_FC_M52B_Armor_Vest
 		dlc="OPTRE";
 		scope=2;
 		author="Sgt. Body";
-		displayName="Arkerson's M52B Rebel Vest";
+		displayName="Ackerson's - Rebel Vest";
 		model="\OPTRE_FC_Units\Marines\h3_vest.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -182,7 +182,7 @@ class 53rd_Rebel_Helmet: OPTRE_FC_CH255_Helmet
 	{
 		scope=2;
 		author="Sgt. Body";
-		displayName="CH255 Helmet";
+		displayName="[53rd] Ackerson Helmet";
 		model="\OPTRE_FC_Units\Marines\h3_helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -222,10 +222,10 @@ class 53rd_Rebel_Helmet: OPTRE_FC_CH255_Helmet
 };
 class CfgVehicles{
 	class BDU_V_Volare_Black;
-	class 53rd_Arkerson_Base: BDU_V_Volare_Black
+	class 53rd_Ackerson_Base: BDU_V_Volare_Black
 	{
 		author="Body";
-		displayName="[53rd] Arkson's Rebel Uniform";
+		displayName="[53rd] Ackerson's Rebel Uniform";
 		scope=1;
 		model="\OPTRE_FC_Units\Marines\h3_uniform.p3d";
 		hiddenSelections[] = {"camo1","camo2"}; 
