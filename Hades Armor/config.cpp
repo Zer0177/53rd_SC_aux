@@ -1269,4 +1269,41 @@ class cfgWeapons
             };
 		};		
     };
+    
+    //custom
+
+
+    class 53rd_CH252D_Rose : 53rd_CH252D_ODST
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] CH252D Helmet (Rose)";
+        author = "53rd AUX TEAM";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"53rd_SC_aux\tex\Hades Armor\ODST_Helmet_Visor_Rose_down.paa"
+		};
+    };
+    class 53rd_CH252D_Rose_dp : 53rd_CH252D_ODST
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] CH252D Helmet (Rose)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"53rd_SC_aux\tex\Hades Armor\ODST_Helmet_Visor_Rose_up.paa"
+		};
+    };
 };
