@@ -23,6 +23,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		transportSoldier=15;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_APC";
 		crew="53rd_crewman_unit";
@@ -85,6 +86,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		transportSoldier=15;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_APC";
 		tf_hasLRradio=1;
@@ -153,6 +155,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		transportSoldier=15;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_APC";
 		tf_hasLRradio=1;
@@ -220,6 +223,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		transportSoldier=15;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_APC";
 		tf_hasLRradio=1;

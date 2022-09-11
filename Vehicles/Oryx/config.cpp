@@ -17,6 +17,7 @@ class OPTRE_M494;
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
+		transportSoldier=15;
 		faction="53rd_faction";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_IFV";
