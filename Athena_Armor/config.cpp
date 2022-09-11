@@ -27,6 +27,28 @@ class cfgWeapons
 	class 53rd_Armor_SL;
 	class 53rd_Armor_Medic_NCO;
 	class 53rd_Armor_RTO;
+	class VES_BDU_Evolved_Slim;
+	class UniformItem;
+
+//Athena uniform
+
+    class 53rd_Athena_BDU_Slim: VES_BDU_Evolved_Slim
+    {
+        dlc="53rd";
+		scope=2;
+		author="Ithias";
+		displayName="[53rd] Athena Combat Uniform";
+		picture="\optre_unsc_units\army\icons\army_uniform";
+		CBRN_protection=1;
+		class ItemInfo: UniformItem
+		{
+			containerClass="Supply120";
+			mass=40;
+			uniformType = "Neopren";
+			uniformModel="";
+			uniformClass="53rd_Athena_BDU_V_Slim";
+		};
+	};
 
 
 //Base
@@ -1140,6 +1162,28 @@ class 53rd_Athena_Helmet_Dublin : 53rd_Athena_Helmet
 
 class CfgVehicles
 {
+	class VES_BDU_V_Urban;
+	
+	class 53rd_Athena_BDU_V_Slim: VES_BDU_V_Urban
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+        uniformclass="53rd_Athena_BDU_Slim";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO",
+			"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO"
+		};
+	};
+
 };
 
 class CfgGlasses
