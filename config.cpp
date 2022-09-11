@@ -2382,6 +2382,31 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	class 53rd_ANPRC_Heavy_515: OPTRE_ANPRC_515
+	{
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+		picture="\OPTRE_weapons\backpacks\icons\como_pack.paa";
+		displayName="[53rd] AN/PRC-515 (Black)";
+		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
+		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
+		maximumLoad=450;
+		mass=1;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Equipment\como_pack_ODST_CO.paa"
+		};
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
 	class 53rd_ANPRC_Body_515: OPTRE_ANPRC_515
 	{
 		author="53rd AUX Team";
