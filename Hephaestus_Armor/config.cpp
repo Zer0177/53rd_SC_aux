@@ -1922,7 +1922,7 @@ class cfgWeapons {
             "53rd_SC_Aux\tex\peg_visr_teef_CO.paa"
         };
     };
-    class 53rd_CH252_GREY_HEV_Sealed_Primal_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
+    class 53rd_CH252_GREY_HEV_Sealed_Primal_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 1;
         scopeArsenal = 1;
@@ -1932,7 +1932,7 @@ class cfgWeapons {
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_SL_Primal.paa",
-            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+            "optre_unsc_units\army\data\peg_visr_teef_CO.paa"
         };
     };
     class 53rd_CH252_GREY_CORP_Sealed_Panzer : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
