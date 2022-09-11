@@ -910,7 +910,7 @@ class 53rd_Athena_Helmet_Medic_Woodland : 53rd_Athena_Helmet
         displayName = "[Body] Para CH252A (Yellow)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Rifleman.paa",
+            "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Rifleman_Woodland.paa",
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
@@ -1112,7 +1112,8 @@ class 53rd_Athena_Helmet_Kuzyk : 53rd_Athena_Helmet
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
-    class 53rd_Athena_Helmet_Dublin : 53rd_Athena_Helmet
+
+class 53rd_Athena_Helmet_Dublin : 53rd_Athena_Helmet
     {
         scope = 2;
         scopeArsenal = 2;
