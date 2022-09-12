@@ -474,7 +474,7 @@ class cfgWeapons {
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
-    class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
+    class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV : 53rd_Army_Heavy
     {
         scope = 2;
         scopeArsenal = 2;
@@ -484,17 +484,6 @@ class cfgWeapons {
         {
             "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa",
             "53rd_SC_Aux\tex\visr_black_CO.paa"
-        };
-    };
-    class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV_dp : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        displayName = "[53rd] Hephaestus Helmet (Body)";
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_CH252_GREY_PLWC.paa",
-            "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
 	 class 53rd_CH252_GREY_Sealed_Reserve : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV

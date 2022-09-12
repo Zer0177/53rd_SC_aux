@@ -14,7 +14,7 @@ class cfgFactionClasses
   class WEA_West_Enia_Army
   {
     icon="";
-    displayName="West Enia Army";
+	displayName="[53rd] West Enia Army";
     side=0;
     priority=1;
   };

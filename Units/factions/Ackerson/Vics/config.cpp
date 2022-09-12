@@ -27,7 +27,7 @@ class CfgVehicles
 			scopeCurator=2;
 			displayName="[53rd] Ifrit";
 			side=0;
-			faction="AKR_Ackersons_Rebellion";
+			faction="53rd_Ackersons_RebellionOF";
 			crew="O_T_Soldier_F";
 			typicalCargo[]=
 			{
@@ -52,7 +52,7 @@ class CfgVehicles
 			scopeCurator=2;
 			displayName="[53rd] Ifrit MG";
 			side=0;
-			faction="AKR_Ackersons_Rebellion";
+			faction="53rd_Ackersons_RebellionOF";
 			crew="O_T_Soldier_F";
 			typicalCargo[]=
 			{
@@ -77,7 +77,7 @@ class CfgVehicles
 			scopeCurator=2;
 			displayName="[53rd] Ifrit GMG";
 			side=0;
-			faction="AKR_Ackersons_Rebellion";
+			faction="53rd_Ackersons_RebellionOF";
 			crew="O_T_Soldier_F";
 				typicalCargo[]=
 				{
