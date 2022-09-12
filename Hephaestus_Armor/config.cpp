@@ -23,7 +23,8 @@ class CfgPatches {
 	};
 };
 #include "xtdGear.hpp"
-class cfgWeapons {
+class cfgWeapons 
+{
     class ItemInfo;
 	class VestItem;
 	class HeadgearItem;
@@ -943,7 +944,7 @@ class cfgWeapons {
 				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
 				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
 				//"APO_Knife", //Back Knife
-				"APO_SMG", // Upper SMG ammo pouches
+				//"APO_SMG", // Upper SMG ammo pouches
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
 				"CustomKit_Scorch"
 			};
