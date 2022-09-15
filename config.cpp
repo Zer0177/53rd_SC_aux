@@ -1195,7 +1195,22 @@ class cfgWeapons
 
     };
 //End Volare
-    
+//Spartan Helemts
+	class OPTRE_UNSC_SCOUT_Black_Helmet;
+	class 53rd_Range_Helmet : OPTRE_UNSC_SCOUT_Black_Helmet
+		{
+			scope = 2;
+			scopeCurator = 2;
+			scopeArsenal = 2;
+			dlc = "53rd AUX";
+			author = "Body";
+			displayName = "[53rd] Ranger Helmet";
+			hiddenSelectionsTextures[] = 
+			{
+				"53rd_SC_aux\tex\Spartan Helmets\Scout_Helmet_co.paa",
+				"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
+			};
+		};  
 //Raider Gear
     class 53rd_Helmet_Lmao: 53rd_Recon_Helmet_Base
 	{
