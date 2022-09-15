@@ -24,6 +24,7 @@ class cfgWeapons {
 	{
 		author="Sgt. Body";
 		scope=2;
+		side=2;
 		displayName="'Ackerson - Marine BDU";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -227,6 +228,7 @@ class CfgVehicles{
 		author="Body";
 		displayName="[53rd] Ackerson's Rebel Uniform";
 		scope=1;
+		side=2;
 		model="\OPTRE_FC_Units\Marines\h3_uniform.p3d";
 		hiddenSelections[] = {"camo1","camo2"}; 
 		hiddenSelectionsTextures[]=

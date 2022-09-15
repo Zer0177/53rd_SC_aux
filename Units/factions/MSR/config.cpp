@@ -309,7 +309,7 @@ class cfgVehicles
   {
     faction="MSR_Misriah_Armory";
     side=2;
-    displayName="Auto Riflemen";
+    displayName="AutoRiflemen";
     uniformClass="OPTRE_FC_Marines_Uniform_WDL";
     weapons[]={"Rangefinder","MSR_OPTRE_M73_optic_Aco","MSR_OPTRE_M6G_OPTRE_M6G_Flashlight","Put","Throw"};
     respawnWeapons[]={"Rangefinder","MSR_OPTRE_M73_optic_Aco","MSR_OPTRE_M6G_OPTRE_M6G_Flashlight","Put","Throw"};

@@ -6,7 +6,7 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-            "WIP"
+            "WEA_Uniform"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -71,6 +71,7 @@ class cfgWeapons{
 	class WEA_Uniform: Uniform_Base
 	{
 		scope=2;
+		side=2;
 		scopeArsenal=2;
 		scopecurator=2;
 		author="Ithias";
@@ -129,7 +130,7 @@ class CfgVehicles{
 	class WEA_Uniform_thing: B_G_Soldier_LAT_F
 	{
 		scope=1;
-		side=1;
+		side=2;
 		uniformClass="WEA_Uniform_thing_2";
 		hiddenSelectionsTextures[]=
 		{
