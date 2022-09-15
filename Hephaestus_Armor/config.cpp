@@ -931,7 +931,7 @@ class cfgWeapons
 				//"AP_GL", //40mm belt on front
 				//"AP_Knife", //Chest knife
 				"AP_MGThigh", //Right thigh ammo pouch
-				/"AP_AR", //Front AR packs, Need both to work <<
+				"AP_AR", //Front AR packs, Need both to work <<
 				//"AP_Pack", //Center Chest Pouch
 				"AP_Pistol", //Right Hip, ammo pouch
 				//"AP_Rounds", //Sniper rounds On Left Sholder
