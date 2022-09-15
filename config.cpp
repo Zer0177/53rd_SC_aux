@@ -1829,8 +1829,9 @@ class CfgVehicles
             item_xx(ACE_splint,20);
             item_xx(53rd_r_biofoam,3);
             item_xx(53rd_r_medigel,3);
-            item_xx(ACE_packingBandage,50);
-            item_xx(ACE_elasticBandage,50);
+            item_xx(53rd_biofoam,50);
+            item_xx(ACE_packingBandage,40);
+            item_xx(ACE_elasticBandage,40);
             item_xx(ACE_epinephrine,10);
             item_xx(ACE_adenosine,10);
             item_xx(ACE_surgicalKit,2);

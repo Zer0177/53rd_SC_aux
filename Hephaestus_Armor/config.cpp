@@ -23,7 +23,8 @@ class CfgPatches {
 	};
 };
 #include "xtdGear.hpp"
-class cfgWeapons {
+class cfgWeapons 
+{
     class ItemInfo;
 	class VestItem;
 	class HeadgearItem;
@@ -941,7 +942,7 @@ class cfgWeapons {
 				//"AP_GL", //40mm belt on front
 				//"AP_Knife", //Chest knife
 				"AP_MGThigh", //Right thigh ammo pouch
-				/"AP_AR", //Front AR packs, Need both to work <<
+				"AP_AR", //Front AR packs, Need both to work <<
 				//"AP_Pack", //Center Chest Pouch
 				"AP_Pistol", //Right Hip, ammo pouch
 				//"AP_Rounds", //Sniper rounds On Left Sholder
@@ -954,7 +955,7 @@ class cfgWeapons {
 				"APO_AR", //2 AR pouches, Spaced to work with ODST armor
 				"APO_BR", //2 BR pouches, Spaced to work with ODST armor
 				//"APO_Knife", //Back Knife
-				"APO_SMG", // Upper SMG ammo pouches
+				//"APO_SMG", // Upper SMG ammo pouches
 				"APO_Sniper", //large pouches on front, Spaced to work with ODST armor
 				"CustomKit_Scorch"
 			};
