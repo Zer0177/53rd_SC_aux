@@ -351,7 +351,8 @@ class CfgVehicles
 	class 53rd_Hardbox_Medical: Box_NATO_Support_F
 	{
 		editorCategory = "53rd_cat_faction";
-		scope=2;
+		scope = 2;
+       	scopeCurator = 2;
 		author="53rd aux";
 		displayName="[53rd] Medical Hardbox";
 		model="\A3\weapons_F\AmmoBoxes\AmmoBox_F";
@@ -388,7 +389,8 @@ class CfgVehicles
 	class 53rd_Hardbox_Resupply: Box_NATO_Support_F
 	{
 		editorCategory = "53rd_cat_faction";
-		scope=2;
+		scope = 2;
+       	scopeCurator = 2;
 		author="53rd aux";
 		displayName="[53rd] Resupply Hardbox";
 		model="\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_medic";
@@ -426,7 +428,8 @@ class CfgVehicles
 	class 53rd_Weapon_Resupply: Box_NATO_Support_F
 	{
 		editorCategory = "53rd_cat_faction";
-		scope=2;
+		scope = 2;
+       	scopeCurator = 2;
 		author="53rd aux";
 		displayName="[53rd] Platoon_Resupply";
 		model="\OPTRE_Buildings\Containers\optre_weaponcase_closed";

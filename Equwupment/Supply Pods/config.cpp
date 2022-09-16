@@ -30,6 +30,8 @@ class CfgVehicles
 	class OPTRE_Ammo_Rack_Weapons;
 	class 53rd_Ammo_SupplyPod_Empty: OPTRE_Ammo_Rack_Weapons
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="53rd";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Empty)";
@@ -57,6 +59,8 @@ class CfgVehicles
 	};
 	class 53rd_SupplyPod_Marksmen: 53rd_Ammo_SupplyPod_Empty
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="OPTRE";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Marksmen)";
@@ -94,6 +98,8 @@ class CfgVehicles
 	};
 	class 53rd_Ammo_SupplyPod_Basic: 53rd_Ammo_SupplyPod_Empty
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="OPTRE";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Basic)";
@@ -135,6 +141,8 @@ class CfgVehicles
 	};
 	class 53rd_Ammo_SupplyPod_Heavy: 53rd_Ammo_SupplyPod_Empty
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="OPTRE";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Heavy)";
@@ -168,6 +176,8 @@ class CfgVehicles
 	};
 	class 53rd_Ammo_SupplyPod_CQB: 53rd_Ammo_SupplyPod_Empty
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="OPTRE";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (CQB)";
@@ -199,6 +209,8 @@ class CfgVehicles
 	};
 	class 53rd_Ammo_SupplyPod_Explosives: 53rd_Ammo_SupplyPod_Empty
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="OPTRE";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Demo)";
@@ -231,6 +243,8 @@ class CfgVehicles
 	};
 	class 53rd_Ammo_SupplyPod_Equipment: 53rd_Ammo_SupplyPod_Empty
 	{
+		scope = 2;
+       	scopeCurator = 2;
 		dlc="53rd";
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Equipment)";
@@ -263,8 +277,9 @@ class CfgVehicles
 	};
     class 53rd_SupplyPod_Medical: 53rd_Ammo_SupplyPod_Empty
     {
+		scope = 2;
+       	scopeCurator = 2;
 		editorCategory = "53rd_cat_faction";
-		scope=2;
         displayName = "[53rd] Supply Pod (Medical)";
 		model="\OPTRE_misc\crates\Supply_pod.p3d";
 		hiddenSelections[]=
