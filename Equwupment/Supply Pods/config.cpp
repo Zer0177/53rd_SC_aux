@@ -57,7 +57,7 @@ class CfgVehicles
 		{
 		};
 	};
-	class 53rd_SupplyPod_Marksmen: 53rd_Ammo_SupplyPod_Empty
+	class 53rd_Ammo_SupplyPod_Marksmen: 53rd_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
        	scopeCurator = 2;
@@ -320,4 +320,56 @@ class CfgVehicles
         ace_cargo_canLoad = 0;
         ace_cargo_noRename = 1;
     };
+    
+    //Define the Pods
+    class Module_F;
+    class Module_OPTRE_PelicanSupplyDrop: Module_F
+    {
+        class Arguments
+        {
+            class box1
+            {
+                defaultValue = "53rd_SupplyPod_Medical";
+                class values
+                {
+                    class n531
+                    {
+                        name = "[53rd] BR/Marksman";
+                        value = "53rd_SupplyPod_Marksmen";
+                    };
+                    class n532
+                    {
+                        name = "[53rd] AR/GL";
+                        value = "53rd_Ammo_SupplyPod_Basic";
+                    };
+                    class n533
+                    {
+                        name = "[53rd] Heavy/AT";
+                        value = "53rd_Ammo_SupplyPod_Heavy";
+                    };
+                    class n534
+                    {
+                        name = "[53rd] CQB/SG-SMG";
+                        value = "53rd_Ammo_SupplyPod_CQB";
+                    };
+                    class n535
+                    {
+                        name = "[53rd] Mortor/Explosives";
+                        value = "53rd_Ammo_SupplyPod_Explosives";
+                    };
+                    class n536
+                    {
+                        name = "[53rd] Basic Equpment";
+                        value = "53rd_Ammo_SupplyPod_Equipment";
+                    };
+                    class n537
+                    {
+                        name = "[53rd] Medical";
+                        value = "53rd_SupplyPod_Medical";
+                    };
+                };
+            };
+        };
+    };
+
 };
