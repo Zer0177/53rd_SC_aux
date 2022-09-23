@@ -14,7 +14,7 @@ class cfgFactionClasses
   class MSR_Misriah_Armory
   {
     icon="";
-    displayName="[53rd] Misriah Armory";
+    displayName="Misriah Armory";
     side=2;
     priority=1;
   };
@@ -309,7 +309,7 @@ class cfgVehicles
   {
     faction="MSR_Misriah_Armory";
     side=2;
-    displayName="AutoRiflemen";
+    displayName="Auto Riflemen";
     uniformClass="OPTRE_FC_Marines_Uniform_WDL";
     weapons[]={"Rangefinder","MSR_OPTRE_M73_optic_Aco","MSR_OPTRE_M6G_OPTRE_M6G_Flashlight","Put","Throw"};
     respawnWeapons[]={"Rangefinder","MSR_OPTRE_M73_optic_Aco","MSR_OPTRE_M6G_OPTRE_M6G_Flashlight","Put","Throw"};
@@ -566,8 +566,8 @@ class cfgVehicles
     side=2;
     displayName="Hog LAAG";
     hiddenSelectionsTextures[]={"optre_vehicles\warthog\data\m12hogmaav_extupper_co.paa","optre_vehicles\warthog\data\m12hogmaav_extunder_co.paa","optre_vehicles\warthog\data\turrets\m12_turret_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Hog_TT: OPTRE_M813_TT
@@ -576,8 +576,8 @@ class cfgVehicles
     side=2;
     displayName="Hog TT";
     hiddenSelectionsTextures[]={"optre_vehicles\warthog\data\m12hogmaav_extupper_co.paa","optre_vehicles\warthog\data\m12hogmaav_extunder_co.paa","optre_vehicles\warthog\data\transp_lopo_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Stallion_Ammo: VES_HDV134_Resupply
@@ -586,8 +586,8 @@ class cfgVehicles
     side=2;
     displayName="Stallion Ammo";
     hiddenSelectionsTextures[]={"v_fz_vehicles\data\buffalo\v_hdv134_od3_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_a_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_s_co.paa","a3\structures_f\data\metal\containers\containers_02_set_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Stallion_Device: VES_HDV134_Fujikawa
@@ -596,8 +596,8 @@ class cfgVehicles
     side=2;
     displayName="Stallion Device";
     hiddenSelectionsTextures[]={"v_fz_vehicles\data\buffalo\v_hdv134_od3_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_a_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_s_co.paa","a3\structures_f_epc\items\electronics\data\the_device_02_co.paa","a3\structures_f_epc\items\electronics\data\the_device_03_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Stallion_TT: VES_HDV134_TT
@@ -606,8 +606,8 @@ class cfgVehicles
     side=2;
     displayName="Stallion TT";
     hiddenSelectionsTextures[]={"v_fz_vehicles\data\buffalo\v_hdv134_od3_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_a_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_s_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Stallion_TT_Coverd: VES_HDV134_TT_C
@@ -616,8 +616,8 @@ class cfgVehicles
     side=2;
     displayName="Stallion TT Coverd";
     hiddenSelectionsTextures[]={"v_fz_vehicles\data\buffalo\v_hdv134_od3_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_a_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_s_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_c_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Stallion_Fuel: VES_HDV134_Tanker_C
@@ -626,8 +626,8 @@ class cfgVehicles
     side=2;
     displayName="Stallion Fuel";
     hiddenSelectionsTextures[]={"v_fz_vehicles\data\buffalo\v_hdv134_od3_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_a_co.paa","v_fz_vehicles\data\buffalo\v_hdv134_od3_f_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_MG_Puma: OPTRE_armed_puma_01
@@ -636,8 +636,8 @@ class cfgVehicles
     side=2;
     displayName="MG Puma";
     hiddenSelectionsTextures[]={"optre_plus\data\puma\puma_01.paa","optre_plus\data\puma\csat_lsv_02_ghex_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_AT_Puma: OPTRE_AT_puma_01
@@ -646,8 +646,8 @@ class cfgVehicles
     side=2;
     displayName="AT Puma";
     hiddenSelectionsTextures[]={"optre_plus\data\puma\puma_01.paa","optre_plus\data\puma\csat_lsv_02_ghex_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Fennic_APC: MSR_MRAP_APC
@@ -656,8 +656,8 @@ class cfgVehicles
     side=2;
     displayName="Fennic APC";
     hiddenSelectionsTextures[]={"53rd_sc_aux\vehicles\fennic\mrap_03_ext_co.paa","53rd_sc_aux\vehicles\fennic\turret_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Fennic_GMG: MSR_MRAP_GMG
@@ -666,8 +666,8 @@ class cfgVehicles
     side=2;
     displayName="Fennic GMG";
     hiddenSelectionsTextures[]={"53rd_sc_aux\vehicles\fennic\mrap_03_ext_co.paa","53rd_sc_aux\vehicles\fennic\turret_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Fennic_HMG: MSR_MRAP_HMG
@@ -676,8 +676,8 @@ class cfgVehicles
     side=2;
     displayName="Fennic HMG";
     hiddenSelectionsTextures[]={"53rd_sc_aux\vehicles\fennic\mrap_03_ext_co.paa","53rd_sc_aux\vehicles\fennic\turret_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Viper_AFV: 53rd_Viper_AFV
@@ -686,8 +686,8 @@ class cfgVehicles
     side=2;
     displayName="Viper AFV";
     hiddenSelectionsTextures[]={"53rd_sc_aux\vehicles\viper ifv\apc_msr_co.paa","53rd_sc_aux\vehicles\viper ifv\apc_wheeled_msr_ext2_co.paa","53rd_sc_aux\vehicles\viper ifv\rcws30_msr_co.paa","53rd_sc_aux\vehicles\viper ifv\apc_wheeled_msr_ext_alpha_co.paa","a3\armor_f\data\camonet_green_co.paa","a3\armor_f\data\cage_olive_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_Bushmaster_IFV: Bushmaster_IFV
@@ -726,8 +726,8 @@ class cfgVehicles
     side=2;
     displayName="HEMETT FLat";
     hiddenSelectionsTextures[]={"a3\soft_f_exp\truck_01\data\truck_01_ext_01_olive_co.paa","a3\soft_f_exp\truck_01\data\truck_01_ext_02_olive_co.paa","a3\soft_f_enoch\truck_01\data\truck_01_ammo_pacific_co.paa","a3\soft_f_enoch\truck_01\data\truck_01_cargo_pacific_co.paa"};
-    crew="MSR_Crewmen";
-    typicalCargo[]={"MSR_Crewmen"};
+    crew="MSR_Riflemen";
+    typicalCargo[]={"MSR_Riflemen"};
   };
 
   class MSR_RAH94_Raven: B_Heli_Attack_01_dynamicLoadout_F

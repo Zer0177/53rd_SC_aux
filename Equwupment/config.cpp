@@ -431,7 +431,7 @@ class CfgVehicles
 		scope = 2;
        	scopeCurator = 2;
 		author="53rd aux";
-		displayName="[53rd] Platoon_Resupply";
+		displayName="[53rd] Platoon Resupply";
 		model="\OPTRE_Buildings\Containers\optre_weaponcase_closed";
 		maximumLoad=1500;
 		class TransportBackpacks

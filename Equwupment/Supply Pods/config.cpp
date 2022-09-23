@@ -322,6 +322,8 @@ class CfgVehicles
     };
     
     //Define the Pods
+	class OPTRE_Ammo_SupplyPod_Empty;
+	class OPTRE_Ammo_SupplyPod_Launcher;
     class Module_F;
     class Module_OPTRE_PelicanSupplyDrop: Module_F
     {
@@ -329,44 +331,63 @@ class CfgVehicles
         {
             class box1
             {
-                defaultValue = "53rd_SupplyPod_Medical";
-                class values
-                {
-                    class n531
-                    {
-                        name = "[53rd] BR/Marksman";
-                        value = "53rd_SupplyPod_Marksmen";
-                    };
-                    class n532
-                    {
-                        name = "[53rd] AR/GL";
-                        value = "53rd_Ammo_SupplyPod_Basic";
-                    };
-                    class n533
-                    {
-                        name = "[53rd] Heavy/AT";
-                        value = "53rd_Ammo_SupplyPod_Heavy";
-                    };
-                    class n534
-                    {
-                        name = "[53rd] CQB/SG-SMG";
-                        value = "53rd_Ammo_SupplyPod_CQB";
-                    };
-                    class n535
-                    {
-                        name = "[53rd] Mortor/Explosives";
-                        value = "53rd_Ammo_SupplyPod_Explosives";
-                    };
-                    class n536
-                    {
-                        name = "[53rd] Basic Equpment";
-                        value = "53rd_Ammo_SupplyPod_Equipment";
-                    };
-                    class n537
-                    {
-                        name = "[53rd] Medical";
-                        value = "53rd_SupplyPod_Medical";
-                    };
+                defaultValue = "rdm";
+					class values
+					{
+						class n1
+						{
+							name = "none";
+							value = "none";
+						};
+						class n2
+						{
+							name = "Random Supply Pod";
+						};
+						class n531
+						{
+							name = "BR/Marksman [53rd]";
+							value = "53rd_SupplyPod_Marksmen";
+						};
+						class n532
+						{
+							name = "AR/GL [53rd]";
+							value = "53rd_Ammo_SupplyPod_Basic";
+						};
+						class n533
+						{
+							name = "Heavy/AT [53rd]";
+							value = "53rd_Ammo_SupplyPod_Heavy";
+						};
+						class n534
+						{
+							name = "CQB/SG-SMG [53rd]";
+							value = "53rd_Ammo_SupplyPod_CQB";
+						};
+						class n535
+						{
+							name = "Mortor/Explosives [53rd]";
+							value = "53rd_Ammo_SupplyPod_Explosives";
+						};
+						class n536
+						{
+							name = "Basic Equpment [53rd]";
+							value = "53rd_Ammo_SupplyPod_Equipment";
+						};
+						class n537
+						{
+							name = "Medical [53rd]";
+							value = "53rd_SupplyPod_Medical";
+						};
+						class n538
+						{
+							name = "Resupply Hardbox [53rd]";
+							value = "53rd_Hardbox_Resupply";
+						};
+						class n539
+						{
+							name = "Platoon Resupply [53rd]";
+							value = "53rd_Weapon_Resupply";
+						};
                 };
             };
         };
