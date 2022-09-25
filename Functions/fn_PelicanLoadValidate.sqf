@@ -128,6 +128,12 @@ switch true do {
 		_veh attachTo [_pelican,[0,-5,-0.4]];  
 		_loaded = true;  
     };
+	case (_veh isKindOf "53rd_M875_SPH"):
+    {
+		_veh attachTo [_pelican,[0,-7,-.8]];
+		_veh setDir 180;
+		_loaded = true;
+    };
 };
 	
 if (_loaded) then 
