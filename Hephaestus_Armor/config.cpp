@@ -487,6 +487,17 @@ class cfgWeapons
             "53rd_SC_Aux\tex\visr_black_CO.paa"
         };
     };
+		class 53rd_CH252_Hellfire_HEV_NOTSEALED_TL : 53rd_Army_Heavy
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Hephaestus Helmet MKI (Hellfire)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_CH252_GREY_SPC_Fire.paa"
+        };
+    };
 	 class 53rd_CH252_GREY_Sealed_Reserve : 53rd_CH252_GREY_HEV_Sealed_PFC_SLV
     {
         scope = 2;

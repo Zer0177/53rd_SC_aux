@@ -166,7 +166,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin","rose"};
+				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin","rose","hellfire"};
 				class body
 				{
 					label = "Body";
@@ -210,6 +210,11 @@ class XtdGearModels
 				class rose
 				{
 					label = "Rose";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class hellfire
+				{
+					label = "Hellfire";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
             };
@@ -350,6 +355,10 @@ class XtdGearInfos
 		class 53rd_CH252D_Rose:53rd_CH252_GREY_HEV_Sealed_PLC_SLV
 		{
 		person = "rose";
+		};
+		class 53rd_CH252_Hellfire_HEV_NOTSEALED_TL : 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "hellfire";
 		};
 	};
 };

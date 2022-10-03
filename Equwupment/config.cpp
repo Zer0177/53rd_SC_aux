@@ -355,7 +355,7 @@ class CfgVehicles
        	scopeCurator = 2;
 		author="53rd aux";
 		displayName="[53rd] Medical Hardbox";
-		model="\A3\weapons_F\AmmoBoxes\AmmoBox_F";
+		model="\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_medic";
 		maximumLoad=1500;
 		class TransportBackpacks
 		{
@@ -375,6 +375,19 @@ class CfgVehicles
             item_xx(ACE_epinephrine,10);
             item_xx(ACE_adenosine,10);
             item_xx(ACE_surgicalKit,2);
+			item_xx(kat_IV_16,30);
+			item_xx(kat_AWD,3);
+			item_xx(kat_EACA,50);
+			item_xx(kat_IO_FAST,40);
+			item_xx(kat_naloxone,40);
+			item_xx(kat_norepinephrine,10);
+			item_xx(kat_TXA,10);
+			item_xx(Laserbatteries,2);
+			item_xx(kat_X_AED,2);
+			item_xx(kat_lorazepam,10);
+			item_xx(kat_phenylephrine,2);
+			item_xx(SmokeShellPurple,2);
+			item_xx(tf_anprc152,8);
 		};
 		class TransportMagazines
 		{
@@ -392,8 +405,8 @@ class CfgVehicles
 		scope = 2;
        	scopeCurator = 2;
 		author="53rd aux";
-		displayName="[53rd] Resupply Hardbox";
-		model="\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_medic";
+		displayName="[53rd] Squad Hardbox";
+		model = "\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate";
 		maximumLoad=1500;
 		class TransportBackpacks
 		{
@@ -401,6 +414,8 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			item_xx(optre_m7_sight,10);
+			item_xx(optre_br55hb_scope,10);
             item_xx(ACE_PlasmaIV,20);
             item_xx(ACE_plasmaIV_500,20);
             item_xx(53rd_Copium,40);
@@ -417,6 +432,15 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHP,30);
+			mag_xx(OPTRE_64Rnd_57x31_Mag,20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_JHP,50);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+			mag_xx(OPTRE_12Rnd_8Gauge_Pellets,10);
+			mag_xx(OPTRE_200Rnd_95x40_Box_JHP,20);
+			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer,10);
+			mag_xx(OPTRE_60RND_762x51_Mag_JHP,50);
+			mag_xx(Commando_20Rnd_65_Mag,50);
 		};
 		class TransportWeapons
 		{

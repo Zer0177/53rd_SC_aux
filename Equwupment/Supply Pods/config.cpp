@@ -107,7 +107,7 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_60RND_762x51_Mag,50);
-			mag_xx(OPTRE_60RND_762x51_Mag_JHPT,50);
+			mag_xx(OPTRE_60RND_762x51_Mag_JHP,50);
 			mag_xx(OPTRE_60RND_762x51_Mag_Tracer_Yellow,50);
 			mag_xx(OPTRE_60RND_762x51_Mag_Tracer,50);
 			mag_xx(Commando_20Rnd_65_Mag,50);
@@ -380,10 +380,15 @@ class CfgVehicles
 						};
 						class n538
 						{
-							name = "Resupply Hardbox [53rd]";
-							value = "53rd_Hardbox_Resupply";
+							name = "Medical Hardbox [53rd]";
+							value = "53rd_Hardbox_Medical";
 						};
 						class n539
+						{
+							name = "Squad Hardbox [53rd]";
+							value = "53rd_Hardbox_Resupply";
+						};
+						class n540
 						{
 							name = "Platoon Resupply [53rd]";
 							value = "53rd_Weapon_Resupply";
