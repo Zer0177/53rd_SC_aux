@@ -1269,14 +1269,14 @@ class cfgWeapons
             };
 		};
 	 };
-	class 53rd_ODST_Medic : 53rd_ODST_Light
+	class 53rd_ODST_Medic : 53rd_ODST_NRM
 		{
 			scope = 2;
 			scopeCurator = 2;
 			scopeArsenal = 2;
 			dlc = "53rd AUX TEAM";
 			author = "53rd AUX TEAM & 37th Aux Team";
-			displayName = "[53rd] N Armor (Medic)";
+			displayName = "[53rd] CH252D Armor (Medic)";
 			hiddenSelectionsTextures[] = 
 				{
 					"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
