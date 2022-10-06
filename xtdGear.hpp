@@ -104,7 +104,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer","primal","kuzyk","dublin"};
+				values[] = {"body","ithias","ryu","joker","panzer","rose","fixer","primal","kuzyk","dublin","tsuki"};
 				class body
 				{
 					label = "Body";
@@ -155,6 +155,11 @@ class XtdGearModels
 					label = "Dublin";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
+				class tsuki
+				{
+					label = "Tsuki";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
             };
 		};
 		class CustomHelm
@@ -166,7 +171,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin","rose","hellfire"};
+				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin","rose","hellfire","tsuki"};
 				class body
 				{
 					label = "Body";
@@ -215,6 +220,11 @@ class XtdGearModels
 				class hellfire
 				{
 					label = "Hellfire";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class tsuki
+				{
+					label = "Tsuki";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
             };
@@ -317,6 +327,10 @@ class XtdGearInfos
 		{
 		person = "kuzyk";
 		};
+		class 53rd_Athena_Armor_Tsuki:Armor_Hephaestus_PL
+		{
+		person = "tsuki";
+		};
         
         //custom helm
         class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
@@ -359,6 +373,10 @@ class XtdGearInfos
 		class 53rd_CH252_Hellfire_HEV_NOTSEALED_TL : 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
 		{
 		person = "hellfire";
+		};
+		class 53rd_Athena_Helmet_Tsuki : 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "tsuki";
 		};
 	};
 };

@@ -707,6 +707,23 @@ class 53rd_Athena_Armor_RTO_Snow: 53rd_Armor_RTO
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+	class 53rd_Athena_Armor_Tsuki: 53rd_Armor_SL
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "Ithias/53rd AUX Team";
+		displayName="[53rd] Athena Armor (Tsuki)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Vest_Tsuki.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Armor_SL_Tsuki.paa",
+			"53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Legs_NCO_Tsuki.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
     
     class 53rd_Athena_Armor_Kuzyk: 53rd_Armor_SL
 	{
@@ -1107,6 +1124,29 @@ class 53rd_Athena_Helmet_Ithias : 53rd_Athena_Helmet
         hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_Ithias.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa"
+        };
+    };
+class 53rd_Athena_Helmet_Tsuki : 53rd_Athena_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Athena Helmet (Tsuki)";
+        author = "Tsuki/53rd AUX Team";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_NCO_Tsuki.paa",
+            "53rd_SC_aux\Athena_Armor\Tex\V_CH252A_SLV_V_CO_Tsuki_V2.paa"
+        };
+    };
+class 53rd_Athena_Helmet_Tsuki_dp : 53rd_Athena_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Athena Helmet (Tsuki)";
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\Athena_Armor\Tex\53rd_Athena_Helmet_NCO_Tsuki.paa",
             "optre_unsc_units\army\data\helmet_visor_ca.paa"
         };
     };
