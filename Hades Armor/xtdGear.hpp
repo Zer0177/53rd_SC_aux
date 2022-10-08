@@ -61,41 +61,40 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        //custom armor
-        class Armor_Hephaestus_PL
+        class 53rd_UNSC_M52A_Armor_Base
 		{
-		model = "CustomArmor";
+		model = "ODSTARMOR";
 		person = "body";
 		};
-		class 53rd_ODST_NRM:Armor_Hephaestus_PL
+		class 53rd_ODST_NRM:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "rifleman";
 		};
-		class 53rd_ODST_SL:Armor_Hephaestus_PL
+		class 53rd_ODST_SL:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "sl";
 		};
-		class 53rd_ODST_TL:Armor_Hephaestus_PL
+		class 53rd_ODST_TL:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "tl";
 		};
-		class 53rd_ODST_Breacher:Armor_Hephaestus_PL
+		class 53rd_ODST_Breacher:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "breacher";
 		};
-		class 53rd_ODST_Marksmen:Armor_Hephaestus_PL
+		class 53rd_ODST_Marksmen:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "marksmen";
 		};
-		class 53rd_ODST_Light:Armor_Hephaestus_PL
+		class 53rd_ODST_Light:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "light";
 		};
-		class 53rd_ODST_Heavy:Armor_Hephaestus_PL
+		class 53rd_ODST_Heavy:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "heavy";
 		};
-		class 53rd_ODST_Medic:Armor_Hephaestus_PL
+		class 53rd_ODST_Medic:53rd_UNSC_M52A_Armor_Base
 		{
 		person = "medic";
 		};
