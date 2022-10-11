@@ -1211,20 +1211,36 @@ class cfgWeapons
 				"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
 			};
 		};
-	class 53rd_Range_Helmet_dp : OPTRE_UNSC_SCOUT_Black_Helmet
+		class ItemInfo: HeadgearItem
 		{
-			scope = 2;
-			scopeCurator = 2;
-			scopeArsenal = 2;
-			dlc = "53rd AUX";
-			author = "Body";
-			displayName = "[53rd] Ranger Helmet DP";
-			hiddenSelectionsTextures[] = 
-			{
-				"53rd_SC_aux\tex\Spartan Helmets\Scout_Helmet_co.paa",
+            hiddenSelections[] = {"camo","camo2"};
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_aux\tex\Spartan Helmets\Scout_Helmet_co.paa",
 				"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
+            };
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 50;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 50;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 20;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
 			};
-		};  		
+		}; 		
 //Raider Gear
     class 53rd_Helmet_Lmao: 53rd_Recon_Helmet_Base
 	{
