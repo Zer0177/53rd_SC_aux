@@ -171,7 +171,7 @@ class XtdGearModels
 			class person
 			{
 				label = "Name";
-				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin","rose","hellfire","tsuki"};
+				values[] = {"body","ithias","ryu","primal","fixer","panzer","kuzyk","dublin","rose","hellfire","tsuki","lone"};
 				class body
 				{
 					label = "Body";
@@ -225,6 +225,11 @@ class XtdGearModels
 				class tsuki
 				{
 					label = "Tsuki";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class lone
+				{
+					label = "Lonewolf";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
             };
@@ -331,6 +336,7 @@ class XtdGearInfos
 		{
 		person = "tsuki";
 		};
+		
         
         //custom helm
         class 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
@@ -377,6 +383,10 @@ class XtdGearInfos
 		class 53rd_Athena_Helmet_Tsuki : 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
 		{
 		person = "tsuki";
+		};
+		class 53rd_CH252D_ODST_Lone : 53rd_CH252_GREY_HEV_Sealed_PLC_SLV
+		{
+		person = "lone";
 		};
 	};
 };

@@ -13,6 +13,8 @@ class cfgWeapons {
 class cfgVehicles 
 {
     class OPTRE_UNSC_hornet;
+	class OPTRE_UNSC_hornet_CAP;
+	class Components;
     class 53rd_FL_Hornet: OPTRE_UNSC_hornet
     {
         dlc="53rd";
@@ -449,6 +451,110 @@ class cfgVehicles
 			1,
 			"ves_olive",
 			1
+		};
+	};
+	class 53rd_hornet_Base: OPTRE_UNSC_hornet_CAP
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="AV-14 Hornet";
+		weapons[]=
+		{
+		};
+		magazines[]=
+		{
+		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				UIPicture="\OPTRE_Vehicles\Hornet\HornetPylonPic.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						maxweight=560;
+						hardpoints[]=
+						{
+							"OPAEX_Hardpoint_AV14"
+						};
+						attachment="";
+						bay=-1;
+						priority=2;
+						UIposition[]={0.15000001,0.2};
+						turret[]={};
+					};
+					class pylons2: pylons1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.34999999,0.2};
+					};
+				};
+			};
+		};
+	};
+	class ATGM_Hornet: 53rd_hornet_Base
+  {
+    faction="53rd_Ackersons_RebellionOF";
+    side=0;
+    displayName="Hornet (Missles)";
+    hiddenSelectionsTextures[]={"53rd_SC_aux\Vehicles\Hornet\HornetAG.paa","","",""};
+    crew="WEA_Rifleman";
+    typicalCargo[]={"WEA_Rifleman"};
+	weapons[]=
+	{
+		"CMFlareLauncher",
+		"OPTRE_missiles_Anvil1"
+	};
+	magazines[]=
+	{
+		"168Rnd_CMFlare_Chaff_Magazine",
+		"OPTRE_16Rnd_Anvil1_missiles",
+		"OPTRE_16Rnd_Anvil1_missiles" 
+   };
+  };
+  class CANNON_Hornet: 53rd_hornet_Base
+  {
+    faction="53rd_Ackersons_RebellionOF";
+    side=0;
+    displayName="Hornet (Fighter)";
+    hiddenSelectionsTextures[]={"53rd_SC_aux\Vehicles\Hornet\HornetGO.paa","","",""};
+    crew="WEA_Rifleman";
+    typicalCargo[]={"WEA_Rifleman"};
+	weapons[]=
+		{
+			"OPTRE_GUA23A",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera"
+		};
+		magazines[]=
+		{
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries"
+		};
+  };
+  class AIO_Hornet: 53rd_hornet_Base
+  {
+    faction="53rd_Ackersons_RebellionOF";
+    side=0;
+    displayName="Hornet (AIO)";
+    hiddenSelectionsTextures[]={"53rd_SC_aux\Vehicles\Hornet\HornetAIO.paa","","",""};
+    crew="WEA_Rifleman";
+    typicalCargo[]={"WEA_Rifleman"};
+	weapons[]=
+	{
+		"CMFlareLauncher",
+		"OPTRE_GUA23A",
+		"OPTRE_missiles_C2GMLS",
+        "missiles_ASRAAM",
+	};
+	magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"OPTRE_8Rnd_C2GMLS_missiles", 
 		};
 	};
 };

@@ -326,6 +326,30 @@ class cfgWeapons
             };
         };
 	};
+	class 53rd_CH252D_ODST_Lone: 53rd_CH252D_ODST
+	{
+		dlc="OPTRE";
+		scope=2;
+		author="Article 2 Studios";
+		displayName="[53rd] CH252D Helmet (Lonewolf)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR_LoneWulf.paa",
+			"53rd_SC_aux\tex\Hades Armor\ODST_Helmet_Visor_ca_LoneWulf.paa"
+		};
+	};
+	class 53rd_CH252D_ODST_Lone_DP: 53rd_CH252D_ODST
+	{
+		dlc="OPTRE";
+		scope=2;
+		author="Article 2 Studios";
+		displayName="[53rd] CH252D Helmet (Lonewolf)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+		};
+	};
 // END ODST HELMETS
 
 

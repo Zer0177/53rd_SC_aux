@@ -25,10 +25,10 @@ class cfgWeapons
         scopeArsenal = 2;
         dlc = "53rd AUX TEAM";
         author = "53rd AUX TEAM & 37th Aux Team";
-        displayName = "[53rd] Ranger Armor (Heavy)";
+        displayName = "[53rd] Ranger Armor (Woodland)";
         hiddenSelectionsTextures[]=
         {
-            "OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+            "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
 			"53rd_SC_aux\Rangers\53rd_M52_Vulc_A4.paa",
             "53rd_SC_aux\Rangers\Legs_odst_Blue_co.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
@@ -45,25 +45,25 @@ class cfgWeapons
                 class Neck
                 {
                     hitpointName = "HitNeck";
-                    armor = 40;
+                    armor = 50;
                     passThrough = 0.1;
                 };
                 class Arms
                 {
                     hitpointName = "HitArms";
-                    armor = 40;
+                    armor = 50;
                     passThrough = 0.1;
                 };
                 class Chest
                 {
                     hitpointName = "HitChest";
-                    armor = 45;
+                    armor = 50;
                     passThrough = 0.1;
                 };
                 class Diaphragm
                 {
                     hitpointName = "HitDiaphragm";
-                    armor = 45;
+                    armor = 50;
                     passThrough = 0.1;
                 };
                 class Abdomen
@@ -76,12 +76,12 @@ class cfgWeapons
                 {
                     hitpointName = "HitBody";
                     passThrough = 0.1;
-                    armor = 40;
+                    armor = 50;
                 };
                 class Legs
                 {
                     hitpointName = "HitLegs";
-                    armor = 40;
+                    armor = 50;
                     passThrough = 0.1;
                 };
             };
@@ -144,12 +144,64 @@ class cfgWeapons
 			};
             hiddenSelectionsTextures[] = 
             {
-                "OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-				"optre_unsc_units\army\data\armor_odst_co.paa",
-				"53rd_SC_aux\tex\Hades Armor\Legs_odst_Red_co.paa",
+                "53rd_SC_aux\tex\Tartartus Armor\53rd_M52_HAZ_V.paa",
+				"53rd_SC_aux\Rangers\53rd_M52_Vulc_A4.paa",
+				"53rd_SC_aux\Rangers\Legs_odst_Blue_co.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"53rd_SC_aux\tex\Hades Armor\ODST_HR_Red_Body.paa"
             };
+		
 		};		
     };
+	class 53rd_Ranger_URB : 53rd_Ranger_Heavy
+     {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX TEAM";
+        author = "53rd AUX TEAM & 37th Aux Team";
+        displayName = "[53rd] Ranger Armor (Urban)";
+        hiddenSelectionsTextures[]=
+        {
+            "OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+			"53rd_SC_aux\Rangers\53rd_M52_Artemis_Urban.paa",
+            "53rd_SC_aux\Rangers\Legs_Ranger_Grey_co.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "53rd_SC_aux\Rangers\Ranger_Body_URB.paa"
+        };
+	 };
+	 class 53rd_Ranger_SNOW : 53rd_Ranger_Heavy
+     {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX TEAM";
+        author = "53rd AUX TEAM & 37th Aux Team";
+        displayName = "[53rd] Ranger Armor (Snow)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_Extra.paa",
+			"53rd_SC_aux\Rangers\53rd_M52_Artemis_Win.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_WIN_L_Camo.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "53rd_SC_aux\Rangers\Ranger_Body_Sno_Co.paa"
+        };
+	 };
+	 class 53rd_Ranger_DES : 53rd_Ranger_Heavy
+     {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX TEAM";
+        author = "53rd AUX TEAM & 37th Aux Team";
+        displayName = "[53rd] Ranger Armor (Desert)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_DES_L3.paa",
+			"53rd_SC_aux\Rangers\53rd_M52_Artemis_Des.paa",
+            "53rd_SC_aux\tex\Hephaestus Armor\Camos\53rd_M52_Des_L_Camo.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "53rd_SC_aux\Rangers\Ranger_Body_Des_Co.paa"
+        };
+	 };
 };
