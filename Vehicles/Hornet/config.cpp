@@ -15,7 +15,7 @@ class cfgVehicles
     class OPTRE_UNSC_hornet;
 	class OPTRE_UNSC_hornet_CAP;
 	class Components;
-    class 53rd_FL_Hornet: OPTRE_UNSC_hornet
+    class 53rd_FL_Hornet: OPTRE_UNSC_hornet_CAP
     {
         dlc="53rd";
         author="Skywalker";
@@ -152,7 +152,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class 53rd_UNSC_Hornet: OPTRE_UNSC_hornet
+	class 53rd_UNSC_Hornet: OPTRE_UNSC_hornet_CAP
 	{
 		dlc="53rd";
 		author="Skywalker";
@@ -171,7 +171,7 @@ class cfgVehicles
 		tf_range=12000;
         hiddenSelectionsTextures[]=
         {
-            "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_URB.paa"
+            "V_FZ_Air_Vehicles\data\Hornet\V_FZ_HORNET_URB.paa"
         };
 		weapons[]=
 		{
@@ -251,7 +251,7 @@ class cfgVehicles
 				displayName="Desert";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_DES.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_DES.paa"
 				};
 			};
 			class ves_woodland
@@ -260,7 +260,7 @@ class cfgVehicles
 				displayName="Woodland";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_WDL.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_WDL.paa"
 				};
 			};
 			class ves_jungle
@@ -269,7 +269,7 @@ class cfgVehicles
 				displayName="Jungle";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_JNG.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_JNG.paa"
 				};
 			};
 			class ves_urban
@@ -278,7 +278,7 @@ class cfgVehicles
 				displayName="Urban";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_URB.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_URB.paa"
 				};
 			};
 			class ves_black
@@ -287,7 +287,7 @@ class cfgVehicles
 				displayName="Black";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_BLK.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_BLK.paa"
 				};
 			};
 			class ves_frost
@@ -296,7 +296,7 @@ class cfgVehicles
 				displayName="Frost";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_FRS.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_FRS.paa"
 				};
 			};
 			class ves_tundra
@@ -305,7 +305,7 @@ class cfgVehicles
 				displayName="Tundra";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_TND.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_TND.paa"
 				};
 			};
 			class ves_dunes
@@ -314,7 +314,7 @@ class cfgVehicles
 				displayName="Dunes";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_DUN.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_DUN.paa"
 				};
 			};
 			class ves_classic
@@ -323,7 +323,7 @@ class cfgVehicles
 				displayName="Classic";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_CLS.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_CLS.paa"
 				};
 			};
 			class ves_olive
@@ -332,7 +332,7 @@ class cfgVehicles
 				displayName="Olive";
 				textures[]=
 				{
-					"V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3.paa"
+					"V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_OD3.paa"
 				};
 			};
 		};
@@ -455,9 +455,9 @@ class cfgVehicles
 	};
 	class 53rd_hornet_Base: OPTRE_UNSC_hornet_CAP
 	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
 		displayName="AV-14 Hornet";
 		weapons[]=
 		{
