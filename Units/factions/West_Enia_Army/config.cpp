@@ -380,7 +380,7 @@ class cfgVehicles
 
   class WEA_Rifleman_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_32Rnd_762x51_Mag_Tracer {count=28;magazine="OPTRE_32Rnd_762x51_Mag_Tracer";};
@@ -392,7 +392,7 @@ class cfgVehicles
 
   class WEA_Auto_Rifleman_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_200Rnd_95x40_Box_Tracer {count=4;magazine="OPTRE_200Rnd_95x40_Box_Tracer";};
@@ -404,7 +404,7 @@ class cfgVehicles
 
   class WEA_Marksman_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_Command_20Rnd_65_TracerR_Mag {count=23;magazine="Command_20Rnd_65_TracerR_Mag";};
@@ -416,7 +416,7 @@ class cfgVehicles
 
   class WEA_Breacher_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_6Rnd_8Gauge_Slugs {count=28;magazine="OPTRE_6Rnd_8Gauge_Slugs";};
@@ -428,7 +428,7 @@ class cfgVehicles
 
   class WEA_Rifleman_AT_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_M41_Twin_HEAT_Thermal {count=3;magazine="OPTRE_M41_Twin_HEAT_Thermal";};
@@ -440,7 +440,7 @@ class cfgVehicles
 
   class WEA_Medic_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines{};
     class TransportItems
     {
@@ -464,7 +464,7 @@ class cfgVehicles
 
   class WEA_Sniper_pack: WEA_Kitbag
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_10Rnd_127x99 {count=35;magazine="OPTRE_10Rnd_127x99";};
@@ -476,7 +476,7 @@ class cfgVehicles
 
   class WEA_RTO_pack: OPTRE_ANPRC_521_Black
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_32Rnd_762x51_Mag_Tracer {count=15;magazine="OPTRE_32Rnd_762x51_Mag_Tracer";};
