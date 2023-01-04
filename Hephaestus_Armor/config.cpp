@@ -15,7 +15,8 @@ class CfgPatches {
 	};
 };
 #include "xtdGear.hpp"
-class cfgWeapons {
+class cfgWeapons 
+{
     class ItemInfo;
     class UniformItem;
 	class VestItem;
@@ -998,6 +999,47 @@ class 53rd_Helmet_Normal_Urban : 53rd_Unsealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+    
+    
+
+class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	
+class 53rd_Helmet_Vac_Sealed_SPC_Urban_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+
+class 53rd_Helmet_Normal_Urban_Medical : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Helmet (Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
 
 
 //Woodland
@@ -1145,6 +1187,45 @@ class 53rd_Helmet_Normal_Woodland : 53rd_Unsealed_Base
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+
+class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	
+class 53rd_Helmet_Vac_Sealed_SPC_Woodland_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+
+class 53rd_Helmet_Normal_Woodland_Medical : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Helmet (Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland_Medical.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
@@ -1299,6 +1380,45 @@ class 53rd_Helmet_Normal_Desert : 53rd_Unsealed_Base
 		};
     };
 
+class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	
+class 53rd_Helmet_Vac_Sealed_SPC_Desert_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+
+class 53rd_Helmet_Normal_Desert_Medical : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Helmet (Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+
 //Snow
 
 class 53rd_Armor_Rifleman_Snow: 53rd_Armor_Rifleman
@@ -1448,6 +1568,44 @@ class 53rd_Helmet_Normal_Snow : 53rd_Unsealed_Base
 		};
     };
 
+class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	
+class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+
+class 53rd_Helmet_Normal_Snow_Medical : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Helmet (Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow_Medical.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
 };
 
 class CfgVehicles
