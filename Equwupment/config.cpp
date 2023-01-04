@@ -14,6 +14,7 @@ class CfgPatches {
 			"53rd_Hardbox_Medical",
 			"53rd_Hardbox_Resupply",
 			"53rd_SupplyPod_Medical",
+			"53rd_Hardbox_3R",
             "Item_53rd_anprc152l"
         };
 		weapons[] = 
@@ -559,5 +560,53 @@ class CfgVehicles
         ace_cargo_size = 1;
         ace_cargo_canLoad = 0;
         ace_cargo_noRename = 1;
+	};
+	class 53rd_Hardbox_3R: Box_NATO_Support_F
+	{
+		editorCategory = "53rd_cat_faction";
+		scope = 2;
+       	scopeCurator = 2;
+		author="53rd aux";
+		displayName="[53rd] 3R Hardbox";
+		model = "\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_nuclear";
+		maximumLoad=1500;
+		class TransportBackpacks
+		{
+		};
+		class TransportItems
+		{
+            item_xx(toolkit,3);
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		supplyRadius=2;
+        ace_repair_canRepair = 1;
+		ace_rearm_defaultSupply=1200;
+		ace_refuel_fuelCargo=1000;
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
+        ace_cargo_hasCargo = 1;
+        ace_cargo_space = 8;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class ACE_Track
+                {
+                    type = "ACE_Track";
+                    amount = 2;
+                };
+                class ACE_Wheel
+                {
+                    type = "ACE_Wheel";
+                    amount = 4;
+                };
+            };
+        };      
 	};
 };

@@ -393,6 +393,11 @@ class CfgVehicles
 							name = "Platoon Resupply [53rd]";
 							value = "53rd_Weapon_Resupply";
 						};
+						class n541
+						{
+							name = "3R Hardbox [53rd]";
+							value = "53rd_Hardbox_3R";
+						};
                 };
             };
         };
