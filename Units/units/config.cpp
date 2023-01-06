@@ -70,11 +70,11 @@ class cfgVehicles
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Men_Hephaestus";
 		displayName="(Hephaestus) Rifleman";
-		uniformClass="53rd_BDU_Slim";
+		uniformClass="53rd_Hephaestus_BDU_Slim";
 		linkedItems[]=
 		{
-			"Armor_Hephaestus_Rifleman",
-			"53rd_CH252_GREY_HEV_Sealed_PFC_SLV",
+			"53rd_Armor_Rifleman_Urban",
+			"53rd_Helmet_Normal_Urban",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -84,8 +84,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_Hephaestus_Rifleman",
-			"53rd_CH252_GREY_HEV_Sealed_PFC_SLV",
+			"53rd_Armor_Rifleman_Urban",
+			"53rd_Helmet_Normal_Urban",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -314,8 +314,8 @@ class cfgVehicles
 		displayName="(Hephaestus) Medic";
 		linkedItems[]=
 		{
-			"Armor_Hephaestus_Medic",
-			"53rd_CH252_GREY_CORP_Sealed_SLV",
+			"53rd_Armor_Medic_Urban",
+			"53rd_Helmet_Normal_Urban",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -325,8 +325,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_Hephaestus_Medic",
-			"53rd_CH252_GREY_CORP_Sealed_SLV",
+			"53rd_Armor_Medic_Urban",
+			"53rd_Helmet_Normal_Urban",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -547,8 +547,8 @@ class cfgVehicles
 		displayName="(Hephaestus) Squad Leader";
 		linkedItems[]=
 		{
-			"Armor_Hephaestus_Squad_leader",
-			"53rd_CH252_GREY_HEV_Sealed_SL_SLV",
+			"53rd_Armor_SL_Urban",
+			"53rd_Helmet_Vac_Sealed_SPC_Urban",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
@@ -558,8 +558,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_Hephaestus_Squad_leader",
-			"53rd_CH252_GREY_HEV_Sealed_SL_SLV",
+			"53rd_Armor_SL_Urban",
+			"53rd_Helmet_Vac_Sealed_SPC_Urban",
 			"G_Aviator",
 			"ItemMap",
 			"ItemCompass",
@@ -798,7 +798,7 @@ class cfgVehicles
 		displayName="(Hephaestus) Officer";
 		linkedItems[]=
 		{
-			"Armor_Hephaestus_Squad_Leader",
+			"53rd_Armor_SL_Urban",
 			"53rd_Beret_Hephaestus",
 			"G_Aviator",
 			"ItemMap",
@@ -809,7 +809,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_Hephaestus_Squad_Leader",
+			"53rd_Armor_SL_Urban",
 			"53rd_Beret_Hephaestus",
 			"G_Aviator",
 			"ItemMap",
@@ -1358,7 +1358,7 @@ class cfgVehicles
 		uniformClass="VES_BDU_SS_Evolved_Slim";
 		linkedItems[]=
 		{
-			"Armor_Hephaestus_Rifleman",
+			"53rd_Armor_Rifleman_Urban",
 			"H_MilCap_gry",
 			"G_Aviator",
 			"ItemMap",
@@ -1369,7 +1369,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"Armor_Hephaestus_Rifleman",
+			"53rd_Armor_Rifleman_Urban",
 			"H_MilCap_gry",
 			"G_Aviator",
 			"ItemMap",

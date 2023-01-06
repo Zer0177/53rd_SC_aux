@@ -14,6 +14,7 @@ class CfgPatches {
 			"53rd_Hardbox_Medical",
 			"53rd_Hardbox_Resupply",
 			"53rd_SupplyPod_Medical",
+			"53rd_Hardbox_3R",
             "Item_53rd_anprc152l"
         };
 		weapons[] = 
@@ -432,14 +433,14 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHP,30);
+			mag_xx(TCF_60Rnd_5x23mm_Mag_JHP,30);
 			mag_xx(OPTRE_64Rnd_57x31_Mag,20);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_JHP,50);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+			mag_xx(TCF_36Rnd_95x40_Mag_JHP,50);
+			mag_xx(TCF_20Rnd_86x70_Mag_JHP,20);
 			mag_xx(OPTRE_12Rnd_8Gauge_Pellets,10);
-			mag_xx(OPTRE_200Rnd_95x40_Box_JHP,20);
+			mag_xx(TCF_200Rnd_95x40_Box_JHPT,20);
 			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer,10);
-			mag_xx(OPTRE_60RND_762x51_Mag_JHP,50);
+			mag_xx(TCF_60Rnd_762x51_Mag_JHP,50);
 			mag_xx(Commando_20Rnd_65_Mag,50);
 		};
 		class TransportWeapons
@@ -496,23 +497,23 @@ class CfgVehicles
 			mag_xx(APERSMine_Range_Mag,8);
 			mag_xx(UNSCMine_Range_Mag,8);
 			mag_xx(DemoCharge_Remote_Mag,8)
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHP,30);
+			mag_xx(TCF_60Rnd_5x23mm_Mag_JHP,30);
 			mag_xx(OPTRE_64Rnd_57x31_Mag,20);
 			mag_xx(OPTRE_12Rnd_8Gauge_Pellets,10);
 			mag_xx(OPTRE_12Rnd_8Gauge_Slugs,10);
-			mag_xx(OPTRE_6Rnd_8Gauge_Pellet,10);
-			mag_xx(OPTRE_6Rnd_8Gauge_Slug,10);
+			mag_xx(TCF_6Rnd_8Gauge_Pellet,10);
+			mag_xx(TCF_6Rnd_8Gauge_Slug,10);
 			mag_xx(OPTRE_200Rnd_95x40_Box_Tracer,20);
-			mag_xx(OPTRE_200Rnd_95x40_Box_JHP,20);
+			mag_xx(TCF_200Rnd_95x40_Box_JHP,20);
 			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer,10);
-			mag_xx(OPTRE_1Rnd_50x137_HEAT,10);
-			mag_xx(OPTRE_1Rnd_50x137_PEN,10);
-			mag_xx(OPTRE_1Rnd_50x137_HE,10);
+			mag_xx(TCF_1Rnd_50x137_HEAT,10);
+			mag_xx(TCF_1Rnd_50x137_PEN,10);
+			mag_xx(TCF_1Rnd_50x137_HE,10);
 			mag_xx(OPTRE_M41_Twin_HEAT_Thermal,10);
 			mag_xx(MRAWS_HEAT_F,10);
 			mag_xx(OPTRE_FC_Railgun_Slug,40);
 			mag_xx(OPTRE_60RND_762x51_Mag,50);
-			mag_xx(OPTRE_60RND_762x51_Mag_JHPT,50);
+			mag_xx(TCF_60RND_762x51_Mag_JHPT,50);
 			mag_xx(OPTRE_60RND_762x51_Mag_Tracer_Yellow,50);
 			mag_xx(OPTRE_60RND_762x51_Mag_Tracer,50);
 			mag_xx(Commando_20Rnd_65_Mag,50);
@@ -526,11 +527,11 @@ class CfgVehicles
 			mag_xx(OPTRE_1Rnd_SmokeRed_Grenade_shell,20);
 			mag_xx(OPTRE_1Rnd_SmokeGreen_Grenade_shell,20);
 			mag_xx(OPTRE_36Rnd_95x40_Mag,50);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_JHP,50);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_AP,20);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
-			mag_xx(OPTRE_15Rnd_762x51_Mag_JHP,20);
-			mag_xx(OPTRE_15Rnd_762x51_Mag_AP,20);
+			mag_xx(TCF_36Rnd_95x40_Mag_JHP,50);
+			mag_xx(TCF_20Rnd_86x70_Mag_AP,20);
+			mag_xx(TCF_20Rnd_86x70_Mag_JHP,20);
+			mag_xx(TCF_15Rnd_762x51_Mag_JHP,20);
+			mag_xx(TCF_15Rnd_762x51_Mag_AP,20);
 			mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag,12);
 			mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag,4);
 		};
@@ -551,13 +552,61 @@ class CfgVehicles
 			weap_xx(OPTRE_Commando,5);
 			weap_xx(OPTRE_BR45,5);
 			weap_xx(OPTRE_BR55,10);
-			weap_xx(OPTRE_M14X,2);
-			weap_xx(OPTRE_CR77,2);
+			weap_xx(TCF_M14,2);
+			weap_xx(TCF_CR77,2);
 			weap_xx(OPTRE_M393_DMR,2);
 			weap_xx(OPTRE_SRS99C,2);
 		};
         ace_cargo_size = 1;
         ace_cargo_canLoad = 0;
         ace_cargo_noRename = 1;
+	};
+	class 53rd_Hardbox_3R: Box_NATO_Support_F
+	{
+		editorCategory = "53rd_cat_faction";
+		scope = 2;
+       	scopeCurator = 2;
+		author="53rd aux";
+		displayName="[53rd] 3R Hardbox";
+		model = "\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_nuclear";
+		maximumLoad=1500;
+		class TransportBackpacks
+		{
+		};
+		class TransportItems
+		{
+            item_xx(toolkit,3);
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		supplyRadius=2;
+        ace_repair_canRepair = 1;
+		ace_rearm_defaultSupply=1200;
+		ace_refuel_fuelCargo=1000;
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
+        ace_cargo_hasCargo = 1;
+        ace_cargo_space = 8;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class ACE_Track
+                {
+                    type = "ACE_Track";
+                    amount = 2;
+                };
+                class ACE_Wheel
+                {
+                    type = "ACE_Wheel";
+                    amount = 4;
+                };
+            };
+        };      
 	};
 };

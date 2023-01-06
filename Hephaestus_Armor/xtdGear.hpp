@@ -56,6 +56,60 @@ class XtdGearModels
 				};
 			};
 		};
+		class HephaestusHelmMedical
+		{
+			label = "Hephaestus Medical Helmets";
+			author = "Fixer";
+			options[] = {"Camo","Type"};
+			
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Snow"};
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class Type
+			{
+				label = "Type";
+				values[] = {"Vac","SPC","Normal"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Vac
+				{
+					label = "Vac Sealed";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class SPC
+				{
+					label = "Vac Sealed SPC+";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Normal
+				{
+					label = "Normal";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+        };
 		class HephaestusVest
 		{
 			label = "Hephaestus Vests";
@@ -188,6 +242,67 @@ class XtdGearInfos
 		Type = "SPC";
 		};
 		class 53rd_Helmet_Normal_Snow:53rd_Helmet_Vac_Sealed_Rifleman_Snow
+		{
+		Type = "Normal";
+		};
+        
+        //medical helmets
+		class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical
+		{
+		model = "HephaestusHelmMedical";
+		Camo = "Urban";
+		Type = "Vac";
+		};
+		class 53rd_Helmet_Vac_Sealed_SPC_Urban_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical
+		{
+		Type = "SPC";
+		};
+		class 53rd_Helmet_Normal_Urban_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical
+		{
+		Type = "Normal";
+		};
+        
+		class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical
+		{
+		model = "HephaestusHelmMedical";
+		Camo = "Woodland";
+		Type = "Vac";
+		};
+		class 53rd_Helmet_Vac_Sealed_SPC_Woodland_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical
+		{
+		Type = "SPC";
+		};
+		class 53rd_Helmet_Normal_Woodland_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical
+		{
+		Type = "Normal";
+		};
+        
+		class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical
+		{
+		model = "HephaestusHelmMedical";
+		Camo = "Desert";
+		Type = "Vac";
+		};
+		class 53rd_Helmet_Vac_Sealed_SPC_Desert_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical
+		{
+		Type = "SPC";
+		};
+		class 53rd_Helmet_Normal_Desert_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical
+		{
+		Type = "Normal";
+		};
+        
+		class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical
+		{
+		model = "HephaestusHelmMedical";
+		Camo = "Snow";
+		Type = "Vac";
+		};
+		class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical
+		{
+		Type = "SPC";
+		};
+		class 53rd_Helmet_Normal_Snow_Medical:53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical
 		{
 		Type = "Normal";
 		};
