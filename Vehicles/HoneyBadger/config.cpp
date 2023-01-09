@@ -274,9 +274,9 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_Hardbox_Resupply
                 {
-                    type = "53rd_SupplyPod_Medical";
+                    type = "53rd_Hardbox_Resupply";
                     amount = 1;
                 };
             };

@@ -76,6 +76,17 @@ class CfgVehicles
 				};
 			};
 		};
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
+            };
+        };
 
 	};
 	class 53rd_Crocodile_IFV : DMNS_M511_Springbok_IFV
@@ -145,6 +156,17 @@ class CfgVehicles
 				};
 			};
 		};
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
+            };
+        };
 	};
 
 	class 53rd_Crocodile_MGS : DMNS_M511_Springbok_MGS
@@ -214,6 +236,17 @@ class CfgVehicles
 				};
 			};
 		};
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
+            };
+        };
 	};
 	class 53rd_Crocodile_AA : DMNS_M511_Springbok_AA
 	{
@@ -282,5 +315,16 @@ class CfgVehicles
 				};
 			};
 		};
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
+            };
+        };
 	};
 };

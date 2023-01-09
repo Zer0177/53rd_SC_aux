@@ -70,6 +70,17 @@ class CfgVehicles
                 };
             };
         };
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
+            };
+        };
     };
     class 53rd_MGS_01E: B_AFV_Wheeled_01_up_cannon_F
     {
@@ -132,6 +143,17 @@ class CfgVehicles
                     {
                         "53rd"
                     };
+            };
+        };
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
             };
         };
     };

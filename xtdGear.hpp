@@ -11,7 +11,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"blk","blu","beret"};
+				values[] = {"blk","blu","red","beret"};
 				changeingame = 1;
                 changedelay  = 0;
 				class blk
@@ -22,6 +22,16 @@ class XtdGearModels
 				class blu
 				{
 					label = "Blue";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class red
+				{
+					label = "Red";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class snow
+				{
+					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class beret
@@ -251,7 +261,37 @@ class XtdGearInfos
 		{
 		type = "blu";
 		};
+		class 53rd_VX19_Red_Helmet:53rd_VX19_Black_Helmet
+		{
+		type = "red";
+		};
+		class 53rd_VX19_Snow_Helmet:53rd_VX19_Black_Helmet
+		{
+		type = "snow";
+		};
         
+        
+        //dp
+        class 53rd_VX19_Black_Helmet_dp
+		{
+		model = "VolareHelm";
+		type = "blk";
+		pol = "off";
+		};
+		class 53rd_VX19_Blue_Helmet_dp:53rd_VX19_Black_Helmet_dp
+		{
+		type = "blu";
+		};
+		class 53rd_VX19_Red_Helmet_dp:53rd_VX19_Black_Helmet_dp
+		{
+		type = "red";
+		};
+		class 53rd_VX19_Snow_Helmet_dp:53rd_VX19_Black_Helmet_dp
+		{
+		type = "snow";
+		};
+        
+        //berets
         class 53rd_Beret_Hephaestus
 		{
 		model = "SoftCap";
@@ -280,18 +320,6 @@ class XtdGearInfos
 		class DAR_Stetson_53rd:53rd_Beret_Hephaestus
 		{
 		detach = "stet";
-		};
-        
-        //dp
-        class 53rd_VX19_Black_Helmet_dp
-		{
-		model = "VolareHelm";
-		type = "blk";
-		pol = "off";
-		};
-		class 53rd_VX19_Blue_Helmet_dp:53rd_VX19_Black_Helmet_dp
-		{
-		type = "blu";
 		};
         //custom start
         //custom armor
