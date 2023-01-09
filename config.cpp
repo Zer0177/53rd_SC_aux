@@ -1099,9 +1099,9 @@ class cfgWeapons
         displayName = "[53rd] Volare Armor (Rifleman)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -1116,9 +1116,9 @@ class cfgWeapons
         displayName = "[53rd] Volare Armor (Squad Leader)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
