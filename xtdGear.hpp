@@ -11,7 +11,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"blk","blu","red","beret"};
+				values[] = {"blk","blu","red"};
 				changeingame = 1;
                 changedelay  = 0;
 				class blk
@@ -32,11 +32,6 @@ class XtdGearModels
 				class snow
 				{
 					label = "Snow";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class beret
-				{
-					label = "Beret";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
