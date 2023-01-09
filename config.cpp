@@ -1673,7 +1673,6 @@ class CfgVehicles
 		ace_refuel_fuelCargo=1000;
 		class TransportBackpacks
 		{
-            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
 		};
 		class TransportItems
 		{
@@ -1693,6 +1692,7 @@ class CfgVehicles
             item_xx(ACE_UAVBattery,2);
             item_xx(B_UavTerminal,2);
             item_xx(ACE_DefusalKit,2);
+            item_xx(53rd_anprc152l,2);
 		};
 		class TransportMagazines
 		{
@@ -1713,6 +1713,11 @@ class CfgVehicles
                 class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+                class 53rd_Weapon_Resupply
+                {
+                    type = "53rd_Weapon_Resupply";
                     amount = 1;
                 };
             };
