@@ -624,8 +624,8 @@ class 53rd_Sealed_Base : VES_CH252_MAR_Vacuum
 	
 	class 53rd_Sealed_Base_dp : 53rd_Sealed_Base
     {
-        scope = 1;
-        scopeArsenal = 1;
+        scope = 0;
+        scopeArsenal = 0;
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.40;
         displayName = "[53rd] Hephaestus Helmet (Rifleman) dp";
@@ -973,6 +973,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Urban : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Urban : 53rd_Sealed_Base
     {
@@ -984,6 +996,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Urban : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+class 53rd_Helmet_Vac_Sealed_SPC_Urban_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -999,8 +1023,6 @@ class 53rd_Helmet_Normal_Urban : 53rd_Unsealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
-    
-    
 
 class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical : 53rd_Sealed_Base
     {
@@ -1014,6 +1036,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Urban_Medical : 53rd_Sealed_Base
     {
@@ -1025,6 +1059,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Urban_Medical : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban_Medical.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+class 53rd_Helmet_Vac_Sealed_SPC_Urban_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Urban_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -1164,6 +1210,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Woodland : 53rd_Sealed_Base
     {
@@ -1175,6 +1233,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Woodland : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };	
+class 53rd_Helmet_Vac_Sealed_SPC_Woodland_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -1203,6 +1273,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Woodland_Medical : 53rd_Sealed_Base
     {
@@ -1214,6 +1296,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Woodland_Medical : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland_Medical.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };	
+class 53rd_Helmet_Vac_Sealed_SPC_Woodland_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Woodland_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -1353,6 +1447,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Desert : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Desert : 53rd_Sealed_Base
     {
@@ -1364,6 +1470,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Desert : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+class 53rd_Helmet_Vac_Sealed_SPC_Desert_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -1392,6 +1510,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Desert_Medical : 53rd_Sealed_Base
     {
@@ -1403,6 +1533,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Desert_Medical : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert_Medical.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+class 53rd_Helmet_Vac_Sealed_SPC_Desert_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Desert_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -1541,6 +1683,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Snow : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Snow : 53rd_Sealed_Base
     {
@@ -1552,6 +1706,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Snow : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+class 53rd_Helmet_Vac_Sealed_SPC_Snow_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
@@ -1580,6 +1746,18 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 	
 class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical : 53rd_Sealed_Base
     {
@@ -1591,6 +1769,18 @@ class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical : 53rd_Sealed_Base
         {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow_Medical.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };	
+class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (SPC+ / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Helmet_Snow_Medical.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
 
