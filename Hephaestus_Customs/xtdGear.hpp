@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias"};
+				values[] = {"Panzer","Ithias","Fixer"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -47,6 +47,11 @@ class XtdGearModels
 				class Ithias
 				{
 					label = "Ithias";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Fixer
+				{
+					label = "Fixer";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -216,6 +221,14 @@ class XtdGearInfos
 		class 53rd_Custom_Helmet_Vac_Sealed_Ithias_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Ithias_Desert_dp
 		{
 		Camo = "Woodland";
+		};
+        //Fixer
+		class 53rd_Custom_Helmet_Unsealed_Fixer
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Woodland";
+		Person = "Fixer";
+        dp="no";
 		};
 
         

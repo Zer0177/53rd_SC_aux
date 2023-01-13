@@ -122,6 +122,22 @@ class 53rd_Custom_Fixer : 53rd_Armor_SL
 			};
 		};
     };
+    
+	class 53rd_Custom_Helmet_Unsealed_Fixer : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom UnSealed Helmet (Fixer/Tartarus)";
+        author = "53rd AUX TEAM";
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer.paa"
+        };
+    };
 
 //Body
 
