@@ -91,6 +91,11 @@ class CfgVehicles {
                     type = "ACE_track";
                     amount = 1;
                 };
+                class 53rd_Hardbox_Resupply
+                {
+                    type = "53rd_Hardbox_Resupply";
+                    amount = 1;
+                };
             };
         };
 	};

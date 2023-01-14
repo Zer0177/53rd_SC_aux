@@ -635,6 +635,8 @@ class cfgWeapons
 		};
 	};
 	
+    /* raider comment
+    
     class 53rd_Raider_Armor_Base: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";
@@ -768,6 +770,7 @@ class cfgWeapons
 			};
 		};
 	};
+    */
 
 	class 53rd_Armor_RTO: 53rd_Armor_Rifleman
 	{
@@ -835,9 +838,9 @@ class cfgWeapons
 			};
 		};
 	};
-
+    
 //End Base
-  
+    
 //Volare Helmet
     class OPTRE_FC_VX19_Helmet;
 
@@ -1099,9 +1102,9 @@ class cfgWeapons
         displayName = "[53rd] Volare Armor (Rifleman)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -1116,9 +1119,9 @@ class cfgWeapons
         displayName = "[53rd] Volare Armor (Squad Leader)";
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_V2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
             "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_M52_GREY_L2.paa",
+            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co",
         };
@@ -1195,135 +1198,7 @@ class cfgWeapons
 
     };
 //End Volare
-//Spartan Helemts
-	class OPTRE_UNSC_SCOUT_Black_Helmet;
-	class 53rd_Range_Helmet : OPTRE_UNSC_SCOUT_Black_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "Body";
-		displayName = "[53rd] Ranger Helmet (Woodland)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = 
-		{
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Helmet_co.paa",
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-		class HitpointsProtectionInfo
-		{
-			class Face
-			{
-				armor = 50;
-				hitpointName = "HitFace";
-				passThrough = 0.1;
-			};
-			class Head
-			{
-				armor = 50;
-				hitPointName = "HitHead";
-				passThrough = 0.1;
-			};
-			class Neck
-				{
-					armor = 20;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				 };
-			};
-	};
-	class 53rd_Range_Helmet_Wood_dp : OPTRE_UNSC_SCOUT_Black_Helmet 
-    {
-		scope = 1;
-        scopeCurator = 1;
-        scopeArsenal = 1;
-		hiddenSelectionsTextures[]=
-		{
-				"53rd_SC_aux\tex\Spartan Helmets\Scout_Helmet_co.paa",
-				"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-        
-    };
-	class 53rd_Range_Helmet_URB : OPTRE_UNSC_SCOUT_Black_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "Body";
-		displayName = "[53rd] Ranger Helmet (Urban)";
-		hiddenSelectionsTextures[] = 
-		{
-			"53rd_SC_aux\Rangers\Scout_Helmet_Black_co.paa",
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-	};
-	 class 53rd_Range_Helmet_URB_dp : OPTRE_UNSC_SCOUT_Black_Helmet 
-    {
-		scope = 1;
-        scopeCurator = 1;
-        scopeArsenal = 1;
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Rangers\Scout_Helmet_Black_co.paa",
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-        
-    };
-	class 53rd_Range_Helmet_DES : OPTRE_UNSC_SCOUT_Black_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "Body";
-		displayName = "[53rd] Ranger Helmet (Desert)";
-		hiddenSelectionsTextures[] = 
-		{
-			"53rd_SC_aux\Rangers\Scout_Helmet_Des_co.paa",
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-	};
-	class 53rd_Range_Helmet_DES_dp : OPTRE_UNSC_SCOUT_Black_Helmet 
-    {
-		scope = 1;
-        scopeCurator = 1;
-        scopeArsenal = 1;
-		hiddenSelectionsTextures[]=
-		{
-				"53rd_SC_aux\Rangers\Scout_Helmet_Des_co.paa",
-				"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-        
-    };
-	class 53rd_Range_Helmet_WIN : OPTRE_UNSC_SCOUT_Black_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		dlc = "53rd AUX";
-		author = "Body";
-		displayName = "[53rd] Ranger Helmet (Winter)";
-		hiddenSelectionsTextures[] = 
-		{
-			"53rd_SC_aux\Rangers\Scout_Helmet_Win_co.paa",
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-	};
-	class 53rd_Range_Helmet_WIN_dp : OPTRE_UNSC_SCOUT_Black_Helmet 
-    {
-		scope = 1;
-        scopeCurator = 1;
-        scopeArsenal = 1;
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Rangers\Scout_Helmet_Win_co.paa",
-			"53rd_SC_aux\tex\Spartan Helmets\Scout_Visor_co.paa",
-		};
-        
-    };
-//Raider Gear
+/*Raider Gear
     class 53rd_Helmet_Lmao: 53rd_Recon_Helmet_Base
 	{
 		scope = 2;
@@ -1405,7 +1280,7 @@ class cfgWeapons
 			"optre_unsc_units\army\data\odst_armor_co.paa"
         };
 	};
-//End Raider
+//End Raider*/
 		
 //Stetson
     class ItemCore;
@@ -1673,7 +1548,6 @@ class CfgVehicles
 		ace_refuel_fuelCargo=1000;
 		class TransportBackpacks
 		{
-            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
 		};
 		class TransportItems
 		{
@@ -1693,6 +1567,7 @@ class CfgVehicles
             item_xx(ACE_UAVBattery,2);
             item_xx(B_UavTerminal,2);
             item_xx(ACE_DefusalKit,2);
+            item_xx(53rd_anprc152l,2);
 		};
 		class TransportMagazines
 		{
@@ -1713,6 +1588,11 @@ class CfgVehicles
                 class 53rd_SupplyPod_Medical
                 {
                     type = "53rd_SupplyPod_Medical";
+                    amount = 1;
+                };
+                class 53rd_Weapon_Resupply
+                {
+                    type = "53rd_Weapon_Resupply";
                     amount = 1;
                 };
             };

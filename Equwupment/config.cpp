@@ -354,6 +354,7 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		scope = 2;
        	scopeCurator = 2;
+		scopeArsenal=2;
 		author="53rd aux";
 		displayName="[53rd] Medical Hardbox";
 		model="\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_medic";
@@ -405,6 +406,7 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		scope = 2;
        	scopeCurator = 2;
+		scopeArsenal=2;
 		author="53rd aux";
 		displayName="[53rd] Squad Hardbox";
 		model = "\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate";
@@ -455,6 +457,7 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		scope = 2;
        	scopeCurator = 2;
+		scopeArsenal=2;
 		author="53rd aux";
 		displayName="[53rd] Platoon Resupply";
 		model="\OPTRE_Buildings\Containers\optre_weaponcase_closed";
@@ -566,6 +569,7 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		scope = 2;
        	scopeCurator = 2;
+		scopeArsenal=2;
 		author="53rd aux";
 		displayName="[53rd] 3R Hardbox";
 		model = "\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_nuclear";
