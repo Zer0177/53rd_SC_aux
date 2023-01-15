@@ -171,11 +171,7 @@ class cfgVehicles
 		tf_range=12000;
         hiddenSelectionsTextures[]=
         {
-<<<<<<< HEAD
             "V_FZ_Air_Vehicles\data\Hornet\V_FZ_HORNET_URB.paa"
-=======
-            "V_FZ_Air_Vehicles\data\Hornet\V_FZ_Hornet_URB.paa"
->>>>>>> dev
         };
 		weapons[]=
 		{
