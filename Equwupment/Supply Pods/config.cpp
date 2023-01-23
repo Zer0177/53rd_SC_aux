@@ -65,6 +65,14 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Marksmen)";
 		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_marks_co.paa"
+        };
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_36Rnd_95x40_Mag,50);
@@ -104,6 +112,14 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Basic)";
 		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_basic_co.paa"
+        };
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_60RND_762x51_Mag,50);
@@ -147,6 +163,14 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Heavy)";
 		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_heavy_co.paa"
+        };
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_200Rnd_95x40_Box_Tracer,20);
@@ -182,6 +206,14 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (CQB)";
 		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_cqb_co.paa"
+        };
 		class TransportMagazines
 		{
 			mag_xx(TCF_60Rnd_5x23mm_Mag_JHP,30);
@@ -215,6 +247,14 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Demo)";
 		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_uxo_co.paa"
+        };
 		class TransportMagazines
 		{
 			mag_xx(C7_Remote_Mag,8);
@@ -249,6 +289,14 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Equipment)";
 		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_equip_co.paa"
+        };
 		class TransportBackpacks
 		{
 			pack_xx(53rd_ANPRC_Heavy_515,4);
@@ -281,14 +329,13 @@ class CfgVehicles
        	scopeCurator = 2;
 		editorCategory = "53rd_cat_faction";
         displayName = "[53rd] Supply Pod (Medical)";
-		model="\OPTRE_misc\crates\Supply_pod.p3d";
 		hiddenSelections[]=
 		{
-			"attach_Cover"
+			"camo"
 		};
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Crates\53rd_Medical_SupplyPod_co.paa"
+            "53rd_SC_aux\tex\Crates\SupplyPod_medi_co.paa"
         };
 		class TransportBackpacks
 		{
