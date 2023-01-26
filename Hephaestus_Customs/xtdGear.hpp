@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer"};
+				values[] = {"Panzer","Ithias","Fixer","Bigben","Lonewulf"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -52,6 +52,16 @@ class XtdGearModels
 				class Fixer
 				{
 					label = "Fixer";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Bigben
+				{
+					label = "Big Ben";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Lonewulf
+				{
+					label = "Lonewulf";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -222,12 +232,65 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
+		//Lonewulf
+		class 53rd_Custom_Helmet_Lonewulf_Desert
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Lonewulf";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Snow:53rd_Custom_Helmet_Lonewulf_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Urban:53rd_Custom_Helmet_Lonewulf_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Woodland:53rd_Custom_Helmet_Lonewulf_Desert
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Lonewulf";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Snow_dp:53rd_Custom_Helmet_Lonewulf_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Urban_dp:53rd_Custom_Helmet_Lonewulf_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Lonewulf_Woodland_dp:53rd_Custom_Helmet_Lonewulf_Desert_dp
+		{
+		Camo = "Woodland";
+		};
         //Fixer
 		class 53rd_Custom_Helmet_Unsealed_Fixer
 		{
 		model = "HephaestusCustomHelm";
 		Camo = "Woodland";
 		Person = "Fixer";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_BigBen
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Urban";
+		Person = "Bigben";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_BigBen_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Urban";
+		Person = "Bigben";
         dp="no";
 		};
 

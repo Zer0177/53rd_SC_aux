@@ -746,7 +746,146 @@ class 53rd_Custom_Helmet_Vac_Sealed_Ithias_Woodland : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-
+    //Ben
+    class 53rd_VX19_Black_Helmet;
+    class 53rd_VX19_Black_Helmet_dp;
+    class 53rd_Custom_Helmet_BigBen : 53rd_VX19_Black_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[53rd] VX19 Flight Helmet (Hawaiian)";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_BigBen.paa",
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_BigBen_dp : 53rd_VX19_Black_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+		displayName = "[53rd] VX19 Flight Helmet (Hawaiian) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_BigBen.paa",
+			""
+		};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo","camo2"};
+            uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_BigBen.paa",
+                ""
+            };
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				"OPTRE_FC_Units\Marines\data\h3_pilothelmet_Visor_trans.rvmat"
+			};
+        };
+    };
+    //Lonewulf
+class OPTRE_UNSC_CH252D_Helmet;
+class OPTRE_UNSC_CH252D_Helmet_dp;
+    
+class 53rd_Custom_Helmet_Lonewulf_Urban : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Urban.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Lonewulf_Urban_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Urban) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Urban.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+class 53rd_Custom_Helmet_Lonewulf_Woodland : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Woodland.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Lonewulf_Woodland_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Woodland) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Woodland.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+class 53rd_Custom_Helmet_Lonewulf_Desert : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Desert.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Lonewulf_Desert_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Desert) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Desert.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+class 53rd_Custom_Helmet_Lonewulf_Snow : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Snow.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Lonewulf_Snow_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Lonewulf / Snow) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Lonewulf_Snow.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
 };
 
 class CfgVehicles
