@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Owl {
-		units[] = {"53rd_Raven","53rd_Dega"};
+		units[] = {"53rd_Raven"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -155,7 +155,7 @@ class CfgVehicles
 			};
 		};		
 	};
-	class DEGA_Heli_Attack_01_dynamicLoadout_F;
+	/*class DEGA_Heli_Attack_01_dynamicLoadout_F;
 	class 53rd_Dega : DEGA_Heli_Attack_01_dynamicLoadout_F
 	{
 		displayName="[53rd] D102 OWL-D";
@@ -299,5 +299,5 @@ class CfgVehicles
 				userActionID=55;
 			};
 		};		
-	};
+	};*/
 };
