@@ -1,3 +1,4 @@
+/*
 class cfgPatches
 {
   class WEA_West_Enia_Army
