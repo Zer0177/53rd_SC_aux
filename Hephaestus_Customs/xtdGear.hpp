@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer","Bigben","Lonewulf"};
+				values[] = {"Panzer","Ithias","Fixer","Bigben","Lonewulf","Ryuu"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -62,6 +62,11 @@ class XtdGearModels
 				class Lonewulf
 				{
 					label = "Lonewulf";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Ryuu
+				{
+					label = "Ryuu";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -117,7 +122,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias"};
+				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Fixer
@@ -143,6 +148,11 @@ class XtdGearModels
 				class Ithias
 				{
 					label = "Ithias";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Joker
+				{
+					label = "Joker";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -193,7 +203,7 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
-		//ithias
+		//Ithias
 		class 53rd_Custom_Helmet_Vac_Sealed_Ithias_Desert
 		{
 		model = "HephaestusCustomHelm";
@@ -229,6 +239,45 @@ class XtdGearInfos
 		Camo = "Urban";
 		};
 		class 53rd_Custom_Helmet_Vac_Sealed_Ithias_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Ithias_Desert_dp
+		{
+		Camo = "Woodland";
+		};
+		//Ryuu
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Ryuu";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Snow:53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Urban:53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Woodland:53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Ryuu";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Snow_dp:53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Urban_dp:53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Ryuu_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Ryuu_Desert_dp
 		{
 		Camo = "Woodland";
 		};
@@ -279,6 +328,7 @@ class XtdGearInfos
 		Person = "Fixer";
         dp="no";
 		};
+		//Bigben
 		class 53rd_Custom_Helmet_BigBen
 		{
 		model = "HephaestusCustomHelm";
@@ -383,6 +433,27 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
+		
+		//Joker
+		class 53rd_Custom_Armor_Joker_Desert
+		{
+		model = "HephaestusCustomVest";
+		Camo = "Desert";
+		Person = "Joker";
+		};
+		class 53rd_Custom_Armor_Joker_Snow:53rd_Custom_Armor_Joker_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Armor_Joker_Urban:53rd_Custom_Armor_Joker_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Armor_Joker_Woodland:53rd_Custom_Armor_Joker_Desert
+		{
+		Camo = "Woodland";
+		};
+
 
 	};
 };
