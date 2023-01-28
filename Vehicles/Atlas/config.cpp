@@ -10,8 +10,8 @@ class cfgWeapons {
     
 };
 class CfgVehicles {
-	class LM_OPCAN_MBTB_KOS;
-	class 53rd_M1022: LM_OPCAN_MBTB_KOS
+	class O_MBT_02_cannon;
+	class 53rd_M1022: O_MBT_02_cannon
 		{
 		displayName="[53rd] M10 Atlas";
 		author="Seven";
@@ -32,6 +32,14 @@ class CfgVehicles {
             "53rd_SC_aux\Vehicles\Atlas\White_Gun.paa",
             "53rd_SC_aux\Vehicles\Atlas\White_Back.paa",
             "53rd_SC_aux\Vehicles\merkava\camonet_NATO_Tundra_CO.paa"
+		};
+		weapons[]=
+		{
+
+		};
+		magazines[]=
+		{
+
 		};
 		class TransportWeapons
 		{

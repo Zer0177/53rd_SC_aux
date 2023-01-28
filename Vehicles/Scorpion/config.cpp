@@ -11,86 +11,8 @@ class cfgWeapons {
 };
 class CfgVehicles
 {
-class OPTRE_M808BM_Base;
-	class 53rd_ONI_Scorpion: OPTRE_M808BM_Base
-	{
-		displayName="[ONI] M808BM";
-		author="53rd & Seven";
-		dlc = "53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_ONI";
-		editorCategory = "53rd_ONI_cat_faction";
-		editorSubCategory = "53rd_Tank";
-		crew="OPTRE_UNSC_ONI_Soldier_Operative";
-		typicalCargo[]=
-		{
-			"OPTRE_UNSC_ONI_Soldier_Operative"
-		};
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"camo6",
-			"camo7",
-			"camo8"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Scorpion\ONI_Tank_CO.paa",
-			"53rd_SC_aux\tex\Scorpion\ONI_tank_Turret.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_ONI_co.paa"
-		};
-	};
-	class 53rd_CORP_Scorpion: OPTRE_M808BM_Base
-	{
-		displayName="[CORP] M808BM";
-		author="53rd & Seven";
-		dlc = "53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_Dortman";
-		editorCategory = "53rd_Dortman_cat_faction";
-		editorSubCategory = "53rd_Tank";
-		crew="OPTRE_UNSC_ONI_Soldier_Operative";
-		typicalCargo[]=
-		{
-			"OPTRE_UNSC_ONI_Soldier_Operative"
-		};
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"camo6",
-			"camo7",
-			"camo8"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Scorpion\Corp\Scorp_base_Corp_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Corp\Scorp_tur_Corp_co.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Corp\Scorpion_mg_Corp_co.paa"
-		};
-	};
-	class 53rd_Scorpion: OPTRE_M808BM_Base
+class OPTRE_M808BM_UNSC;
+	class 53rd_Scorpion: OPTRE_M808BM_UNSC
 	{
 		displayName="[53rd] M808BM";
 		author="53rd & Seven";
@@ -100,10 +22,17 @@ class OPTRE_M808BM_Base;
 		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		crew="53rd_crewman_unit";
+		crew="OPTRE_UNSC_ONI_Soldier_Operative";
 		typicalCargo[]=
 		{
-			"53rd_crewman_unit"
+			"OPTRE_UNSC_ONI_Soldier_Operative"
+		};
+		weapons[]=
+		{
+
+		};
+		magazines[]=
+		{
 		};
 		hiddenSelections[]=
 		{
@@ -241,4 +170,82 @@ class OPTRE_M808BM_Base;
             };
         };
     };
+	class 53rd_ONI_Scorpion: OPTRE_M808BM_UNSC
+	{
+		displayName="[ONI] M808BM";
+		author="53rd & Seven";
+		dlc = "53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_ONI";
+		editorCategory = "53rd_ONI_cat_faction";
+		editorSubCategory = "53rd_Tank";
+		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		typicalCargo[]=
+		{
+			"OPTRE_UNSC_ONI_Soldier_Operative"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Scorpion\ONI_Tank_CO.paa",
+			"53rd_SC_aux\tex\Scorpion\ONI_tank_Turret.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_ONI_co.paa"
+		};
+	};
+	class 53rd_CORP_Scorpion: OPTRE_M808BM_UNSC
+	{
+		displayName="[CORP] M808BM";
+		author="53rd & Seven";
+		dlc = "53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_Dortman";
+		editorCategory = "53rd_Dortman_cat_faction";
+		editorSubCategory = "53rd_Tank";
+		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		typicalCargo[]=
+		{
+			"OPTRE_UNSC_ONI_Soldier_Operative"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Scorpion\Corp\Scorp_base_Corp_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Corp\Scorp_tur_Corp_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Corp\Scorpion_mg_Corp_co.paa"
+		};
+	};
 };
