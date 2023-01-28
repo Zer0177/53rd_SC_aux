@@ -445,6 +445,7 @@ class CfgVehicles{
 };
 
 class CfgGlasses{
+    /*
 	class G_CBRN_S10;
 
 //Base
@@ -487,5 +488,5 @@ class WEA_Gasmask_Base: G_CBRN_S10
 			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_WEA.paa",
 			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
 		};
-	};
+	};*/
 };
