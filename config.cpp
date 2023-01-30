@@ -1420,19 +1420,19 @@ class cfgWeapons
 			"OPTRE_60Rnd_762x51_Mag",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"TCF_60Rnd_762x51_Mag_AP",
+			"TCF_60Rnd_762x51_Mag_APT",
+			"TCF_60Rnd_762x51_Mag_JHP",
+			"TCF_60Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag",
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
 			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
+			"TCF_32Rnd_762x51_Mag_AP",
+			"TCF_32Rnd_762x51_Mag_APT",
+			"TCF_32Rnd_762x51_Mag_JHP",
+			"TCF_32Rnd_762x51_Mag_JHPT",
+			"TCF_32Rnd_762x51_Mag_SS",
+			"TCF_32Rnd_762x51_Mag_SST"
 		};
     };
 	class 53rd_MA37GL: OPTRE_MA37GL
@@ -1447,19 +1447,19 @@ class cfgWeapons
 			"OPTRE_60Rnd_762x51_Mag",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"TCF_60Rnd_762x51_Mag_AP",
+			"TCF_60Rnd_762x51_Mag_APT",
+			"TCF_60Rnd_762x51_Mag_JHP",
+			"TCF_60Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag",
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
 			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
+			"TCF_32Rnd_762x51_Mag_AP",
+			"TCF_32Rnd_762x51_Mag_APT",
+			"TCF_32Rnd_762x51_Mag_JHP",
+			"TCF_32Rnd_762x51_Mag_JHPT",
+			"TCF_32Rnd_762x51_Mag_SS",
+			"TCF_32Rnd_762x51_Mag_SST"
 		};
     };
 	class 53rd_MA32: OPTRE_MA32
@@ -1474,19 +1474,19 @@ class cfgWeapons
 			"OPTRE_60Rnd_762x51_Mag",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"TCF_60Rnd_762x51_Mag_AP",
+			"TCF_60Rnd_762x51_Mag_APT",
+			"TCF_60Rnd_762x51_Mag_JHP",
+			"TCF_60Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag",
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
 			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
+			"TCF_32Rnd_762x51_Mag_AP",
+			"TCF_32Rnd_762x51_Mag_APT",
+			"TCF_32Rnd_762x51_Mag_JHP",
+			"TCF_32Rnd_762x51_Mag_JHPT",
+			"TCF_32Rnd_762x51_Mag_SS",
+			"TCF_32Rnd_762x51_Mag_SST"
 		};
     };
 	class 53rd_MA32GL: OPTRE_MA32GL
@@ -1501,19 +1501,19 @@ class cfgWeapons
 			"OPTRE_60Rnd_762x51_Mag",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT",
+			"TCF_60Rnd_762x51_Mag_AP",
+			"TCF_60Rnd_762x51_Mag_APT",
+			"TCF_60Rnd_762x51_Mag_JHP",
+			"TCF_60Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag",
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
 			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
+			"TCF_32Rnd_762x51_Mag_AP",
+			"TCF_32Rnd_762x51_Mag_APT",
+			"TCF_32Rnd_762x51_Mag_JHP",
+			"TCF_32Rnd_762x51_Mag_JHPT",
+			"TCF_32Rnd_762x51_Mag_SS",
+			"TCF_32Rnd_762x51_Mag_SST"
 		};
     };
 };
