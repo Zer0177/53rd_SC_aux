@@ -1,4 +1,4 @@
-class CfgPatches {
+/*class CfgPatches {
 	class West_Enia_Army {
 		units[] = 
         {
@@ -445,48 +445,4 @@ class CfgVehicles{
 };
 
 class CfgGlasses{
-    /*
-	class G_CBRN_S10;
-
-//Base
-class WEA_Gasmask_Base: G_CBRN_S10
-	{
-		author="Ithias";
-		displayname="Base thing";
-		//picture="";
-		optreVarietys[]=
-		{
-			"",
-			"",
-			""
-		};
-        optreHUDStyle = "ODST_1";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_WEA.paa",
-			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
-		};
-	};
-
-//Gas Mask
-
-	class WEA_Gasmask: WEA_Gasmask_Base
-	{
-		scope=2;
-		scopeArsenal=2;
-		scopecurator=2;
-		author="Ithias";
-		displayname="[53rd] West Enia Army Gasmask";
-		//picture="";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_WEA.paa",
-			"53rd_SC_aux\Units\factions\West_Enia_Army\Tex\Gasmask_Glasses_WEA.paa"
-		};
-	};*/
 };
