@@ -762,7 +762,7 @@ class cfgVehicles
 
   class MSR_Auto_Riflemen_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_200Rnd_65x39_cased_Box {count=3;magazine="200Rnd_65x39_cased_Box";};
@@ -796,7 +796,7 @@ class cfgVehicles
 
   class MSR_Medic_pack: OPTRE_UNSC_Rucksack_Medic
   {
-    scope=1;
+    scope=0;
     class TransportMagazines{};
     class TransportItems
     {
@@ -827,7 +827,7 @@ class cfgVehicles
 
   class MSR_Rifleman_AT_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_M41_Twin_HEAT {count=5;magazine="OPTRE_M41_Twin_HEAT";};
@@ -853,7 +853,7 @@ class cfgVehicles
 
   class MSR_Grenadier_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_M9_Frag {count=3;magazine="OPTRE_M9_Frag";};
@@ -894,7 +894,7 @@ class cfgVehicles
 
   class MSR_Rifleman_Big_AT_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=1;
+    scope=0;
     class TransportMagazines
     {
      class _xx_OPTRE_1Rnd_50x137_HEAT {count=8;magazine="OPTRE_1Rnd_50x137_HEAT";};
