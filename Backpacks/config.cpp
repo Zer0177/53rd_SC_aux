@@ -26,8 +26,8 @@ class CfgVehicles
 	class OPTRE_ONI_Researcher_Suitcase;
 	class B_Parachute;
 	
-	
-   class OPTRE_UNSC_Rucksack_53rd: OPTRE_UNSC_Rucksack
+//Rucksacks
+   class 53rd_Hephaestus_Rucksack_Basic: OPTRE_UNSC_Rucksack
     {
         dlc="53rd AUX";
         author="Ithias";
@@ -50,108 +50,7 @@ class CfgVehicles
         };
     }; 
 
-    
-	class 53rd_ANPRC_515: OPTRE_ANPRC_515
-    {
-        displayName = "[53rd] AN/PRC-515 (LR)";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        tf_isolatedAmount = 0.65;
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_dialog = "anarc210_radio_dialog";
-        tf_subtype = "digital_lr";
-        tf_range = 120000;
-        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio = 1;
-        maximumLoad=300;
-    };
-    class OPTRE_UNSC_Rucksack_53rd_Athena_LR: OPTRE_UNSC_Rucksack
-    {
-        dlc="53rd AUX";
-        author="Ithias";
-        scope=2;
-        scopeCurator=2;
-        displayName="[53rd] Rucksack (NCO)";
-        maximumLoad=300;
-        mass=1;
-        hiddenSelections[]=
-        {
-            "camo",
-            "camo2",
-            "B_Addons",
-            "B_Medic",
-            "B_Radio"
-        };
-        hiddenSelectionsTextures[]=
-        {
-            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd_Basic_With_LR.paa"
-        };
-		tf_isolatedAmount=0.64999998;
-        tf_encryptionCode="tf_west_radio_code";
-        tf_dialog="anarc210_radio_dialog";
-        tf_subtype="digital_lr";
-        tf_range=120000;
-        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio=1;
-    }; 
-   /* class OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA: OPTRE_UNSC_Rucksack
-    {
-        dlc="53rd AUX";
-        author="Ithias";
-        scope=2;
-        scopeCurator=2;
-        displayName="[53rd] Rucksack (NCO+Chute)";
-        maximumLoad=300;
-        mass=1;
-        hiddenSelections[]=
-        {
-            "camo",
-            "camo2",
-            "B_Addons",
-            "B_Medic",
-            "B_Radio"
-        };
-        hiddenSelectionsTextures[]=
-        {
-            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd_Basic_With_LR.paa"
-        };
-		tf_isolatedAmount=0.64999998;
-        tf_encryptionCode="tf_west_radio_code";
-        tf_dialog="anarc210_radio_dialog";
-        tf_subtype="digital_lr";
-        tf_range=120000;
-        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio=1;
-		backpackSimulation="ParachuteSteerable";
-		ParachuteClass="Steerable_Parachute_F";
-        ace_reserveParachute = "OPTRE_UNSC_Rucksack_53rd_Athena_LRPARA";
-        ace_hasReserveParachute = 1;
-    }; 
-	*/
-    class OPTRE_ANPRC_521_Green_53rd: OPTRE_ANPRC_521_Green
-    {
-        dlc="53rd AUX";
-        author="Ithias";
-        scope=2;
-        scopeCurator=2;
-        displayName="[53rd] AN/PRC-521 (LR)";
-        hiddenSelectionsTextures[]=
-        {
-            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa",
-			"53rd_SC_Aux\tex\Backpacks\CommoPack_CO_53rd.paa"
-        };
-        descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
-		tf_isolatedAmount=0.64999998;
-        tf_encryptionCode="tf_west_radio_code";
-        tf_dialog="anarc210_radio_dialog";
-        tf_subtype="digital_lr";
-        tf_range=120000;
-        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio=1;
-        maximumLoad=300;
-    };
-    class OPTRE_UNSC_Rucksack_Heavy_53rd: OPTRE_UNSC_Rucksack_Heavy
+    class 53rd_Hephaestus_Rucksack_Heavy: OPTRE_UNSC_Rucksack_Heavy
     {
 		author="53rd AUX Team";
         dlc="53rd AUX";
@@ -171,7 +70,56 @@ class CfgVehicles
             "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
         };
     }; 
-    class OPTRE_UNSC_Rucksack_Medic_53rd: OPTRE_UNSC_Rucksack_Medic
+
+//NCO Stuff
+	class 53rd_Hephaestus_NCO_LR_515: OPTRE_ANPRC_515
+    {
+        displayName = "[53rd] NCO LR (515)";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad=400;
+    };
+	
+    class 53rd_Hephaestus_NCO_LR_Rucksack: OPTRE_UNSC_Rucksack
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] NCO LR (Rucksack)";
+        maximumLoad=400;
+        mass=1;
+        hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            "B_Addons",
+            "B_Medic",
+            "B_Radio"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd_Basic_With_LR.paa"
+        };
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+    }; 
+
+//Medic
+    class 53rd_Hephaestus_Medical_Rucksack: OPTRE_UNSC_Rucksack_Medic
     {
         dlc="53rd AUX";
         author="Ithias";
@@ -191,13 +139,14 @@ class CfgVehicles
             "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
         };
     }; 
-    class 53rd_Hardcase_Medic_NCO: OPTRE_ONI_Researcher_Suitcase
+	
+    class 53rd_Hephaestus_Medical_Satchel: OPTRE_ONI_Researcher_Suitcase
     {
 		author="53rd AUX Team";
         dlc="53rd AUX";
         scope=2;
         scopeArsenal=2;
-        displayName="[53rd] Satchel (Medical NCO)";
+        displayName="[53rd] Satchel (Medical)";
         tf_isolatedAmount=0.64999998;
         tf_encryptionCode="tf_west_radio_code";
         tf_dialog="anarc210_radio_dialog";
@@ -216,7 +165,9 @@ class CfgVehicles
         maximumLoad=400;
 		mass=1;
     };
-	class 53rd_ANPRC_Body_515: OPTRE_ANPRC_515
+
+//Customs
+	class 53rd_Hephaestus_NCO_LR_Rucksack_Body: OPTRE_ANPRC_515
 	{
 		author="53rd AUX Team";
         dlc="53rd AUX";
@@ -224,7 +175,7 @@ class CfgVehicles
 		displayName="[53rd] AN/PRC-515 (Body)";
 		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
 		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
-		maximumLoad=300;
+		maximumLoad=400;
 		mass=1;
 		hiddenSelections[]=
 		{
@@ -241,6 +192,8 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+
+//Volare
 	class 53rd_LR_Parachute: B_Parachute
 	{
 		author="53rd Aux";
@@ -260,5 +213,99 @@ class CfgVehicles
         ace_reserveParachute = "53rd_LR_Parachute";
         ace_hasReserveParachute = 1;
 	};
+
+//JTAC LR
+    class 53rd_Hephaestus_Rucksack_JTAC_Urban: OPTRE_ANPRC_521_Green
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] JTAC LR (Urban)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa",
+			"53rd_SC_Aux\tex\Backpacks\53rd_Hephaestus_Rucksack_JTAC_Urban.paa"
+        };
+        descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        maximumLoad=450;
+    };
+	
+    class 53rd_Hephaestus_Rucksack_JTAC_Woodland: OPTRE_ANPRC_521_Green
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] JTAC LR (Woodland)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa",
+			"53rd_SC_Aux\tex\Backpacks\53rd_Hephaestus_Rucksack_JTAC_Woodland.paa"
+        };
+        descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        maximumLoad=450;
+    };
+
+    class 53rd_Hephaestus_Rucksack_JTAC_Desert: OPTRE_ANPRC_521_Green
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] JTAC LR (Desert)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa",
+			"53rd_SC_Aux\tex\Backpacks\53rd_Hephaestus_Rucksack_JTAC_Desert.paa"
+        };
+        descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        maximumLoad=450;
+    };
+
+    class 53rd_Hephaestus_Rucksack_JTAC_Snow: OPTRE_ANPRC_521_Green
+    {
+        dlc="53rd AUX";
+        author="Ithias";
+        scope=2;
+        scopeCurator=2;
+        displayName="[53rd] JTAC LR (Snow)";
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa",
+			"53rd_SC_Aux\tex\Backpacks\53rd_Hephaestus_Rucksack_JTAC_Snow.paa"
+        };
+        descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        maximumLoad=450;
+    };
+
 
 };
