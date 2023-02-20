@@ -832,23 +832,6 @@ class 53rd_Unsealed_Base: VES_CH252_WDL_Heavy
 		};
 	};
 
-class 53rd_Hephaestus_BDU_Slim: VES_BDU_Evolved_Slim
-    {
-        dlc="53rd";
-		scope=2;
-		author="Ithias";
-		displayName="[53rd] Combat Uniform";
-		picture="\optre_unsc_units\army\icons\army_uniform";
-		CBRN_protection=1;
-		class ItemInfo: UniformItem
-		{
-			containerClass="Supply120";
-			mass=40;
-			uniformType = "Neopren";
-			uniformModel="";
-			uniformClass="53rd_Hephaestus_BDU_V_Slim";
-		};
-	};
 
 
 //Urban
@@ -1796,30 +1779,4 @@ class 53rd_Helmet_Normal_Snow_Medical : 53rd_Unsealed_Base
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
-};
-
-class CfgVehicles
-{
-class VES_BDU_V_Urban;
-	
-class 53rd_Hephaestus_BDU_V_Slim: VES_BDU_V_Urban
-	{
-		scope=1;
-		model="\OPTRE_UNSC_Units\Army\uniform";
-        uniformclass="53rd_Hephaestus_BDU_Slim";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"insignia",
-			"clan",
-			"A_BaseLeg"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO",
-			"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO"
-		};
-	};
-
 };
