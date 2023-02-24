@@ -398,7 +398,7 @@ class CfgVehicles
 	class BDU_V_Volare_Black_NCO : OPTRE_UNSC_Army_Soldier_WDL 
     { 
         model = "\OPTRE_FC_Units\Marines\h3_uniform.p3d"; 
-        uniformClass = "Volare_BDU_B1_NCO"; 
+        uniformClass = "Volare_BDU_Bl_NCO"; 
         hiddenSelections[] = {"camo1","camo2"}; 
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_uniform_nco_black_co.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"}; 
     };
