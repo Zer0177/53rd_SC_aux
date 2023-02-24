@@ -327,24 +327,43 @@ class XtdGearInfos
 		};
 		
 		//Body
-		class 53rd_Custom_Helmet_Body_Woodland
+		class 53rd_Custom_Helmet_Body_Desert
 		{
 		model = "HephaestusCustomHelm";
-		Camo = "Woodland";
+		Camo = "Desert";
 		Person = "Body";
-        dp="no";
+        dp="yes";
 		};
-		class 53rd_Custom_Helmet_Body_Snow:53rd_Custom_Helmet_Body_Woodland
+		class 53rd_Custom_Helmet_Body_Snow:53rd_Custom_Helmet_Body_Desert
 		{
 		Camo = "Snow";
 		};
-		class 53rd_Custom_Helmet_Body_Urban:53rd_Custom_Helmet_Body_Woodland
+		class 53rd_Custom_Helmet_Body_Urban:53rd_Custom_Helmet_Body_Desert
 		{
 		Camo = "Urban";
 		};
-		class 53rd_Custom_Helmet_Body_Desert:53rd_Custom_Helmet_Body_Woodland
+		class 53rd_Custom_Helmet_Body_Woodland:53rd_Custom_Helmet_Body_Desert
 		{
-		Camo = "Desert"
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Body_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Body";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Body_Snow_dp:53rd_Custom_Helmet_Body_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Body_Urban_dp:53rd_Custom_Helmet_Body_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Body_Woodland_dp:53rd_Custom_Helmet_Body_Desert_dp
+		{
+		Camo = "Woodland";
 		};
 		
         //Fixer
