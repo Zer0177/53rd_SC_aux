@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer","Bigben","Lonewulf","Ryuu","Body"};
+				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -52,11 +52,6 @@ class XtdGearModels
 				class Fixer
 				{
 					label = "Fixer";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Bigben
-				{
-					label = "Big Ben";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Lonewulf
@@ -353,23 +348,7 @@ class XtdGearInfos
 		model = "HephaestusCustomHelm";
 		Camo = "Woodland";
 		Person = "Fixer";
-        dp="no";
-		};
-		
-		//Bigben
-		class 53rd_Custom_Helmet_BigBen
-		{
-		model = "HephaestusCustomHelm";
-		Camo = "Urban";
-		Person = "Bigben";
         dp="yes";
-		};
-		class 53rd_Custom_Helmet_BigBen_dp
-		{
-		model = "HephaestusCustomHelm";
-		Camo = "Urban";
-		Person = "Bigben";
-        dp="no";
 		};
 
         

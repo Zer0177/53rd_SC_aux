@@ -2,12 +2,10 @@ class CfgPatches {
 	class Hephaestus_Armor {
 		units[] = 
         {
-            "",
 			""
         };
 		weapons[] = 
         {
-            "53rd_Hephaestus_BDU_Slim",
             ""
         };
 		requiredVersion = 0.100000;
