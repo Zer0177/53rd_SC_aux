@@ -36,7 +36,7 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa"
@@ -61,7 +61,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa"
 		};
@@ -85,7 +85,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa"
 		};
@@ -109,8 +109,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa"
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 		};
 	};
 	class OPTRE_M12_LRV;
@@ -132,7 +132,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa"
 		};
@@ -156,7 +156,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\m68_turret_Grey_co.paa",
 			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa"
@@ -181,7 +181,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\m79_turret_Grey_co.paa"
 		};
@@ -205,8 +205,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12_MG_Grey.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa"
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 		};
 		ace_rearm_defaultSupply=1200;
 		ace_refuel_fuelCargo=1000;

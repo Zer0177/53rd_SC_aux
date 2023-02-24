@@ -140,6 +140,66 @@ class 53rd_Custom_Fixer : 53rd_Armor_SL
     };
 
 //Body
+	class 53rd_Custom_Helmet_Body_Woodland : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Body / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Body_Woodland.paa"
+        };
+    };
+	class 53rd_Custom_Helmet_Body_Urban : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Body / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Body_Urban.paa"
+        };
+    };
+	class 53rd_Custom_Helmet_Body_Snow : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Body / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Body_Snow.paa"
+        };
+    };
+	class 53rd_Custom_Helmet_Body_Desert : 53rd_Unsealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Body / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Body_Desert.paa"
+        };
+    };
 
 class 53rd_Custom_Armor_Body_Desert : 53rd_Armor_SL
 	{ 

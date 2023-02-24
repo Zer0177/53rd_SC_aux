@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer","Bigben","Lonewulf","Ryuu"};
+				values[] = {"Panzer","Ithias","Fixer","Bigben","Lonewulf","Ryuu","Body"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -67,6 +67,11 @@ class XtdGearModels
 				class Ryuu
 				{
 					label = "Ryuu";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Body
+				{
+					label = "Body";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -320,6 +325,28 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
+		
+		//Body
+		class 53rd_Custom_Helmet_Body_Woodland
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Woodland";
+		Person = "Body";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Body_Snow:53rd_Custom_Helmet_Body_Woodland
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Body_Urban:53rd_Custom_Helmet_Body_Woodland
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Body_Desert:53rd_Custom_Helmet_Body_Woodland
+		{
+		Camo = "Desert"
+		};
+		
         //Fixer
 		class 53rd_Custom_Helmet_Unsealed_Fixer
 		{
@@ -328,6 +355,7 @@ class XtdGearInfos
 		Person = "Fixer";
         dp="no";
 		};
+		
 		//Bigben
 		class 53rd_Custom_Helmet_BigBen
 		{

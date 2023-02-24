@@ -41,14 +41,14 @@ class cfgVehicles
 			"CMFlareLauncher",
 			"OPTRE_GUA23A",
 			"OPTRE_missiles_C2GMLS",
-            "missiles_ASRAAM",
+            "missiles_ASRAAM"
 		};
 		magazines[]=
 		{
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"OPTRE_2000Rnd_20mm_HEIAP",
 			"OPTRE_8Rnd_C2GMLS_missiles",
-            "4Rnd_AAA_missiles",
+            "4Rnd_AAA_missiles"
 		};
 		class UserActions
 		{
