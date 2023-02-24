@@ -20,7 +20,7 @@ class CfgVehicles
 	class 53rd_M12_FAV_APC: OPTRE_M12_FAV_APC
 	{
 		displayName="[53rd] M12 APC Warthog";
-		author="Seven";
+		author="Six";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -47,7 +47,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M813 Transport Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -71,7 +71,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12A1 AT Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -95,7 +95,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12 Recon Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -118,7 +118,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12 LAAG Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -142,7 +142,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12G1 Gauss Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -167,7 +167,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12 AA Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -191,7 +191,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M914 RV Warthog";
-		author="Seven";
+		author="Six";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
