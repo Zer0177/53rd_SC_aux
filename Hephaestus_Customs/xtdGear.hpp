@@ -346,25 +346,6 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
-		class 53rd_Custom_Helmet_Body_Desert_dp
-		{
-		model = "HephaestusCustomHelm";
-		Camo = "Desert";
-		Person = "Body";
-        dp="no";
-		};
-		class 53rd_Custom_Helmet_Body_Snow_dp:53rd_Custom_Helmet_Body_Desert_dp
-		{
-		Camo = "Snow";
-		};
-		class 53rd_Custom_Helmet_Body_Urban_dp:53rd_Custom_Helmet_Body_Desert_dp
-		{
-		Camo = "Urban";
-		};
-		class 53rd_Custom_Helmet_Body_Woodland_dp:53rd_Custom_Helmet_Body_Desert_dp
-		{
-		Camo = "Woodland";
-		};
 		
         //Fixer
 		class 53rd_Custom_Helmet_Unsealed_Fixer
