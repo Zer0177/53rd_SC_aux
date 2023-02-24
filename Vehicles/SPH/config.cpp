@@ -45,7 +45,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Scorpion\Scorp_base_grey_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorp_base_53rd_co.paa",
 			"53rd_SC_aux\Vehicles\Scorpion\Scorp_art_black_co.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_art_camo_ca.paa",
