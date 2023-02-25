@@ -33,13 +33,16 @@ class CfgVehicles
 		{
 			"53rd_crewman_unit"
 		};
-
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa",
-			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa"
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class OPTRE_M813_TT;
@@ -63,7 +66,11 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa"
+			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class OPTRE_M12A1_LRV;
@@ -87,7 +94,11 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa"
+			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class OPTRE_M12_FAV;
@@ -111,6 +122,10 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class OPTRE_M12_LRV;
@@ -134,7 +149,11 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa"
+			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class OPTRE_M12G1_LRV;
@@ -159,7 +178,9 @@ class CfgVehicles
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\m68_turret_Grey_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa"
+			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
 		};
 	};
 	class OPTRE_M12R_AA;
@@ -183,7 +204,11 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m79_turret_Grey_co.paa"
+			"53rd_SC_aux\tex\Hogs\m79_turret_Grey_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class OPTRE_M914_RV;
@@ -207,6 +232,10 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
 			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 		ace_rearm_defaultSupply=1200;
 		ace_refuel_fuelCargo=1000;
@@ -249,7 +278,7 @@ class CfgVehicles
         {
             class Cargo
             {
-                class MEU_Speedbag
+                class 53rd_Speedbag
                 {
                     type = "53rd_SupplyPod_Medical";
                     amount = 1;
