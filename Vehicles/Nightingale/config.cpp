@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Night {
-		units[] = {"53rd_Nightingale"};
+		units[] = {"53rd_Nightingale","53rd_Nightingale_medi"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -182,4 +182,19 @@ class CfgVehicles
 			};
 		};
 	};
+    class 53rd_Nightingale_medi:53rd_Nightingale
+    {
+		displayName = "[53rd] EV-44 Nightingale (Medical)";
+        hiddenSelectionsTextures[] = { "53rd_SC_aux\Vehicles\Nightingale\Medical_night.paa" };
+		weapons[]=
+		{
+			"CMFlareLauncher",
+			"OPTRE_GUA23A",
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"OPTRE_2000Rnd_20mm_HEIAP",
+		};
+    };
 };
