@@ -116,9 +116,9 @@ class OPTRE_M494;
 			"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
 		};
 	};
-    ace_cargo_space = 4;
-    ace_cargo_hasCargo = 1;
-    class ACE_Cargo
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
         {
             class Cargo
             {
