@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body"};
+				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body","Hazard"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -67,6 +67,11 @@ class XtdGearModels
 				class Body
 				{
 					label = "Body";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Hazard
+				{
+					label = "Hazard";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -349,6 +354,47 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Person = "Fixer";
         dp="yes";
+		};
+		
+		//Hazard
+		//Lonewulf
+		class 53rd_Custom_Helmet_Hazard_Desert
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Hazard";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_Hazard_Snow:53rd_Custom_Helmet_Hazard_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Hazard_Urban:53rd_Custom_Helmet_Hazard_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Hazard_Woodland:53rd_Custom_Helmet_Hazard_Desert
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Hazard_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Hazard";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Hazard_Snow_dp:53rd_Custom_Helmet_Hazard_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Hazard_Urban_dp:53rd_Custom_Helmet_Hazard_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Hazard_Woodland_dp:53rd_Custom_Helmet_Hazard_Desert_dp
+		{
+		Camo = "Woodland";
 		};
 
         
