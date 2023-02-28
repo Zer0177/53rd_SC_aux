@@ -22,10 +22,10 @@ class OPTRE_M808BM_UNSC;
 		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"OPTRE_UNSC_ONI_Soldier_Operative"
+			"53rd_crewman_unit"
 		};
 		weapons[]=
 		{
