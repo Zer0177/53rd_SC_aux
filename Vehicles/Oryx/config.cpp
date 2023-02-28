@@ -8,7 +8,7 @@ class CfgPatches {
 };
 class CfgVehicles
 {
-class OPTRE_M494;
+    class OPTRE_M494;
 	class 53rd_Oryx: OPTRE_M494
 	{
 		displayName="[53rd] M494 Oryx";
@@ -115,7 +115,6 @@ class OPTRE_M494;
 			"53rd_SC_aux\Vehicles\Oryx\Scorpion_mg_grey_co.paa",
 			"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
 		};
-	};
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
         class ACE_Cargo
@@ -133,6 +132,14 @@ class OPTRE_M494;
                     amount = 1;
                 };
             };
+        };
+    };
+    class 53rd_Oryx_50:53rd_Oryx
+    {
+		displayName="[53rd] M494 Oryx 50mm";
+		class EventHandlers
+		{
+            Init = "(_this select 0) addWeaponTurret ['OPTRE_M230',[0]];(_this select 0) addMagazineTurret ['OPTRE_100Rnd_50mm_APFSDS',[0]];";
         };
     };
 };
