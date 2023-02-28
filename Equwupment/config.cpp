@@ -398,7 +398,7 @@ class CfgVehicles
 		{
 		};
         ace_cargo_size = 1;
-        ace_cargo_canLoad = 0;
+        ace_cargo_canLoad = 1;
         ace_cargo_noRename = 1;
 	};
 	class 53rd_Hardbox_Resupply: Box_NATO_Support_F
@@ -449,7 +449,7 @@ class CfgVehicles
 		{
 		};
         ace_cargo_size = 1;
-        ace_cargo_canLoad = 0;
+        ace_cargo_canLoad = 1;
         ace_cargo_noRename = 1;
 	};
 	class 53rd_Weapon_Resupply: Box_NATO_Support_F
@@ -561,7 +561,7 @@ class CfgVehicles
 			weap_xx(OPTRE_SRS99C,2);
 		};
         ace_cargo_size = 1;
-        ace_cargo_canLoad = 0;
+        ace_cargo_canLoad = 1;
         ace_cargo_noRename = 1;
 	};
 	class 53rd_Hardbox_3R: Box_NATO_Support_F
