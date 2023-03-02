@@ -1234,6 +1234,75 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+    //Hazard
+    class 53rd_Custom_Armor_Hazard_Desert : 53rd_Armor_SL
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Hazard / Desert)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Desert.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Armor_Hazard_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Desert.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+    class 53rd_Custom_Armor_Hazard_Snow : 53rd_Armor_SL
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Hazard / Snow)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Snow.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Armor_Hazard_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Snow.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+    class 53rd_Custom_Armor_Hazard_Urban : 53rd_Armor_SL
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Hazard / Urban)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Armor_Hazard_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
+    class 53rd_Custom_Armor_Hazard_Woodland : 53rd_Armor_SL
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Hazard / Woodland)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Woodland.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Armor_Hazard_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Woodland.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+		};
+	};
 };
 
 class CfgVehicles

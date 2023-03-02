@@ -127,7 +127,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker"};
+				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Fixer
@@ -158,6 +158,11 @@ class XtdGearModels
 				class Joker
 				{
 					label = "Joker";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Hazard
+				{
+					label = "Hazard";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};

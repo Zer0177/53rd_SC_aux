@@ -270,11 +270,13 @@ class CfgVehicles
 			"ves_olive",
 			1
 		};
+        ace_cargo_hasCargo = 1;
+        ace_cargo_space = 4;
         class ACE_Cargo
         {
             class Cargo
             {
-                class 53rd_Hardbox_Resupply
+                class 53rd_Hardbox_Resupply_int
                 {
                     type = "53rd_Hardbox_Resupply";
                     amount = 1;
