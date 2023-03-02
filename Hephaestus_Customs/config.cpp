@@ -1307,5 +1307,4 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 
 class CfgVehicles
 {
-
 };
