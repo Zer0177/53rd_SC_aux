@@ -24,6 +24,7 @@ class cfgVehicles
         scopeArsenal=2;
         forceInGarage=1;
         displayName="[53rd] AV-14 HQ (CAP)";
+        editorPreview="53rd_SC_aux\Vehicles\Hornet\Hornet-HQ.jpg";
         editorCategory = "53rd_cat_faction";
         editorSubCategory = "53rd_Rotary";
         crew="53rd_Volare_airmen_unit";
@@ -161,6 +162,7 @@ class cfgVehicles
 		scopeArsenal=2;
 		forceInGarage=1;
 		displayName="[53rd] AV-14 Hornet (CAP)";
+        editorPreview="53rd_SC_aux\Vehicles\Hornet\Hornet-HQ.jpg";
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		crew="53rd_Volare_airmen_unit";

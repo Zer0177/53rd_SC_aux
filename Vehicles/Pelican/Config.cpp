@@ -70,6 +70,7 @@ class CfgVehicles
 		crewCrashProtection=9.9999997e-005;
 		crewExplosionProtection=9.9999997e-005;
 		displayName="[53rd] D77H Pelican/AV";
+        editorPreview="53rd_SC_aux\Vehicles\Pelican\Pelican-Grey.jpg";
 		transportSoldier=21;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";

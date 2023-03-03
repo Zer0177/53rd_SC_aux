@@ -25,6 +25,7 @@ class cfgVehicles
         editorSubCategory = "53rd_Rotary";
         crew="53rd_Volare_airmen_unit";
         displayName="[53rd] UH-144 Falcon (Ama)";
+        editorPreview="53rd_SC_aux\Vehicles\Falcon\Falcon-AMA.jpg";
         hiddenSelectionsTextures[]=
         {
             "53rd_SC_aux\Vehicles\Falcon\Falcon_Hull_Standard_BLUE_CO.paa",
