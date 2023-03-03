@@ -42,21 +42,21 @@ class cfgWeapons
 
 //Fixer
 
-class 53rd_Custom_Fixer : 53rd_Armor_SL
+    class 53rd_Custom_Fixer_Woodland : 53rd_Armor_SL
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "53rd AUX";
 		author = "53rd AUX TEAM";
-		displayName = "[53rd] Tartarus Armor (Fixer)";
+		displayName = "[53rd] Custom Armor (Fixer / Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
             "53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Woodland.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_SL_Woodland.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Woodland.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-            "53rd_SC_aux\tex\Hephaestus Armor\53rd_ODST_OD.paa"
+            "53rd_SC_aux\tex\ODST Armor\53rd_ODST_WD.paa"
         };
 		class ItemInfo: ItemInfo
 		{
@@ -120,21 +120,153 @@ class 53rd_Custom_Fixer : 53rd_Armor_SL
 			};
 		};
     };
+    class 53rd_Custom_Armor_Fixer_Desert : 53rd_Custom_Fixer_Woodland
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Fixer / Desert)";
+		hiddenSelectionsTextures[]=
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_SL_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Desert.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+            "53rd_SC_aux\tex\ODST Armor\53rd_ODST_DE.paa"
+		};
+	};
+    class 53rd_Custom_Armor_Fixer_Snow : 53rd_Custom_Fixer_Woodland
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Fixer / Snow)";
+		hiddenSelectionsTextures[]=
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_SL_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Snow.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+            "53rd_SC_aux\tex\ODST Armor\53rd_ODST_SN.paa"
+		};
+	};
+    class 53rd_Custom_Armor_Fixer_Urban : 53rd_Custom_Fixer_Woodland
+	{ 
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "53rd AUX";
+		author = "53rd AUX Team";
+		displayName="[53rd] Custom Armor (Fixer / Urban)";
+		hiddenSelectionsTextures[]=
+		{
+            "53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_SL_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+            "53rd_SC_aux\tex\ODST Armor\53rd_ODST_UB.paa"
+		};
+	};
     
-	class 53rd_Custom_Helmet_Unsealed_Fixer : 53rd_Unsealed_Base
+    class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert : 53rd_Sealed_Base
     {
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[53rd] Custom UnSealed Helmet (Fixer/Tartarus)";
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Desert)";
         author = "53rd AUX TEAM";
-        hiddenSelections[]=
-        {
-            "camo"
-        };
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer.paa"
-        };
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Desert.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+    class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Snow : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Snow_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Snow.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+    class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Urban : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Urban_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Urban.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+    class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Woodland : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Woodland_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Fixer / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Fixer_Woodland.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
     };
 
 //Body
@@ -1066,104 +1198,6 @@ class 53rd_Custom_Helmet_Lonewulf_Snow : OPTRE_UNSC_CH252D_Helmet
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
     };
-
-//Hazard
-class 53rd_Custom_Helmet_Hazard_Urban : OPTRE_UNSC_CH252D_Helmet
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Urban)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Urban.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
-		};
-    };
-	class 53rd_Custom_Helmet_Hazard_Urban_dp : OPTRE_UNSC_CH252D_Helmet_dp
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Urban) dp";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Urban.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
-		};
-    };
-class 53rd_Custom_Helmet_Hazard_Woodland : OPTRE_UNSC_CH252D_Helmet
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Woodland)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Woodland.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
-		};
-    };
-	class 53rd_Custom_Helmet_Hazard_Woodland_dp : OPTRE_UNSC_CH252D_Helmet_dp
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Woodland) dp";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Woodland.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
-		};
-    };
-class 53rd_Custom_Helmet_Hazard_Desert : OPTRE_UNSC_CH252D_Helmet
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Desert)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Desert.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
-		};
-    };
-	class 53rd_Custom_Helmet_Hazard_Desert_dp : OPTRE_UNSC_CH252D_Helmet_dp
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Desert) dp";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Desert.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
-		};
-    };
-class 53rd_Custom_Helmet_Hazard_Snow : OPTRE_UNSC_CH252D_Helmet
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Snow)";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Snow.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
-		};
-    };
-	class 53rd_Custom_Helmet_Hazard_Snow_dp : OPTRE_UNSC_CH252D_Helmet_dp
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Helmet (Hazard / Snow) dp";
-        author = "53rd AUX TEAM";
-        hiddenSelectionsTextures[] = 
-        {
-			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Snow.paa",
-			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
-		};
-    };
 	
 //Joker
 class 53rd_Custom_Armor_Joker_Desert : 53rd_Armor_SL
@@ -1303,6 +1337,103 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
+    
+    class 53rd_Custom_Helmet_Hazard_Urban : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Urban.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Hazard_Urban_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Urban) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Urban.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+    class 53rd_Custom_Helmet_Hazard_Woodland : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Woodland.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Hazard_Woodland_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Woodland) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Woodland.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+    class 53rd_Custom_Helmet_Hazard_Desert : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Desert.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Hazard_Desert_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Desert) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Desert.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+    class 53rd_Custom_Helmet_Hazard_Snow : OPTRE_UNSC_CH252D_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Snow.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Hazard_Snow_dp : OPTRE_UNSC_CH252D_Helmet_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Helmet (Hazard / Snow) dp";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Hephaestus_Helmet_Hazard_Snow.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
 };
 
 class CfgVehicles

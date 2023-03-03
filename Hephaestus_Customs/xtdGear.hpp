@@ -353,12 +353,43 @@ class XtdGearInfos
 		};
 		
         //Fixer
-		class 53rd_Custom_Helmet_Unsealed_Fixer
+        class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert
 		{
 		model = "HephaestusCustomHelm";
-		Camo = "Woodland";
+		Camo = "Desert";
 		Person = "Fixer";
         dp="yes";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Snow:53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Urban:53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Woodland:53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Fixer";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Snow_dp:53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Urban_dp:53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Fixer_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Fixer_Desert_dp
+		{
+		Camo = "Woodland";
 		};
 		
 		//Hazard
@@ -405,11 +436,23 @@ class XtdGearInfos
         
         //armors
 		//Fixer
-		class 53rd_Custom_Fixer
+		class 53rd_Custom_Fixer_Woodland
 		{
 		model = "HephaestusCustomVest";
 		Camo = "Woodland";
 		Person = "Fixer";
+		};
+		class 53rd_Custom_Armor_Fixer_Desert:53rd_Custom_Fixer_Woodland
+		{
+		Camo = "Desert";
+		};
+		class 53rd_Custom_Armor_Fixer_Snow:53rd_Custom_Fixer_Woodland
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Armor_Fixer_Urban:53rd_Custom_Fixer_Woodland
+		{
+		Camo = "Urban";
 		};
 		
 		//Body
@@ -510,6 +553,26 @@ class XtdGearInfos
 		class 53rd_Custom_Armor_Joker_Woodland:53rd_Custom_Armor_Joker_Desert
 		{
 		Camo = "Woodland";
+		};
+        
+        //Hazard
+		class 53rd_Custom_Armor_Hazard_Woodland
+		{
+		model = "HephaestusCustomVest";
+		Camo = "Woodland";
+		Person = "Hazard";
+		};
+		class 53rd_Custom_Armor_Hazard_Desert:53rd_Custom_Armor_Hazard_Woodland
+		{
+		Camo = "Desert";
+		};
+		class 53rd_Custom_Armor_Hazard_Snow:53rd_Custom_Armor_Hazard_Woodland
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Armor_Hazard_Urban:53rd_Custom_Armor_Hazard_Woodland
+		{
+		Camo = "Urban";
 		};
 
 
