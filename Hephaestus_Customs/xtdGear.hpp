@@ -127,7 +127,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard"};
+				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard","Lonewulf"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Fixer
@@ -163,6 +163,11 @@ class XtdGearModels
 				class Hazard
 				{
 					label = "Hazard";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Lonewulf
+				{
+					label = "Lonewulf";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -574,7 +579,26 @@ class XtdGearInfos
 		{
 		Camo = "Urban";
 		};
-
+        
+        //Lonewulf
+		class 53rd_Custom_Armor_Lonewulf_Woodland
+		{
+		model = "HephaestusCustomVest";
+		Camo = "Woodland";
+		Person = "Lonewulf";
+		};
+		class 53rd_Custom_Armor_Lonewulf_Desert:53rd_Custom_Armor_Lonewulf_Woodland
+		{
+		Camo = "Desert";
+		};
+		class 53rd_Custom_Armor_Lonewulf_Snow:53rd_Custom_Armor_Lonewulf_Woodland
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Armor_Lonewulf_Urban:53rd_Custom_Armor_Lonewulf_Woodland
+		{
+		Camo = "Urban";
+		};
 
 	};
 };
