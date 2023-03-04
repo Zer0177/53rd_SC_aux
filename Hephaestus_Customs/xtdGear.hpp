@@ -36,7 +36,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body","Hazard"};
+				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body","Hazard","Hellfire","Patches"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Panzer
@@ -72,6 +72,16 @@ class XtdGearModels
 				class Hazard
 				{
 					label = "Hazard";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Hellfire
+				{
+					label = "Hellfire";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Patches
+				{
+					label = "Patches";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -127,7 +137,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard","Lonewulf"};
+				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard","Lonewulf","Patches"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Fixer
@@ -168,6 +178,11 @@ class XtdGearModels
 				class Lonewulf
 				{
 					label = "Lonewulf";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Patches
+				{
+					label = "Patches";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -398,7 +413,6 @@ class XtdGearInfos
 		};
 		
 		//Hazard
-		//Lonewulf
 		class 53rd_Custom_Helmet_Hazard_Desert
 		{
 		model = "HephaestusCustomHelm";
@@ -434,6 +448,86 @@ class XtdGearInfos
 		Camo = "Urban";
 		};
 		class 53rd_Custom_Helmet_Hazard_Woodland_dp:53rd_Custom_Helmet_Hazard_Desert_dp
+		{
+		Camo = "Woodland";
+		};
+		
+		//Hellfire
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Hellfire";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Snow:53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Urban:53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Woodland:53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Hellfire";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Snow_dp:53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Urban_dp:53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Hellfire_Desert_dp
+		{
+		Camo = "Woodland";
+		};
+		
+		//Patches
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Desert
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Patches";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Snow:53rd_Custom_Helmet_Vac_Sealed_Patches_Desert
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Urban:53rd_Custom_Helmet_Vac_Sealed_Patches_Desert
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Woodland:53rd_Custom_Helmet_Vac_Sealed_Patches_Desert
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Camo = "Desert";
+		Person = "Patches";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Snow_dp:53rd_Custom_Helmet_Vac_Sealed_Patches_Desert_dp
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Urban_dp:53rd_Custom_Helmet_Vac_Sealed_Patches_Desert_dp
+		{
+		Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_Vac_Sealed_Patches_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Patches_Desert_dp
 		{
 		Camo = "Woodland";
 		};
@@ -596,6 +690,26 @@ class XtdGearInfos
 		Camo = "Snow";
 		};
 		class 53rd_Custom_Armor_Lonewulf_Urban:53rd_Custom_Armor_Lonewulf_Woodland
+		{
+		Camo = "Urban";
+		};
+        
+        //Patches
+		class 53rd_Custom_Armor_Patches_Woodland
+		{
+		model = "HephaestusCustomVest";
+		Camo = "Woodland";
+		Person = "Patches";
+		};
+		class 53rd_Custom_Armor_Patches_Desert:53rd_Custom_Armor_Patches_Woodland
+		{
+		Camo = "Desert";
+		};
+		class 53rd_Custom_Armor_Patches_Snow:53rd_Custom_Armor_Patches_Woodland
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Custom_Armor_Patches_Urban:53rd_Custom_Armor_Patches_Woodland
 		{
 		Camo = "Urban";
 		};
