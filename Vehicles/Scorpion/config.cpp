@@ -27,16 +27,9 @@ class OPTRE_M875_SPH;
 		{
 			"53rd_crewman_unit"
 		};
-		weapons[]=
-		{
-
-		};
-		magazines[]=
-		{
-		};
 		class EventHandlers
 		{
-        Init = "(_this select 0) addWeaponTurret ['cannon_125mm_advancedcannon_125mm_advanced',[8]];(_this select 0) addMagazineTurret ['OPTRE_100Rnd_50mm_APFSDS',[8]];";
+        Init = "(_this select 0) addWeaponTurret ['TruckHorn2',[-1]];(_this select 0) addWeaponTurret ['cannon_125mm_advanced',[8]];(_this select 0) addMagazineTurret ['12Rnd_125mm_HE_T_Green',[8]];(_this select 0) addMagazineTurret ['24Rnd_125mm_APFSDS_T_Yellow',[8]];(_this select 0) addMagazineTurret ['12Rnd_125mm_HEAT_T_Red',[8]];";
         };
         hiddenSelections[]=
 		{
