@@ -2,7 +2,7 @@ class cfgPatches
 {
   class LD_Faction
   {
-    units[]={"LDGF_LD_Marksman","LDGF_LD_Crewman","LDGF_LD_Foreman","LDGF_LD_AR","LDGF_LD_Foreman_Guard","LDGF_LD_Breacher","LDGF_LD_CHEMWORKER_AR","LDGF_LD_CHEMWORKER_BREACHER","LDGF_LD_CHEMWORKER_ARS","LDGF_LD_CHEMWORKER_DMR","LDGF_M12_LAAG","LDGF_M12_Recon","LDGF_M12G1_Gauss","LDGF_M12R_AA","LDGF_M1813_Transport","LDGF_M914_RV","LDGF_M808BM_Scorpion","LDGF_D77H_Pelican"};
+    units[]={"LDGF_LD_Marksman","LDGF_LD_Crewman","LDGF_LD_Foreman","LDGF_LD_AR","LDGF_LD_Foreman_Guard","LDGF_LD_Breacher","LDGF_LD_CHEMWORKER_AR","LDGF_LD_CHEMWORKER_BREACHER","LDGF_LD_CHEMWORKER_ARS","LDGF_LD_CHEMWORKER_DMR","LDGF_M12_LAAG","LDGF_M12_Recon","LDGF_M12G1_Gauss","LDGF_M12R_AA","LDGF_M1813_Transport","LDGF_M914_RV","LDGF_D77H_Pelican"};
     weapons[]={};
     requiredVersion=0.1;
     requiredAddons[]={"A3_Weapons_F_Items","OPTRE_Weapons_Items","A3_Weapons_F","OPTRE_Weapons_SRM77","A3_Weapons_F_Pistols_ACPC2","OPTRE_UNSC_Units_ONI","A3_Characters_F","OPTRE_Weapons_Pistol","A3_Characters_F_Orange_Headgear","OPTRE_Weapons_HMG38","OPTRE_Weapons_BR","OPTRE_Weapons_AR","OPTRE_Weapons_Shotgun","OPTRE_Weapons_MG","OPTRE_Weapons_DMR"};
@@ -264,15 +264,6 @@ class cfgVehicles
     typicalCargo[]={"LDGF_LD_Crewman"};
   };
 
-  class LDGF_M808BM_Scorpion: 53rd_CORP_Scorpion
-  {
-    faction="53rd_Dortman";
-    side=2;
-    displayName="M808BM Scorpion";
-    hiddenSelectionsTextures[]={"53rd_sc_aux\tex\scorpion\corp\scorp_base_corp_co.paa","53rd_sc_aux\tex\scorpion\corp\scorp_tur_corp_co.paa","optre_vehicles\scorpion\data\texture\det_3_co.paa","optre_vehicles\scorpion\data\texture\scorp_decals_ca.paa","optre_vehicles\scorpion\data\texture\scorp_net_wood_ca.paa","optre_vehicles\scorpion\data\texture\scorp_net_wood_ca.paa","optre_vehicles\scorpion\data\texture\mine_roller_co.paa","53rd_sc_aux\tex\scorpion\corp\scorpion_mg_corp_co.paa"};
-    crew="LDGF_LD_Crewman";
-    typicalCargo[]={"LDGF_LD_Crewman"};
-  };
 
   class LDGF_D77H_Pelican: 53rd_CORP_Pelican
   {

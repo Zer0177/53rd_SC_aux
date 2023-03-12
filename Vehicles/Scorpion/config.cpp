@@ -1,9 +1,9 @@
 class CfgPatches {
 	class 53rd_Land_Scorpion {
-		units[] = {"53rd_Scorpion","53rd_ONI_Scorpion","53rd_CORP_Scorpion"};
+		units[] = {"53rd_Scorpion","53rd_ONI_Scorpion","53rd_CORP_Scorpion","53rd_M875_SPH"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[]={"OPTRE_Core"};
 	};
 };
 class cfgWeapons {
@@ -12,6 +12,7 @@ class cfgWeapons {
 class CfgVehicles
 {
 class OPTRE_M808BM_UNSC;
+class OPTRE_M875_SPH;
 	class 53rd_Scorpion: OPTRE_M808BM_UNSC
 	{
 		displayName="[53rd] M808BM";
@@ -19,7 +20,6 @@ class OPTRE_M808BM_UNSC;
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
-		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
 		crew="53rd_crewman_unit";
@@ -185,10 +185,10 @@ class OPTRE_M808BM_UNSC;
 		faction="53rd_ONI";
 		editorCategory = "53rd_ONI_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"OPTRE_UNSC_ONI_Soldier_Operative"
+			"53rd_crewman_unit"
 		};
 		hiddenSelections[]=
 		{
@@ -224,10 +224,10 @@ class OPTRE_M808BM_UNSC;
 		faction="53rd_Dortman";
 		editorCategory = "53rd_Dortman_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		crew="OPTRE_UNSC_ONI_Soldier_Operative";
+		crew="53rd_crewman_unit";
 		typicalCargo[]=
 		{
-			"OPTRE_UNSC_ONI_Soldier_Operative"
+				"53rd_crewman_unit"
 		};
 		hiddenSelections[]=
 		{
@@ -250,6 +250,49 @@ class OPTRE_M808BM_UNSC;
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
 			"53rd_SC_aux\tex\Scorpion\Corp\Scorpion_mg_Corp_co.paa"
+		};
+	};
+	class 53rd_M875_SPH: OPTRE_M875_SPH
+	{
+		author="53rd & Seven";
+		dlc = "53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Tank";
+		displayName="[53rd] M875 SPH";
+		tf_range=25000;
+		tf_isolatedAmount=0.40000001;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		enableRadio=1;
+		crew="53rd_crewman_unit";
+		typicalCargo[]=
+		{
+			"53rd_crewman_unit"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Scorpion\Scorp_base_53rd_co.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorp_53rd_art_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_art_camo_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
+			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_grey_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_1_lopo_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa"
 		};
 	};
 };
