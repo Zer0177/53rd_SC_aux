@@ -1766,7 +1766,7 @@ class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Woodland : 53rd_Sealed_Base
 				"A_ODST", 
 				//"A_ShinArmorLeft", //Shin Plates
 				//"A_ShinArmorRight",
-				//"A_TacPad", //Small screen on left wrist
+				"A_TacPad", //Small screen on left wrist
 				//"A_ThighArmorLeft", //Thigh Plate
 				//"A_ThighArmorRight",
 				//"AS_BaseLeft", //Under pad that sits on the uniform
