@@ -45,20 +45,38 @@ class cfgWeapons
 		ace_hearing_lowerVolume = 0.60;
         optreVarietys[] = {"_dp","","_broken"};
         optreHUDStyle = "ODST_1";
-		hiddenSelections[] =
+		hiddenSelections[]=
 		{
 			"camo",
-			"camo2"
+			"camo2",
+			"camo3",
+			"camo4",
+			"H_Collar",
+			"H_Neck",
+			"H_VacCollar",
+			"H_Ghillie"
 		};
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
-			"53rd_SC_Aux\tex\visr_black_CO.paa"
+			"53rd_SC_Aux\tex\visr_black_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
         class ItemInfo: HeadgearItem
 		{
-            hiddenSelections[] = {"camo","camo2"};
             uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Collar",
+				"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
             hiddenSelectionsTextures[] = 
             {
                 "53rd_SC_Aux\tex\Volare Armor\h3_pilothelmet_black_CO.paa",
@@ -99,7 +117,17 @@ class cfgWeapons
 		};
         class ItemInfo: ItemInfo
 		{
-            hiddenSelections[] = {"camo","camo2"};
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Collar",
+				"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
             uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
             hiddenSelectionsTextures[] = 
             {
@@ -136,7 +164,17 @@ class cfgWeapons
 		};
         class ItemInfo: ItemInfo
 		{
-            hiddenSelections[] = {"camo","camo2"};
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Collar",
+				"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
             uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
             hiddenSelectionsTextures[] = 
             {
@@ -173,7 +211,17 @@ class cfgWeapons
 		};
         class ItemInfo: ItemInfo
 		{
-            hiddenSelections[] = {"camo","camo2"};
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Collar",
+				"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
             uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
             hiddenSelectionsTextures[] = 
             {
@@ -210,7 +258,17 @@ class cfgWeapons
 		};
         class ItemInfo: ItemInfo
 		{
-            hiddenSelections[] = {"camo","camo2"};
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Collar",
+				"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
             uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
             hiddenSelectionsTextures[] = 
             {
