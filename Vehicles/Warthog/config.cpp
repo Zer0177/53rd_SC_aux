@@ -307,7 +307,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\ONI\M12_MG_ONI.paa",
 			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa",
-			"53rd_SC_aux\tex\Hogs\ONI\M12_turret_ONI_co.paa"
+			"53rd_SC_aux\tex\Hogs\ONI\M12_turret_ONI_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_ONI_M12R: OPTRE_M12R_AA
@@ -330,7 +335,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\ONI\M12_MG_ONI.paa",
 			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa",
-			"53rd_SC_aux\tex\Hogs\ONI\m79_turret_ONI_co.paa"
+			"53rd_SC_aux\tex\Hogs\ONI\m79_turret_ONI_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_M12G1_ONI_LRV: OPTRE_M12G1_LRV
@@ -353,7 +363,12 @@ class CfgVehicles
 			"53rd_SC_aux\tex\Hogs\ONI\M12_MG_ONI.paa",
 			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa",
 			"53rd_SC_aux\tex\Hogs\ONI\m68_turret_ONI_co.paa",
-			"53rd_SC_aux\tex\Hogs\ONI\M12_turret_ONI_co.paa"
+			"53rd_SC_aux\tex\Hogs\ONI\M12_turret_ONI_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_ONI_M914: OPTRE_M914_RV
@@ -375,8 +390,12 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\tex\Hogs\ONI\M12_MG_ONI.paa",
-			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa"
-		};
+			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 	};
 	class 53rd_ONI_M1813: OPTRE_M813_TT
 	{
@@ -398,7 +417,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\ONI\M12_MG_ONI.paa",
 			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa",
-			"53rd_SC_aux\tex\Hogs\ONI\transp_lopo_ONI_co.paa"
+			"53rd_SC_aux\tex\Hogs\ONI\transp_lopo_ONI_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_ONI_M12_Recon: OPTRE_M12_FAV
@@ -421,7 +445,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\ONI\M12_MG_ONI.paa",
 			"53rd_SC_aux\tex\Hogs\ONI\M12HogMaav_extunder_ONI_co.paa",
-			"53rd_SC_aux\tex\Hogs\ONI\M12_turret_ONI_co.paa"
+			"53rd_SC_aux\tex\Hogs\ONI\M12_turret_ONI_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	//CORP HOGS
@@ -445,7 +474,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\Corp\M12_Corp_Main_co.paa",
 			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa",
-			"53rd_SC_aux\tex\Hogs\Corp\m12_turret_Corp_co.paa"
+			"53rd_SC_aux\tex\Hogs\Corp\m12_turret_Corp_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_CORP_M12R: OPTRE_M12R_AA
@@ -468,7 +502,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\Corp\M12_Corp_Main_co.paa",
 			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa",
-			"53rd_SC_aux\tex\Hogs\Corp\m79_turret_Corp_co.paa"
+			"53rd_SC_aux\tex\Hogs\Corp\m79_turret_Corp_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_M12G1_CORP_LRV: OPTRE_M12G1_LRV
@@ -491,7 +530,12 @@ class CfgVehicles
 			"53rd_SC_aux\tex\Hogs\Corp\M12_Corp_Main_co.paa",
 			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa",
 			"53rd_SC_aux\tex\Hogs\Corp\m68_turret_Corp_co.paa",
-			"53rd_SC_aux\tex\Hogs\Corp\m12_turret_Corp_co.paa"
+			"53rd_SC_aux\tex\Hogs\Corp\m12_turret_Corp_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_CORP_M914: OPTRE_M914_RV
@@ -513,7 +557,12 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\tex\Hogs\Corp\M12_Corp_Main_co.paa",
-			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa"
+			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_CORP_M1813: OPTRE_M813_TT
@@ -536,7 +585,12 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\Corp\M12_Corp_Main_co.paa",
 			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa",
-			"53rd_SC_aux\tex\Hogs\Corp\transp_lopo_Corp_co.paa"
+			"53rd_SC_aux\tex\Hogs\Corp\transp_lopo_Corp_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
 	class 53rd_CORP_M12_Recon: OPTRE_M12_FAV
@@ -559,7 +613,13 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\tex\Hogs\Corp\M12_Corp_Main_co.paa",
 			"53rd_SC_aux\tex\Hogs\Corp\M12HogMaav_extunder_Corp_co.paa",
-			"53rd_SC_aux\tex\Hogs\Corp\m12_turret_Corp_co.paa"
+			"53rd_SC_aux\tex\Hogs\Corp\m12_turret_Corp_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
+};
 };
