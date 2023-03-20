@@ -300,39 +300,39 @@ class XtdGearInfos
 		Camo = "Urban";
 		};
 
-		class 53rd_ODST_Helmet_DE
+		class 53rd_Custom_Helmet_ODST_Desert
 		{
 		model = "ODSTHelm";
 		Camo = "Desert";
         dp="yes";
 		};
-		class 53rd_ODST_Helmet_SN:53rd_ODST_Helmet_DE
+		class 53rd_Custom_Helmet_ODST_Snow:53rd_Custom_Helmet_ODST_Desert
 		{
 		Camo = "Snow";
 		};
-		class 53rd_ODST_Helmet_UB:53rd_ODST_Helmet_DE
+		class 53rd_Custom_Helmet_ODST_Urban:53rd_Custom_Helmet_ODST_Desert
 		{
 		Camo = "Urban";
 		};
-		class 53rd_ODST_Helmet_WD:53rd_ODST_Helmet_DE
+		class 53rd_Custom_Helmet_ODST_Woodland:53rd_Custom_Helmet_ODST_Desert
 		{
 		Camo = "Woodland";
 		};
-		class 53rd_ODST_Helmet_DE_dp
+		class 53rd_Custom_Helmet_ODST_Desert_dp
 		{
 		model = "ODSTHelm";
 		Camo = "Desert";
         dp="no";
 		};
-		class 53rd_ODST_Helmet_SN_dp:53rd_ODST_Helmet_DE_dp
+		class 53rd_Custom_Helmet_ODST_Snow_dp:53rd_Custom_Helmet_ODST_Desert_dp
 		{
 		Camo = "Snow";
 		};
-		class 53rd_ODST_Helmet_UB_dp:53rd_ODST_Helmet_DE_dp
+		class 53rd_Custom_Helmet_ODST_Urban_dp:53rd_Custom_Helmet_ODST_Desert_dp
 		{
 		Camo = "Urban";
 		};
-		class 53rd_ODST_Helmet_WD_dp:53rd_ODST_Helmet_DE_dp
+		class 53rd_Custom_Helmet_ODST_Woodland_dp:53rd_Custom_Helmet_ODST_Desert_dp
 		{
 		Camo = "Woodland";
 		};
