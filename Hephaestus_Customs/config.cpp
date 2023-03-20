@@ -1955,7 +1955,105 @@ class 53rd_Custom_Helmet_Vac_Sealed_Patches_Woodland : 53rd_Sealed_Base
 			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Patches_Woodland.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
-    };    
+    }; 
+    //Dic Dic
+
+class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Desert : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Desert_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Desert.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Snow : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Snow_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Snow.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Urban : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Urban_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Urban.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Woodland : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Woodland_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Tikles / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Tikles_Woodland.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
 };
 
 class CfgVehicles
