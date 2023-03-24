@@ -12,10 +12,15 @@ class CfgVehicles
 	class Turrets;
 	class CopilotTurret;
 	class ACE_SelfActions;
-	class UserActions;
 	class CargoTurret;
-	class VES_D77HTCI_A;
-	class OPTRE_Pelican_armed_SOCOM;
+	class VES_D77HTCI_A
+    {
+		class UserActions;
+    };
+	class OPTRE_Pelican_armed_SOCOM
+	{
+		class UserActions;
+    };
 	class 53rd_CORP_Pelican: VES_D77HTCI_A
 	{
 		scope=2;
@@ -232,7 +237,7 @@ class CfgVehicles
 				count=36;
 			};
 		};
-		class UserActions: UserActions
+	class UserActions: UserActions
 		{
 			class PelLift_LoadVehicle
 			{
@@ -661,7 +666,7 @@ class CfgVehicles
 		transportSoldier=22;
 		cargoProxyIndexes[]={3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25};
 		model="OPTRE_Vehicles\P_SOCOM\Pelican_SOCOM.p3d";
-		class UserActions: UserActions
+	class UserActions: UserActions
 		{
 			class PelLift_LoadVehicle
 			{
