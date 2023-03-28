@@ -30,23 +30,25 @@ class cfgVehicles {
 		tf_isolatedAmount=0.40000001;
 		tf_range=12000;
 		weapons[]=
-		{
-			"CMFlareLauncher",
-			"OPTRE_110mm_Gatling",
-            "missiles_ASRAAM",
-			"OPTRE_bomblauncher_2000lb"
-		};
-		magazines[]=
-		{
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"OPTRE_600Rnd_110mm",
-			"OPTRE_600Rnd_110mm",
-            "4Rnd_AAA_missiles",
-			"4Rnd_AAA_missiles",
-			"OPTRE_16Rnd_2000lb_bomb",
-			"OPTRE_16Rnd_2000lb_bomb",
-			"OPTRE_16Rnd_2000lb_bomb",
-		};
+			{
+				"CMFlareLauncher",
+				"missiles_ASRAAM",
+				"OPTRE_MISRIAH_Cannon",
+				"OPTRE_bomblauncher_2000lb"
+			};
+			magazines[]=
+			{
+				"168Rnd_CMFlare_Chaff_Magazine",
+				"168Rnd_CMFlare_Chaff_Magazine",
+				"OPTRE_2500Rnd_50mm_HE2",
+				"OPTRE_2500Rnd_50mm_APFSDS",
+				"168Rnd_CMFlare_Chaff_Magazine",
+				"4Rnd_AAA_missiles",
+				"4Rnd_AAA_missiles",
+				"4Rnd_AAA_missiles",
+				"4Rnd_AAA_missiles",
+				"OPTRE_16Rnd_2000lb_bomb",
+			};
 		class TransportBackpacks
 		{
 			class _xx_B_Parachute

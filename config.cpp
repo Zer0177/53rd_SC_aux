@@ -23,6 +23,8 @@ class CfgPatches {
 			"53rd_MA32GL",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
+			"53rd_Cap",
+			"53rd_UNSC_PatrolCap",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -52,16 +54,18 @@ class cfgWeapons
 	class VES_CH252_MAR_Vacuum_dp;
     class VES_CH252A_dp;
 	class OPTRE_UNSC_CH252D_Helmet_Base;
-
-
+	class H_Booniehat_khk;
+	class OPTRE_UNSC_PatrolCap_Army;
+	class OPTRE_CPD_Cap;
+	
 //Stetson
     class ItemCore;
     class InventoryItem_Base_F;
 
 	class DAR_Stetson_53rd: ItemCore
 	{
-		scope = 2;
-		scopeArsenal = 2;
+		scope = 1;
+		scopeArsenal = 1;
 		weaponPoolAvailable = 1;
 		displayName = "[53rd] Stetson";
 		author = "Richards.D/Ithias";
@@ -158,6 +162,74 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Volare.paa"
+		};
+	};
+
+//Boonie
+    class 53rd_Boonie_gry: H_Booniehat_khk
+	{
+		author="53rd Strike Company";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName="(53rd) Boonie Hat";
+		picture="\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
+		model="\A3\Characters_F\Common\booniehat";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_booniehat_grey.paa"
+		};
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
+	};
+	
+//PatrolCap
+	class 53rd_UNSC_PatrolCap: OPTRE_UNSC_PatrolCap_Army
+	{
+			author="53rd";
+			scope = 2;
+			scopeArsenal = 2;
+			displayName="[53rd] Patrol Cap";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
+			};
+			class ItemInfo: ItemInfo
+			{
+				uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
+				hiddenSelections[]=
+				{
+					"camo1",
+					"hide_marines"
+				};
+				hiddenSelectionsTextures[]=
+				{
+					"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
+				};
+			};
+	};
+
+	class 53rd_Cap: OPTRE_CPD_Cap
+	{
+		dlc="53rd Aux Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		author="Article 2 Studios";
+		displayName="[53rd] Soft Cap";
+		model="\A3\Characters_F\Common\cappatrol";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_cappatrol_grey_co.paa"
 		};
 	};	
     

@@ -1174,8 +1174,8 @@ class cfgWeapons
 		};
 	class 53rd_CH252D_Medic : OPTRE_UNSC_CH252D_Helmet
     {
-        scope = 2;
-        scopeArsenal = 2;
+        scope = 1;
+        scopeArsenal = 1;
         displayName = "[53rd] CH252D Helmet (Medic)";
         author = "53rd AUX TEAM";
 		hiddenSelections[]=

@@ -46,7 +46,9 @@ class cfgweapons
 	class 53rd_MJOLNIR_MkVArmor: OPTRE_FC_MJOLNIR_MKV_Armor
 	{
 		dlc="OPTRE";
-		scope=2;
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
 		author="Vince5754 & Article 2 Studios";
 	displayName="[53rd] MJOLNIR Mark V Armor";
 		model="\OPTRE_FC_Units\Spartan\MKV_Armor_vince.p3d";
@@ -153,7 +155,9 @@ class cfgweapons
 class 53rd_FC_MJOLNIR_MKV_Helmet: OPTRE_FC_MJOLNIR_MKV_Helmet
 	{
 		dlc="OPTRE";
-		scope=2;
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
 		author="Vince5754 & Article 2 Studios";
 		displayName="[53rd] MJOLNIR Mark V Helmet";
 		picture="\OPTRE_FC_Units\Marines\data\h3_helmet_i_ca.paa";
