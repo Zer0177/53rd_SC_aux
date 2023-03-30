@@ -23,8 +23,9 @@ class CfgPatches {
 			"53rd_MA32GL",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
-			"53rd_Cap",
+			"53rd_Boonie_gry",
 			"53rd_UNSC_PatrolCap",
+			"53rd_Cap",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -190,30 +191,23 @@ class cfgWeapons
 	};
 	
 //PatrolCap
-	class 53rd_UNSC_PatrolCap: OPTRE_UNSC_PatrolCap_Army
-	{
-			author="53rd";
-			scope = 2;
-			scopeArsenal = 2;
-			displayName="[53rd] Patrol Cap";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
-			};
-			class ItemInfo: ItemInfo
-			{
-				uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
-				hiddenSelections[]=
-				{
-					"camo1",
-					"hide_marines"
-				};
-				hiddenSelectionsTextures[]=
-				{
-					"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
-				};
-			};
-	};
+    class 53rd_UNSC_PatrolCap: OPTRE_UNSC_PatrolCap_Army
+    {
+        author="53rd";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName="[53rd] Patrol Cap";
+        uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "hide_marines"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
+        };
+    };
 
 	class 53rd_Cap: OPTRE_CPD_Cap
 	{

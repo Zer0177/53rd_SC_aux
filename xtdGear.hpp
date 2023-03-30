@@ -62,7 +62,7 @@ class XtdGearModels
 			class detach
 			{
 				label = "detach";
-				values[] = {"heph","heph_med","heph_med_led","ath","vol","tart","stet"};
+				values[] = {"heph","heph_med","heph_med_led","ath","vol","tart","stet","boonie","patrol","cap"};
 				class heph
 				{
 					label = "Hephaestus";
@@ -97,6 +97,21 @@ class XtdGearModels
 				{
 					label = "Stetson";
 					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class boonie
+				{
+					label = "Boonie";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class patrol
+				{
+					label = "Patrol Cap";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class cap
+				{
+					label = "Soft Cap";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
             };
 		};
@@ -176,6 +191,18 @@ class XtdGearInfos
 		class DAR_Stetson_53rd:53rd_Beret_Hephaestus
 		{
 		detach = "stet";
+		};
+		class 53rd_Boonie_gry:53rd_Beret_Hephaestus
+		{
+		detach = "boonie";
+		};
+		class 53rd_UNSC_PatrolCap:53rd_Beret_Hephaestus
+		{
+		detach = "patrol";
+		};
+		class 53rd_Cap:53rd_Beret_Hephaestus
+		{
+		detach = "cap";
 		};
 	};
 };
