@@ -12,6 +12,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
@@ -55,9 +57,9 @@ class XtdGearModels
 		{
 			label = "ODST Armor";
 			author = "Seven & Body";
-			options[] = {"person","camo"};
+			options[] = {"Type","camo"};
 			
-			class person
+			class Type
 			{
 				label = "Name";
 				values[] = {"rifleman","breacher","heavy","light","sl","tl","medic"};
@@ -106,6 +108,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "urban";
@@ -137,166 +141,166 @@ class XtdGearInfos
         class 53rd_UNSC_M52A_Armor_Base
 		{
 		model = "ODSTARMOR";
-		person = "body";
+		Type = "body";
 		};
 		class 53rd_ODST_NRM_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "rifleman";
+		Type = "rifleman";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_NRM_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "rifleman";
+		Type = "rifleman";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_NRM_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "rifleman";
+		Type = "rifleman";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_NRM_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "rifleman";
+		Type = "rifleman";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_SL_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "sl";
+		Type = "sl";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_SL_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "sl";
+		Type = "sl";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_SL_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "sl";
+		Type = "sl";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_SL_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "sl";
+		Type = "sl";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_TL_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "tl";
+		Type = "tl";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_TL_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "tl";
+		Type = "tl";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_TL_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "tl";
+		Type = "tl";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_TL_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "tl";
+		Type = "tl";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_Breacher_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "breacher";
+		Type = "breacher";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_Breacher_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "breacher";
+		Type = "breacher";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_Breacher_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "breacher";
+		Type = "breacher";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_Breacher_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "breacher";
+		Type = "breacher";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_Marksmen_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "marksmen";
+		Type = "marksmen";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_Marksmen_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "marksmen";
+		Type = "marksmen";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_Marksmen_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "marksmen";
+		Type = "marksmen";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_Marksmen_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "marksmen";
+		Type = "marksmen";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_Light_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "light";
+		Type = "light";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_Light_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "light";
+		Type = "light";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_Light_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "light";
+		Type = "light";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_Light_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "light";
+		Type = "light";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_Heavy_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "heavy";
+		Type = "heavy";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_Heavy_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "heavy";
+		Type = "heavy";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_Heavy_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "heavy";
+		Type = "heavy";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_Heavy_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "heavy";
+		Type = "heavy";
 		Camo = "Urban";
 		};
 		class 53rd_ODST_Medic_DE:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "medic";
+		Type = "medic";
 		Camo = "Desert";
 		};
 		class 53rd_ODST_Medic_WD:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "medic";
+		Type = "medic";
 		Camo = "Woodland";
 		};
 		class 53rd_ODST_Medic_SN:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "medic";
+		Type = "medic";
 		Camo = "Snow";
 		};
 		class 53rd_ODST_Medic_UB:53rd_UNSC_M52A_Armor_Base
 		{
-		person = "medic";
+		Type = "medic";
 		Camo = "Urban";
 		};
 

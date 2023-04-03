@@ -12,6 +12,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
@@ -37,8 +39,6 @@ class XtdGearModels
 			{
 				label = "Person";
 				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body","Hazard","Hellfire","Patches","Tikles"};
-				changeingame = 1;
-                changedelay  = 0;
 				class Panzer
 				{
 					label = "Panzer";
@@ -118,6 +118,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
@@ -143,8 +145,6 @@ class XtdGearModels
 			{
 				label = "Person";
 				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard","Lonewulf","Patches"};
-				changeingame = 1;
-                changedelay  = 0;
 				class Fixer
 				{
 					label = "Fixer";

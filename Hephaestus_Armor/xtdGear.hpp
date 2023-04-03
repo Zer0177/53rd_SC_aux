@@ -12,6 +12,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
@@ -37,8 +39,6 @@ class XtdGearModels
 			{
 				label = "Type";
 				values[] = {"Vac","SPC","Normal"};
-				changeingame = 1;
-                changedelay  = 0;
 				class Vac
 				{
 					label = "Vac Sealed";
@@ -83,6 +83,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
@@ -108,8 +110,6 @@ class XtdGearModels
 			{
 				label = "Type";
 				values[] = {"Vac","SPC","Normal"};
-				changeingame = 1;
-                changedelay  = 0;
 				class Vac
 				{
 					label = "Vac Sealed";
@@ -154,6 +154,8 @@ class XtdGearModels
 			{
 				label = "Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
@@ -179,8 +181,6 @@ class XtdGearModels
 			{
 				label = "Type";
 				values[] = {"Rifleman","Specialist","TL","SL","Medic","JTAC"};
-				changeingame = 1;
-                changedelay  = 0;
 				class Rifleman
 				{
 					label = "Rifleman";

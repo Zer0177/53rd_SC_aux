@@ -63,6 +63,8 @@ class XtdGearModels
 			{
 				label = "detach";
 				values[] = {"heph","heph_med","heph_med_led","ath","vol","tart","stet","boonie","patrol","cap"};
+				changeingame = 1;
+                changedelay  = 0;
 				class heph
 				{
 					label = "Hephaestus";
