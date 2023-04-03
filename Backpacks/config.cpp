@@ -14,8 +14,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
-//#include "xtdGear.hpp"
-
+#include "xtdGear.hpp"
 class CfgVehicles
 {
 	class OPTRE_UNSC_Rucksack;
@@ -27,7 +26,7 @@ class CfgVehicles
 	class B_Parachute;
 	
 //Rucksacks
-   class 53rd_Hephaestus_Rucksack_Basic: OPTRE_UNSC_Rucksack
+    class 53rd_Hephaestus_Rucksack_Basic: OPTRE_UNSC_Rucksack
     {
         dlc="53rd AUX";
         author="Ithias";

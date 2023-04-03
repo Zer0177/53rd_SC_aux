@@ -1,0 +1,176 @@
+class XtdGearModels
+{
+	class CfgVehicles
+	{
+		class Rucksacks
+		{
+			label = "Rucksacks";
+			author = "Ithias";
+			options[] = {"Type"};
+
+			class Type
+			{
+				label = "Type";
+				values[] = {"Basic_Ruck","Heavy_Ruck"};
+				class Basic_Ruck
+				{
+					label = "Basic Ruck";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Heavy_Ruck
+				{
+					label = "Heavy Ruck";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+		class NCO_LR
+		{
+			label = "NCO LR";
+			author = "Ithias";
+			options[] = {"Type"};
+
+			class Type
+			{
+				label = "Type";
+				values[] = {"515_LR","Rucksack_LR"};
+				class 515_LR
+				{
+					label = "515 LR";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Rucksack_LR
+				{
+					label = "Rucksack LR";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+		class Medic
+		{
+			label = "Medic";
+			author = "Ithias";
+			options[] = {"Type"};
+
+			class Type
+			{
+				label = "Type";
+				values[] = {"Medic_Rucksack","Medic_Satchel"};
+				class Medic_Rucksack
+				{
+					label = "Medic Rucksack";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Medic_Satchel
+				{
+					label = "Medic Satchel";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+		class JTAC_LR
+		{
+			label = "JTAC LR";
+			author = "Ithias";
+			options[] = {"Camo"};
+
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+		};
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgVehicles 
+    {
+        //Rucksacks
+		class 53rd_Hephaestus_Rucksack_Basic
+		{
+		model = "Rucksacks";
+		Type = "Basic_Ruck";
+		};
+        
+		class 53rd_Hephaestus_Rucksack_Heavy
+		{
+		model = "Rucksacks";
+		Type = "Heavy_Ruck";
+		};
+		
+        //NCO_LR
+		class 53rd_Hephaestus_NCO_LR_515
+		{
+		model = "NCO_LR";
+		Type = "515_LR";
+		};
+        
+		class 53rd_Hephaestus_NCO_LR_Rucksack
+		{
+		model = "NCO_LR";
+		Type = "Rucksack_LR";
+		};
+
+        //Medic
+		class 53rd_Hephaestus_Medical_Rucksack
+		{
+		model = "Medic";
+		Type = "Medic_Rucksack";
+		};
+        
+		class 53rd_Hephaestus_Medical_Satchel
+		{
+		model = "Medic";
+		Type = "Medic_Satchel";
+		};
+		
+        //JTAC_LR
+		class 53rd_Hephaestus_Rucksack_JTAC_Urban
+		{
+		model = "JTAC_LR";
+		Camo = "Urban";
+		};
+        
+		class 53rd_Hephaestus_Rucksack_JTAC_Woodland
+		{
+		model = "JTAC_LR";
+		Camo = "Woodland";
+		};
+		
+		class 53rd_Hephaestus_Rucksack_JTAC_Desert
+		{
+		model = "JTAC_LR";
+		Camo = "Desert";
+		};
+        
+		class 53rd_Hephaestus_Rucksack_JTAC_Snow
+		{
+		model = "JTAC_LR";
+		Camo = "Snow";
+		};
+	};
+};

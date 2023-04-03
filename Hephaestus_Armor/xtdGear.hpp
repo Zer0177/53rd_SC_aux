@@ -6,11 +6,11 @@ class XtdGearModels
 		{
 			label = "Hephaestus Helmets";
 			author = "Ithias";
-			options[] = {"Camo","Type","dp"};
+			options[] = {"Helm_Camo","Type","dp"};
 			
-			class Camo
+			class Helm_Camo
 			{
-				label = "Camo";
+				label = "Helm Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
@@ -77,11 +77,11 @@ class XtdGearModels
 		{
 			label = "Hephaestus Medical Helmets";
 			author = "Fixer";
-			options[] = {"Camo","Type","dp"};
+			options[] = {"Helm_Camo","Type","dp"};
 			
-			class Camo
+			class Helm_Camo
 			{
-				label = "Camo";
+				label = "Helm Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
@@ -148,11 +148,11 @@ class XtdGearModels
 		{
 			label = "Hephaestus Vests";
 			author = "Ithias";
-			options[] = {"Camo","Type"};
+			options[] = {"Vest_Camo","Type"};
 			
-			class Camo
+			class Vest_Camo
 			{
-				label = "Camo";
+				label = "Vest Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
@@ -223,7 +223,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Urban
 		{
 		model = "HephaestusHelm";
-		Camo = "Urban";
+		Helm_Camo = "Urban";
 		Type = "Vac";
         dp="yes";
 		};
@@ -238,7 +238,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_dp
 		{
 		model = "HephaestusHelm";
-		Camo = "Urban";
+		Helm_Camo = "Urban";
 		Type = "Vac";
         dp="no";
 		};
@@ -250,7 +250,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland
 		{
 		model = "HephaestusHelm";
-		Camo = "Woodland";
+		Helm_Camo = "Woodland";
 		Type = "Vac";
         dp="yes";
 		};
@@ -265,7 +265,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_dp
 		{
 		model = "HephaestusHelm";
-		Camo = "Woodland";
+		Helm_Camo = "Woodland";
 		Type = "Vac";
         dp="no";
 		};
@@ -277,7 +277,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Desert
 		{
 		model = "HephaestusHelm";
-		Camo = "Desert";
+		Helm_Camo = "Desert";
 		Type = "Vac";
         dp="yes";
 		};
@@ -292,7 +292,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_dp
 		{
 		model = "HephaestusHelm";
-		Camo = "Desert";
+		Helm_Camo = "Desert";
 		Type = "Vac";
         dp="no";
 		};
@@ -304,7 +304,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Snow
 		{
 		model = "HephaestusHelm";
-		Camo = "Snow";
+		Helm_Camo = "Snow";
 		Type = "Vac";
         dp="yes";
 		};
@@ -319,7 +319,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_dp
 		{
 		model = "HephaestusHelm";
-		Camo = "Snow";
+		Helm_Camo = "Snow";
 		Type = "Vac";
         dp="no";
 		};
@@ -332,7 +332,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Urban";
+		Helm_Camo = "Urban";
 		Type = "Vac";
         dp="yes";
 		};
@@ -346,7 +346,7 @@ class XtdGearInfos
 		};class 53rd_Helmet_Vac_Sealed_Rifleman_Urban_Medical_dp
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Urban";
+		Helm_Camo = "Urban";
 		Type = "Vac";
         dp="no";
 		};
@@ -358,7 +358,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Woodland";
+		Helm_Camo = "Woodland";
 		Type = "Vac";
         dp="yes";
 		};
@@ -373,7 +373,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Woodland_Medical_dp
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Woodland";
+		Helm_Camo = "Woodland";
 		Type = "Vac";
         dp="no";
 		};
@@ -385,7 +385,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Desert";
+		Helm_Camo = "Desert";
 		Type = "Vac";
         dp="yes";
 		};
@@ -400,7 +400,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Desert_Medical_dp
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Desert";
+		Helm_Camo = "Desert";
 		Type = "Vac";
         dp="no";
 		};
@@ -412,7 +412,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Snow";
+		Helm_Camo = "Snow";
 		Type = "Vac";
         dp="yes";
 		};
@@ -427,7 +427,7 @@ class XtdGearInfos
 		class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical_dp
 		{
 		model = "HephaestusHelmMedical";
-		Camo = "Snow";
+		Helm_Camo = "Snow";
 		Type = "Vac";
         dp="no";
 		};
@@ -440,7 +440,7 @@ class XtdGearInfos
 		class 53rd_Armor_Rifleman_Urban
 		{
 		model = "HephaestusVest";
-		Camo = "Urban";
+		Vest_Camo = "Urban";
 		Type = "Rifleman";
 		};
 		class 53rd_Armor_Specialist_Urban:53rd_Armor_Rifleman_Urban
@@ -467,7 +467,7 @@ class XtdGearInfos
 		class 53rd_Armor_Rifleman_Woodland
 		{
 		model = "HephaestusVest";
-		Camo = "Woodland";
+		Vest_Camo = "Woodland";
 		Type = "Rifleman";
 		};
 		class 53rd_Armor_Specialist_Woodland:53rd_Armor_Rifleman_Woodland
@@ -495,7 +495,7 @@ class XtdGearInfos
 		class 53rd_Armor_Rifleman_Desert
 		{
 		model = "HephaestusVest";
-		Camo = "Desert";
+		Vest_Camo = "Desert";
 		Type = "Rifleman";
 		};
 		class 53rd_Armor_Specialist_Desert:53rd_Armor_Rifleman_Desert
@@ -523,7 +523,7 @@ class XtdGearInfos
 		class 53rd_Armor_Rifleman_Snow
 		{
 		model = "HephaestusVest";
-		Camo = "Snow";
+		Vest_Camo = "Snow";
 		Type = "Rifleman";
 		};
 		class 53rd_Armor_Specialist_Snow:53rd_Armor_Rifleman_Snow

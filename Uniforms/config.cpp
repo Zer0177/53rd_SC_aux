@@ -12,7 +12,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
-//#include "xtdGear.hpp"
+#include "xtdGear.hpp"
 class cfgWeapons 
 {
     class ItemInfo;
