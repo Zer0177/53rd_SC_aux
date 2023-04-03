@@ -172,7 +172,7 @@ class cfgWeapons
 		author="53rd Strike Company";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName="(53rd) Boonie Hat";
+		displayName="(53rd) Boonie Hat (Urban)";
 		picture="\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
 		model="\A3\Characters_F\Common\booniehat";
 		hiddenSelectionsTextures[]=
@@ -189,14 +189,37 @@ class cfgWeapons
 			};
 		};
 	};
+	class 53rd_Boonie_Winter: H_Booniehat_khk
+	{
+		author="53rd Strike Company";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName="(53rd) Boonie Hat (Winter)";
+		picture="\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
+		model="\A3\Characters_F\Common\booniehat";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_booniehat_winter_co.paa"
+		};
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
+	};
 	
-//PatrolCap
-    class 53rd_UNSC_PatrolCap: OPTRE_UNSC_PatrolCap_Army
+	
+//Patrol
+    class 53rd_UNSC_PatrolCap_Woodland: OPTRE_UNSC_PatrolCap_Army
     {
         author="53rd";
         scope = 2;
         scopeArsenal = 2;
-        displayName="[53rd] Patrol Cap";
+        displayName="[53rd] Patrol Cap (Woodland)";
         uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
         hiddenSelections[]=
         {
@@ -208,14 +231,66 @@ class cfgWeapons
             "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
         };
     };
-
-	class 53rd_Cap: OPTRE_CPD_Cap
+	class 53rd_UNSC_PatrolCap_Winter: OPTRE_UNSC_PatrolCap_Army
+    {
+        author="53rd";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName="[53rd] Patrol Cap (Winter)";
+        uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "hide_marines"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_winter.paa"
+        };
+    };
+	class 53rd_UNSC_PatrolCap_Urban: OPTRE_UNSC_PatrolCap_Army
+    {
+        author="53rd";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName="[53rd] Patrol Cap (Urban)";
+        uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "hide_marines"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_winter.paa"
+        };
+    };
+	class 53rd_UNSC_PatrolCap_Desert: OPTRE_UNSC_PatrolCap_Army
+    {
+        author="53rd";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName="[53rd] Patrol Cap (Desert)";
+        uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "hide_marines"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_winter.paa"
+        };
+    };
+	
+///////Caps
+	class 53rd_Cap_Urban: OPTRE_CPD_Cap
 	{
 		dlc="53rd Aux Mod";
 		scope = 2;
 		scopeArsenal = 2;
 		author="Article 2 Studios";
-		displayName="[53rd] Soft Cap";
+		displayName="[53rd] Soft Cap (Urban)";
 		model="\A3\Characters_F\Common\cappatrol";
 		hiddenSelections[]=
 		{
@@ -223,9 +298,43 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Soft caps\53rd_cappatrol_grey_co.paa"
+			"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_Urban_New_co.paa"
 		};
-	};	
+	};
+	 class 53rd_Cap_Woodland: OPTRE_CPD_Cap
+	{
+		dlc="53rd Aux Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		author="Article 2 Studios";
+		displayName="[53rd] Soft Cap (Woodland)";
+		model="\A3\Characters_F\Common\cappatrol";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_Woodland_New_co.paa"
+		};
+	};
+	class 53rd_Cap_Desert: OPTRE_CPD_Cap
+	{
+		dlc="53rd Aux Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		author="Article 2 Studios";
+		displayName="[53rd] Soft Cap (Desert)";
+		model="\A3\Characters_F\Common\cappatrol";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_Des_New_co.paa"
+		};
+	};
     
     //Weapons
 	class OPTRE_MA37

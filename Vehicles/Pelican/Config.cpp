@@ -415,6 +415,17 @@ class CfgVehicles
 				textToolTip="Open Ramp";
 				userActionID=50;
 			};
+			class ECM_ON
+			{
+				displayName = "ECM JAMMER ON";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User2";
+				condition = "player in this and isengineon this and (this getvariable 'ECMJAMMER' == 'yes' or 'FIR_ECMPOD' in weapons this)";
+				statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
+				onlyforplayer = "False";
+				hideOnUse = 1;
+			};
 		};
 		class pilotCamera
 		{
@@ -843,6 +854,17 @@ class CfgVehicles
 				statement="this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
 				textToolTip="Open Ramp";
 				userActionID=50;
+			};
+			class ECM_ON
+			{
+				displayName = "ECM JAMMER ON";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User2";
+				condition = "player in this and isengineon this and (this getvariable 'ECMJAMMER' == 'yes' or 'FIR_ECMPOD' in weapons this)";
+				statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
+				onlyforplayer = "False";
+				hideOnUse = 1;
 			};
 		};
 		class textureSources

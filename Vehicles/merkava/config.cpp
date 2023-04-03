@@ -1,6 +1,6 @@
  class CfgPatches {
 	class 53rd_Merkava {
-		units[] = {"53rd_Merkava_BB"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

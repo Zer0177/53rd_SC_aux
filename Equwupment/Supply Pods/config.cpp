@@ -76,13 +76,14 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_36Rnd_95x40_Mag,50);
-			mag_xx(TCF_36Rnd_95x40_Mag_JHP,50);
-			mag_xx(TCF_20Rnd_86x70_Mag_AP,20);
-			mag_xx(TCF_20Rnd_86x70_Mag_JHP,20);
-			mag_xx(TCF_15Rnd_762x51_Mag_JHP,20);
-			mag_xx(TCF_15Rnd_762x51_Mag_AP,20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_JHP,50);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP,20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+			mag_xx(OPTRE_15Rnd_762x51_Mag_JHP,20);
+			mag_xx(OPTRE_15Rnd_762x51_Mag_AP,20);
 			mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag,12);
 			mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag,4);
+			mag_xx(TCF_20Rnd_86x70_Mag_JHP,20);
 		};
 		class TransportWeapons
 		{
@@ -123,19 +124,20 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_60RND_762x51_Mag,50);
-			mag_xx(TCF_60RND_762x51_Mag_JHP,50);
+			mag_xx(OPTRE_60RND_762x51_Mag_JHPT,50);
 			mag_xx(OPTRE_60RND_762x51_Mag_Tracer_Yellow,50);
 			mag_xx(OPTRE_60RND_762x51_Mag_Tracer,50);
-			mag_xx(Commando_20Rnd_65_Mag,50);
-			mag_xx(Commando_20Rnd_65_ReloadR_Mag,50);
-			mag_xx(3Rnd_Smoke_Grenade_shell,20);
-			mag_xx(3Rnd_SmokeRed_Grenade_shell,20);
+			mag_xx(3Rnd_Smoke_Grenarde_shell,20);
+			mag_xx(3Rnd_SmokeRed_Grenarde_shell,20);
 			mag_xx(3Rnd_HE_Grenade_shell,20);
 			mag_xx(1Rnd_HE_Grenade_shell,20);
-			mag_xx(OPTRE_1Rnd_Smoke_Grenade_shell,20);
+			mag_xx(OPTRE_1Rnd_SmokeWhite_Grenade_shell,20);
 			mag_xx(OPTRE_1Rnd_SmokePurple_Grenade_shell,20);
 			mag_xx(OPTRE_1Rnd_SmokeRed_Grenade_shell,20);
 			mag_xx(OPTRE_1Rnd_SmokeGreen_Grenade_shell,20);
+			mag_xx(DMNS_42Rnd_762x54_Mag,20);
+			mag_xx(Commando_20Rnd_65_Mag,50);
+			mag_xx(Commando_20Rnd_65_ReloadR_Mag,50);
 		};
 		class TransportWeapons
 		{
@@ -174,14 +176,20 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_200Rnd_95x40_Box_Tracer,20);
-			mag_xx(TCF_200Rnd_95x40_Box_JHP,20);
+			mag_xx(OPTRE_200Rnd_95x40_Box_JHP,20);
 			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer,10);
-			mag_xx(TCF_1Rnd_50x137_HEAT,10);
-			mag_xx(TCF_1Rnd_50x137_PEN,10);
-			mag_xx(TCF_1Rnd_50x137_HE,10);
+			mag_xx(OPTRE_1Rnd_50x137_HEAT,10);
+			mag_xx(OPTRE_1Rnd_50x137_PEN,10);
+			mag_xx(OPTRE_1Rnd_50x137_HE,10);
 			mag_xx(OPTRE_M41_Twin_HEAT_Thermal,10);
 			mag_xx(MRAWS_HEAT_F,10);
 			mag_xx(OPTRE_FC_Railgun_Slug,40);
+			mag_xx(DMNS_150Rnd_30x06_Mag,20);
+			mag_xx(TCF_100Rnd_762x51_Mag,20);
+			mag_xx(TCF_762_jhp_mag,20);
+			mag_xx(TCF_64Rnd_57x31_Mag_JHP,20);
+			mag_xx(TCF_30Rnd_30x06_Mag_JHP,20);
+			mag_xx(36Rnd_95x40_jhp_br_55,20);
 		};
 		class TransportWeapons
 		{
@@ -216,12 +224,16 @@ class CfgVehicles
         };
 		class TransportMagazines
 		{
-			mag_xx(TCF_60Rnd_5x23mm_Mag_JHP,30);
-			mag_xx(OPTRE_64Rnd_57x31_Mag,20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag,30);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHP,20);
+			mag_xx(OPTRE_64Rnd_57x31_Mag,10);
 			mag_xx(OPTRE_12Rnd_8Gauge_Pellets,10);
 			mag_xx(OPTRE_12Rnd_8Gauge_Slugs,10);
-			mag_xx(TCF_6Rnd_8Gauge_Pellet,10);
-			mag_xx(TCF_6Rnd_8Gauge_Slug,10);
+			mag_xx(OPTRE_6Rnd_8Gauge_Pellet,10);
+			mag_xx(OPTRE_6Rnd_8Gauge_Slug,10);
+			mag_xx(TCF_64Rnd_57x31_Mag_JHP,10);
+			mag_xx(TCF_30Rnd_30x06_Mag_JHP,10);
+			mag_xx(36Rnd_95x40_jhp_br_55,10);
 		};
 		class TransportWeapons
 		{

@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Land_Atlas {
-		units[] = {"53rd_M1022"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

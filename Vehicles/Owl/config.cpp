@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Owl {
-		units[] = {"53rd_Raven"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

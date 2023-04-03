@@ -37,6 +37,9 @@ class cfgWeapons
 	class 53rd_Unsealed_Base;
 	class 53rd_Unsealed_Base_dp;
 	class 53rd_Hephaestus_BDU_Slim;
+	class MA_H4_Scout_Helmet;
+	class MA_AA_Helmet;
+	class MA_EOD_Helmet;
 
 //Customs
 
@@ -365,7 +368,7 @@ class 53rd_Custom_Armor_Body_Snow : 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
-class 53rd_Custom_Armor_Body_Urban : 53rd_Armor_SL
+	class 53rd_Custom_Armor_Body_Urban : 53rd_Armor_SL
 	{ 
 		scope = 2;
         scopeCurator = 2;
@@ -382,7 +385,7 @@ class 53rd_Custom_Armor_Body_Urban : 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
-class 53rd_Custom_Armor_Body_Woodland : 53rd_Armor_SL
+	class 53rd_Custom_Armor_Body_Woodland : 53rd_Armor_SL
 	{ 
 		scope = 2;
         scopeCurator = 2;
@@ -399,7 +402,7 @@ class 53rd_Custom_Armor_Body_Woodland : 53rd_Armor_SL
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
-
+	
 //Panzer
 
 class 53rd_Custom_Base_Armor_Panzer: 53rd_Armor_Rifleman

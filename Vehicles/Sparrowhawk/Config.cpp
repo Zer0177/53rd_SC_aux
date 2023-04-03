@@ -66,6 +66,14 @@ class CfgVehicles
 				"OPTRE_2500Rnd_50mm_APFSDS",
 				"168Rnd_CMFlare_Chaff_Magazine"
 			};
+			class eventhandlers
+				{
+					class FIR_AWS_Common_EH
+					{
+						Init = "[_this select 0,’yes’] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";		
+					};			
+				};
+
 			class Turrets: Turrets
 			{
 				class CopilotTurret: CopilotTurret
