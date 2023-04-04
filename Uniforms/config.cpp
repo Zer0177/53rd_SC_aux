@@ -339,8 +339,8 @@ class 53rd_Hephaestus_BDU_V_Slim_Woodland: VES_BDU_V_Evolved_Slim
         uniformclass="53rd_Hephaestus_BDU_Slim_Woodland";
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO",
-			"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO"
+			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa"
 		};
 	};
 class 53rd_Hephaestus_BDU_R_V_Slim_Woodland: VES_BDU_R_V_Evolved_Slim
@@ -349,8 +349,8 @@ class 53rd_Hephaestus_BDU_R_V_Slim_Woodland: VES_BDU_R_V_Evolved_Slim
         uniformclass="53rd_Hephaestus_BDU_R_Slim_Woodland";
 		hiddenSelectionsTextures[] = 
         {
-			"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO",
-			"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO"
+			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa"
         };
 	};
 class 53rd_Hephaestus_BDU_SS_V_Slim_Woodland: VES_BDU_SS_V_Evolved_Slim
@@ -359,8 +359,8 @@ class 53rd_Hephaestus_BDU_SS_V_Slim_Woodland: VES_BDU_SS_V_Evolved_Slim
         uniformclass="53rd_Hephaestus_BDU_SS_Slim_Woodland";
 		hiddenSelectionsTextures[] = 
         {
-			"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO",
-			"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO"
+			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa"
         };
 	};
 };
