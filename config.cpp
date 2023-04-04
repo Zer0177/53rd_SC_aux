@@ -214,12 +214,12 @@ class cfgWeapons
 	
 	
 //Patrol
-    class 53rd_UNSC_PatrolCap_Woodland: OPTRE_UNSC_PatrolCap_Army
+    class 53rd_UNSC_Cap_Black: OPTRE_UNSC_PatrolCap_Army
     {
         author="53rd";
         scope = 2;
         scopeArsenal = 2;
-        displayName="[53rd] Patrol Cap (Woodland)";
+        displayName="[53rd] UNSC Cap (Black)";
         uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
         hiddenSelections[]=
         {
@@ -228,15 +228,15 @@ class cfgWeapons
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_grey.paa"
+            "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_grey.paa"
         };
     };
-	class 53rd_UNSC_PatrolCap_Winter: OPTRE_UNSC_PatrolCap_Army
+	class 53rd_UNSC_Cap_Woodland: OPTRE_UNSC_PatrolCap_Army
     {
         author="53rd";
         scope = 2;
         scopeArsenal = 2;
-        displayName="[53rd] Patrol Cap (Winter)";
+        displayName="[53rd] UNSC Cap (Woodland)";
         uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
         hiddenSelections[]=
         {
@@ -245,15 +245,15 @@ class cfgWeapons
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_winter.paa"
+            "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_Woodland.paa"
         };
     };
-	class 53rd_UNSC_PatrolCap_Urban: OPTRE_UNSC_PatrolCap_Army
+	class 53rd_UNSC_Cap_Urban: OPTRE_UNSC_PatrolCap_Army
     {
         author="53rd";
         scope = 2;
         scopeArsenal = 2;
-        displayName="[53rd] Patrol Cap (Urban)";
+        displayName="[53rd] UNSC Cap (Urban)";
         uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
         hiddenSelections[]=
         {
@@ -262,15 +262,15 @@ class cfgWeapons
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_winter.paa"
+            "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_winter.paa"
         };
     };
-	class 53rd_UNSC_PatrolCap_Desert: OPTRE_UNSC_PatrolCap_Army
+	class 53rd_UNSC_Cap_Desert: OPTRE_UNSC_PatrolCap_Army
     {
         author="53rd";
         scope = 2;
         scopeArsenal = 2;
-        displayName="[53rd] Patrol Cap (Desert)";
+        displayName="[53rd] UNSC Cap (Desert)";
         uniformModel="\OPTRE_UNSC_Units\Army\patrolcap.p3d";
         hiddenSelections[]=
         {
@@ -279,7 +279,7 @@ class cfgWeapons
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\tex\Soft caps\53rd_patrolcap_winter.paa"
+            "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_Des.paa"
         };
     };
 	
