@@ -166,7 +166,7 @@ class cfgWeapons
 		};
 	};
 
-//Boonie
+//Boonie Hats
     class 53rd_Boonie_gry: H_Booniehat_khk
 	{
 		author="53rd Strike Company";
@@ -211,9 +211,53 @@ class cfgWeapons
 			};
 		};
 	};
+	class 53rd_Boonie_Des: H_Booniehat_khk
+	{
+		author="53rd Strike Company";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName="(53rd) Boonie Hat (Desert)";
+		picture="\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
+		model="\A3\Characters_F\Common\booniehat";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_booniehat_desert_co.paa"
+		};
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
+	};
+	class 53rd_Boonie_Woodland: H_Booniehat_khk
+	{
+		author="53rd Strike Company";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName="(53rd) Boonie Hat (Woodland)";
+		picture="\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
+		model="\A3\Characters_F\Common\booniehat";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Soft caps\53rd_booniehat_woodland.paa"
+		};
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
+	};
 	
 	
-//Patrol
+//UNSC CAP
     class 53rd_UNSC_Cap_Black: OPTRE_UNSC_PatrolCap_Army
     {
         author="53rd";
@@ -230,6 +274,15 @@ class cfgWeapons
         {
             "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_grey.paa"
         };
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
     };
 	class 53rd_UNSC_Cap_Woodland: OPTRE_UNSC_PatrolCap_Army
     {
@@ -247,6 +300,15 @@ class cfgWeapons
         {
             "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_Woodland.paa"
         };
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
     };
 	class 53rd_UNSC_Cap_Urban: OPTRE_UNSC_PatrolCap_Army
     {
@@ -264,6 +326,15 @@ class cfgWeapons
         {
             "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_winter.paa"
         };
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
     };
 	class 53rd_UNSC_Cap_Desert: OPTRE_UNSC_PatrolCap_Army
     {
@@ -281,6 +352,15 @@ class cfgWeapons
         {
             "53rd_SC_aux\tex\Soft caps\53rd_UNSC_Cap_Des.paa"
         };
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitPointName="HitHead";
+				armor=40;
+				passThrough=0.5;
+			};
+		};
     };
 	
 ///////Caps
