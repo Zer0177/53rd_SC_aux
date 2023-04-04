@@ -361,10 +361,28 @@ class cfgWeapons
 				passThrough=0.5;
 			};
 		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
+			hiddenSelections[]=
+			{
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName="HitHead";
+					armor=40;
+					passThrough=0.5;
+				};
+			};
+		};
     };
 	
-///////Caps
-	class 53rd_Cap_Urban: OPTRE_CPD_Cap
+///////Soft Caps
+	class 53rd_Soft_Urban: OPTRE_CPD_Cap
 	{
 		dlc="53rd Aux Mod";
 		scope = 2;
@@ -378,10 +396,10 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_Urban_New_co.paa"
+			"53rd_SC_aux\tex\Soft caps\53rd_Soft_Urban_co.paa"
 		};
 	};
-	 class 53rd_Cap_Woodland: OPTRE_CPD_Cap
+	 class 53rd_Soft_Woodland: OPTRE_CPD_Cap
 	{
 		dlc="53rd Aux Mod";
 		scope = 2;
@@ -395,10 +413,28 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_Woodland_New_co.paa"
+			"53rd_SC_aux\tex\Soft caps\53rd_Soft_Woodland_co.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
+			hiddenSelections[]=
+			{
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName="HitHead";
+					armor=40;
+					passThrough=0.5;
+				};
+			};
 		};
 	};
-	class 53rd_Cap_Desert: OPTRE_CPD_Cap
+	class 53rd_Soft_Desert: OPTRE_CPD_Cap
 	{
 		dlc="53rd Aux Mod";
 		scope = 2;
@@ -412,7 +448,25 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Soft caps\53rd_patrolcap_Des_New_co.paa"
+			"53rd_SC_aux\tex\Soft caps\53rd_Soft_Des_co.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
+			hiddenSelections[]=
+			{
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName="HitHead";
+					armor=40;
+					passThrough=0.5;
+				};
+			};
 		};
 	};
     
