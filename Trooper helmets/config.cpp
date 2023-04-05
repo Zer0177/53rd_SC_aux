@@ -1,4 +1,4 @@
-/*class CfgPatches {
+class CfgPatches {
     class 53rd_Halo_4_Helmets {
         units[] = 
         {
@@ -24,7 +24,7 @@ class cfgWeapons
 	class MA_H4_Scout_Helmet;
 	class MA_AA_Helmet;
 	class MA_EOD_Helmet;
-
+/*
 	class 53rd_H4_Scout_Helmet: MA_H4_Scout_Helmet
 	{
 		scope=2;
@@ -90,18 +90,53 @@ class cfgWeapons
 			"MA_Armor\data\Helmets\AA\AA_Helm_co.paa",
 			"MA_Armor\data\Helmets\AA\AA_Visor_co.paa"
 			};
+		};
 	};
+	*/
 	class 53rd_AA_Helmet_Gold:  MA_AA_Helmet
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=0;
+		scopeArsenal=0;
 		displayName="[53rd] Air Assault Helmet";
 		model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+		optreVarietys[]=
+        {
+            "",
+            "",
+            ""
+        };
+		optreHUDStyle="ODST_1";
 		picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
-			hiddenSelectionsTextures[]=
-			{
+		hiddenSelectionsTextures[]=
+		{
 			"53rd_SC_aux\Custom helmets\AA_Helmet_Wood_co.paa",
 			"53rd_SC_aux\Custom helmets\AA_Visor_gold_co.paa"
+		};
+		/*class ItemInfo: HeadgearItem
+		{
+			mass=0;
+			uniformModel="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor=40;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor=15;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
 			};
+		};*/
 	};
 };

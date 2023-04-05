@@ -40,6 +40,7 @@ class cfgWeapons
 	class MA_H4_Scout_Helmet;
 	class MA_AA_Helmet;
 	class MA_EOD_Helmet;
+	class 53rd_AA_Helmet_Gold;
 
 //Customs
 
@@ -2057,6 +2058,45 @@ class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Woodland : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
+//Cherryy
+class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert:  53rd_AA_Helmet_Gold
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Custom Air Assault Helmet (Cherryy / Desert)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Desert.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa",
+		};
+	};
+class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Snow:  53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+	{
+		displayName="[53rd] Custom Air Assault Helmet (Cherryy / Snow)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Snow.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa",
+		};
+	};
+class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Urban:  53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+	{
+		displayName="[53rd] Custom Air Assault Helmet (Cherryy / Urban)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Urban.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa",
+		};
+	};
+class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:  53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+	{
+		displayName="[53rd] Custom Air Assault Helmet (Cherryy / Woodland)";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Woodland.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa",
+		};
+	};
 };
 
 class CfgVehicles

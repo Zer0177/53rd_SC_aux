@@ -1739,7 +1739,6 @@ class 53rd_Helmet_Vac_Sealed_Rifleman_Snow_Medical_dp : 53rd_Sealed_Base_dp
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-	
 class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical : 53rd_Sealed_Base
     {
         scope = 2;
@@ -1764,7 +1763,6 @@ class 53rd_Helmet_Vac_Sealed_SPC_Snow_Medical_dp : 53rd_Sealed_Base_dp
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-
 class 53rd_Helmet_Normal_Snow_Medical : 53rd_Unsealed_Base
     {
         scope = 2;
