@@ -6,11 +6,11 @@ class XtdGearModels
 		{
 			label = "Uniforms";
 			author = "Ithias";
-			options[] = {"Camo","Type"};
+			options[] = {"Uniform_Camo","Type"};
 
-			class Camo
+			class Uniform_Camo
 			{
-				label = "Camo";
+				label = "Uniform Camo";
 				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
@@ -67,7 +67,7 @@ class XtdGearInfos
 		class 53rd_Hephaestus_BDU_Slim
 		{
 		model = "Uniforms";
-		Camo = "Urban";
+		Uniform_Camo = "Urban";
 		Type = "Full";
 		};
 		class 53rd_Hephaestus_BDU_R_Slim:53rd_Hephaestus_BDU_Slim
@@ -83,7 +83,7 @@ class XtdGearInfos
 		class 53rd_Hephaestus_BDU_Slim_Desert
 		{
 		model = "Uniforms";
-		Camo = "Desert";
+		Uniform_Camo = "Desert";
 		Type = "Full";
 		};
 		class 53rd_Hephaestus_BDU_R_Slim_Desert:53rd_Hephaestus_BDU_Slim_Desert
@@ -99,7 +99,7 @@ class XtdGearInfos
 		class 53rd_Hephaestus_BDU_Slim_Snow
 		{
 		model = "Uniforms";
-		Camo = "Snow";
+		Uniform_Camo = "Snow";
 		Type = "Full";
 		};
 		class 53rd_Hephaestus_BDU_R_Slim_Snow:53rd_Hephaestus_BDU_Slim_Snow
@@ -115,7 +115,7 @@ class XtdGearInfos
 		class 53rd_Hephaestus_BDU_Slim_Woodland
 		{
 		model = "Uniforms";
-		Camo = "Woodland";
+		Uniform_Camo = "Woodland";
 		Type = "Full";
 		};
 		class 53rd_Hephaestus_BDU_R_Slim_Woodland:53rd_Hephaestus_BDU_Slim_Woodland
