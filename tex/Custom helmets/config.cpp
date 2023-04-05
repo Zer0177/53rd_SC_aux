@@ -1,4 +1,4 @@
-class CfgPatches {
+/*class CfgPatches {
     class 53rd_Halo_5_Helmets {
         units[] = 
         {
