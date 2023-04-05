@@ -194,17 +194,5 @@ class XtdGearInfos
 		{
 		detach = "stet";
 		};
-		class 53rd_Boonie_gry:53rd_Beret_Hephaestus
-		{
-		detach = "boonie";
-		};
-		class 53rd_UNSC_PatrolCap:53rd_Beret_Hephaestus
-		{
-		detach = "patrol";
-		};
-		class 53rd_Cap:53rd_Beret_Hephaestus
-		{
-		detach = "cap";
-		};
 	};
 };
