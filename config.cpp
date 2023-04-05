@@ -73,7 +73,7 @@ class cfgWeapons
 		hiddenSelections[] = {"Camo"};
 		class ItemInfo: HeadgearItem
 		{
-			mass = 1;
+			mass = 0;
 			uniformmodel = "\DAR_Stetson\DAR_Stetson";
 			modelSides[] = {3,1};
 			armor = 40;
@@ -105,7 +105,7 @@ class cfgWeapons
 		};
 		class ItemInfo: HeadgearItem
 		{
-			mass=1;
+			mass=0;
 			uniformModel="a3\characters_f_epb\BLUFOR\headgear_beret02";
 			hiddenSelections[]=
 			{
@@ -138,22 +138,6 @@ class cfgWeapons
 			"\53rd_SC_Aux\tex\Soft caps\Hephaestus_Medical_Beret_Leader_V1.paa"
 		};
 	};
-    class 53rd_Beret_Athena: 53rd_Beret_Hephaestus
-	{
-		displayName="[53rd] Beret (Athena)";
-		hiddenSelectionsTextures[]=
-		{
-			"\53rd_SC_Aux\tex\Soft caps\53rd_Beret_Athena.paa"
-		};
-	};
-    class 53rd_Beret_Tart: 53rd_Beret_Hephaestus
-	{
-		displayName="[53rd] Beret (Tartarus)";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Soft caps\53rd_Beret_Tartarus.paa"
-		};
-	};	
     class 53rd_Beret_Volare: 53rd_Beret_Hephaestus
 	{
 		displayName="[53rd] Beret (Volare)";
