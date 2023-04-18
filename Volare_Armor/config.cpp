@@ -338,40 +338,6 @@ class cfgWeapons
         displayName = "[53rd] Volare Flight Vest (Snow)";
         hiddenSelectionsTextures[] = {"53rd_SC_aux\tex\Volare Armor\h3_vest_White_co.paa"};
     };
-    class 53rd_M52A_Volare : 53rd_Armor_Specialist
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        dlc = "53rd AUX";
-        author = "Body";
-        displayName = "[53rd] Volare Armor (Rifleman)";
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
-            "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
-            "optre_unsc_units\army\data\ghillie_woodland_co",
-            "optre_unsc_units\army\data\odst_armor_co",
-        };
-    };
-    class 53rd_M52A_Volare_NCO : 53rd_Armor_SL
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        dlc = "53rd AUX";
-        author = "Body";
-        displayName = "[53rd] Volare Armor (Squad Leader)";
-        hiddenSelectionsTextures[] = 
-        {
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
-            "53rd_SC_aux\tex\Volare Armor\53th_M52_GB_AM.paa",
-            "53rd_SC_Aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
-            "optre_unsc_units\army\data\ghillie_woodland_co",
-            "optre_unsc_units\army\data\odst_armor_co",
-        };
-    };
     class Volare_BDU_Bl:OPTRE_FC_Marines_Uniform
     {
         scope = 2;
@@ -438,6 +404,80 @@ class cfgWeapons
             uniformType = "Neopren";
             containerClass = "Supply100";
             modelSides[] = {6};
+        };
+    };
+	
+//Combat Armor
+
+    class 53rd_Volare_Combat_Armor_Urban : 53rd_Armor_Specialist
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX";
+        author = "Body";
+		displayName="[53rd] Volare Armor (Combat / Urban)";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
+			"53rd_SC_aux\tex\Volare Armor\53rd_Volare_Combat_Armor_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+        };
+    };
+	
+    class 53rd_Volare_Combat_Armor_Woodland : 53rd_Armor_Specialist
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX";
+        author = "Body";
+		displayName="[53rd] Volare Armor (Combat / Woodland)";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Woodland.paa",
+			"53rd_SC_aux\tex\Volare Armor\53rd_Volare_Combat_Armor_Woodland.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Woodland.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+        };
+    };
+
+    class 53rd_Volare_Combat_Armor_Desert : 53rd_Armor_Specialist
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX";
+        author = "Body";
+		displayName="[53rd] Volare Armor (Combat / Desert)";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Desert.paa",
+			"53rd_SC_aux\tex\Volare Armor\53rd_Volare_Combat_Armor_Desert.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Desert.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
+        };
+    };
+
+    class 53rd_Volare_Combat_Armor_Snow : 53rd_Armor_Specialist
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "53rd AUX";
+        author = "Body";
+		displayName="[53rd] Volare Armor (Combat / Snow)";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Snow.paa",
+			"53rd_SC_aux\tex\Volare Armor\53rd_Volare_Combat_Armor_Snow.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Snow.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\odst_armor_co.paa"
         };
     };
 };

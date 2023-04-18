@@ -6,8 +6,23 @@ class XtdGearModels
 		{
 			label = "Volare Helmets";
 			author = "Seven";
-			options[] = {"type","pol"};
+			options[] = {"type","pol","Armor"};
 			
+			class Armor
+			{
+				label = "Armor";
+				values[] = {"Pilot","Combat"};
+				class Pilot
+				{
+					label = "Pilot";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Combat
+				{
+					label = "Combat";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
 			class type
 			{
 				label = "Type";
@@ -63,6 +78,7 @@ class XtdGearInfos
         class 53rd_VX19_Black_Helmet
 		{
 		model = "VolareHelm";
+		Armor = "Pilot";
 		type = "blk";
 		pol = "on";
 		};
@@ -84,6 +100,7 @@ class XtdGearInfos
         class 53rd_VX19_Black_Helmet_dp
 		{
 		model = "VolareHelm";
+		Armor = "Pilot";
 		type = "blk";
 		pol = "off";
 		};
