@@ -47,8 +47,8 @@ class cfgWeapons
 		picture="MA_Armor\data\Icons\H4_Scout_Helmet.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Custom helmets\Scout_Helmet_Wood_co.paa",
-			"53rd_SC_aux\Custom helmets\Scout_Visor_Gold_co.paa"
+			"53rd_SC_aux\Trooper helmets\[53rd] H4 Helmet.paa",
+			"53rd_SC_aux\Trooper helmets\[53rd] H4 Helmet(Visor).paa"
 		};
 	};
 	
@@ -74,8 +74,8 @@ class cfgWeapons
     picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Custom helmets\EOD_Helmet_Wood_co.paa",
-			"53rd_SC_aux\Custom helmets\EOD_Visor_Gold_co.paa"
+			"53rd_SC_aux\Trooper helmets\[53rd] EOD Helmet.paa",
+			"53rd_SC_aux\Trooper helmets\[53rd] EOD Helmet(Visor).paa"
 		};
 	};
 	class 53rd_AA_Helmet:  MA_AA_Helmet
@@ -109,13 +109,72 @@ class cfgWeapons
 		picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Custom helmets\AA_Helmet_Wood_co.paa",
-			"53rd_SC_aux\Custom helmets\AA_Visor_gold_co.paa"
+			"53rd_SC_aux\Trooper helmets\[53rd] AA Helmet.paa",
+			"53rd_SC_aux\Trooper helmets\[53rd] AA Helmet(Visor).paa"
 		};
 		/*class ItemInfo: HeadgearItem
 		{
 			mass=0;
 			uniformModel="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor=40;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor=15;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
+			};
+		};
+		class 53rd_H3_ODST_Helmet:  MA_H3_ODST_Helmet
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Halo 3 ODST Helmet";
+		model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
+		picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa"; //TODO: Update this
+			hiddenSelectionsTextures[]=
+			{
+			"MA_Armor\data\Helmets\H3_ODST\Helmet_co.paa",
+			"MA_Armor\data\Helmets\H3_ODST\Visor_co.paa"
+			};
+		};
+	};
+	class 53rd_H3_ODST_Helmet_Gold:  MA_H3_ODST_Helmet
+	{
+		scope=0;
+		scopeArsenal=0;
+		displayName="[53rd] Halo 3 ODST Helmet";
+		model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
+		optreVarietys[]=
+        {
+            "",
+            "",
+            ""
+        };
+		optreHUDStyle="ODST_1";
+		picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa"; //TODO: Update this
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Trooper helmets\[53rd] H3_ODST Helmet.paa",
+			"53rd_SC_aux\Trooper helmets\[53rd] H3_ODST Helmet(Visor).paa"
+		};
+		/*class ItemInfo: HeadgearItem
+		{
+			mass=0;
+			uniformModel="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
 			class HitpointsProtectionInfo
 			{
 				class Face
