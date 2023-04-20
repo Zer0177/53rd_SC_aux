@@ -259,11 +259,398 @@ class CfgVehicles
 		class ViewCargo;
 		class HeadLimits;
 	};
-
+	class OPTRE_M808BM_Base
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+		class HitPoints;
+		class CargoTurret;
+		class ViewPilot;
+		class ViewOptics;
+		class RCWSOptics;
+		class ViewCargo;
+		class HeadLimits;
+	};
 class OPTRE_M808BM_UNSC;
 class OPTRE_M875_SPH;
 	
-	class 53rd_Scorpion: OPTRE_M808BM_UNSC
+	class 53rd_M808BM_Base: OPTRE_M808BM_Base
+	{
+		accuracy=0.30000001;
+		scope=1;
+		scopeCurator=1;
+		model="OPTRE_Vehicles\Scorpion\ScorpionBM.p3d";
+		picture="\OPTRE_Vehicles\Scorpion\data\UI\M808B_MBT_ca.paa";
+		icon="\OPTRE_Vehicles\Scorpion\data\UI\map_M808B_ca.paa";
+		author="Article 2 Studios";
+		editorPreview="OPTRE_Vehicles\Scorpion\data\UI\OPTRE_M808BM_UNSC.jpg";
+		armor=755;
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		forceHideDriver=1;
+		driverForceOptics=0;
+		driverAction="Driver_OPTRE_M808B";
+		driverInAction="Driver_OPTRE_M808B";
+		transportSoldier=0;
+		viewdriverInExternal=1;
+		getInAction="GetInLow";
+		getOutAction="GetOutLow";
+		cargoGetInAction[]=
+		{
+			"GetInLow"
+		};
+		cargoGetOutAction[]=
+		{
+			"GetOutLow"
+		};
+		cargoCanEject=1;
+		hideWeaponsCargo=0;
+		castCargoShadow=1;
+		class Turrets: Turrets
+		{
+			class CargoTurret1: CargoTurret
+			{
+				gunnerAction="passenger_inside_3";
+				gunnerCompartments="Compartment2";
+				memoryPointsGetInGunner="pos cargo1";
+				memoryPointsGetInGunnerDir="pos cargo1 dir";
+				memoryPointGunnerOptics="gunnerview";
+				gunnerName="Passenger Gunner 1";
+				proxyIndex=1;
+				maxElev=15;
+				minElev=-25;
+				maxTurn=60;
+				minTurn=-60;
+				isPersonTurret=2;
+				ejectDeadGunner=1;
+				gunnerInAction="passenger_inside_3";
+				startEngine=0;
+				allowLauncherIn=1;
+				allowLauncherOut=1;
+				LODTurnedIn=0;
+				LODTurnedOut=0;
+			};
+			class CargoTurret2: CargoTurret1
+			{
+				gunnerCompartments="Compartment2";
+				memoryPointsGetInGunner="pos cargo2";
+				memoryPointsGetInGunnerDir="pos cargo2 dir";
+				gunnerName="Passenger Gunner 2";
+				proxyIndex=2;
+			};
+			class CargoTurret3: CargoTurret1
+			{
+				proxyIndex=3;
+				gunnerName="Passenger Gunner 3";
+				gunnerCompartments="Compartment3";
+				memoryPointsGetInGunner="pos cargo3";
+				memoryPointsGetInGunnerDir="pos cargo3 dir";
+			};
+			class CargoTurret4: CargoTurret1
+			{
+				proxyIndex=4;
+				gunnerName="Passenger Gunner 4";
+				gunnerCompartments="Compartment3";
+				memoryPointsGetInGunner="pos cargo4";
+				memoryPointsGetInGunnerDir="pos cargo4 dir";
+			};
+			class CargoTurret5: CargoTurret1
+			{
+				proxyIndex=5;
+				gunnerName="Passenger Gunner 5";
+				gunnerCompartments="Compartment4";
+				memoryPointsGetInGunner="pos cargo5";
+				memoryPointsGetInGunnerDir="pos cargo6 dir";
+			};
+			class CargoTurret6: CargoTurret1
+			{
+				proxyIndex=6;
+				gunnerName="Passenger Gunner 6";
+				gunnerCompartments="Compartment4";
+				memoryPointsGetInGunner="pos cargo6";
+				memoryPointsGetInGunnerDir="pos cargo6 dir";
+			};
+			class CargoTurret7: CargoTurret1
+			{
+				proxyIndex=7;
+				gunnerName="Passenger Gunner 7";
+				gunnerCompartments="Compartment5";
+				memoryPointsGetInGunner="pos cargo7";
+				memoryPointsGetInGunnerDir="pos cargo7 dir";
+			};
+			class CargoTurret8: CargoTurret1
+			{
+				proxyIndex=8;
+				gunnerName="Passenger Gunner 8";
+				gunnerCompartments="Compartment5";
+				memoryPointsGetInGunner="pos cargo8";
+				memoryPointsGetInGunnerDir="pos cargo8 dir";
+			};
+			class MainTurret: MainTurret
+			{
+				class Turrets
+				{
+				};
+				memoryPointGun="usti hlavne2";
+				selectionFireAnim="zasleh2";
+				maxVerticalRotSpeed="90/45";
+				maxHorizontalRotSpeed="90/45";
+				gunBeg="usti hlavne";
+				gunEnd="konec hlavne";
+				weapons[]=
+				{
+					"OPTRE_90mm_M512",
+					"cannon_125mm_advanced",
+					"OPTRE_M41_LAAG",
+					"SmokeLauncher"
+				};
+				magazines[]=
+				{
+					"20Rnd_125mm_APFSDS_T_Green",
+					"20Rnd_125mm_APFSDS_T_Green",
+					"12Rnd_125mm_HEAT_T_Green",
+					"12Rnd_125mm_HE_T_Green",
+					"OPTRE_10Rnd_90mm_S1",
+					"OPTRE_1000Rnd_127x99_M41",
+					"OPTRE_1000Rnd_127x99_M41",
+					"SmokeLauncherMag"
+				};
+				minElev=-8;
+				maxElev=25;
+				initElev=0;
+				turretInfoType="RscOptics_MBT_01_gunner";
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+				discreteDistanceInitIndex=5;
+				memoryPointGunnerOptics="gunnerview";
+				gunnerOutOpticsModel="";
+				gunnerOutOpticsEffect[]={};
+				gunnerOpticsEffect[]={};
+				class OpticsIn
+				{
+					class Wide: ViewOptics
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.30000001;
+						minFov=0.30000001;
+						maxFov=0.30000001;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+						thermalMode[]={0};
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_m_F.p3d";
+						gunnerOpticsEffect[]={};
+					};
+					class Medium: Wide
+					{
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_m_F.p3d";
+						initFov=0.07;
+						minFov=0.07;
+						maxFov=0.07;
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_m_F.p3d";
+						initFov=0.028000001;
+						minFov=0.028000001;
+						maxFov=0.028000001;
+					};
+				};
+				gunnerAction="Gunner_OPTRE_M808B";
+				gunnerInAction="Gunner_OPTRE_M808B";
+				gunnerGetInAction="GetInAMV_cargo";
+				gunnerGetOutAction="GetOutLow";
+				castGunnerShadow=0;
+				stabilizedInAxes=3;
+				viewGunnerInExternal=1;
+				forceHideGunner=1;
+				gunnerForceOptics=0;
+				usepip=1;
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=4.5;
+						material=-1;
+						name="otocVez";
+						visual="vez";
+						passThrough=0;
+						minimalHit=0.02;
+						explosionShielding=0.60000002;
+						radius=0.25;
+					};
+					class HitGun
+					{
+						armor=4.5;
+						material=-1;
+						name="otocHlaven";
+						visual="Hlaven";
+						passThrough=0;
+						minimalHit=0;
+						explosionShielding=0.60000002;
+						radius=0.25;
+					};
+				};
+			};
+			class CommanderTurret: MainTurret
+			{
+				class Turrets
+				{
+				};
+				LODTurnedIn=1100;
+				body="obsTurret";
+				gun="obsGun";
+				animationSourceBody="obsTurret";
+				animationSourceGun="obsGun";
+				proxyType="CPCargo";
+				proxyIndex=14;
+				cargoCompartments[]=
+				{
+					"Compartment1"
+				};
+				memoryPointGun="usti hlavne3";
+				selectionFireAnim="zasleh3";
+				maxVerticalRotSpeed="90/45";
+				maxHorizontalRotSpeed="90/45";
+				gunBeg="usti hlavne3";
+				gunEnd="konec hlavne3";
+				weapons[]=
+				{
+					"OPTRE_M41_LAAG",
+					"Laserdesignator_mounted"
+				};
+				magazines[]=
+				{
+					"OPTRE_1000Rnd_127x99_M41",
+					"OPTRE_1000Rnd_127x99_M41",
+					"OPTRE_1000Rnd_127x99_M41",
+					"OPTRE_1000Rnd_127x99_M41",
+					"Laserbatteries"
+				};
+				minElev=-12;
+				maxElev=45;
+				initElev=0;
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_best",
+					"db-40",
+					1,
+					50
+				};
+				turretInfoType="RscOptics_APC_Wheeled_01_gunner";
+				memoryPointsGetInGunner="pos commander";
+				memoryPointsGetInGunnerDir="pos commander dir";
+				commanding=-2;
+				primaryGunner=0;
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+				discreteDistanceInitIndex=4;
+				memoryPointGunnerOptics="commanderview";
+				gunnerOutOpticsModel="";
+				gunnerOutOpticsEffect[]={};
+				gunnerOpticsEffect[]={};
+				class OpticsIn
+				{
+					class Wide: ViewOptics
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.30000001;
+						minFov=0.30000001;
+						maxFov=0.30000001;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+						thermalMode[]={0,1};
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOpticsEffect[]={};
+					};
+					class Medium: Wide
+					{
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
+						initFov=0.07;
+						minFov=0.07;
+						maxFov=0.07;
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
+						initFov=0.028000001;
+						minFov=0.028000001;
+						maxFov=0.028000001;
+					};
+				};
+				gunnerGetInAction="GetInAMV_cargo";
+				gunnerGetOutAction="GetOutLow";
+				gunnerName="Commander";
+				castGunnerShadow=0;
+				stabilizedInAxes=3;
+				viewGunnerInExternal=1;
+				startEngine=0;
+				gunnerForceOptics=0;
+				usepip=1;
+			};
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_lopo_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_tur_wood_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
+			"OPTRE_Vehicles\Scorpion\data\texture\Scorpion_mg_co.paa"
+		};
+		class UserActions
+		{
+			class Flip
+			{
+				displayNameDefault="Press SPACEBAR to Flip Scorpion";
+				displayName="Press SPACEBAR to Flip Scorpion";
+				position="";
+				radius=15;
+				onlyForPlayer=1;
+				condition="(alive this) AND !(canmove this)";
+				statement="this setposATL [getPosATL this select 0, getPosATL this select 1, (getPosATL this select 2) + 3]; this setVectorUp surfaceNormal getposATL this;";
+			};
+		};
+	};
+	
+	class 53rd_Scorpion: 53rd_M808BM_Base
 	{
 		displayName="[53rd] M808BM";
 		author="53rd & Seven";
@@ -567,7 +954,7 @@ class OPTRE_M875_SPH;
             };
         };
     };
-	class 53rd_ONI_Scorpion: OPTRE_M808BM_UNSC
+	class 53rd_ONI_Scorpion: 53rd_M808BM_Base
 	{
 		displayName="[ONI] M808BM";
 		author="53rd & Seven";
@@ -606,7 +993,7 @@ class OPTRE_M875_SPH;
 			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_ONI_co.paa"
 		};
 	};
-	class 53rd_CORP_Scorpion: OPTRE_M808BM_UNSC
+	class 53rd_CORP_Scorpion: 53rd_M808BM_Base
 	{
 		displayName="[CORP] M808BM";
 		author="53rd & Seven";
