@@ -8,7 +8,7 @@ class CfgPatches {
 			"53rd_H4_Scout_Helmet",
 			"53rd_EOD_Helmet",
 			"53rd_AA_Helmet",
-			"53rd_M56SH_Helmet",
+			"53rd_M56SR_Helm",
         };
         requiredVersion = 0.100000;
         requiredAddons[] = {};
@@ -23,7 +23,7 @@ class cfgWeapons
 		class MA_M56_Scout_Helmet;
 		class MA_M56A_Helmet;
 		class MA_M56E_Helmet;
-		class MA_M56SH_Helmet;
+		class MA_M56SR_Helmet;
 		
 		class 53rd_H4_Scout_Helmet: MA_M56_Scout_Helmet
 		{
@@ -64,13 +64,13 @@ class cfgWeapons
 				"53rd_SC_aux\Trooper helmets\53rd_AA_Helmet_Visor.paa"
 				};
 		};
-		class 53rd_M56SH_Helmet: MA_M56SH_Helmet
+		class 53rd_M56SR_Helmet: MA_M56SR_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] H3 ODST Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
+			displayName="[53rd] MSR ODST HR Helmet";
+			model="MA_Armor\data\Helmets\HR_ODST\HR_ODST.p3d";
+			picture="MA_Armor\data\Icons\Halo_Reach_ODST_Helmet.paa";
 			hiddenSelectionsTextures[]=
 			{
 				"53rd_SC_aux\Trooper helmets\53rd_H3_ODST_Helmet.paa",
@@ -78,7 +78,7 @@ class cfgWeapons
 			};
 			class ItemInfo: ItemInfo
 			{
-				uniformModel="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
+				uniformModel="MA_Armor\data\Helmets\HR_ODST\HR_ODST.p3d";
 				hiddenSelectionsTextures[]=
 				{
 					"53rd_SC_aux\Trooper helmets\53rd_H3_ODST_Helmet.paa",
