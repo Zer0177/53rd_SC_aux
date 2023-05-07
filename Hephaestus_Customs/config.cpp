@@ -6,7 +6,10 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-            ""
+			"53rd_AA_Cherry_WN",
+			"53rd_AA_Cherry_UB",
+			"53rd_AA_Cherry_DS",
+            "53rd_AA_Cherry_WD"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -41,6 +44,7 @@ class cfgWeapons
 	class MA_AA_Helmet;
 	class MA_EOD_Helmet;
 	class 53rd_AA_Helmet_Gold;
+	class MA_M56A_Helmet;
 
 //Customs
 
@@ -1566,7 +1570,59 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
     };
-    
+    //Cherry 
+class 53rd_AA_Cherry_UB:MA_M56A_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Cherry / Urban)";
+			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Urban.paa",
+				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				};
+		};
+class 53rd_AA_Cherry_DS:MA_M56A_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Cherry / Desert)";
+			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Desert.paa",
+				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				};
+		};
+class 53rd_AA_Cherry_WN:MA_M56A_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Cherry / Snow)";
+			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Snow.paa",
+				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				};
+		};
+class 53rd_AA_Cherry_WD:MA_M56A_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Cherry / Woodland)";
+			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Woodland.paa",
+				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				};
+		};
     /*Hellfire
     class 53rd_Custom_Armor_Hellfire_Desert : 53rd_Armor_TL
 	{ 
