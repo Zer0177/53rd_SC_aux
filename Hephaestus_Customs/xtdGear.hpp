@@ -582,42 +582,23 @@ class XtdGearInfos
 		Helm_Camo = "Woodland";
 		};
         
-		//Tikles
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		//Cherryy
+		class 53rd_AA_Cherry_DS
 		{
 		model = "HephaestusCustomHelm";
 		Helm_Camo = "Desert";
 		Person = "Cherryy";
         dp="yes";
 		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Snow:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		class 53rd_AA_Cherry_WN:53rd_AA_Cherry_DS
 		{
 		Helm_Camo = "Snow";
 		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Urban:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		class 53rd_AA_Cherry_UB:53rd_AA_Cherry_DS
 		{
 		Helm_Camo = "Urban";
 		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
-		{
-		model = "HephaestusCustomHelm";
-		Helm_Camo = "Desert";
-		Person = "Cherryy";
-        dp="no";
-		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Snow_dp:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
-		{
-		Helm_Camo = "Snow";
-		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Urban_dp:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
-		{
-		Helm_Camo = "Urban";
-		};
-		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland_dp:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
+		class 53rd_AA_Cherry_WD:53rd_AA_Cherry_DS
 		{
 		Helm_Camo = "Woodland";
 		};
