@@ -38,7 +38,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body","Hazard","Hellfire","Patches","Tikles"};
+				values[] = {"Panzer","Ithias","Fixer","Lonewulf","Ryuu","Body","Hazard","Hellfire","Patches","Tikles","Cherryy"};
 				class Panzer
 				{
 					label = "Panzer";
@@ -87,6 +87,11 @@ class XtdGearModels
 				class Tikles
 				{
 					label = "Tikles";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Cherryy
+				{
+					label = "Cherryy";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -573,6 +578,46 @@ class XtdGearInfos
 		Helm_Camo = "Urban";
 		};
 		class 53rd_Custom_Helmet_Vac_Sealed_Tikles_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Tikles_Desert_dp
+		{
+		Helm_Camo = "Woodland";
+		};
+        
+		//Tikles
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		{
+		model = "HephaestusCustomHelm";
+		Helm_Camo = "Desert";
+		Person = "Cherryy";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Snow:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		{
+		Helm_Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Urban:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		{
+		Helm_Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
+		{
+		model = "HephaestusCustomHelm";
+		Helm_Camo = "Desert";
+		Person = "Cherryy";
+        dp="no";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Snow_dp:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
+		{
+		Helm_Camo = "Snow";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Urban_dp:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
+		{
+		Helm_Camo = "Urban";
+		};
+		class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland_dp:53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Desert_dp
 		{
 		Helm_Camo = "Woodland";
 		};
