@@ -13,7 +13,11 @@ class CfgPatches {
         {
             "53rd_Bulldog_RV",
             "53rd_M1015_RV_mule",
-			"53rd_Bulldog_Panzer"
+			"53rd_Bulldog_Panzer",
+			"53rd_HaloInf_ODST_F",
+			"53rd_HaloInf_Marine_AWDL_F",
+			"53rd_HaloInf_Marine_WDL_UNSC_headgear",
+			"53rd_HaloInf_Marine_WDL_UNSC_NV_headgear",
         };
 		weapons[] = 
         {
@@ -23,6 +27,10 @@ class CfgPatches {
 			"53rd_MA32GL",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
+			"53rd_haloinfodst_U_uniform",
+			"53rd_haloinfmar_U_AWDL_uniform",
+			"53rd_HaloInf_Marine_WDL_UNSC_headgear",
+			"53rd_HaloInf_Marine_WDL_UNSC_NV_headgear",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -55,6 +63,10 @@ class cfgWeapons
 	class H_Booniehat_khk;
 	class OPTRE_UNSC_PatrolCap_Army;
 	class OPTRE_CPD_Cap;
+	class haloinfodst_U_uniform;
+	class Uniform_Base;
+	class HaloInf_Marine_WDL_NV_headgear;
+	class HaloInf_Marine_WDL_headgear;
 	
 //Stetson
     class ItemCore;
@@ -274,10 +286,138 @@ class cfgWeapons
 			"TCF_32Rnd_762x51_Mag_SST"
 		};
     };
+	//Unifrom
+	class 53rd_haloinfodst_U_uniform: haloinfodst_U_uniform
+	{
+		author="Nody&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] ODST Heavy Uniform";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\halo_odst\Top\Halo_marine_02_top_odst_co.paa",
+			"\halo_odst\Pants\Halo_marine_02_pants_odst_co.paa",
+			"\halo_odst\Armor\Halo_marine_02_armor_odst_co.paa",
+			"\halo_odst\ODST_parts\Halo_marine_02_ODST_co.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3",
+				"Camo4"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"\halo_odst\Top\Halo_marine_02_top_odst_co.paa",
+				"\halo_odst\Pants\Halo_marine_02_pants_odst_co.paa",
+				"\halo_odst\Armor\Halo_marine_02_armor_odst_co.paa",
+				"\halo_odst\ODST_parts\Halo_marine_02_ODST_co.paa"
+			};
+			uniformModel="-";
+			uniformClass="53rd_HaloInf_ODST_F";
+			containerClass="Supply150";
+			mass=80;
+		};
+		class 53rd_haloinfmar_U_AWDL_uniform: Uniform_Base
+	{
+		author="Nody&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Woodland Trooper";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Halo_marine_02\Uniform\Textures\Top\Halo_marine_02_top_woodland_AS_co.paa",
+			"\Halo_marine_02\Uniform\Textures\Pants\Halo_marine_02_pants_woodland_co.paa",
+			"\Halo_marine_02\Uniform\Textures\Armor\Halo_marine_02_armor_green_AS_co.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"\Halo_marine_02\Uniform\Textures\Top\Halo_marine_02_top_woodland_AS_co.paa",
+				"\Halo_marine_02\Uniform\Textures\Pants\Halo_marine_02_pants_woodland_co.paa",
+				"\Halo_marine_02\Uniform\Textures\Armor\Halo_marine_02_armor_green_AS_co.paa"
+			};
+			uniformModel="-";
+			uniformClass="53rd_HaloInf_Marine_AWDL_F";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_HaloInf_Marine_WDL_UNSC_headgear: HaloInf_Marine_WDL_headgear
+	{
+		author="Nody&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Ranger Helmet";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Halo_marine_02\helmet\textures\Halo_marine_02_Helmet_green_unsc_co.paa"
+		};
+	};
+	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		displayName="[53rd] Ranger Helmet (NV)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Halo_marine_02\helmet\textures\Halo_marine_02_Helmet_green_unsc_co.paa"
+		};
+	};
 };
 
 class CfgVehicles
 { //Bulldog
+	class haloinf_ODST_Soldier_base_F;
+	class haloinf_Marine_Soldier_base_F;
 	class DMNS_Bulldog_FAV;
 	class DMNS_Bulldog_LRV_AGL;
 	class 53rd_Bulldog_RV: DMNS_Bulldog_FAV
@@ -697,7 +837,60 @@ class CfgVehicles
             };
         };   
 	};
-};
-class CfgGlasses
-{
+	//INF Marine Armor
+	class 53rd_HaloInf_ODST_F: haloinf_ODST_Soldier_base_F
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+        side=1;
+		displayName="[53rd] ODST Heavy Uniform";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\halo_odst\Top\Halo_marine_02_top_odst_co.paa",
+			"\halo_odst\Pants\Halo_marine_02_pants_odst_co.paa",
+			"\halo_odst\Armor\Halo_marine_02_armor_odst_co.paa",
+			"\halo_odst\ODST_parts\Halo_marine_02_ODST_co.paa"
+		};
+		model="\halo_odst\Halo_ODST_Uniform_F.p3d";
+		uniformClass="53rd_haloinfodst_U_uniform";
+	};
+	class 53rd_HaloInf_Marine_AWDL_F: haloinf_Marine_Soldier_base_F
+		{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger Woodland";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"\Halo_marine_02\Uniform\Textures\Top\Halo_marine_02_top_woodland_AS_co.paa",
+				"\Halo_marine_02\Uniform\Textures\Pants\Halo_marine_02_pants_woodland_co.paa",
+				"\Halo_marine_02\Uniform\Textures\Armor\Halo_marine_02_armor_green_AS_co.paa"
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_haloinfmar_U_AWDL_uniform";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+		};
+	};
 };
