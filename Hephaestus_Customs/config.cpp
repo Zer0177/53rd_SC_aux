@@ -1580,8 +1580,8 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Urban.paa",
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Urban.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
 			};
 		};
 	class 53rd_OP_Cherry_DS:OPTRE_UNSC_Operator_Helmet
@@ -1592,8 +1592,8 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Desert.paa",
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Desert.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
 			};
 		};
 	class 53rd_OP_Cherry_WN:OPTRE_UNSC_Operator_Helmet
@@ -1604,8 +1604,8 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Snow.paa",
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Snow.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
 			};
 		};
 	class 53rd_OP_Cherry_WD:OPTRE_UNSC_Operator_Helmet
@@ -1616,8 +1616,8 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Woodland.paa",
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Woodland.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
 			};
 		};
     /*Hellfire
