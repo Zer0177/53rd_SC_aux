@@ -333,7 +333,8 @@ class cfgWeapons
 			containerClass="Supply150";
 			mass=80;
 		};
-		class 53rd_haloinfmar_U_AWDL_uniform: Uniform_Base
+	};
+	class 53rd_haloinfmar_U_AWDL_uniform: Uniform_Base
 	{
 		author="Nody&Scarecrow";
 		scope=2;
@@ -341,7 +342,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Woodland Trooper";
+		displayName="[53rd] Ranger Woodland";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -352,9 +353,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\Halo_marine_02\Uniform\Textures\Top\Halo_marine_02_top_woodland_AS_co.paa",
-			"\Halo_marine_02\Uniform\Textures\Pants\Halo_marine_02_pants_woodland_co.paa",
-			"\Halo_marine_02\Uniform\Textures\Armor\Halo_marine_02_armor_green_AS_co.paa"
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_armor_green_AS_co.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -366,9 +367,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"\Halo_marine_02\Uniform\Textures\Top\Halo_marine_02_top_woodland_AS_co.paa",
-				"\Halo_marine_02\Uniform\Textures\Pants\Halo_marine_02_pants_woodland_co.paa",
-				"\Halo_marine_02\Uniform\Textures\Armor\Halo_marine_02_armor_green_AS_co.paa"
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_top_woodland_AS_co.paa",
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_pants_woodland_two_co.paa",
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_armor_green_AS_co.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_HaloInf_Marine_AWDL_F";
@@ -877,9 +878,9 @@ class CfgVehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"\Halo_marine_02\Uniform\Textures\Top\Halo_marine_02_top_woodland_AS_co.paa",
-				"\Halo_marine_02\Uniform\Textures\Pants\Halo_marine_02_pants_woodland_co.paa",
-				"\Halo_marine_02\Uniform\Textures\Armor\Halo_marine_02_armor_green_AS_co.paa"
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_top_woodland_AS_co.paa",
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_pants_woodland_two_co.paa",
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_armor_green_AS_co.paa"
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_haloinfmar_U_AWDL_uniform";
