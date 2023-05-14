@@ -6,10 +6,10 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-			"53rd_AA_Cherry_WN",
-			"53rd_AA_Cherry_UB",
-			"53rd_AA_Cherry_DS",
-            "53rd_AA_Cherry_WD"
+			"53rd_OP_Cherry_WN",
+			"53rd_OP_Cherry_UB",
+			"53rd_OP_Cherry_DS",
+            "53rd_OP_Cherry_WD"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -45,6 +45,7 @@ class cfgWeapons
 	class MA_EOD_Helmet;
 	class 53rd_AA_Helmet_Gold;
 	class MA_M56A_Helmet;
+	class OPTRE_UNSC_Operator_Helmet;
 
 //Customs
 
@@ -1571,57 +1572,53 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 		};
     };
     //Cherry 
-class 53rd_AA_Cherry_UB:MA_M56A_Helmet
+	class 53rd_OP_Cherry_UB:OPTRE_UNSC_Operator_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Urban)";
-			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
-				hiddenSelectionsTextures[]=
-				{
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
 				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Urban.paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
-				};
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+			};
 		};
-class 53rd_AA_Cherry_DS:MA_M56A_Helmet
+	class 53rd_OP_Cherry_DS:OPTRE_UNSC_Operator_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Desert)";
-			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
-				hiddenSelectionsTextures[]=
-				{
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
 				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Desert.paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
-				};
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+			};
 		};
-class 53rd_AA_Cherry_WN:MA_M56A_Helmet
+	class 53rd_OP_Cherry_WN:OPTRE_UNSC_Operator_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Snow)";
-			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
-				hiddenSelectionsTextures[]=
-				{
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
 				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Snow.paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
-				};
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+			};
 		};
-class 53rd_AA_Cherry_WD:MA_M56A_Helmet
+	class 53rd_OP_Cherry_WD:OPTRE_UNSC_Operator_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Woodland)";
-			model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
-				hiddenSelectionsTextures[]=
-				{
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
 				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherryy_Woodland.paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
-				};
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa"
+			};
 		};
     /*Hellfire
     class 53rd_Custom_Armor_Hellfire_Desert : 53rd_Armor_TL
