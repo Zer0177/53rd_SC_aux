@@ -342,7 +342,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Ranger Woodland";
+		displayName="[53rd] Ranger Woodland Test";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
