@@ -67,6 +67,8 @@ class cfgWeapons
 	class Uniform_Base;
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
+	class TCF_Reach_Scout_Helmet;
+
 	
 //Stetson
     class ItemCore;
@@ -396,6 +398,67 @@ class cfgWeapons
 			"Halo_marine_02\helmet\textures\Halo_marine_02_Helmet_green_unsc_co.paa"
 		};
 	};
+	class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		author="Cherryy";
+		displayName="Ranger Scout WD";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Woodland.paa",
+			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
+		};
+	};
+		class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		author="Cherryy";
+		displayName="Ranger Scout WD";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Woodland.paa",
+			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
+		};
+	};
+		class Ranger_Scout_DS: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		author="Cherryy";
+		displayName="Ranger Scout DS";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Desert.paa",
+			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
+		};
+	};
+		class Ranger_Scout_SN: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		author="Cherryy";
+		displayName="Ranger Scout SN";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Winter.paa",
+			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
+		};
+	};
+		class Ranger_Scout_UB: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		author="Cherryy";
+		displayName="Ranger Scout UB";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Urban.paa",
+			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
+		};
+	};
+
 	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Body&Scarecrow";
