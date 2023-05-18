@@ -229,6 +229,58 @@ class 53rd_Hephaestus_BDU_SS_Slim_Woodland: VES_BDU_SS_Evolved_Slim
 			uniformClass="53rd_Hephaestus_BDU_SS_V_Slim_Woodland";
 		};
 	};
+//Tanker Uniforms
+class 53rd_Apollo_BDU_Slim_Woodland: VES_BDU_Evolved_Slim
+    {
+        dlc="53rd";
+		scope=2;
+		author="Body";
+		displayName="[53rd] Combat Uniform (Apollo)";
+		picture="\optre_unsc_units\army\icons\army_uniform";
+		CBRN_protection=1;
+		class ItemInfo: UniformItem
+		{
+			containerClass="Supply120";
+			mass=40;
+			uniformType = "Neopren";
+			uniformModel="";
+			uniformClass="53rd_Apollo_BDU_V_Slim_Woodland";
+		};
+	};
+class 53rd_Apollo_BDU_R_Slim_Woodland: VES_BDU_R_Evolved_Slim
+    {
+        dlc="53rd";
+		scope=2;
+		author="Body";
+		displayName="[53rd] Combat Uniform Rolled (Apollo)";
+		picture="\optre_unsc_units\army\icons\army_uniform";
+		CBRN_protection=1;
+		class ItemInfo: UniformItem
+		{
+			containerClass="Supply120";
+			mass=40;
+			uniformType = "Neopren";
+			uniformModel="";
+			uniformClass="53rd_Apollo_BDU_R_V_Slim_Woodland";
+		};
+	};
+class 53rd_Apollo_BDU_SS_Slim_Woodland: VES_BDU_SS_Evolved_Slim
+    {
+        dlc="53rd";
+		scope=2;
+		author="Body";
+		displayName="[53rd] Combat Uniform Short Sleeve (Apollo)";
+		picture="\optre_unsc_units\army\icons\army_uniform";
+		CBRN_protection=1;
+		class ItemInfo: UniformItem
+		{
+			containerClass="Supply120";
+			mass=40;
+			uniformType = "Neopren";
+			uniformModel="";
+			uniformClass="53rd_Apollo_BDU_SS_V_Slim_Woodland";
+		};
+	};
 };
 
 
@@ -361,6 +413,38 @@ class 53rd_Hephaestus_BDU_SS_V_Slim_Woodland: VES_BDU_SS_V_Evolved_Slim
         {
 			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa",
 			"53rd_SC_aux\tex\Uniforms\53rd_Hephaestus_Uniform_Woodland.paa"
+        };
+	};
+	
+//Apollo
+	class 53rd_Apollo_BDU_V_Slim_Woodland: VES_BDU_V_Evolved_Slim
+	{
+		scope=1;
+        uniformclass="53rd_Apollo_BDU_Slim_Woodland";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Uniforms\53rd_Apollo.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_Apollo.paa"
+		};
+	};
+class 53rd_Apollo_BDU_R_V_Slim_Woodland: VES_BDU_R_V_Evolved_Slim
+	{
+		scope=1;
+        uniformclass="53rd_Apollo_BDU_R_Slim_Woodland";
+		hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Uniforms\53rd_Apollo.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_Apollo.paa"
+        };
+	};
+class 53rd_Apollo_BDU_SS_V_Slim_Woodland: VES_BDU_SS_V_Evolved_Slim
+	{
+		scope=1;
+        uniformclass="53rd_Apollo_BDU_SS_Slim_Woodland";
+		hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Uniforms\53rd_Apollo.paa",
+			"53rd_SC_aux\tex\Uniforms\53rd_Apollo.paa"
         };
 	};
 };

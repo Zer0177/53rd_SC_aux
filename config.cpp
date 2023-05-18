@@ -16,8 +16,7 @@ class CfgPatches {
 			"53rd_Bulldog_Panzer",
 			"53rd_HaloInf_ODST_F",
 			"53rd_HaloInf_Marine_AWDL_F",
-			"53rd_HaloInf_Marine_WDL_UNSC_headgear",
-			"53rd_HaloInf_Marine_WDL_UNSC_NV_headgear",
+			"53rd_HaloInf_Marine_TSS_F",
         };
 		weapons[] = 
         {
@@ -29,8 +28,11 @@ class CfgPatches {
 			"53rd_HelmetCrew_B",
 			"53rd_haloinfodst_U_uniform",
 			"53rd_haloinfmar_U_AWDL_uniform",
-			"53rd_HaloInf_Marine_WDL_UNSC_headgear",
-			"53rd_HaloInf_Marine_WDL_UNSC_NV_headgear",
+			"53rd_Ranger_CH252_NML",
+			"53rd_Ranger_CH252_NV",
+			"53rd_Ranger_CH252_MD",
+			"53rd_Ranger_CH252_MD_NV",
+			"53rd_haloinfmar_U_Test_uniform",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -332,6 +334,7 @@ class cfgWeapons
 			};
 			uniformModel="-";
 			uniformClass="53rd_HaloInf_ODST_F";
+			uniformType = "Neopren";
 			containerClass="Supply150";
 			mass=80;
 		};
@@ -374,12 +377,74 @@ class cfgWeapons
 				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_armor_green_AS_co.paa"
 			};
 			uniformModel="-";
+			uniformType = "Neopren";
 			uniformClass="53rd_HaloInf_Marine_AWDL_F";
 			containerClass="Supply150";
 			mass=80;
 		};
 	};
-	class 53rd_HaloInf_Marine_WDL_UNSC_headgear: HaloInf_Marine_WDL_headgear
+	class 53rd_haloinfmar_U_Test_uniform: Uniform_Base
+	{
+		author="Nody&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Ranger Woodland Test II";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\Ranger Stuff\Halo_marine_02_armor_green_TEMP_co.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_top_woodland_AS_co.paa",
+				"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_pants_woodland_two_co.paa",
+				"53rd_SC_aux\Ranger Stuff\Halo_marine_02_armor_green_TEMP_co.paa"
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_HaloInf_Marine_TSS_F";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Ranger_CH252_NML: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		displayName="[53rd] Ranger Helmet (NV)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Halo_Ranger_Woodland_Medic.paa"
+		};
+	};
+	class 53rd_Ranger_CH252_NV: HaloInf_Marine_WDL_headgear
 	{
 		author="Nody&Scarecrow";
 		scope=2;
@@ -395,7 +460,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Halo_marine_02\helmet\textures\Halo_marine_02_Helmet_green_unsc_co.paa"
+			"53rd_SC_aux\Ranger Stuff\Halo_Ranger_Woodland_N_MC.paa"
 		};
 	};
 	class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
@@ -463,7 +528,7 @@ class cfgWeapons
 	{
 		author="Body&Scarecrow";
 		scope=2;
-		displayName="[53rd] Ranger Helmet (NV)";
+		displayName="[53rd] Ranger Medic (NV)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -473,7 +538,24 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Halo_marine_02\helmet\textures\Halo_marine_02_Helmet_green_unsc_co.paa"
+			"53rd_SC_aux\Ranger Stuff\Halo_Ranger_Woodland_Medic.paa"
+		};
+	};
+	class 53rd_Ranger_CH252_MD: HaloInf_Marine_WDL_headgear
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		displayName="[53rd] Ranger Medic";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Ranger Stuff\Halo_Ranger_Woodland_Medic.paa"
 		};
 	};
 };
@@ -924,10 +1006,11 @@ class CfgVehicles
 			"\halo_odst\ODST_parts\Halo_marine_02_ODST_co.paa"
 		};
 		model="\halo_odst\Halo_ODST_Uniform_F.p3d";
+		uniformType = "Neopren";
 		uniformClass="53rd_haloinfodst_U_uniform";
 	};
 	class 53rd_HaloInf_Marine_AWDL_F: haloinf_Marine_Soldier_base_F
-		{
+	{
 			scope=2;
 			scopeCurator=2;
 			scopeArsenal=2;
@@ -947,6 +1030,7 @@ class CfgVehicles
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_haloinfmar_U_AWDL_uniform";
+			uniformType = "Neopren";
 			linkedItems[]=
 			{
 				"HaloInf_Marine_WDL_UNSC_headgear",
@@ -955,6 +1039,37 @@ class CfgVehicles
 				"ItemWatch",
 				"ItemRadio"
 			};
-		};
+	};
+	class 53rd_HaloInf_Marine_TSS_F: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger Woodland Test";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\Ranger Stuff\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\Ranger Stuff\Halo_marine_02_armor_green_TEMP_co.paa"
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_haloinfmar_U_Test_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
 	};
 };

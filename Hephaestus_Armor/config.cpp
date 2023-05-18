@@ -1787,9 +1787,9 @@ class 53rd_Training_Rifleman_Red: 53rd_Armor_Rifleman
 		displayName="[53rd] Training Armor (Red)";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Woodland.paa",
+			"53rd_SC_aux\tex\Training Amor\53rd_Hephaestus_Training_Thigh_Armor_Red.Paa",
 			"53rd_SC_aux\tex\Training Amor\53rd_Hephaestus_Training_Armor_Red.Paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Woodland.paa",
+			"53rd_SC_aux\tex\Training Amor\53rd_Hephaestus_Training_Leg_Armor_Red.Paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
@@ -1816,9 +1816,9 @@ class 53rd_Training_Rifleman_Blue: 53rd_Armor_Rifleman
 		displayName="[53rd] Training Armor (Blue)";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Woodland.paa",
+			"53rd_SC_aux\tex\Training Amor\53rd_Hephaestus_Training_Thigh_Armor_Blue.Paa",
 			"53rd_SC_aux\tex\Training Amor\53rd_Hephaestus_Training_Armor_Blue.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Woodland.paa",
+			"53rd_SC_aux\tex\Training Amor\53rd_Hephaestus_Training_Leg_Armor_Blue.Paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};

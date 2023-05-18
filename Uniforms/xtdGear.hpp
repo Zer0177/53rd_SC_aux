@@ -11,7 +11,7 @@ class XtdGearModels
 			class Uniform_Camo
 			{
 				label = "Uniform Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow","Apollo"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -32,6 +32,11 @@ class XtdGearModels
 				class Snow
 				{
 					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+				class Apollo
+				{
+					label = "Apollo";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
@@ -123,6 +128,22 @@ class XtdGearInfos
 		Type = "Rolled";
 		};
         class 53rd_Hephaestus_BDU_SS_Slim_Woodland:53rd_Hephaestus_BDU_Slim_Woodland
+		{
+		Type = "Short_Sleeve";
+		};
+		
+		//Apollo
+		class 53rd_Apollo_BDU_Slim_Woodland
+		{
+		model = "Uniforms";
+		Uniform_Camo = "Apollo";
+		Type = "Full";
+		};
+		class 53rd_Apollo_BDU_R_Slim_Woodland:53rd_Apollo_BDU_Slim_Woodland
+		{
+		Type = "Rolled";
+		};
+        class 53rd_Apollo_BDU_SS_Slim_Woodland:53rd_Hephaestus_BDU_Slim_Woodland
 		{
 		Type = "Short_Sleeve";
 		};
