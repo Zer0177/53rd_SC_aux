@@ -17,6 +17,10 @@ class CfgPatches {
 			"53rd_HaloInf_ODST_F",
 			"53rd_HaloInf_Marine_AWDL_F",
 			"53rd_HaloInf_Marine_TSS_F",
+			"Ranger_Scout_DS",
+			"Ranger_Scout_SN",
+			"Ranger_Scout_UB",
+			"Ranger_Scout_WD",
         };
 		weapons[] = 
         {
@@ -33,6 +37,10 @@ class CfgPatches {
 			"53rd_Ranger_CH252_MD",
 			"53rd_Ranger_CH252_MD_NV",
 			"53rd_haloinfmar_U_Test_uniform",
+			"Ranger_Scout_DS",
+			"Ranger_Scout_SN",
+			"Ranger_Scout_UB",
+			"Ranger_Scout_WD",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -466,20 +474,12 @@ class cfgWeapons
 	class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
 		author="Cherryy";
-		displayName="Ranger Scout WD";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Woodland.paa",
-			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
-		};
-	};
-		class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		author="Cherryy";
-		displayName="Ranger Scout WD";
+		displayName="[53rd] Ranger Scout (Woodland)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -490,8 +490,12 @@ class cfgWeapons
 		class Ranger_Scout_DS: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
 		author="Cherryy";
-		displayName="Ranger Scout DS";
+		displayName="[53rd] Ranger Scout (Desert)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -502,8 +506,12 @@ class cfgWeapons
 		class Ranger_Scout_SN: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
 		author="Cherryy";
-		displayName="Ranger Scout SN";
+		displayName="[53rd] Ranger Scout (Snow)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -514,8 +522,12 @@ class cfgWeapons
 		class Ranger_Scout_UB: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
 		author="Cherryy";
-		displayName="Ranger Scout UB";
+		displayName="[53rd] Ranger Scout (Urban)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -523,11 +535,13 @@ class cfgWeapons
 			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
 		};
 	};
-
 	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Body&Scarecrow";
 		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
 		displayName="[53rd] Ranger Medic (NV)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
@@ -545,6 +559,9 @@ class cfgWeapons
 	{
 		author="Body&Scarecrow";
 		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
 		displayName="[53rd] Ranger Medic";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
