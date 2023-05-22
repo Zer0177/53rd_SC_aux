@@ -471,55 +471,8 @@ class cfgWeapons
 			"53rd_SC_aux\Ranger Stuff\Halo_Ranger_Woodland_N_MC.paa"
 		};
 	};
-	class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Cherryy";
-		displayName="[53rd] Ranger Scout (Woodland)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Woodland.paa",
-			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
-		};
-	};
-		class Ranger_Scout_DS: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Cherryy";
-		displayName="[53rd] Ranger Scout (Desert)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Desert.paa",
-			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
-		};
-	};
-		class Ranger_Scout_SN: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Cherryy";
-		displayName="[53rd] Ranger Scout (Snow)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Ranger Stuff\Ranger_Scout_Winter.paa",
-			"53rd_SC_aux\Ranger Stuff\Visor_CO.paa"
-		};
-	};
-		class Ranger_Scout_UB: TCF_Reach_Scout_Helmet
+	//ranger scout
+		class Ranger_Scout: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
 		scope=2;
@@ -1087,6 +1040,5 @@ class CfgVehicles
 				"ItemWatch",
 				"ItemRadio"
 			};
-	};
 	};
 };

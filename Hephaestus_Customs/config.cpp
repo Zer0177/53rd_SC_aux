@@ -9,7 +9,8 @@ class CfgPatches {
 			"53rd_OP_Cherry_WN",
 			"53rd_OP_Cherry_UB",
 			"53rd_OP_Cherry_DS",
-            "53rd_OP_Cherry_WD"
+            "53rd_OP_Cherry_WD",
+			"53rd_Ranger_Shin_Armor"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -46,6 +47,8 @@ class cfgWeapons
 	class 53rd_AA_Helmet_Gold;
 	class MA_M56A_Helmet;
 	class OPTRE_UNSC_Operator_Helmet;
+	class OPTRE_UNSC_Security_Helmet;
+	class OPTRE_UNSC_M52D_Armor;
 
 //Customs
 
@@ -1865,6 +1868,7 @@ class 53rd_Custom_Helmet_Vac_Sealed_Hellfire_Woodland : 53rd_Sealed_Base
 			};
 		};
 	};
+	
     class 53rd_Custom_Armor_Patches_Snow : 53rd_Custom_Armor_Patches_Desert
 	{ 
 		scope = 2;
@@ -2150,8 +2154,20 @@ class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:  53rd_Custom_Helmet_MA
 			"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa",
 		};
 	};
-};
-
+//Panzer Security
+	class 53rd_Custom_Helmet_Panzer_Security_Woodland: OPTRE_UNSC_Security_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet Panzer_SC / Woodland)";
+			model="OPTRE_UNSC_Units\Army\Helmets\Security_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_SC_Panzer_Woodland.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Panzer_Visor.paa"
+			};
+		};
+	};
 class CfgVehicles
 {
 };
