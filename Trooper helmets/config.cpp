@@ -1,4 +1,4 @@
-/*	class CfgPatches 
+	class CfgPatches 
 	{
 		class 53rd_Halo_4_Helmets 
 		{
@@ -58,6 +58,49 @@
 				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
 			};
 		};
+
+		class 53rd_EOD_Helmet_WD: MA_M56E_Helmet
+		{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] EOD Helmet Woodland";
+		model="MA_Armor\data\Helmets\EOD\EOD_Helmet.p3d";
+		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
+		hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet_Woodland.paa",
+				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+			};
+		};
+
+		class 53rd_EOD_Helmet_DS: MA_M56E_Helmet
+		{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] EOD Helmet Desert";
+		model="MA_Armor\data\Helmets\EOD\EOD_Helmet.p3d";
+		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
+		hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet_Desert.paa",
+				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+			};
+		};
+		
+		class 53rd_EOD_Helmet_WN: MA_M56E_Helmet
+		{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] EOD Helmet Winter";
+		model="MA_Armor\data\Helmets\EOD\EOD_Helmet.p3d";
+		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
+		hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet_Winter.paa",
+				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+			};
+		};
+
 		class 53rd_AA_Helmet_UB:MA_M56A_Helmet
 		{
 			scope=2;
