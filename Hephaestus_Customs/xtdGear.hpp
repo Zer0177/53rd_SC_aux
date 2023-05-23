@@ -149,7 +149,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard","Lonewulf","Patches"};
+				values[] = {"Fixer","Body","Panzer","Ryuu","Ithias","Joker","Hazard","Lonewulf","Patches","Cherry"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -170,21 +170,21 @@ class XtdGearModels
 					label = "Ryuu";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Ithias
+				/*class Ithias
 				{
 					label = "Ithias";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
+				};*/
 				class Joker
 				{
 					label = "Joker";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Hazard
+				/*class Hazard
 				{
 					label = "Hazard";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
+				};*/
 				class Lonewulf
 				{
 					label = "Lonewulf";
@@ -193,6 +193,11 @@ class XtdGearModels
 				class Patches
 				{
 					label = "Patches";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Cherry
+				{
+					label = "Cherry";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -583,22 +588,22 @@ class XtdGearInfos
 		};
         
 		//Cherryy
-		class 53rd_AA_Cherry_DS
+		class 53rd_OP_Cherry_DS
 		{
 		model = "HephaestusCustomHelm";
 		Helm_Camo = "Desert";
 		Person = "Cherryy";
         dp="yes";
 		};
-		class 53rd_AA_Cherry_WN:53rd_AA_Cherry_DS
+		class 53rd_OP_Cherry_WN:53rd_OP_Cherry_DS
 		{
 		Helm_Camo = "Snow";
 		};
-		class 53rd_AA_Cherry_UB:53rd_AA_Cherry_DS
+		class 53rd_OP_Cherry_UB:53rd_OP_Cherry_DS
 		{
 		Helm_Camo = "Urban";
 		};
-		class 53rd_AA_Cherry_WD:53rd_AA_Cherry_DS
+		class 53rd_OP_Cherry_WD:53rd_OP_Cherry_DS
 		{
 		Helm_Camo = "Woodland";
 		};
