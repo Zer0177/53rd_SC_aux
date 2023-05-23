@@ -54,8 +54,8 @@
 		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet.paa",
-				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\EOD\[53rd] EOD Helmet.paa",
+				"53rd_SC_aux\tex\Trooper helmets\EOD\[53rd] EOD Helmet(Visor).paa"
 			};
 		};
 
@@ -68,8 +68,8 @@
 		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet_Woodland.paa",
-				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\EOD\[53rd] EOD Helmet_Woodland.paa",
+				"53rd_SC_aux\tex\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
 			};
 		};
 
@@ -82,8 +82,8 @@
 		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet_Desert.paa",
-				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\EOD\[53rd] EOD Helmet_Desert.paa",
+				"53rd_SC_aux\tex\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
 			};
 		};
 		
@@ -96,8 +96,8 @@
 		picture="MA_Armor\data\Icons\EOD_Helm.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\Trooper helmets\EOD\[53rd] EOD Helmet_Winter.paa",
-				"53rd_SC_aux\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\EOD\[53rd] EOD Helmet_Winter.paa",
+				"53rd_SC_aux\tex\Trooper helmets\EOD\Visor\[53rd] EOD Helmet(Visor).paa"
 			};
 		};
 
@@ -110,8 +110,8 @@
 			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
 				hiddenSelectionsTextures[]=
 				{
-				"53rd_SC_aux\Trooper helmets\AA\[53rd] AA Helmet.paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\AA\[53rd] AA Helmet.paa",
+				"53rd_SC_aux\tex\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
 				};
 		};
 		class 53rd_AA_Helmet_DS:MA_M56A_Helmet
@@ -123,8 +123,8 @@
 			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
 				hiddenSelectionsTextures[]=
 				{
-				"53rd_SC_aux\Trooper helmets\AA\[53rd] AA Helmet (Desert).paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\AA\[53rd] AA Helmet (Desert).paa",
+				"53rd_SC_aux\tex\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
 				};
 		};
 		class 53rd_AA_Helmet_WN:MA_M56A_Helmet
@@ -136,8 +136,8 @@
 			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
 				hiddenSelectionsTextures[]=
 				{
-				"53rd_SC_aux\Trooper helmets\AA\[53rd] AA Helmet (Winter).paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor_Winter).paa"
+				"53rd_SC_aux\tex\Trooper helmets\AA\[53rd] AA Helmet (Winter).paa",
+				"53rd_SC_aux\tex\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor_Winter).paa"
 				};
 		};
 		class 53rd_AA_Helmet_WD:MA_M56A_Helmet
@@ -149,8 +149,8 @@
 			picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\Trooper helmets\AA\[53rd] AA Helmet (Woodland).paa",
-				"53rd_SC_aux\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
+				"53rd_SC_aux\tex\Trooper helmets\AA\[53rd] AA Helmet (Woodland).paa",
+				"53rd_SC_aux\tex\Trooper helmets\AA\Visor\[53rd] AA Helmet(Visor).paa"
 			};
 		};
 		//class 53rd_M56SH_Helmet_UB: MA_M56SH_Helmet
