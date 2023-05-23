@@ -49,6 +49,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Operator_Helmet;
 	class OPTRE_UNSC_Security_Helmet;
 	class OPTRE_UNSC_M52D_Armor;
+	class OPTRE_UNSC_HRPilot_Helmet;
 
 //Customs
 
@@ -2154,17 +2155,54 @@ class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:  53rd_Custom_Helmet_MA
 			"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherryy.paa",
 		};
 	};
-//Panzer Security
-	class 53rd_Custom_Helmet_Panzer_Security_Woodland: OPTRE_UNSC_Security_Helmet
+//Panzer Pilot
+	class 53rd_Custom_Helmet_Panzer_Pilot_Woodland: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet Panzer_SC / Woodland)";
-			model="OPTRE_UNSC_Units\Army\Helmets\Security_Helmet.p3d";
+			displayName="[53rd] Custom Helmet Panzer Pilot / Woodland)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_SC_Panzer_Woodland.paa",
-				"53rd_SC_aux\tex\Customs\53rd_Custom_Panzer_Visor.paa"
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+	class 53rd_Custom_Helmet_Panzer_Pilot_Urban: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Urban)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer_Urban.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+	
+	class 53rd_Custom_Helmet_Panzer_Pilot_Desert: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Desert)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer_Desert.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+	class 53rd_Custom_Helmet_Panzer_Pilot_Winter: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Winter)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer_Winter.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
 			};
 		};
 	};
