@@ -1,4 +1,4 @@
-class CfgPatches {
+/*class CfgPatches {
 	class 53rd_Air_Falcon {
 		units[] = {"53rd_UNSC_Falcon","53rd_UNSC_falcon_AMA"};
 		weapons[] = {};
