@@ -396,7 +396,8 @@ class cfgVehicles
   };
   class 53rd_MEDIC_pack: OPTRE_UNSC_Rucksack_Medic
   {
-    scope=0;
+    scope=1;
+	scopeArsenal=1;
     class TransportMagazines{};
     class TransportItems
     {
@@ -408,7 +409,8 @@ class cfgVehicles
 
   class 53rd_AA_RIFLEMAN_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=0;
+       scope=1;
+	scopeArsenal=1;
     class TransportMagazines
     {
      class _xx_Titan_AA {count=3;magazine="Titan_AA";};
@@ -420,7 +422,8 @@ class cfgVehicles
 
   class 53rd_AT_RIFLEMAN_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=0;
+    scope=1;
+	scopeArsenal=1;
     class TransportMagazines
     {
      class _xx_OPTRE_M41_Twin_HEAT_G {count=4;magazine="OPTRE_M41_Twin_HEAT_G";};
@@ -432,7 +435,8 @@ class cfgVehicles
 
   class 53rd_AUTO_RIFLEMAN_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=0;
+    scope=1;
+	scopeArsenal=1;
     class TransportMagazines
     {
      class _xx_OPTRE_100Rnd_762x51_Box {count=7;magazine="OPTRE_100Rnd_762x51_Box";};
@@ -444,7 +448,8 @@ class cfgVehicles
 
   class 53rd_Special_Warfare_Operator_AT_pack: OPTRE_UNSC_Rucksack_Heavy
   {
-    scope=0;
+    scope=1;
+	scopeArsenal=1;
     class TransportMagazines
     {
      class _xx_OPTRE_M41_Twin_HEAT_Thermal {count=4;magazine="OPTRE_M41_Twin_HEAT_Thermal";};

@@ -4,7 +4,6 @@ class CfgPatches {
         {
 			"53rd_haloinfmar_U_AWDL_uniform",
 			"53rd_HaloInf_Marine_TSS_F",
-			"Ranger_Scout",
 			"53rd_Ranger_CH252_NV",
 			"53rd_Ranger_CH252_MD",
 			"53rd_Ranger_CH252_MD_NV",
@@ -20,6 +19,7 @@ class CfgPatches {
 			"53rd_Ranger_CH252_MD_NV",
 			"53rd_HaloInf_Marine_AWDL_F",
 			"Ranger_Scout",
+			"53rd_MA_Vest",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -51,6 +51,7 @@ class cfgWeapons
 	class OPTRE_UNSC_CH252D_Helmet_Base;
 	class H_Booniehat_khk;
 	class OPTRE_UNSC_PatrolCap_Army;
+	class MA_M56R_Vest;
 	class OPTRE_CPD_Cap;
 	class haloinfodst_U_uniform;
 	class Uniform_Base;
@@ -143,7 +144,7 @@ class cfgWeapons
 		};
 	};
 	//ranger scout
-		class Ranger_Scout: TCF_Reach_Scout_Helmet
+		/*class Ranger_Scout: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
 		scope=2;
@@ -158,7 +159,7 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Atlas Armor\Ranger_Scout_Urban.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
-	};
+	};*/
 	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Body&Scarecrow";
@@ -197,6 +198,125 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+		};
+	};
+	class 53rd_MA_Vest: MA_M56R_Vest
+	{
+		scope=2;
+		scopeArsenal=2;
+		author="Body & Misriah Armory";
+		displayName="[53rd] MSR Vest";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		hiddenSelections[]=
+		{
+			//"camo1",
+			//"camo2",
+			//"camo3",
+			//"camo4",
+		    //"camo5",
+			//"camo6",
+			//"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+			"Thigh_Pouch",
+			//"Armor_Upper_H3",
+			//"Armor_Lower_H3"
+		};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: VestItem
+		{
+			vestType="Rebreather";
+			hiddenSelections[]=
+			{
+			//"camo1",
+			//"camo2",
+			//"camo3",
+			//"camo4",
+		    //"camo5",
+			//"camo6",
+			//"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+			"Thigh_Pouch",
+			//"Armor_Upper_H3",
+			//"Armor_Lower_H3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"53rd_SC_aux\tex\Atlas Armor\Reach_Upper_Armor_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			mass=20;
+			passThrough=0.1;
+			modelSides[]={6};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=40;
+					passThrough=0.5;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=40;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=40;
+					passThrough=0.1;
+				};
+				class Hands
+				{
+					hitpointName="HitHands";
+					armor=40;
+					passThrough=0.1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=40;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=40;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=40;
+					passThrough=0.1;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=40;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+				};
+			};
 		};
 	};
 };

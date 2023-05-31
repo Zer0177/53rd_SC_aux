@@ -81,11 +81,6 @@ class XtdGearModels
 					label = "Soft Cap";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
-				class Stetson
-				{
-					label = "Stetson";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
             };
 			class Camo
 			{
@@ -234,14 +229,5 @@ class XtdGearInfos
 		{
 		Camo = "Desert";
 		};
-
-		//Stetson
-		class DAR_Stetson_53rd
-		{
-		model= "Soft_Caps"
-		Type = "Stetson";
-		Camo = "Urban";
-		};
-
 	};
 };

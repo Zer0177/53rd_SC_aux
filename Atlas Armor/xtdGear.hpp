@@ -32,11 +32,13 @@ class XtdGearModels
 					label = "MedicV";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
+				/*
 				class Scout
 				{
 					label = "Scout";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
+				*/
 			};
 		};
     };
@@ -64,11 +66,13 @@ class XtdGearInfos
 		{
 		Type = "Med_Vizor";
 		};
+		
 		class Ranger_Scout
 		{
 		model = "Atlashelms";
 		Type = "Scout";
 		};
+		
 
 	};
 };
