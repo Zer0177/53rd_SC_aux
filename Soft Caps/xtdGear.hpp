@@ -2,58 +2,6 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		/*class SpartanHelms
-		{
-			label = "Spartan Helmets";
-			author = "Seven";
-			options[] = {"type","pol"};
-			
-			class type
-			{
-				label = "Type";
-				values[] = {"MKV","EOD","AA","Scout"};
-				changeingame = 1;
-                changedelay  = 0;
-				class blk
-				{
-					label = "MKV";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class blu
-				{
-					label = "EOD";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class red
-				{
-					label = "AA";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class snow
-				{
-					label = "Scout";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-			};
-			class pol
-			{
-				label = "Polarization";
-				values[] = {"on","off"};
-				changeingame = 1;
-                changedelay  = 0;
-				class on
-				{
-					label = "On";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class off
-				{
-					label = "Off";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-			};
-		};
-		*/
 		class Soft_Caps
 		{
 			label = "Soft Caps";
@@ -153,8 +101,9 @@ class XtdGearModels
 };
 class XtdGearInfos
 {
-    class CfgWeapons 
-    {
+    class CfgWeapons
+	{	
+		
 		//Berets
         class 53rd_Beret_Hephaestus
 		{

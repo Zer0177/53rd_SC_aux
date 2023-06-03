@@ -71,30 +71,6 @@ class cfgWeapons
     class ItemCore;
     class InventoryItem_Base_F;
 
-	class DAR_Stetson_53rd: ItemCore
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		weaponPoolAvailable = 1;
-		displayName = "[53rd] Stetson";
-		author = "Richards.D/Ithias";
-		picture = "\DAR_Stetson\UI\icon_h_stetson_ca.paa";
-		model = "\DAR_Stetson\DAR_Stetson";
-		hiddenSelectionsTextures[] = {"\53rd_SC_Aux\tex\Soft caps\Stetson_co_53rd.paa"};
-		hiddenSelections[] = {"Camo"};
-		class ItemInfo: HeadgearItem
-		{
-			mass = 0;
-			uniformmodel = "\DAR_Stetson\DAR_Stetson";
-			modelSides[] = {3,1};
-			armor = 40;
-			passThrough = 0.1;
-			hiddenSelectionsTextures[] = {"\53rd_SC_Aux\tex\Soft caps\Stetson_co_53rd.paa"};
-			hiddenSelections[] = {"Camo"};
-		};
-	};
-	
-
 //Berets
     class H_HelmetB;
 

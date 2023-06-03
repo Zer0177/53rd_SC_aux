@@ -15,20 +15,97 @@ class CfgPatches {
 			"53rd_Hardbox_Resupply",
 			"53rd_SupplyPod_Medical",
 			"53rd_Hardbox_3R",
-            "Item_53rd_anprc152l"
+            "Item_53rd_anprc152l",
+			"53rd_fortify_setupModule",
+			"53rd_fortify_buildLocationModule",
         };
 		weapons[] = 
         {
 			"53rd_Copium",
 			"53rd_r_biofoam",
 			"53rd_r_medigel",
-            "53rd_anprc152l"
+            "53rd_anprc152l",
+			"53rd_Fortify",
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"task_force_radio_items"};
+		requiredAddons[] = {"task_force_radio_items","ace_interaction"};
 	};
 };
-
+class Cfg3DEN
+{
+	class Attributes
+	{
+		class Default;
+		class Title: Default
+		{
+			class Controls
+			{
+				class Title;
+			};
+		};
+		class Combo: Title
+		{
+			class Controls: Controls
+			{
+				class Title: Title
+				{
+				};
+				class Value;
+			};
+		};
+		class ace_fortify_presetSelection: Combo
+		{
+			class Controls: Controls
+			{
+				class Title: Title
+				{
+				};
+				class Value: Value
+				{
+					delete Items;
+					class ItemsConfig
+					{
+						path[]=
+						{
+							"ACEX_Fortify_Presets"
+						};
+						localConfig=1;
+						propertyText="displayName";
+						sort=1;
+					};
+				};
+			};
+		};
+	};
+};
+class Extended_PreStart_EventHandlers
+{
+	class ace_fortify
+	{
+		init="call compileScript ['\z\ace\addons\fortify\XEH_preStart.sqf']";
+	};
+};
+class Extended_PreInit_EventHandlers
+{
+	class ace_fortify
+	{
+		init="call compileScript ['\z\ace\addons\fortify\XEH_preInit.sqf']";
+	};
+};
+class Extended_PostInit_EventHandlers
+{
+	class ace_fortify
+	{
+		init="call compileScript ['\z\ace\addons\fortify\XEH_postInit.sqf']";
+	};
+};
+class Extended_DisplayLoad_EventHandlers
+{
+	class RscDisplayMission
+	{
+		ace_fortify="_this call compileScript ['\z\ace\addons\fortify\XEH_missionDisplayLoad.sqf']";
+	};
+};
 class ace_medical_treatment
 {
     class Bandaging
@@ -243,12 +320,60 @@ class cfgWeapons
 		};
 	};
     
-    
+	//Fort Tool
+	class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class 53rd_Ace_Fortify: ACE_ItemCore
+	{
+		author="$STR_ace_common_ACETeam";
+		displayName="$STR_ace_fortify_FortifyItem_name";
+		descriptionShort="";
+		model="\A3\Structures_F\Items\Tools\Hammer_F.p3d";
+		picture="\z\ace\addons\fortify\UI\hammer_ca.paa";
+		scope=2;
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0;
+		};
+	};
+class 53rd_ACEX_Fortify_Presets
+{
+	class small
+	{
+		displayName="$STR_ace_fortify_small";
+		objects[]=
+		{
+			
+			{
+				"Land_BagFence_Round_F",
+				5
+			},
+			
+			{
+				"Land_BagFence_Short_F",
+				5
+			},
+			
+			{
+				"Land_BagFence_Long_F",
+				10
+			},
+			
+			{
+				"Land_Plank_01_4m_F",
+				10
+			},
+			
+			{
+				"Land_BagBunker_Small_F",
+				25
+			}
+		};
+	};
+};
     //medical
-    class ACE_ItemCore;
     class OPTRE_Medigel;
     class OPTRE_Biofoam;
-    class CBA_MiscItem_ItemInfo;
 	class 53rd_Copium: ACE_ItemCore
 	{
 		scope=2;
@@ -303,6 +428,128 @@ class cfgWeapons
 
 class CfgVehicles
 {
+	//Fort Tool
+	class Man;
+	class CAManBase: Man
+	{
+		class ACE_SelfActions
+		{
+			class 53rd_ace_fortify
+			{
+				displayName="$STR_ace_fortify_Fortify";
+				condition="[_player] call ace_fortify_fnc_canFortify";
+				modifierFunction="call ace_fortify_fnc_modifyAction";
+				insertChildren="_this call ace_fortify_fnc_addActions";
+				statement="";
+				exceptions[]={};
+				showDisabled=0;
+				priority=1;
+			};
+		};
+	};
+	class Logic;
+	class Module_F: Logic
+	{
+		class AttributesBase
+		{
+			class Default;
+			class Combo;
+			class Edit;
+			class Checkbox;
+			class ModuleDescription;
+		};
+		class ModuleDescription;
+	};
+	class 53rd_ACE_Module: Module_F
+	{
+	}; 
+	class 53rd_acex_fortify_setupModule: 53rd_ACE_Module
+	{
+		author="$STR_ace_common_ACETeam";
+		category="ACE";
+		displayName="$STR_ace_fortify_Fortify";
+		function="ace_fortify_fnc_setupModule";
+		scope=2;
+		isGlobal=0;
+		class Attributes: AttributesBase
+		{
+			class Side: Combo
+			{
+				displayName="$STR_eval_typeside";
+				property="ace_fortify_setupModule_Side";
+				typeName="NUMBER";
+				defaultValue=1;
+				class values
+				{
+					class West
+					{
+						name="$STR_WEST";
+						value=1;
+					};
+					class East
+					{
+						name="$STR_east";
+						value=2;
+					};
+					class Indp
+					{
+						name="$STR_guerrila";
+						value=3;
+					};
+					class Civ
+					{
+						name="$STR_civilian";
+						value=4;
+					};
+				};
+			};
+			class Preset: Default
+			{
+				displayName="$STR_controls_presets";
+				property="ace_fortify_setupModule_Preset";
+				control="ace_fortify_presetSelection";
+				typeName="STRING";
+				defaultValue=0;
+			};
+			class Budget: Edit
+			{
+				property="ace_fortify_setupModule_Budget";
+				displayName="$STR_ace_fortify_budget";
+				typeName="NUMBER";
+				defaultValue=-1;
+			};
+			class AddToolItem: Checkbox
+			{
+				property="ace_fortify_setupModule_AddToolItem";
+				displayName="$STR_ace_fortify_addToolItem";
+				typeName="BOOL";
+			};
+			class ModuleDescription: ModuleDescription
+			{
+			};
+		};
+		class ModuleDescription: ModuleDescription
+		{
+			description="$STR_ace_fortify_moduleDescription";
+		};
+	};
+	class acex_fortify_buildLocationModule: 53rd_ACE_Module
+	{
+		author="$STR_ace_common_ACETeam";
+		category="ACE";
+		displayName="[53rd] Fortify Tool";
+		scope=2;
+		isGlobal=1;
+		canSetArea=1;
+		function="ace_fortify_fnc_buildLocationModule";
+		class AttributeValues
+		{
+			size3[]={300,300,-1};
+			IsRectangle=1;
+		};
+	};
+	
+
     //medical
     class Item_Base_F;
     class ACE_MedicalLitterBase;

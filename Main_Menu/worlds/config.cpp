@@ -3,9 +3,10 @@ class CfgPatches
 	class 53rd_main_worlds
 	{
 		author="53rd_aux";
-		addonRootClass="53rd_aux";
+		addonRootClass="53rd_SC_aux";
 		requiredAddons[]=
 		{
+		
 		};
 		requiredVersion=0.1;
 		units[]={};

@@ -549,99 +549,101 @@ class 53rd_Custom_Armor_Panzer_Woodland : 53rd_Custom_Base_Armor_Panzer
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
-class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert : 53rd_Sealed_Base
+	
+//Axe
+class 53rd_Custom_Helmet_Vac_Sealed_Axe_Desert : 53rd_Sealed_Base
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Desert)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Desert)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Desert.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Desert.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
 		};
     };
-	class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert_dp : 53rd_Sealed_Base_dp
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Desert_dp : 53rd_Sealed_Base_dp
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Desert)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Desert)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Desert.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Desert.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Snow : 53rd_Sealed_Base
+class 53rd_Custom_Helmet_Vac_Sealed_Axe_Snow : 53rd_Sealed_Base
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Snow)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Snow)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Snow.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Snow.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
 		};
     };
-	class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Snow_dp : 53rd_Sealed_Base_dp
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Snow_dp : 53rd_Sealed_Base_dp
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Snow)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Snow)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Snow.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Snow.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Urban : 53rd_Sealed_Base
+class 53rd_Custom_Helmet_Vac_Sealed_Axe_Urban : 53rd_Sealed_Base
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Urban)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Urban)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Urban.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Urban.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
 		};
     };
-	class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Urban_dp : 53rd_Sealed_Base_dp
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Urban_dp : 53rd_Sealed_Base_dp
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Urban)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Urban)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Urban.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Urban.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Woodland : 53rd_Sealed_Base
+class 53rd_Custom_Helmet_Vac_Sealed_Axe_Woodland : 53rd_Sealed_Base
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Woodland)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Woodland)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Woodland.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Woodland.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
 		};
     };
-	class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Woodland_dp : 53rd_Sealed_Base_dp
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Woodland_dp : 53rd_Sealed_Base_dp
     {
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[53rd] Custom Vac Sealed Helmet (Panzer / Woodland)";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Woodland)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
-			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Panzer_Woodland.paa",
+			"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Axe_Woodland.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };

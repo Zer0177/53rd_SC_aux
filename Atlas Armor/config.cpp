@@ -144,7 +144,7 @@ class cfgWeapons
 		};
 	};
 	//ranger scout
-		/*class Ranger_Scout: TCF_Reach_Scout_Helmet
+		class Ranger_Scout: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
 		scope=2;
@@ -159,7 +159,7 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Atlas Armor\Ranger_Scout_Urban.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
-	};*/
+	};
 	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Body&Scarecrow";

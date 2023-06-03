@@ -32,13 +32,12 @@ class XtdGearModels
 					label = "MedicV";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				/*
 				class Scout
 				{
 					label = "Scout";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				*/
+				
 			};
 		};
     };
@@ -51,22 +50,21 @@ class XtdGearInfos
 		class 53rd_Ranger_CH252_NV
 		{
 		model = "Atlashelms";
-		Type = "Normal";
+		Type = "NormalV";
 		};
 		class 53rd_Ranger_CH252_MD:53rd_Ranger_CH252_NV
 		{
-		Type = "Medic_Normal";
+		Type = "MedicV";
 		};
 		class 53rd_Ranger_CH252_NML
 		{
 		model = "Atlashelms";
-		Type = "Normal Vizor";
+		Type = "Normal";
 		};
 		class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear:53rd_Ranger_CH252_NML
 		{
-		Type = "Med_Vizor";
-		};
-		
+		Type = "Medic";
+		}; 
 		class Ranger_Scout
 		{
 		model = "Atlashelms";
