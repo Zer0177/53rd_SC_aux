@@ -550,11 +550,12 @@ class 53rd_Custom_Armor_Panzer_Woodland : 53rd_Custom_Base_Armor_Panzer
 		};
 	};
 	
-//Axe
-class 53rd_Custom_Helmet_Vac_Sealed_Axe_Desert : 53rd_Sealed_Base
+	//Axe
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Desert : 53rd_Sealed_Base
     {
-        scope = 1;
-        scopeArsenal = 1;
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Desert)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
@@ -575,10 +576,11 @@ class 53rd_Custom_Helmet_Vac_Sealed_Axe_Desert : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-class 53rd_Custom_Helmet_Vac_Sealed_Axe_Snow : 53rd_Sealed_Base
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Snow : 53rd_Sealed_Base
     {
-        scope = 1;
-        scopeArsenal = 1;
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Snow)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
@@ -599,10 +601,11 @@ class 53rd_Custom_Helmet_Vac_Sealed_Axe_Snow : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-class 53rd_Custom_Helmet_Vac_Sealed_Axe_Urban : 53rd_Sealed_Base
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Urban : 53rd_Sealed_Base
     {
-        scope = 1;
-        scopeArsenal = 1;
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Urban)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
@@ -623,10 +626,11 @@ class 53rd_Custom_Helmet_Vac_Sealed_Axe_Urban : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-class 53rd_Custom_Helmet_Vac_Sealed_Axe_Woodland : 53rd_Sealed_Base
+	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Woodland : 53rd_Sealed_Base
     {
-        scope = 1;
-        scopeArsenal = 1;
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         displayName = "[53rd] Custom Vac Sealed Helmet (Axe / Woodland)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
@@ -1626,6 +1630,55 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
 			};
 		};
+	class 53rd_OP_Cherry_UB_dp:OPTRE_UNSC_Operator_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet (Cherry / Urban dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Urban.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
+			};
+		};
+	class 53rd_OP_Cherry_DS_dp:OPTRE_UNSC_Operator_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet (Cherry / Desert dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Desert.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
+			};
+		};
+	class 53rd_OP_Cherry_WN_dp:OPTRE_UNSC_Operator_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet (Cherry / Snow dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Snow.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
+			};
+		};
+	class 53rd_OP_Cherry_WD_dp:OPTRE_UNSC_Operator_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet (Cherry / Woodland dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Cherry_Woodland.paa",
+				"53rd_SC_aux\tex\Customs\53rd_Custom_Visor_Cherry.paa"
+			};
+		};
+		
     /*Hellfire
     class 53rd_Custom_Armor_Hellfire_Desert : 53rd_Armor_TL
 	{ 
@@ -2199,7 +2252,56 @@ class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:  53rd_Custom_Helmet_MA
 		{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet Panzer Pilot / Winter)";
+			displayName="[53rd] Custom Helmet Panzer Pilot / Winter )";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer_Winter.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+		class 53rd_Custom_Helmet_Panzer_Pilot_Woodland_dp: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Woodland dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+	class 53rd_Custom_Helmet_Panzer_Pilot_Urban_dp: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Urban dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer_Urban.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+	
+	class 53rd_Custom_Helmet_Panzer_Pilot_Desert_dp: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Desert dp)";
+			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\tex\Customs\Pilot_Helmet_co_panzer_Desert.paa",
+				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
+			};
+		};
+	class 53rd_Custom_Helmet_Panzer_Pilot_Winter_dp: OPTRE_UNSC_HRPilot_Helmet
+		{
+			scope=1;
+			scopeArsenal=1;
+			displayName="[53rd] Custom Helmet Panzer Pilot / Winter dp)";
 			model="OPTRE_UNSC_Units\Army\Helmets\HRPilot_Helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
