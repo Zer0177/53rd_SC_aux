@@ -2309,6 +2309,107 @@ class 53rd_Custom_Helmet_MA_Air_Assault_Cherryy_Woodland:  53rd_Custom_Helmet_MA
 				"53rd_SC_aux\tex\Customs\Panzer_Visor.paa"
 			};
 		};
+    
+    
+    //Shark
+
+class 53rd_OP_Shark_DS : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_DS.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_OP_Shark_DS_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_DS.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+class 53rd_OP_Shark_WN : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_WN.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_OP_Shark_WN_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Snow)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_WN.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+class 53rd_OP_Shark_UB : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_UB.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_OP_Shark_UB_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_UB.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+class 53rd_OP_Shark_WD : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_WD.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Gold.paa"
+		};
+    };
+	class 53rd_OP_Shark_WD_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Custom Vac Sealed Helmet (Shark / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Customs\53rd_OP_Shark_WD.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+    
 	};
 class CfgVehicles
 {

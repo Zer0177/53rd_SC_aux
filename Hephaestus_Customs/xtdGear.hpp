@@ -681,43 +681,44 @@ class XtdGearInfos
 		{
 		Helm_Camo = "Woodland";
 		};
-		
+        
 		//Shark
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert
+		class 53rd_OP_Shark_DS
 		{
 		model = "HephaestusCustomHelm";
 		Helm_Camo = "Desert";
 		Person = "Shark";
         dp="yes";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Snow:53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert
+		class 53rd_OP_Shark_WN:53rd_OP_Shark_DS
 		{
 		Helm_Camo = "Snow";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Urban:53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert
+		class 53rd_OP_Shark_UB:53rd_OP_Shark_DS
 		{
 		Helm_Camo = "Urban";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Woodland:53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert
+		class 53rd_OP_Shark_WD:53rd_OP_Shark_DS
 		{
 		Helm_Camo = "Woodland";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert_dp
+		
+		class 53rd_OP_Shark_DS_dp
 		{
 		model = "HephaestusCustomHelm";
 		Helm_Camo = "Desert";
 		Person = "Shark";
         dp="no";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Snow_dp:53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert_dp
+		class 53rd_OP_Shark_WN_dp:53rd_OP_Shark_DS_dp
 		{
 		Helm_Camo = "Snow";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Urban_dp:53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert_dp
+		class 53rd_OP_Shark_UB_dp:53rd_OP_Shark_DS_dp
 		{
 		Helm_Camo = "Urban";
 		};
-		class 53rd_Custom_Helmet_Vac_Sealed_Panzer_Woodland_dp:53rd_Custom_Helmet_Vac_Sealed_Panzer_Desert_dp
+		class 53rd_OP_Shark_WD_dp:53rd_OP_Shark_DS_dp
 		{
 		Helm_Camo = "Woodland";
 		};
