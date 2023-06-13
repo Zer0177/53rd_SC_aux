@@ -214,7 +214,6 @@ class cfgModels
     };
 };
 
-#include "\53rd_SC_aux\Equwupment\radio_ids.hpp"
 
 class cfgAmmo
 {
@@ -575,8 +574,9 @@ class CfgVehicles
         hiddenSelections[]={"camo"};
         hiddenSelectionsTextures[]={"\53rd_SC_aux\Equwupment\Copium_CO.paa"};
 	};
+    /*
     //Radios
-    
+    #include "\53rd_SC_aux\Equwupment\radio_ids.hpp"
     class Item_tf_anprc152;
     class Item_53rd_anprc152l: Item_tf_anprc152
     {
@@ -594,6 +594,7 @@ class CfgVehicles
             };
         };
     };
+    */
     //Cargo Boxes
     class Box_NATO_Support_F;
 	class 53rd_Hardbox_Medical: Box_NATO_Support_F
