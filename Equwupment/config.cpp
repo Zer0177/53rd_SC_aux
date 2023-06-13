@@ -413,6 +413,7 @@ class 53rd_ACEX_Fortify_Presets
 		author="53rd Aux";
 		displayName="[53rd] Medigel";
 	};
+    /*
 	class tf_anprc152;
     class 53rd_anprc152l: tf_anprc152
     {
@@ -422,6 +423,7 @@ class 53rd_ACEX_Fortify_Presets
         tf_range=120000;
     };
     TF_RADIO_IDS(53rd_anprc152l,[53rd] AN/PRC-152 w/ Link)
+    */
 };
 
 
