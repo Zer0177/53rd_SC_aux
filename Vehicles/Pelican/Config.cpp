@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Pelican {
-		units[] = {"53rd_Pelican","53rd_Pelican_SOCOM"};
+		units[] = {"53rd_Pelican","53rd_Pelican_SOCOM","53rd_UNSC_D77_TC_Pelican"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -13,6 +13,7 @@ class CfgVehicles
 	class CopilotTurret;
 	class ACE_SelfActions;
 	class CargoTurret;
+	class Splits_UNSC_D77_TC_Pelican;
 	class VES_D77HTCI_A
     {
 		class UserActions;
@@ -888,5 +889,28 @@ class CfgVehicles
 			"colorblack",
 			1
 		};
+	};
+	class 53rd_UNSC_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		forceInGarage=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Rotary";
+		author="SplitJaw & DemonicOnPC,Body";
+		crew="53rd_Volare_airmen_unit";
+		displayName="(53rd) D77-TC Pelican";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Vehicles\Pelican\53rd_body_co.paa",
+			"53rd_SC_aux\Vehicles\Pelican\53rd_wings_and_gear_co.paa",
+			"Splits\Splits_Vehicles\Pelican\data\weaponry_co.paa"
+		};
+		tf_range=25000;		
+		tf_isolatedAmount=0.40000001;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		enableRadio=1;
 	};
 };
