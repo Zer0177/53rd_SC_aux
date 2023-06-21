@@ -8,10 +8,14 @@ class CfgPatches {
 			"53rd_Ranger_CH252_MD",
 			"53rd_Ranger_CH252_MD_NV",
 			"53rd_HaloInf_Marine_AWDL_F",
+			"53rd_haloinfmar_U_Kuk_uniform",
+			"53rd_haloinfmar_U_Kuk2_uniform",
+			"53rd_haloinfmar_Lone_uniform",
         };
 		weapons[] = 
         {
 			"53rd_haloinfodst_U_uniform",
+			"53rd_haloinfmar_U_Kuk_uniform",
 			"53rd_haloinfmar_U_AWDL_uniform",
 			"53rd_Ranger_CH252_NML",
 			"53rd_Ranger_CH252_NV",
@@ -19,7 +23,9 @@ class CfgPatches {
 			"53rd_Ranger_CH252_MD_NV",
 			"53rd_HaloInf_Marine_AWDL_F",
 			"Ranger_Scout",
-			"53rd_MA_Vest",
+			"Ranger_Scout_Kuzyk",
+			"53rd_haloinfmar_U_Kuk2_uniform",
+			"53rd_haloinfmar_Lone_uniform"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -104,6 +110,94 @@ class cfgWeapons
 			mass=80;
 		};
 	};
+	class 53rd_haloinfmar_Kyzuk_uniform: 53rd_haloinfmar_U_AWDL_uniform
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd]  Kuzyk Atlas Univest";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_Ranger_02_top_Kuzyk.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\Halo_marine_02_armor_Kuzyk.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_Ranger_02_top_Kuzyk.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\Halo_marine_02_armor_Kuzyk.paa"
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_HaloInf_KUK2_AWDL_F";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_haloinfmar_Lone_uniform: 53rd_haloinfmar_U_AWDL_uniform
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd]  Atlas Lonewulf Univest";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_Ranger_Uniform_Lone.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_Ranger_armor_Lone.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_Ranger_Uniform_Lone.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_Ranger_armor_Lone.paa"
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_HaloInf_Lonewolf_F";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
 	class 53rd_Ranger_CH252_NML: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Body&Scarecrow";
@@ -112,6 +206,26 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Ranger Helmet (NV)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC"
+		};
+	};
+	class 53rd_Ranger_CH252_NML_dp: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Body&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Ranger Helmet dp (NV)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -143,8 +257,27 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC.paa"
 		};
 	};
+	class 53rd_Ranger_CH252_NV_dp: HaloInf_Marine_WDL_headgear
+	{
+		author="Nody&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Ranger Helmet dp";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC.paa"
+		};
+	};
 	//ranger scout
-		class Ranger_Scout: TCF_Reach_Scout_Helmet
+	class Ranger_Scout: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
 		scope=2;
@@ -160,6 +293,86 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
 	};
+	class Ranger_Scout_dp: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		author="Cherryy";
+		displayName="[53rd] Ranger Scout (Dp)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Ranger_Scout_Urban.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
+		};
+	};
+	class Ranger_Scout_Kuzyk: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		author="Cherryy";
+		displayName="[53rd] Ranger Scout (Kuzyk)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_ranger_Kuzyk_Scout.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
+		};
+	};
+	class Ranger_Scout_Kuzyk_dp: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		author="Cherryy";
+		displayName="[53rd] Ranger Scout (Dp)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_ranger_Kuzyk_Scout.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
+		};
+	};
+	class Ranger_Scout_Lonewulf: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		author="Cherryy";
+		displayName="[53rd] Ranger Scout (Wolf)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_ranger_Helm_Lone.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
+		};
+	};
+	class Ranger_Scout_Lonewulf_dp: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		author="Cherryy";
+		displayName="[53rd] Ranger Scout DP (wulf)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_ranger_Helm_Lone.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
+		};
+	};
 	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Body&Scarecrow";
@@ -168,6 +381,26 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Ranger Medic (NV)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+		};
+	};
+	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear_dp: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Body&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Ranger Medic dp (NV)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -200,123 +433,24 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
 		};
 	};
-	class 53rd_MA_Vest: MA_M56R_Vest
+	class 53rd_Ranger_CH252_MD_dp: HaloInf_Marine_WDL_headgear
 	{
-		scope=2;
-		scopeArsenal=2;
-		author="Body & Misriah Armory";
-		displayName="[53rd] MSR Vest";
-		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		author="Body&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Ranger Medic dp";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
-			//"camo1",
-			//"camo2",
-			//"camo3",
-			//"camo4",
-		    //"camo5",
-			//"camo6",
-			//"camo7",
-			"Left_Forearm_H3",
-			"Right_Forearm_H3",
-			"Left_Pauldron_H3",
-			"Right_Pauldron_H3",
-			"Thigh_Pouch",
-			//"Armor_Upper_H3",
-			//"Armor_Lower_H3"
+			"Camo1",
+			"_Visor"
 		};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
+		hiddenSelectionsTextures[]=
 		{
-			vestType="Rebreather";
-			hiddenSelections[]=
-			{
-			//"camo1",
-			//"camo2",
-			//"camo3",
-			//"camo4",
-		    //"camo5",
-			//"camo6",
-			//"camo7",
-			"Left_Forearm_H3",
-			"Right_Forearm_H3",
-			"Left_Pauldron_H3",
-			"Right_Pauldron_H3",
-			"Thigh_Pouch",
-			//"Armor_Upper_H3",
-			//"Armor_Lower_H3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
-				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
-				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-				"53rd_SC_aux\tex\Atlas Armor\Reach_Upper_Armor_co.paa",
-				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
-				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
-				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
-			};
-			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-			containerClass="Supply200";
-			mass=20;
-			passThrough=0.1;
-			modelSides[]={6};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=40;
-					passThrough=0.5;
-				};
-				class Legs
-				{
-					hitpointName="HitLegs";
-					armor=40;
-					passThrough=0.5;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=40;
-					passThrough=0.1;
-				};
-				class Hands
-				{
-					hitpointName="HitHands";
-					armor=40;
-					passThrough=0.1;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=40;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=40;
-					passThrough=0.1;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=40;
-					passThrough=0.1;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=40;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.1;
-				};
-			};
+			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
 		};
 	};
 };
@@ -345,6 +479,68 @@ class cfgvehicles
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_haloinfmar_U_AWDL_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
+	class 53rd_HaloInf_Lonewolf_F: 53rd_HaloInf_Marine_AWDL_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger Woodland (LW)";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_Ranger_Uniform_Lone.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_Ranger_armor_Lone.paa"
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_haloinfmar_Lone_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
+	class 53rd_HaloInf_KUK2_AWDL_F: 53rd_HaloInf_Marine_AWDL_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger Woodland Kuzyk";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_Ranger_02_top_Kuzyk.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\Halo_marine_02_armor_Kuzyk.paa"
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_haloinfmar_Kyzuk_uniform";
 			uniformType = "Neopren";
 			linkedItems[]=
 			{

@@ -7,6 +7,7 @@
 			};
 			weapons[] = 
 			{
+				"53rd_Hazop_Helmet",
 				"53rd_EOD_Helmet",
 				"53rd_EOD_Helmet_WD",
 				"53rd_EOD_Helmet_DS",
@@ -48,6 +49,8 @@
 		class MA_M56E_Helmet;
 		class MA_M56SR_Helmet;
 		class MA_M56SH_Helmet;
+		class TCF_Hazop_Helmet_dp;
+		class TCF_Hazop_Helmet;
 		
 		//Base Class
 		class 53rd_MJOLNIR_MkVArmor: OPTRE_FC_MJOLNIR_MKV_Armor
@@ -547,4 +550,123 @@
 				"53rd_SC_aux\tex\Spartan Gear\AA\Visor\[53rd] AA Helmet(Visor).paa"
 			};
 		};
+		class 53rd_Hazop_Helmet: TCF_Hazop_Helmet
+	{
+		author="43rd Quartermasters";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hazop Helmet ";
+		model="TCF_EQUIPMENT\Helmets\Hazop\Hazop_Helmet.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Visor",
+			"Interior"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"TCF_EQUIPMENT\Helmets\Hazop\Data\43rd_Hazop_Helmet_CO.paa",
+			"TCF_EQUIPMENT\Helmets\Hazop\Data\43rd_Hazop_Visor_co.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel="TCF_EQUIPMENT\Helmets\Hazop\Hazop_Helmet.p3d";
+			picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
+			allowedSlots[]=
+			{
+				"BACKPACK_SLOT",
+				"VEST_SLOT",
+				"HEADGEAR_SLOT"
+			};
+			modelSides[]={6};
+			hiddenSelections[]=
+			{
+				"camo1",
+				"Visor",
+				"Interior"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=25;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor=25;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor=20;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
+			};
+		};
 	};
+	class 53rd_Hazop_Helmet_dp: TCF_Hazop_Helmet_dp
+	{
+		author="Dutch";
+		scope=1;
+		displayName="[53rd] Hazop Helmet DP";
+		model="TCF_EQUIPMENT\Helmets\Hazop\Hazop_Helmet_DP.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Visor",
+			"Interior"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"TCF_EQUIPMENT\Helmets\Hazop\Data\43rd_Hazop_Helmet_CO.paa",
+			"TCF_EQUIPMENT\Helmets\Hazop\Data\43rd_Hazop_DP_VISOR_CA.paa"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel="TCF_EQUIPMENT\Helmets\Hazop\Hazop_Helmet_DP.p3d";
+			allowedSlots[]=
+			{
+				"BACKPACK_SLOT",
+				"VEST_SLOT",
+				"HEADGEAR_SLOT"
+			};
+			modelSides[]={6};
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Visor",
+				"Interior"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"TCF_EQUIPMENT\Helmets\Hazop\Data\43rd_Hazop_Helmet_CO.paa",
+				"TCF_EQUIPMENT\Helmets\Hazop\Data\43rd_Hazop_DP_VISOR_CA.paa"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=25;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor=25;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor=20;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+};
