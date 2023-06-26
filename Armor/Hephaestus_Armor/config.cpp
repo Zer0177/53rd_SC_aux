@@ -28,7 +28,6 @@ class cfgWeapons
 	class VES_BDU_Evolved_Slim;
 
 //Base
-
 class 53rd_Armor_Rifleman: OPTRE_UNSC_M52A_Armor_Base
 	{
         scope=1
@@ -217,8 +216,7 @@ class 53rd_Armor_Rifleman: OPTRE_UNSC_M52A_Armor_Base
 				"optre_unsc_units\army\data\odst_armor_co.paa"
 			};
 		};
-	};	
-
+	};
 class 53rd_Armor_Specialist: 53rd_Armor_Rifleman
 	{
 		author="Article 2 Studios";

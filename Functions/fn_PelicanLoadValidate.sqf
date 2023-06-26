@@ -4,15 +4,15 @@ _loaded = false;
 	
 switch true do {
 		
-	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2" or _veh isKindOf "53rd_Scorpion") : 
+	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2" or _veh isKindOf "53rd_Scorpion" or _veh isKindOf "53rd_Scorpion_125" or _veh isKindOf "53rd_Grizzly" or _veh isKindOf "53rd_M875_SPH") : 
 	{
-		_veh attachTo [_pelican,[0,-8, -0.37105]];
+		_veh attachTo [_pelican,[0,-10, -3]];
 		_veh setDir 180;
 		_loaded = true;
 	};
 	case (_veh isKindOf "OPTRE_M808S") : 
 	{
-		_veh attachTo [_pelican,[0,-7.2, -3]];
+		_veh attachTo [_pelican,[0,10.2, -4]];
 		_veh setDir 180;
 		_loaded = true;
 	};
@@ -127,12 +127,6 @@ switch true do {
     {
 		_veh attachTo [_pelican,[0,-5,-0.4]];  
 		_loaded = true;  
-    };
-	case (_veh isKindOf "53rd_M875_SPH"):
-    {
-		_veh attachTo [_pelican,[0,-7,-.8]];
-		_veh setDir 180;
-		_loaded = true;
     };
 };
 	

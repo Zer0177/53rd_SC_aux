@@ -13,15 +13,21 @@ class CfgVehicles
 	class CopilotTurret;
 	class ACE_SelfActions;
 	class CargoTurret;
-	class Splits_UNSC_D77_TC_Pelican;
-	class VES_D77HTCI_A
+	class Optre_Pelican_armed;
+	class VES_D77HTCI_A: Optre_Pelican_armed
     {
-		class UserActions;
+	class UserActions;
     };
-	class OPTRE_Pelican_armed_SOCOM
+	class OPTRE_Pelican_armed_SOCOM:Optre_Pelican_armed
 	{
-		class UserActions;
+	class UserActions;
     };
+	class Splits_Pelican_base;
+	class Splits_UNSC_D77_TC_Pelican : Splits_Pelican_base
+	{
+	class UserActions;
+    };
+	///////////////////////////////////////////////////////
 	class 53rd_CORP_Pelican: VES_D77HTCI_A
 	{
 		scope=2;
@@ -238,7 +244,7 @@ class CfgVehicles
 				count=36;
 			};
 		};
-	class UserActions: UserActions
+		class UserActions: UserActions
 		{
 			class PelLift_LoadVehicle
 			{
@@ -428,68 +434,6 @@ class CfgVehicles
 				hideOnUse = 1;
 			};
 		};
-		class pilotCamera
-		{
-			class OpticsIn
-			{
-				class Wide
-				{
-					opticsDisplayName="WFOV";
-					initAngleX=0;
-					minAngleX=0;
-					maxAngleX=0;
-					initAngleY=0;
-					minAngleY=0;
-					maxAngleY=0;
-					initFov="(75 / 120)";
-					minFov="(75 / 120)";
-					maxFov="(75 / 120)";
-					directionStabilized=1;
-					visionMode[]=
-					{
-						"Normal",
-						"NVG",
-						"Ti"
-					};
-					thermalMode[]={0,1};
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera2",
-						"OpticsBlur2"
-					};
-				};
-				class Medium: Wide
-				{
-					opticsDisplayName="MFOV";
-					initFov="(14.4 / 120)";
-					minFov="(14.4 / 120)";
-					maxFov="(14.4 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
-				};
-				class Narrow: Wide
-				{
-					opticsDisplayName="NFOV";
-					initFov="(4.8 / 120)";
-					minFov="0.01";
-					maxFov="(4.8 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-			};
-			minTurn=-90;
-			maxTurn=90;
-			initTurn=0;
-			minElev=-10;
-			maxElev=90;
-			initElev=25;
-			maxXRotSpeed=1;
-			maxYRotSpeed=1;
-			maxMouseXRotSpeed=0.5;
-			maxMouseYRotSpeed=0.5;
-			pilotOpticsShowCursor=1;
-			controllable=1;
-		};
-		memoryPointDriverOptics="gunnerview";
 		class textureSources
 		{
 			class Grey
@@ -678,7 +622,7 @@ class CfgVehicles
 		transportSoldier=22;
 		cargoProxyIndexes[]={3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25};
 		model="OPTRE_Vehicles\P_SOCOM\Pelican_SOCOM.p3d";
-	class UserActions: UserActions
+		class UserActions: UserActions
 		{
 			class PelLift_LoadVehicle
 			{
