@@ -6,6 +6,7 @@ class CfgPatches
 		addonRootClass="53rd_aux";
 		requiredAddons[]=
 		{
+			"21st_SAB_patch_main_LoadingScreens"
 		};
 		requiredVersion=0.1;
 		units[]={};
