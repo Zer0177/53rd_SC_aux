@@ -128,7 +128,7 @@ class CfgMusic
 		name = "TLA - Leaves From the Vine";
 		sound[] = {"53rd_SC_aux\Main\Music\Leaves_From_The_Vine_Little_Soldie_(getmp3.pro).ogg",1,1};
 		theme = "Moddedmsuic";
-		duration = 191";
+		duration = "191";
 		musicClass = "Moddedmsuic";
 	};
 		class Da15
