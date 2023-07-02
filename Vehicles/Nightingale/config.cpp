@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Night {
-		units[] = {"53rd_Nightingale","53rd_Nightingale_medi"};
+		units[] = {"53rd_Nightingale"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

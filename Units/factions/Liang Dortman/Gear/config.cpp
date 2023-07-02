@@ -22,7 +22,7 @@ class cfgWeapons {
 	class 53rd_Dortman_Uni: OPTRE_Ins_BJ_Undersuit
 	{
 		author="Sgt. Body";
-		scope=2;
+		scope=1;
 		side=2;
 		displayName="[53rd] Liang Dortman Uniform";
 		picture="\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
@@ -41,7 +41,7 @@ class cfgWeapons {
 	class LD_M52A_Light: OPTRE_UNSC_M52A_Armor1_WDL
 	{
 		author="Sgt. Body";
-		scope=2;
+		scope=1;
 		displayName="[53rd] Liang Dortman M52A";
 		hiddenSelectionsTextures[]=
 		{
@@ -55,7 +55,7 @@ class cfgWeapons {
 	class LD_M52A_Heavy: OPTRE_UNSC_M52A_Armor3_WDL
 	{
 		author="Sgt. Body";
-		scope=2;
+		scope=1;
 		displayName="[53rd] Liang Dortman M52A (H)";
 		hiddenSelectionsTextures[]=
 		{

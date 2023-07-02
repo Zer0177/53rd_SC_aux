@@ -1,4 +1,4 @@
-/*class CfgPatches {
+class CfgPatches {
     class 53rd_ODST {
         units[] = 
         {
@@ -1021,6 +1021,18 @@ class cfgWeapons
             };
 		};		
     };
+	class 53rd_CH252D_ODST_NEM: OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc="OPTRE";
+		scope=2;
+		author="Article 2 Studios";
+		displayName="[53rd] CH252D Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+		};
+	};
 	class 53rd_ODST_Heavy_DE : 53rd_ODST_NRM_DE
      {
 		scope = 2;
@@ -1157,32 +1169,27 @@ class cfgWeapons
 	 };
 	class 53rd_ODST_Medic_DE : 53rd_ODST_NRM_DE
 		{
-			scope = 2;
-			scopeCurator = 2;
-			scopeArsenal = 2;
-			dlc = "53rd AUX TEAM";
-			author = "53rd AUX TEAM & 37th Aux Team";
-			displayName = "[53rd] CH252D Armor (Medic)";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		dlc = "53rd AUX TEAM";
+		author = "53rd AUX TEAM & 37th Aux Team";
+		displayName = "[53rd] CH252D Armor (Medic)";
 			hiddenSelectionsTextures[] = 
-				{
+		{
             "53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Desert.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_Rifleman_Desert.paa",
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Desert.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "53rd_SC_aux\tex\ODST Armor\53rd_ODST_DE.paa"
-				};
 		};
+	};
 	class 53rd_CH252D_Medic : OPTRE_UNSC_CH252D_Helmet
     {
         scope = 1;
         scopeArsenal = 1;
         displayName = "[53rd] CH252D Helmet (Medic)";
         author = "53rd AUX TEAM";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
@@ -1194,11 +1201,6 @@ class cfgWeapons
         scope = 1;
         scopeArsenal = 1;
         displayName = "[53rd] CH252D Helmet (Medic)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
@@ -1667,5 +1669,5 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_snow_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
-    };;
+    };	
 };

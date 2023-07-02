@@ -10,7 +10,8 @@ class CfgPatches {
 			"53rd_OP_Cherry_UB",
 			"53rd_OP_Cherry_DS",
             "53rd_OP_Cherry_WD",
-			"53rd_Ranger_Shin_Armor"
+			"53rd_Ranger_Shin_Armor",
+			"53rd_UNSC_CQC_Helmet",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -50,6 +51,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Security_Helmet;
 	class OPTRE_UNSC_M52D_Armor;
 	class OPTRE_UNSC_HRPilot_Helmet;
+	class OPTRE_UNSC_CQC_Helmet;
 
 //Customs
 
@@ -2409,8 +2411,61 @@ class 53rd_OP_Shark_WD : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
+	class 53rd_UNSC_CQC_Helmet: OPTRE_UNSC_CQC_Helmet
+	{
+		dlc=;
+		scope=2;
+		scopeArsenal=2;
+		author="Article 2 Studios & Gamma";
+		picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+		model="\OPTRE_UNSC_Units\Army\CQC_Helmet.p3d";
+	displayName="[53rd] Mark V/CQC Helmet";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\53rd_Custom_Helmet_Kuzyk_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Kuzyk_Visor_Custom.paa"
+		};
+		optreHUDStyle="ODST_1";
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\CQC_Helmet.p3d";
+			mass=40;
+			modelSides[]={6};
+			passThrough=0.1;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Armor\Hephaestus_Customs\53rd_Custom_Helmet_Kuzyk_Woodland.paa",
+				"53rd_SC_aux\Armor\Hephaestus_Customs\Kuzyk_Visor_Custom.paa"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=30;
+					passThrough=0.1;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=30;
+					passThrough=0.1;
+				};
+			};
+		};
+	}
     
-	};
+};
 class CfgVehicles
 {
 };

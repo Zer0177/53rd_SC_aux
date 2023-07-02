@@ -1,7 +1,11 @@
-class CfgPatches {
+/*class CfgPatches {
     class 53rd_MA_Armor_Binns {
         units[] = 
         {
+			"53rd_M56SR_Helmet",
+			"53rd_M56SH_Helmet",
+			"53rd_M56S_Vest",
+			"53rd_M56R_Vest",
         };
         weapons[] = 
         {
@@ -429,6 +433,516 @@ class cfgWeapons
 				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+		};
+	};
+	class CT_Vest: MA_M56S_Vest
+	{
+		author = "KAz";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "C.T";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+	//      "Reach_Pauldron_Left",
+	//      "Reach_Pauldron_Right",
+	        "Thigh_Pouch",
+			"Armor_Upper_H3",
+			"Armor_Lower_H3",
+	//      "Armor_Upper_Reach",
+	//      "Armor_Lower_Reach",
+	//      "Forearm_Reach_Left",
+	//      "Forearm_Reach_Right",
+	//      "Forearm_Vent_Left",
+	//      "Forearm_Vent_Right",
+	//      "Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackUp.paa",       //camo1 (H3 Upper Armor)
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackDown.paa",       //camo2 (H3 Lower Armor)
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+			"Assets\Data\CharonIndustries\MainODST\CT\Vest\CTUpper.paa",    //camo4 (Reach Upper Armor)
+			"Assets\Data\CharonIndustries\MainODST\CT\Vest\CTLower.paa",    //camo5 (Reach Lower Armor)
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"Left_Forearm_H3",
+				"Right_Forearm_H3",
+				"Left_Pauldron_H3",
+				"Right_Pauldron_H3",
+	//          "Reach_Pauldron_Left",
+	//          "Reach_Pauldron_Right",
+	            "Thigh_Pouch",
+				"Armor_Upper_H3",
+				"Armor_Lower_H3",
+	//			"Armor_Upper_Reach",
+	//			"Armor_Lower_Reach",
+	//          "Forearm_Reach_Left",
+	//          "Forearm_Reach_Right",
+	//			"Forearm_Vent_Left",
+	//			"Forearm_Vent_Right",
+	//          "Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+		};
+	};
+	class Demo_Vest: MA_M56S_Vest
+	{
+		author = "KAz";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "Demo";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+	//      "Reach_Pauldron_Left",
+	//      "Reach_Pauldron_Right",
+	        "Thigh_Pouch",
+			"Armor_Upper_H3",
+			"Armor_Lower_H3",
+	//      "Armor_Upper_Reach",
+	//      "Armor_Lower_Reach",
+	//      "Forearm_Reach_Left",
+	//      "Forearm_Reach_Right",
+	//      "Forearm_Vent_Left",
+	//      "Forearm_Vent_Right",
+	//      "Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackUp.paa",       //camo1 (H3 Upper Armor)
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackDown.paa",       //camo2 (H3 Lower Armor)
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+			"Assets\Data\CharonIndustries\MainODST\Demo\Vest\DemoUpper.paa",    //camo4 (Reach Upper Armor)
+			"Assets\Data\CharonIndustries\MainODST\Demo\Vest\DemoLower.paa",    //camo5 (Reach Lower Armor)
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"Left_Forearm_H3",
+				"Right_Forearm_H3",
+				"Left_Pauldron_H3",
+				"Right_Pauldron_H3",
+	//          "Reach_Pauldron_Left",
+	//          "Reach_Pauldron_Right",
+	            "Thigh_Pouch",
+				"Armor_Upper_H3",
+				"Armor_Lower_H3",
+	//			"Armor_Upper_Reach",
+	//			"Armor_Lower_Reach",
+	//          "Forearm_Reach_Left",
+	//          "Forearm_Reach_Right",
+	//			"Forearm_Vent_Left",
+	//			"Forearm_Vent_Right",
+	//          "Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+		};
+	};
+	class Flame_Vest: MA_M56S_Vest
+	{
+		author = "KAz";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "Flame";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+	//      "Reach_Pauldron_Left",
+	//      "Reach_Pauldron_Right",
+	        "Thigh_Pouch",
+			"Armor_Upper_H3",
+			"Armor_Lower_H3",
+	//      "Armor_Upper_Reach",
+	//      "Armor_Lower_Reach",
+	//      "Forearm_Reach_Left",
+	//      "Forearm_Reach_Right",
+	//      "Forearm_Vent_Left",
+	//      "Forearm_Vent_Right",
+	//      "Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackUp.paa",       //camo1 (H3 Upper Armor)
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackDown.paa",       //camo2 (H3 Lower Armor)
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+			"Assets\Data\CharonIndustries\MainODST\Flame\Vest\FlameUpper.paa",    //camo4 (Reach Upper Armor)
+			"Assets\Data\CharonIndustries\MainODST\Flame\Vest\FlameLower.paa",    //camo5 (Reach Lower Armor)
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"Left_Forearm_H3",
+				"Right_Forearm_H3",
+				"Left_Pauldron_H3",
+				"Right_Pauldron_H3",
+	//          "Reach_Pauldron_Left",
+	//          "Reach_Pauldron_Right",
+	            "Thigh_Pouch",
+				"Armor_Upper_H3",
+				"Armor_Lower_H3",
+	//			"Armor_Upper_Reach",
+	//			"Armor_Lower_Reach",
+	//          "Forearm_Reach_Left",
+	//          "Forearm_Reach_Right",
+	//			"Forearm_Vent_Left",
+	//			"Forearm_Vent_Right",
+	//          "Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+		};
+	};
+		class Girlie_Vest: MA_M56S_Vest
+	{
+		author = "KAz";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "Girlie";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+	//      "Reach_Pauldron_Left",
+	//      "Reach_Pauldron_Right",
+	        "Thigh_Pouch",
+			"Armor_Upper_H3",
+			"Armor_Lower_H3",
+	//      "Armor_Upper_Reach",
+	//      "Armor_Lower_Reach",
+	//      "Forearm_Reach_Left",
+	//      "Forearm_Reach_Right",
+	//      "Forearm_Vent_Left",
+	//      "Forearm_Vent_Right",
+	//      "Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackUp.paa",       //camo1 (H3 Upper Armor)
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackDown.paa",       //camo2 (H3 Lower Armor)
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+			"Assets\Data\CharonIndustries\MainODST\Girlie\Vest\GirlieUpper.paa",    //camo4 (Reach Upper Armor)
+			"Assets\Data\CharonIndustries\MainODST\Girlie\Vest\GirlieLower.paa",    //camo5 (Reach Lower Armor)
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"Left_Forearm_H3",
+				"Right_Forearm_H3",
+				"Left_Pauldron_H3",
+				"Right_Pauldron_H3",
+	//          "Reach_Pauldron_Left",
+	//          "Reach_Pauldron_Right",
+	            "Thigh_Pouch",
+				"Armor_Upper_H3",
+				"Armor_Lower_H3",
+	//			"Armor_Upper_Reach",
+	//			"Armor_Lower_Reach",
+	//          "Forearm_Reach_Left",
+	//          "Forearm_Reach_Right",
+	//			"Forearm_Vent_Left",
+	//			"Forearm_Vent_Right",
+	//          "Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+		};
+	};
+			class Slev_Vest: MA_M56S_Vest
+	{
+		author = "KAz";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "Sleeveless";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+	//      "Reach_Pauldron_Left",
+	//      "Reach_Pauldron_Right",
+	        "Thigh_Pouch",
+			"Armor_Upper_H3",
+			"Armor_Lower_H3",
+	//      "Armor_Upper_Reach",
+	//      "Armor_Lower_Reach",
+	//      "Forearm_Reach_Left",
+	//      "Forearm_Reach_Right",
+	//      "Forearm_Vent_Left",
+	//      "Forearm_Vent_Right",
+	//      "Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackUp.paa",       //camo1 (H3 Upper Armor)
+			"Assets\Data\Bravo3\Vest\Jackal\H3\JackDown.paa",       //camo2 (H3 Lower Armor)
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+			"Assets\Data\CharonIndustries\MainODST\Sleeveless\Vest\SleveUpper.paa",    //camo4 (Reach Upper Armor)
+			"Assets\Data\CharonIndustries\MainODST\Sleeveless\Vest\SleveLower.paa",    //camo5 (Reach Lower Armor)
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"Left_Forearm_H3",
+				"Right_Forearm_H3",
+				"Left_Pauldron_H3",
+				"Right_Pauldron_H3",
+	//          "Reach_Pauldron_Left",
+	//          "Reach_Pauldron_Right",
+	            "Thigh_Pouch",
+				"Armor_Upper_H3",
+				"Armor_Lower_H3",
+	//			"Armor_Upper_Reach",
+	//			"Armor_Lower_Reach",
+	//          "Forearm_Reach_Left",
+	//          "Forearm_Reach_Right",
+	//			"Forearm_Vent_Left",
+	//			"Forearm_Vent_Right",
+	//          "Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"
+			};
+		};
+	};
+	class Sniper_Vest: MA_M56S_Vest
+	{
+		author = "C. Duck";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[Bravo-3] Phantom";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"Left_Forearm_H3",
+			"Right_Forearm_H3",
+			"Left_Pauldron_H3",
+			"Right_Pauldron_H3",
+	//      "Reach_Pauldron_Left",
+	//      "Reach_Pauldron_Right",
+	        "Thigh_Pouch",
+			"Armor_Upper_H3",
+			"Armor_Lower_H3",
+	//      "Armor_Upper_Reach",
+	//      "Armor_Lower_Reach",
+	//      "Forearm_Reach_Left",
+	//      "Forearm_Reach_Right",
+	//      "Forearm_Vent_Left",
+	//      "Forearm_Vent_Right",
+	//      "Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Assets\Data\Bravo3\Vest\Phantom\H3\Phantom_Up.paa",       //camo1 (H3 Upper Armor)
+			"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",       //camo2 (H3 Lower Armor)
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+			"Assets\Data\CharonIndustries\MainODST\Sniper\Vest\SniperUpper.paa",    //camo4 (Reach Upper Armor)
+			"Assets\Data\CharonIndustries\MainODST\Sniper\Vest\SniperLower.paa",    //camo5 (Reach Lower Armor)
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"Left_Forearm_H3",
+				"Right_Forearm_H3",
+				"Left_Pauldron_H3",
+				"Right_Pauldron_H3",
+	//          "Reach_Pauldron_Left",
+	//          "Reach_Pauldron_Right",
+	            "Thigh_Pouch",
+				"Armor_Upper_H3",
+				"Armor_Lower_H3",
+	//			"Armor_Upper_Reach",
+	//			"Armor_Lower_Reach",
+	//          "Forearm_Reach_Left",
+	//          "Forearm_Reach_Right",
+	//			"Forearm_Vent_Left",
+	//			"Forearm_Vent_Right",
+	//          "Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\Armor_Upper_co.paa",       //camo1 (H3 Upper Armor)
+				"MA_Armor\data\Vests\H3_ODST\Armor_Lower_co.paa",       //camo2 (H3 Lower Armor)
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",    //camo4 (Reach Upper Armor)
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",    //camo5 (Reach Lower Armor)
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",      //camo6 (Canisters)
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa"   //camo7 (Forearm Vents)
 			};
 		};
 	};
