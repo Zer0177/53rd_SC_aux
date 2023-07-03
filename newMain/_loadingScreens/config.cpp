@@ -1,4 +1,4 @@
-class CfgPatches
+/*class CfgPatches
 {
 	class 53rd_LoadingScreens
 	{
@@ -6,7 +6,6 @@ class CfgPatches
 		addonRootClass="53rd_main_loading_screen";
 		requiredAddons[]=
 		{
-			"21st_SAB_patch_main"
 		};
 		requiredVersion=0.1;
 		units[]={};

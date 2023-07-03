@@ -107,7 +107,7 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Atlas_B_uniform: 53rd_Atlas_Y_uniform
+	/*class 53rd_Atlas_B_uniform: 53rd_Atlas_Y_uniform
 	{
 		author="Body&Scarecrow";
 		scope=2;
@@ -126,7 +126,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Black_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Black_Team_AS_co.paa" 
 		};
@@ -140,7 +140,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Black_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Black_Team_AS_co.paa" 
 			};
@@ -170,7 +170,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Purple_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Purple_Team_AS_co.paa" 
 		};
@@ -184,7 +184,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Purple_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Purple_Team_AS_co.paa" 
 			};
@@ -194,7 +194,7 @@ class cfgWeapons
 			containerClass="Supply150";
 			mass=80;
 		};
-	};
+	};*/
 	class 53rd_Atlas_PL_uniform: 53rd_Atlas_Y_uniform
 	{
 		author="Body&Scarecrow";
@@ -214,7 +214,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Platoon_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Platoon_AS_co.paa" 
 		};
@@ -228,7 +228,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Platoon_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Platoon_AS_co.paa" 
 			};
@@ -238,7 +238,7 @@ class cfgWeapons
 			containerClass="Supply150";
 			mass=80;
 		};
-	};
+	};/*
 	class 53rd_Atlas_T_uniform: 53rd_Atlas_Y_uniform
 	{
 		author="Body&Scarecrow";
@@ -258,9 +258,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Texas_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
-			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Black_Team_AS_co.paa" 
+			"553rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Texas_AS_co.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -272,9 +272,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Texas_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
-			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Black_Team_AS_co.paa" 
+			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Texas_AS_co.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -282,7 +282,7 @@ class cfgWeapons
 			containerClass="Supply150";
 			mass=80;
 		};
-	};
+	};*/
 
 
 //ATLAS HELMETS
@@ -593,7 +593,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Black_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Black_Team_AS_co.paa" 
 			};
@@ -624,7 +624,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Purple_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Purple_Team_AS_co.paa" 
 			};
@@ -655,7 +655,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Texas_Squad_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Texas_AS_co.paa" 
 			};
@@ -686,7 +686,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_top_Platoon_AS_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\53rd_Ranger_02_pants_woodland_two_co.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Halo_marine_02_armor_Platoon_AS_co.paa" 
 			};

@@ -15,8 +15,14 @@
 	};
 	class CfgVehicles
 	{
-		class OPTRE_UNSC_falcon;
-		class OPTRE_UNSC_falcon_armed_S;
+		class OPTRE_UNSC_falcon 
+		{ 
+			class Components; 
+		}; 
+		class OPTRE_UNSC_falcon_armed_S 
+		{ 
+			class Components; 
+		}; 
 		class 53rd_CMA_falcon: OPTRE_UNSC_falcon
 		{
 			editorPreview="\OPTRE_Core\Data\logo_ca.paa";
