@@ -24,11 +24,9 @@ class CfgVehicles
 	class OPTRE_UNSC_Rucksack_Heavy;
 	class OPTRE_ONI_Researcher_Suitcase;
 	class B_Parachute;
+    class NSM_neutral_XD_1_backpack; 
 
-
-//Jump Packs
-{   
-    class NSM_neutral_XD_1_backpack;    
+//Jump Packs      
     class 53rd_Hephaestus_Jumpack: NSM_neutral_XD_1_backpack
     {
 		dlc="53rd Aux";
@@ -69,8 +67,7 @@ class CfgVehicles
 			""
 		};
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
-    };
-};	
+    };	
 //Rucksacks
     class 53rd_Hephaestus_Rucksack_Basic: OPTRE_UNSC_Rucksack
     {

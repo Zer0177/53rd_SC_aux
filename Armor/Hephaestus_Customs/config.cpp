@@ -11,7 +11,6 @@ class CfgPatches {
 			"53rd_OP_Cherry_DS",
             "53rd_OP_Cherry_WD",
 			"53rd_Ranger_Shin_Armor",
-			"53rd_UNSC_CQC_Helmet",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -2411,6 +2410,7 @@ class 53rd_OP_Shark_WD : 53rd_Sealed_Base
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
+	/*
 	class 53rd_UNSC_CQC_Helmet: OPTRE_UNSC_CQC_Helmet
 	{
 		dlc=;
@@ -2463,7 +2463,7 @@ class 53rd_OP_Shark_WD : 53rd_Sealed_Base
 				};
 			};
 		};
-	}
+	}*/
     
 };
 class CfgVehicles

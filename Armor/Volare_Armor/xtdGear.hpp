@@ -92,7 +92,7 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"blk","blu","red","nco","woodland","urban","desert","snow";
+				values[] = {"blk","blu","nco","FL","woodland","urban","desert","snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class blk
@@ -105,27 +105,27 @@ class XtdGearModels
 					label = "Blue";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class red
-				{
-					label = "Red";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class snow
+				class nco
 				{
 					label = "nco";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class blk
+				class FL
+				{
+					label = "flight leader";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class woodland
 				{
 					label = "woodland";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class blu
+				class urban
 				{
 					label = "urban";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class red
+				class desert
 				{
 					label = "desert";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
@@ -189,7 +189,7 @@ class XtdGearInfos
         class 53rd_Volare_Combat_Armor_Urban
 		{
 		model = "VolareArm";
-		Armor = "Armor";
+		Armor = "Combat";
 		type = "urban";
 		};
 		class 53rd_Volare_Combat_Armor_Woodland:53rd_Volare_Combat_Armor_Urban
@@ -209,23 +209,19 @@ class XtdGearInfos
 		{
 		model = "VolareArm";
 		Armor = "Pilot";
-		type = "urban";
-		};
-		class 53rd_V_Pilot_Armor_Black_NCO:53rd_V_Pilot_Armor_Black
-		{
 		type = "blk";
 		};
 		class 53rd_V_Pilot_Armor_BU_NCO:53rd_V_Pilot_Armor_Black
 		{
 		type = "blu";
 		};
-		class 53rd_V_Pilot_Armor_Red_NCO:53rd_V_Pilot_Armor_Black
+		class 53rd_V_Pilot_Armor_Black_NCO:53rd_V_Pilot_Armor_Black
 		{
-		type = "red";
+		type = "nco";
 		};
 		class 53rd_V_Pilot_Armor_Red_NCO:53rd_V_Pilot_Armor_Black
 		{
-		type = "nco";
+		type = "FL";
 		};
 		class 53rd_V_Pilot_Armor_White:53rd_V_Pilot_Armor_Black
 		{
