@@ -6,7 +6,7 @@ class CfgMagazines{
         displaynameshort				= "DEATH";
 		descriptionshort				= "High Explosive Anti Tank<br/>Un-guided";
 		ammo							= "53rd_M41_Rocket_MEME";
-		mass = 200;
+		mass = 2000;
 
     };
 };

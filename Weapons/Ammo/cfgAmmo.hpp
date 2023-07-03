@@ -8,6 +8,7 @@ class cfgAmmo
 		indirectHitRange = 10;
 		explosive = 1;
 		allowAgainstInfantry = 1;
+		mass = 2000;
 
     };
     
