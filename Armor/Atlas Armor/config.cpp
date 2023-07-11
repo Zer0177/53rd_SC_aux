@@ -6,13 +6,12 @@ class CfgPatches {
 		weapons[] = 
         {
 			"53rd_haloinfodst_U_uniform",
-			"53rd_haloinfmar_U_Kuk_uniform",
-			"53rd_haloinfmar_U_AWDL_uniform",
 			"53rd_Ranger_CH252_NML",
 			"53rd_Ranger_CH252_NV",
 			"53rd_Ranger_CH252_MD",
 			"53rd_Ranger_CH252_MD_NV",
 			"Ranger_Scout",
+			"Ranger_Scout_PL",
 			"53rd_Atlas_T_uniform",
 			"53rd_Atlas_Y_uniform",
 			"53rd_Atlas_B_uniform",
@@ -398,7 +397,7 @@ class cfgWeapons
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
 	};
-	class Ranger_Scout_Kuzyk: TCF_Reach_Scout_Helmet
+		class Ranger_PL_Scout: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
 		scope=2;
@@ -406,15 +405,15 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Cherryy";
-		displayName="[53rd] Ranger Scout (Kuzyk)";
+		displayName="[53rd] Ranger Scout (PL)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_ranger_Kuzyk_Scout.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Ranger_Scout_PL.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
 	};
-	class Ranger_Scout_Kuzyk_dp: TCF_Reach_Scout_Helmet
+	class Ranger_Scout_PL_dp: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
 		scope=1;
@@ -422,43 +421,11 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		author="Cherryy";
-		displayName="[53rd] Ranger Scout (Dp)";
+		displayName="[53rd] Ranger Scout PL (Dp)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Kuyzk\53rd_ranger_Kuzyk_Scout.paa",
-			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
-		};
-	};
-	class Ranger_Scout_Lonewulf: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Cherryy";
-		displayName="[53rd] Ranger Scout (Wolf)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_ranger_Helm_Lone.paa",
-			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
-		};
-	};
-	class Ranger_Scout_Lonewulf_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Cherryy";
-		displayName="[53rd] Ranger Scout DP (wulf)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Atlas Armor\Atlas Customs\Lonewulf\53rd_ranger_Helm_Lone.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Ranger_Scout_PL.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
 	};

@@ -7,7 +7,7 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-            "",
+            "53rd_Hephaestus_Jumpack",
             ""
         };
 		requiredVersion = 0.100000;
@@ -24,9 +24,105 @@ class CfgVehicles
 	class OPTRE_UNSC_Rucksack_Heavy;
 	class OPTRE_ONI_Researcher_Suitcase;
 	class B_Parachute;
-    class NSM_neutral_XD_1_backpack; 
+    class NSM_neutral_XD_1_backpack;
+	class B_AssaultPack_Base;
+	
+//Atlas Packs
+	class 53rd_Atlas_RTO_Pack: B_AssaultPack_Base
+	{
+		author="Body & Split Jaw";
+		scope=2;
+		picture="";
+		displayName="[53rd] Atlas RTO Pack";
+		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Pouches",
+			"Biofoam",
+			"Antenna"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"19thVests_Kelp\Backpack\Standard\Main_ca.paa",
+			"19thVests_Kelp\Backpack\Standard\Addon_Pouch_ca.paa",
+			"19thVests_Kelp\Backpack\Base\Addon_biofoam_ca.paa",
+			"19thVests_Kelp\Backpack\Base\Addon_antenna_ca.paa"
+		};
+		maximumLoad=300;
+		mass=20;
+		tf_range=30000;
+		tf_dialog="rt1523g_radio_dialog";
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel";
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+	};	
+	class 53rd_Atlas_Heavy_Pack: B_AssaultPack_Base
+	{
+		author="Body & Split Jaw";
+		scope=2;
+		picture="";
+		displayName="[53rd] Atlas Heavy Pack";
+		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Pouches",
+			"Biofoam",
+			"Antenna"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"19thVests_Kelp\Backpack\Standard\Main_ca.paa",
+			"19thVests_Kelp\Backpack\Standard\Addon_Pouch_ca.paa",
+			"19thVests_Kelp\Backpack\Base\Addon_biofoam_ca.paa",
+			""
+		};
+		maximumLoad=400;
+		mass=20;
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+	};		
+	class 53rd_Atlas_Standard_Pack: B_AssaultPack_Base
+	{
+		author="Body & Split Jaw";
+		scope=2;
+		picture="";
+		displayName="[53rd] Atlas Standard Pack";
+		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Pouches",
+			"Biofoam",
+			"Antenna"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"19thVests_Kelp\Backpack\Standard\Main_ca.paa",
+			"19thVests_Kelp\Backpack\Standard\Addon_Pouch_ca.paa",
+			"",
+			""
+		};
+		maximumLoad=300;
+		mass=20;
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+	};
 
-//Jump Packs      
+//Jump Packs	
     class 53rd_Hephaestus_Jumpack: NSM_neutral_XD_1_backpack
     {
 		dlc="53rd Aux";
@@ -34,6 +130,12 @@ class CfgVehicles
         scopeCurator=2;
         author = "Namenai / Ithias";
         displayname = "[53rd] Jumpack";
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
         NSM_jumppack_is_jumppack = 1;
         NSM_jumppack_spam_delay = 1;
         NSM_jumppack_energy_capacity = 200; 
@@ -57,7 +159,7 @@ class CfgVehicles
         NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
         NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
 		model="\OPTRE_weapons\backpacks\jetpack_on.p3d";
-        maximumload = 350;
+		maximumLoad=350;
 		hiddenSelections[]=
 		{
 			"camo1"

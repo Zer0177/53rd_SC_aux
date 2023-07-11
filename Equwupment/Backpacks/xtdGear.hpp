@@ -11,7 +11,7 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"Basic_Ruck","Heavy_Ruck"};
+				values[] = {"Basic_Ruck","Heavy_Ruck","Atlas_Ruck","Atlas_Heavy_Ruck"};
 				class Basic_Ruck
 				{
 					label = "Basic Ruck";
@@ -20,6 +20,16 @@ class XtdGearModels
 				class Heavy_Ruck
 				{
 					label = "Heavy Ruck";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Atlas_Ruck
+				{
+					label = "Atlas Standard Ruck";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Atlas_Heavy_Ruck
+				{
+					label = "Atlas Heavy Ruck";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -33,7 +43,7 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"515_LR","Rucksack_LR"};
+				values[] = {"515_LR","Rucksack_LR","Atlas_Rucksack_LR"};
 				class 515_LR
 				{
 					label = "515 LR";
@@ -42,6 +52,11 @@ class XtdGearModels
 				class Rucksack_LR
 				{
 					label = "Rucksack LR";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Atlas_Rucksack_LR
+				{
+					label = "Atlas LR";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -121,6 +136,16 @@ class XtdGearInfos
 		model = "Rucksacks";
 		Type = "Heavy_Ruck";
 		};
+		class 53rd_Atlas_Standard_Pack
+		{
+		model = "Rucksacks";
+		Type = "Atlas_Ruck";
+		};
+		class 53rd_Atlas_Heavy_Pack
+		{
+		model = "Rucksacks";
+		Type = "Atlas_Heavy_Ruck";
+		};
 		
         //NCO_LR
 		class 53rd_Hephaestus_NCO_LR_515
@@ -133,6 +158,11 @@ class XtdGearInfos
 		{
 		model = "NCO_LR";
 		Type = "Rucksack_LR";
+		};
+		class 53rd_Atlas_RTO_Pack
+		{
+		model = "NCO_LR";
+		Type = "Atlas_Rucksack_LR";
 		};
 
         //Medic

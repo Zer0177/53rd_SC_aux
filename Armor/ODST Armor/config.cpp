@@ -1021,18 +1021,6 @@ class cfgWeapons
             };
 		};		
     };
-	class 53rd_CH252D_ODST_NEM: OPTRE_UNSC_CH252D_Helmet
-	{
-		dlc="OPTRE";
-		scope=2;
-		author="Article 2 Studios";
-		displayName="[53rd] CH252D Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
-			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
-		};
-	};
 	class 53rd_ODST_Heavy_DE : 53rd_ODST_NRM_DE
      {
 		scope = 2;
@@ -1184,30 +1172,6 @@ class cfgWeapons
             "53rd_SC_aux\tex\ODST Armor\53rd_ODST_DE.paa"
 		};
 	};
-	class 53rd_CH252D_Medic : OPTRE_UNSC_CH252D_Helmet
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        displayName = "[53rd] CH252D Helmet (Medic)";
-        author = "53rd AUX TEAM";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
-			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
-		};
-    };
-    class 53rd_CH252D_Medic_dp : OPTRE_UNSC_CH252D_Helmet
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        displayName = "[53rd] CH252D Helmet (Medic)";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
-			"optre_unsc_units\army\data\ODST_Helmet_Visor_ca.paa"
-		};
-    };		
-    
 	//WOODLAND
 class 53rd_ODST_Heavy_WD : 53rd_ODST_Heavy_DE
 	{
@@ -1457,6 +1421,7 @@ class 53rd_ODST_Heavy_UB:53rd_ODST_Heavy_DE
     scopeArsenal = 2;
     displayName = "[53rd] ODST Urban(Heavy)";
     author = "53rd AUX TEAM";
+	
 	hiddenSelectionsTextures[] = 
             {
 			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
@@ -1572,101 +1537,343 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
             };
 };		
     //Helmets
-
-
-  class 53rd_Custom_Helmet_ODST_Urban : OPTRE_UNSC_CH252D_Helmet
+	class 53rd_CH252D_Base : OPTRE_UNSC_CH252D_Helmet
+	 {
+        displayName = "[53rd & EOS] CH252D Helmet";
+        model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[]= 
+        {
+			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+			mass=1;
+            class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor=40;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor=15;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
+			};
+			class ItemInfo: HeadgearItem
+			{
+				mass=40;
+				modelSides[]={6};
+				passThrough=0.1;
+				hiddenSelections[]=
+				{
+					"camo",
+					"camo2",
+					//"H_Collar",
+					"H_Ghillie"
+				};
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
+				"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+				};
+				uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			};
+		};
+	 };
+	 class 53rd_CH252D_Base_dp : 53rd_CH252D_Base
+	 {
+        displayName = "[53rd & EOS] CH252D Helmet";
+        model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[]= 
+        {
+			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+			mass=1;
+            class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=20;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor=40;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor=15;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
+			};
+			class ItemInfo: HeadgearItem
+			{
+				mass=40;
+				modelSides[]={6};
+				passThrough=0.1;
+				hiddenSelections[]=
+				{
+					"camo",
+					"camo2",
+					//"H_Collar",
+					"H_Ghillie"
+				};
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
+				"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+				};
+				uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			};
+		};
+	 };
+	class 53rd_CH252D_Medic : 53rd_CH252D_Base
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] CH252D Helmet (Medic)";
+        author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie"
+        };
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+		};
+    };
+    class 53rd_CH252D_Medic_dp : 53rd_CH252D_Base_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] CH252D Helmet (Medic)";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Medic_Helmet.paa",
+			"optre_unsc_units\army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+  class 53rd_Custom_Helmet_ODST_Urban : 53rd_CH252D_Base
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Urban)";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_urban_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
 		};
     };
-	class 53rd_Custom_Helmet_ODST_Urban_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class 53rd_Custom_Helmet_ODST_Urban_dp : 53rd_CH252D_Base_dp
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Urban) dp";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_urban_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
     };
-    class 53rd_Custom_Helmet_ODST_Woodland : OPTRE_UNSC_CH252D_Helmet
+    class 53rd_Custom_Helmet_ODST_Woodland : 53rd_CH252D_Base
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Woodland)";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_woodland_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
 		};
     };
-	class 53rd_Custom_Helmet_ODST_Woodland_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class 53rd_Custom_Helmet_ODST_Woodland_dp : 53rd_CH252D_Base_dp
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Woodland) dp";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_woodland_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
     };
-    class 53rd_Custom_Helmet_ODST_Desert : OPTRE_UNSC_CH252D_Helmet
+    class 53rd_Custom_Helmet_ODST_Desert : 53rd_CH252D_Base
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Desert)";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_desert_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
 		};
     };
-	class 53rd_Custom_Helmet_ODST_Desert_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class 53rd_Custom_Helmet_ODST_Desert_dp : 53rd_CH252D_Base_dp
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Desert) dp";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_desert_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
     };
-    class 53rd_Custom_Helmet_ODST_Snow : OPTRE_UNSC_CH252D_Helmet
+    class 53rd_Custom_Helmet_ODST_Snow : 53rd_CH252D_Base
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Snow)";
         author = "53rd AUX TEAM";
+	    hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_snow_co.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_co.paa"
 		};
     };
-	class 53rd_Custom_Helmet_ODST_Snow_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class 53rd_Custom_Helmet_ODST_Snow_dp : 53rd_CH252D_Base_dp
     {
         scope = 2;
         scopeArsenal = 2;
         displayName = "[53rd] ODST Helmet (Snow) dp";
         author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\tex\ODST Armor\odst_helmet_snow_co.paa",
+			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
+		};
+    };
+	class 53rd_CH252D_ODST_NEM: 53rd_CH252D_Base
+	{
+		dlc="OPTRE";
+        scope = 2;
+        scopeArsenal = 2;
+		author="Article 2 Studios";
+		displayName="[53rd] CH252D Helmet (NEM)";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
+			"optre_unsc_units\army\data\odst_helmet_visor_co.paa"
+		};
+	};
+    class 53rd_CH252D_ODST_NEM_dp : 53rd_CH252D_Base_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] CH252D Helmet (NEM) dp";
+        author = "53rd AUX TEAM";
+		hiddenSelections[]=
+        {
+            "camo",
+            "camo2",
+            //"H_Collar",
+            "H_Ghillie",
+        };
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\tex\Hades Armor\ODST_Red_HR.paa",
 			"OPTRE_UNSC_Units\Army\data\ODST_Helmet_Visor_ca.paa"
 		};
     };	

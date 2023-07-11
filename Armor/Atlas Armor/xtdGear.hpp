@@ -11,7 +11,7 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"Normal","NormalV","Medic","MedicV","Scout"};
+				values[] = {"Normal","NormalV","Medic","MedicV","Scout","Scout_PL"};
 				class Normal
 				{
 					label = "Normal";
@@ -19,7 +19,7 @@ class XtdGearModels
 				};
 				class NormalV
 				{
-					label = "NormalV";
+					label = "Normal Visor";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Medic
@@ -29,12 +29,17 @@ class XtdGearModels
 				};
 				class MedicV
 				{
-					label = "MedicV";
+					label = "Medic Visor";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Scout
 				{
 					label = "Scout";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Scout_PL
+				{
+					label = "Scout PL";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				
@@ -69,6 +74,11 @@ class XtdGearInfos
 		{
 		model = "Atlashelms";
 		Type = "Scout";
+		};
+		class Ranger_PL_Scout
+		{
+		model = "Atlashelms";
+		Type = "Scout_PL";
 		};
 		
 
