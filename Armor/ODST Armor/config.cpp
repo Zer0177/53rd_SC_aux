@@ -1537,7 +1537,22 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "53rd_SC_aux\tex\ODST Armor\53rd_ODST_UB.paa"
             };
-};		
+};
+class 53rd_ODST_NEM_NRM:53rd_ODST_NRM_DE
+{
+	scope = 2;
+    scopeArsenal = 2;
+    displayName = "[53rd] ODST Urban(SL)";
+    author = "53rd AUX TEAM";
+	hiddenSelectionsTextures[] = 
+            {
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_Rifleman_Urban.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "53rd_SC_aux\tex\ODST Armor\53rd_ODST_UB.paa"
+            };
+};			
     //Helmets
 	class 53rd_CH252D_Medic : OPTRE_UNSC_CH252D_Helmet
     {
@@ -1547,7 +1562,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
         author = "53rd AUX TEAM";
 		hiddenSelections[]=
         {
-            "camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",
@@ -1598,7 +1613,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
         author = "53rd AUX TEAM";
 		hiddenSelections[]=
         {
-            "camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",
@@ -1637,7 +1652,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
         author = "53rd AUX TEAM";
 		hiddenSelections[]=
         {
-            "camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",
@@ -1676,7 +1691,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
         author = "53rd AUX TEAM";
 		hiddenSelections[]=
         {
-            "camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",
@@ -1692,8 +1707,8 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
     };
 	class 53rd_Custom_Helmet_ODST_Desert_dp : 53rd_CH252D_Medic_dp
     {
-        scope = 2;
-        scopeArsenal = 2;
+        scope = 1;
+        scopeArsenal = 1;
         displayName = "[53rd] ODST Helmet (Desert) dp";
         author = "53rd AUX TEAM";
         model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -1715,7 +1730,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
         author = "53rd AUX TEAM";
 	    hiddenSelections[]=
         {
-            "camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",
@@ -1731,8 +1746,8 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
     };
 	class 53rd_Custom_Helmet_ODST_Snow_dp : 53rd_CH252D_Medic_dp
     {
-        scope = 2;
-        scopeArsenal = 2;
+        scope = 1;
+        scopeArsenal = 1;
         displayName = "[53rd] ODST Helmet (Snow) dp";
         author = "53rd AUX TEAM";
         model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -1755,7 +1770,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
 		displayName="[53rd] CH252D Helmet (NEM)";
 		hiddenSelections[]=
         {
-            "camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",

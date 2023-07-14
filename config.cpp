@@ -15,6 +15,7 @@ class CfgPatches {
             "53rd_M1015_RV_mule",
 			"53rd_Bulldog_Panzer",
 			"53rd_HaloInf_ODST_F",
+			"53rd_Bulldog_MG",
         };
 		weapons[] = 
         {
