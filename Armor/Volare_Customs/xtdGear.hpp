@@ -10,12 +10,17 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Bigben"};
+				values[] = {"Bigben","Amatsu"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Bigben
 				{
 					label = "Big Ben";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Amatsu
+				{
+					label = "Amatsu";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -55,6 +60,19 @@ class XtdGearInfos
 		{
 		model = "VolareCustomHelm";
 		Person = "Bigben";
+        dp="no";
+		};
+		//Amatsu
+		class 53rd_Custom_Helmet_Amatsu
+		{
+		model = "VolareCustomHelm";
+		Person = "Amatsu";
+        dp="yes";
+		};
+		class 53rd_Custom_Helmet_Amatsu_dp
+		{
+		model = "VolareCustomHelm";
+		Person = "Amatsu";
         dp="no";
 		};
 

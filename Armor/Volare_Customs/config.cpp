@@ -81,6 +81,44 @@ class 53rd_Custom_Helmet_BigBen : 53rd_VX19_Black_Helmet
 			};
         };
     };
+    
+class 53rd_Custom_Helmet_Amatsu : 53rd_VX19_Black_Helmet
+    {
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[53rd] VX19 Flight Helmet (Amatsu)";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Amatsu.paa",
+			"53rd_SC_Aux\tex\visr_black_CO.paa"
+		};
+    };
+	class 53rd_Custom_Helmet_Amatsu_dp : 53rd_VX19_Black_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+		displayName = "[53rd] VX19 Flight Helmet (Amatsu) dp";
+		hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Amatsu.paa",
+			""
+		};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo","camo2"};
+            uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+            hiddenSelectionsTextures[] = 
+            {
+                "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Amatsu.paa",
+                ""
+            };
+			hiddenSelectionsMaterials[]=
+			{
+				"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",
+				"OPTRE_FC_Units\Marines\data\h3_pilothelmet_Visor_trans.rvmat"
+			};
+        };
+    };
 };
 
 class CfgVehicles
