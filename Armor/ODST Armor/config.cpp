@@ -1541,7 +1541,7 @@ class 53rd_ODST_SL_UB:53rd_ODST_SL_DE
 	 {
         displayName = "[53rd & EOS] CH252D Helmet";
         model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelectionsTextures[]= 
         {

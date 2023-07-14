@@ -11,7 +11,7 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow","Nem"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -32,6 +32,11 @@ class XtdGearModels
 				class Snow
 				{
 					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+				class Nem
+				{
+					label = "Nem";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
@@ -322,6 +327,11 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
+		class 53rd_CH252D_ODST_NEM:53rd_Custom_Helmet_ODST_Desert
+		{
+		Camo = "Nem";
+		};
+		
 		class 53rd_Custom_Helmet_ODST_Desert_dp
 		{
 		model = "ODSTHelm";
@@ -339,6 +349,10 @@ class XtdGearInfos
 		class 53rd_Custom_Helmet_ODST_Woodland_dp:53rd_Custom_Helmet_ODST_Desert_dp
 		{
 		Camo = "Woodland";
+		};
+		class 53rd_CH252D_ODST_NEM_dp:53rd_Custom_Helmet_ODST_Desert_dp
+		{
+		Camo = "Nem";
 		};
 	};
 };
