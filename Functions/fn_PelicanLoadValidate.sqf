@@ -45,8 +45,8 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case ( _veh isKindOf "53rd_Crocodile_APC" or _veh isKindOf "53rd_Crocodile_IFV" or _veh isKindOf "53rd_Crocodile_MGS" or _veh isKindOf "53rd_Crocodile_AA"):
-    {
+	case ( _veh isKindOf "53rd_Crocodile_APC" or _veh isKindOf "53rd_Crocodile_IFV" or _veh isKindOf "53rd_Crocodile_MGS" or _veh isKindOf "53rd_Crocodile_AA"or _veh isKindOf "53rd_Coyote_RV"):
+    {  
 		_veh attachTo [_pelican,[0,-10,-1.5]];
 		_veh setDir 180;
 		_loaded = true;

@@ -924,35 +924,63 @@ class CfgVehicles
 				textToolTip="<t color='#DF3A01'>Detach Individual Supply Pod Menu";
 				userActionID=8;
 			};
-			class RampClose
-			{
-				animPeriod=5;
-				condition="((this animationPhase ""cargoDoor_1"" > 0.5) AND (!(this getvariable [""VES_PelicanMG_Status"",false])) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this))";
-				displayName="Close Ramp";
-				displayNameDefault="Close Ramp";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=4;
-				radius=4;
-				showWindow=0;
-				statement="this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
-				textToolTip="Close Ramp";
-				userActionID=51;
-			};
 			class RampOpen
 			{
+				userActionID=50;
+				displayName="Close Ramp";
+				displayNameDefault="Close Ramp";
+				textToolTip="Close Ramp";
+				position="cargo_door_handle";
+				showWindow=0;
+				radius=100000;
+				priority=4;
+				onlyForPlayer=0;
+				condition="((this animationPhase ""cargoDoor_1"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement="this animate [""cargoDoor_1"",1]";
 				animPeriod=5;
-				condition="((this animationPhase ""cargoDoor_1"" < 0.5) AND (!(this getvariable [""VES_PelicanMG_Status"",false])) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this))";
+			};
+			class RampClose: RampOpen
+			{
+				userActionID=51;
 				displayName="Open Ramp";
 				displayNameDefault="Open Ramp";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=4;
-				radius=4;
-				showWindow=0;
-				statement="this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
 				textToolTip="Open Ramp";
-				userActionID=50;
+				priority=4;
+				condition="((this animationPhase ""cargoDoor_1"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement="this animate [""cargoDoor_1"",0]";
+				animPeriod=5;
+			};
+			class ThrusterEngage
+			{
+				userActionID=122;
+				displayName="ENGAGE FORWARD THRUSTERS";
+				displayNameDefault="ENGAGE FORWARD THRUSTERS";
+				textToolTip="ENGAGE FORWARD THRUSTERS";
+				position="cargo_door_handle";
+				priority=10;
+				radius=3;
+				onlyForPlayer=0;
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
+				animPeriod=4;
+			};
+			class ThrusterDisengage: ThrusterEngage
+			{
+				userActionID=123;
+				displayName="DISENGAGE FORWARD THRUSTERS";
+				displayNameDefault="DISENGAGE FORWARD THRUSTERS";
+				textToolTip="DISENGAGE FORWARD THRUSTERS";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+			};
+			class AirbrakeEngage: ThrusterEngage
+			{
+				userActionID=124;
+				displayName="ENGAGE AIRBRAKES";
+				displayNameDefault="ENGAGE AIRBRAKES";
+				textToolTip="ENGAGE AIRBRAKES";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
+				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
 			};
 			class ECM_ON
 			{

@@ -467,11 +467,20 @@ class cfgWeapons
 
 class CfgVehicles
 { //Bulldog
+    class Turrets;
+	class MainTurret;
 	class haloinf_ODST_Soldier_base_F;
 	class haloinf_Marine_Soldier_base_F;
 	class DMNS_Bulldog_FAV;
 	class DMNS_Bulldog_LRV_AGL;
-	class DMNS_Bulldog_LRV_MG;
+	class DMNS_Bulldog_LRV_MG
+	{
+		class Turrets
+		{
+			class MainTurret;
+				// Turret properties and methods go here
+		};
+	};
 	class 53rd_Bulldog_RV: DMNS_Bulldog_FAV
 	{
 		dlc = "53rd";
@@ -572,6 +581,64 @@ class CfgVehicles
         ace_repair_canRepair = 1;
 		ace_rearm_defaultSupply=1200;
 		ace_refuel_fuelCargo=1000;
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				body = "mainturret";
+				gun = "maingun";
+				animationsourcebody = "mainturret";
+				animationSourceGun = "maingun";
+				gunAxis = "Osa Hlavne";
+				gunBeg = "Usti hlavne";
+				gunEnd = "konec hlavne";
+				LODTurnedOut = 1100;
+				LODTurnedIn= 1100;
+				LODOpticsIn= 1100;
+				LODOpticsOut= 1100;
+				ejectDeadGunner = 1;
+				minElev = -15;
+				maxElev = 30; //45
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				turretAxis = "OsaVeze";
+				maxHorizontalRotSpeed = 1.75;
+				maxVerticalRotSpeed = 1.5;
+				gunnerAction = "OPTRE_Gunner_Gaus_Warthog"; //replace meeeeeeeeeeee
+				gunnerInAction = "OPTRE_Gunner_Gaus_Warthog"; //replace meeeeeeeeeeee
+				gunnerGetInAction = "GetInMRAP_01";
+				gunnerGetOutAction = "GetOutMRAP_01";
+				gunnerName = "Gunner";
+				hideWeaponsGunner = 0;
+				soundServo[] = { "",0.01,1 };
+				stabilizedInAxes = 3;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				commanding = 1;
+				primaryGunner = 1;
+				turretInfoType = "RscWeaponZeroing";
+				memoryPointsGetInGunner = "Pos Gunner";
+				memoryPointsGetInGunnerDir = "Pos Gunner dir";
+				gunnerLeftHandAnimName = "OtocHlaven";
+				gunnerRightHandAnimName = "OtocHlaven";
+				//gunnerRightLegAnimName = "OtocHlave";
+                //gunnerLeftLegAnimName = "OtocHlave";
+				memoryPointGun = "machinegun";
+				weapons[] = { "DMNS_M41_LAAG" };
+				magazines[] = { "DMNS_1000Rnd_127x99_M41","DMNS_1000Rnd_127x99_M41" };
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGunnerOutOptics= "gunnerview";
+				gunnerOpticsShowCursor = 1;
+				castGunnerShadow = 1;
+				startEngine = 0;
+				enableManualFire = 0;
+				gunnerOpticsModel = "a3\weapons_f\Reticle\optics_empty";
+				gunnerOutOpticsModel = "a3\weapons_f\Reticle\optics_empty"; // for turned out position
+				gunnerForceOptics = 0;
+				hasGunner = 1;
+			};
+		};
 		class TransportBackpacks
 		{
 		};
