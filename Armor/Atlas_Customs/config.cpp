@@ -1007,7 +1007,7 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Ranger_Scout_PL.paa",
+			"53rd_SC_aux\tex\Atlas Armor\Ranger_Scout_PL.paa",
 			"53rd_SC_aux\tex\Atlas Armor\Visor_CO.paa"
 		};
 	};
