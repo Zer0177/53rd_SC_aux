@@ -112,7 +112,7 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow","Nem"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -133,6 +133,11 @@ class XtdGearModels
 				class Snow
 				{
 					label = "snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+				class Nem
+				{
+					label = "Nem";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
@@ -167,6 +172,11 @@ class XtdGearInfos
 		{
 		Type = "rifleman";
 		Camo = "Urban";
+		};
+		class 53rd_ODST_NRM_NEM:53rd_UNSC_M52A_Armor_Base
+		{
+		Type = "rifleman";
+		Camo = "Nem";
 		};
 		class 53rd_ODST_SL_DE:53rd_UNSC_M52A_Armor_Base
 		{

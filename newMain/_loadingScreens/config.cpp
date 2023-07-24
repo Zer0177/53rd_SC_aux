@@ -1,4 +1,4 @@
-/*class CfgPatches
+class CfgPatches
 {
 	class 53rd_LoadingScreens
 	{
@@ -6,6 +6,8 @@
 		addonRootClass="53rd_main_loading_screen";
 		requiredAddons[]=
 		{
+		"OPTRE_Core",
+		"19th_Fleet_Armor",
 		};
 		requiredVersion=0.1;
 		units[]={};

@@ -1542,22 +1542,22 @@ class 53rd_ODST_NEM_NRM:53rd_ODST_NRM_DE
 {
 	scope = 2;
     scopeArsenal = 2;
-    displayName = "[53rd] ODST Urban(SL)";
+    displayName = "[53rd] ODST Urban(NEM)";
     author = "53rd AUX TEAM";
 	hiddenSelectionsTextures[] = 
             {
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Vest_Urban.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Armor_Rifleman_Urban.paa",
-			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Leg_Urban.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-            "53rd_SC_aux\tex\ODST Armor\53rd_ODST_UB.paa"
+            "OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+			"optre_unsc_units\army\data\armor_odst_co.paa",
+            "53rd_SC_aux\tex\Hades Armor\Legs_odst_Red_co.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "53rd_SC_aux\tex\Hades Armor\ODST_HR_Red_Body.paa"
             };
 };			
     //Helmets
 	class 53rd_CH252D_Medic : OPTRE_UNSC_CH252D_Helmet
     {
         scope = 2;
-        scopeArsenal = 2;
+        scopeArsenal = 1;
         displayName = "[53rd] CH252D Helmet (Medic)";
         author = "53rd AUX TEAM";
 		hiddenSelections[]=

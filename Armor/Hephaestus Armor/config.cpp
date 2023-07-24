@@ -14,6 +14,21 @@ class CfgPatches {
 		"53rd_Hephaestus_Infantry_Veh",
 		"53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor",
 		"53rd_Hephaestus_Rifleman_CH252_Urban",
+		"53rd_Hephaestus_CH252_Visor",
+		"53rd_Hephaestus_CH252_Visor_dp",
+		"53rd_Hephaestus_CH252_Visor_MV",
+		"53rd_Hephaestus_CH252_Visor_MNV",
+		"53rd_Hephaestus_Rifleman_CH252_Woodland_No_Visor",
+		"53rd_Hephaestus_Rifleman_CH252_Woodland_Visor",
+		"53rd_Hephaestus_Rifleman_CH252_Desert_No_Visor",
+		"53rd_Hephaestus_Rifleman_CH252_Desert_Visor",
+		"53rd_Hephaestus_Rifleman_CH252_Winter_No_Visor",
+		"53rd_Hephaestus_Rifleman_CH252_Winter_Visor",
+		"53rd_Apollo_uniform_MSR_Rifleman_Urban",
+		"53rd_Apollo_uniform_MSR_Rifleman_Winter",
+		"53rd_Apollo_CH252_Visor_MNV",
+		"53rd_Apollo_CH252_Visor_MV",
+		
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -51,7 +66,93 @@ class cfgWeapons
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
 	class TCF_Reach_Scout_Helmet;
-	
+///Apollo Urban
+class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Rifleman Armor (Urban)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
+			};
+			uniformType = "Neopren";
+			uniformClass="53rd_Apollo_Infantry_Veh_Rifleman_Urban";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Apollo_uniform_MSR_Rifleman_Winter: Uniform_Base
+	{
+		author="Body&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Rifleman Armor (Winter)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_AS_co.paa",
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_AS_co.paa",
+			};
+			uniformType = "Neopren";
+			uniformClass="53rd_Apollo_Infantry_Veh_Rifleman_Winter";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
 //Rifleman 
 	class 53rd_Hephaestus_uniform_MSR_Rifleman_Urban: Uniform_Base
 	{
@@ -72,9 +173,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Armor_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Rework_RFM_Armor_Urban.paa",
 		};
 		class ItemInfo: UniformItem
 		{
@@ -86,9 +187,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Armor_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Rework_RFM_Armor_Urban.paa",
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Rifleman_Urban";
@@ -249,7 +350,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\SPC\SPC_Urban\53rd_Rework_SPC_Armor_Urban.paa",
 		};
@@ -263,7 +364,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\SPC\SPC_Urban\53rd_Rework_SPC_Armor_Urban.paa",
 			};
@@ -601,7 +702,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\JTAC\JTAC_Urban\53rd_Rework_JTAC_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\TL\53rd_Hephaestus_Army_NCO_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Armor_Urban.paa",
 		};
@@ -615,7 +716,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\JTAC\JTAC_Urban\53rd_Rework_JTAC_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\TL\53rd_Hephaestus_Army_NCO_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Armor_Urban.paa",
 			};
@@ -777,7 +878,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Urban\53rd_Rework_Medic_Armor_Urban.paa",
 		};
@@ -791,7 +892,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Urban\53rd_Rework_Medic_Armor_Urban.paa",
 			};
@@ -865,7 +966,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Desert\53rd_Rework_Rifleman_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Desert\53rd_Rework_SL_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Desert\53rd_Rework_Rifleman_Pants_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Desert\53rd_Rework_Medic_Armor_Desert.paa",
 		};
@@ -879,7 +980,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Desert\53rd_Rework_Rifleman_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Desert\53rd_Rework_SL_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Desert\53rd_Rework_Rifleman_Pants_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Desert\53rd_Rework_Medic_Armor_Desert.paa",
 			};
@@ -935,14 +1036,15 @@ class cfgWeapons
 	};
 	//Helmets
 	//Rifleman
-	class 53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear
+	//Urban
+	class 53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Hephaestus Rifleman Helmet (Urban / No Visor)";
+		displayName="[53rd] Hephaestus Helmet (Urban / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -952,77 +1054,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor_dp: HaloInf_Marine_WDL_NV_headgear
+	class 53rd_Hephaestus_CH252_Visor: HaloInf_Marine_WDL_headgear
 	{
-		author="Cherryy&Scarecrow";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		displayName="[53rd] Hephaestus Rifleman Helmet (Urban) dp";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
-		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"_Visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Helmet_Urban.paa"
-		};
-	};
-	class 53rd_Hephaestus_Rifleman_CH252_Urban: HaloInf_Marine_WDL_headgear
-	{
-		author="Cherryy&Scarecrow";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		displayName="[53rd] Hephaestus Rifleman Helmet (Urban)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
-		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"_Visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Helmet_Urban"
-		};
-	};
-	class 53rd_Hephaestus_Rifleman_CH252_Urban_dp: HaloInf_Marine_WDL_headgear
-	{
-		author="Cherryy&Scarecrow";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		displayName="[53rd] Hephaestus Rifleman Helmet (Urban) dp";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
-		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"_Visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Helmet_Urban"
-		};
-	};
-	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear: HaloInf_Marine_WDL_NV_headgear
-	{
-		author="Body&Scarecrow";
+		author="Cherri&Scarecrow";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Hephaestus Medic (No Visor)";
+		displayName="[53rd] Hephaestus Helmet (Urban / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1032,37 +1074,18 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear_dp: HaloInf_Marine_WDL_NV_headgear
+	//Woodland
+	class 53rd_Hephaestus_Rifleman_CH252_Woodland_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
-		author="Body&Scarecrow";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		displayName="[53rd] Hephaestus Medic dp (No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
-		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"_Visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
-		};
-	};
-	class 53rd_Hephaestus_CH252_MD: HaloInf_Marine_WDL_headgear
-	{
-		author="Body&Scarecrow";
+		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Hephaestus Medic (Yes Visor)";
+		displayName="[53rd] Hephaestus Helmet (Woodland / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1072,17 +1095,182 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Woodland.paa"
 		};
 	};
-	class 53rd_Ranger_CH252_MD_dp: HaloInf_Marine_WDL_headgear
+	class 53rd_Hephaestus_Rifleman_CH252_Woodland_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
-		author="Body&Scarecrow";
+		author="Cherryy&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet (Woodland / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Woodland.paa"
+		};
+	};
+	//Desert
+		class 53rd_Hephaestus_Rifleman_CH252_Desert_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	{
+		author="Cherryy&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet (Desert / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Desert.paa"
+		};
+	};
+	class 53rd_Hephaestus_Rifleman_CH252_Desert_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	{
+		author="Cherryy&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet (Desert / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Desert.paa"
+		};
+	};
+	//Winter
+	class 53rd_Hephaestus_Rifleman_CH252_Winter_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	{
+		author="Cherryy&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet (Winter / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Winter.paa"
+		};
+	};
+	class 53rd_Hephaestus_Rifleman_CH252_Winter_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	{
+		author="Cherryy&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet (Winter / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Winter.paa"
+		};
+	};
+	//Medic
+	class 53rd_Hephaestus_CH252_Visor_MV: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet Medic (Yes Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\53rd_Rework_Medic_Helmet.paa"
+		};
+	};
+	class 53rd_Hephaestus_CH252_Visor_MNV: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Hephaestus Helmet Medic (No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\53rd_Rework_Medic_Helmet.paa"
+		};
+	};
+
+/// Apollo
+	class 53rd_Apollo_CH252_Visor_MV: HaloInf_Marine_WDL_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Apollo Helmet (Yes Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
+		};
+	};
+	class 53rd_Apollo_CH252_Visor_MV_DP: HaloInf_Marine_WDL_headgear
+	{
+		author="Cherri&Scarecrow";
 		scope=1;
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Hephaestus Medic dp (Yes Visor)";
+		displayName="[53rd] Apollo Helmet (Yes Visor) DP";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1092,21 +1280,63 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
+		};
+	};
+	class 53rd_Apollo_CH252_Visor_MNV: HaloInf_Marine_WDL_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Apollo Helmet  (No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
+		};
+	};
+	class 53rd_Apollo_CH252_Visor_MNV_DP: HaloInf_Marine_WDL_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Apollo Helmet  (No Visor) DP";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
 		};
 	};
 };
+
 //Rifleman 2
 class cfgvehicles
 {
 	class haloinf_Marine_Soldier_base_F;
-	class 53rd_Hephaestus_Infantry_Veh_Rifleman_Urban: haloinf_Marine_Soldier_base_F
+	//Apollo
+		class 53rd_Apollo_Infantry_Veh_Rifleman_Urban: haloinf_Marine_Soldier_base_F
 	{
 			scope=2;
 			scopeCurator=2;
 			scopeArsenal=2;
 			side=1;
-			displayName="[53rd] Ranger Urban";
+			displayName="[53rd] Apollo Urban";
 			hiddenSelections[]=
 			{
 				"Camo1",
@@ -1115,9 +1345,72 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Armor_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Rework_RFM_Armor_Urban.paa",
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_Apollo_uniform_MSR_Rifleman_Urban";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
+		class 53rd_Apollo_Infantry_Veh_Rifleman_Winter: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Apollo Winter";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_AS_co.paa",
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_Apollo_uniform_MSR_Rifleman_Winter";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
+//Urban
+	class 53rd_Hephaestus_Infantry_Veh_Rifleman_Urban: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Hephaestus Rifleman Armor (Urban)";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Rework_RFM_Armor_Urban.paa",
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_Urban";
@@ -1243,7 +1536,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\SPC\SPC_Urban\53rd_Rework_SPC_Armor_Urban.paa",
 			};
@@ -1495,7 +1788,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\JTAC\JTAC_Urban\53rd_Rework_JTAC_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\TL\53rd_Hephaestus_Army_NCO_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Urban\53rd_Rework_SL_Armor_Urban.paa",
 			};
@@ -1624,7 +1917,7 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Urban\53rd_Rework_Medic_Armor_Urban.paa",
 			};
@@ -1720,7 +2013,7 @@ class cfgvehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Top_Winter.paa",
+		"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Winter\53rd_Rework_SL_Armor_Winter.paa",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Winter\53rd_Rework_Medic_Armor_Winter.paa",
 		};
@@ -1737,6 +2030,7 @@ class cfgvehicles
 		};
 	};
 };
+
 
 
 
