@@ -629,7 +629,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC"
+			"53rd_SC_aux\Armor\Atlas_Customs\53rd_Atlas_Rework_RFM_Helmet.paa"
 		};
 	};
 	class 53rd_Ranger_CH252_NML_dp: HaloInf_Marine_WDL_NV_headgear
@@ -649,7 +649,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC"
+			"53rd_SC_aux\Armor\Atlas_Customs\53rd_Atlas_Rework_RFM_Helmet.paa"
 		};
 	};
 	class 53rd_Ranger_CH252_NV: HaloInf_Marine_WDL_headgear
@@ -668,7 +668,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\53rd_Atlas_Rework_RFM_Helmet.paa"
 		};
 	};
 	class 53rd_Ranger_CH252_NV_dp: HaloInf_Marine_WDL_headgear
@@ -687,7 +687,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_N_MC.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\53rd_Atlas_Rework_RFM_Helmet.paa"
 		};
 	};
 	//ranger scout
@@ -1045,7 +1045,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Atlas_Rework__Medic_Helmet.paa"
 		};
 	};
 	class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear_dp: HaloInf_Marine_WDL_NV_headgear
@@ -1065,7 +1065,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Atlas_Rework__Medic_Helmet.paa"
 		};
 	};
 	class 53rd_Ranger_CH252_MD: HaloInf_Marine_WDL_headgear
@@ -1085,7 +1085,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Atlas_Rework__Medic_Helmet.paa"
 		};
 	};
 	class 53rd_Ranger_CH252_MD_dp: HaloInf_Marine_WDL_headgear
@@ -1105,7 +1105,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Atlas Armor\Halo_Ranger_Woodland_Medic.paa"
+			"53rd_SC_aux\tex\Atlas Armor\53rd_Atlas_Rework__Medic_Helmet.paa"
 		};
 	};
 };

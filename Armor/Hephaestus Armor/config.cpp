@@ -28,6 +28,10 @@ class CfgPatches {
 		"53rd_Apollo_uniform_MSR_Rifleman_Winter",
 		"53rd_Apollo_CH252_Visor_MNV",
 		"53rd_Apollo_CH252_Visor_MV",
+		"53rd_Apollo_CH252_Visor_MNV_Urban",
+		"53rd_Apollo_CH252_Visor_MNV_Win",
+		"53rd_Apollo_CH252_Visor_MV_Urban",
+		"53rd_Apollo_CH252_Visor_MV_Win",
 		
         };
 		requiredVersion = 0.100000;
@@ -66,6 +70,86 @@ class cfgWeapons
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
 	class TCF_Reach_Scout_Helmet;
+	class MA_TGE_InvisVest;
+	
+/////Base Class
+	
+class 53rd_InvisVest: MA_TGE_InvisVest
+	{
+		author="Scarecrow";
+		scope=2;
+		displayName="[53rd] Invisible Vest";
+		picture="\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
+		model="\Halo_marine_02\null.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Invis Vest\Vest\null_CA.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\Halo_marine_02\null.p3d";
+			containerClass="Supply120";
+			mass=80;
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=35;
+					passThrough=0.5;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=35;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Hands
+				{
+					hitpointName="HitHands";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+	
+	
 ///Apollo Urban
 class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 	{
@@ -88,7 +172,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 		{
 			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Urban_AS_co.paa",
 		};
 		class ItemInfo: UniformItem
 		{
@@ -102,11 +186,11 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			{
 			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Urban_AS_co.paa",
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Apollo_Infantry_Veh_Rifleman_Urban";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -149,7 +233,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Apollo_Infantry_Veh_Rifleman_Winter";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -193,7 +277,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Rifleman_Urban";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -237,7 +321,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Rifleman_Des";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -281,7 +365,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Rifleman_WDL";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -325,7 +409,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Rifleman_WTR";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -370,7 +454,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SPC_Urban";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -414,7 +498,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SPC_WDL";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -458,7 +542,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SPC_DES";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -502,7 +586,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SPC_WTR";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -546,7 +630,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_JTAC_Urban";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -589,7 +673,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_JTAC_Woodland";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -632,7 +716,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_JTAC_Desert";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -676,7 +760,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_JTAC_Winter";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -722,7 +806,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SL_Urban";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -766,7 +850,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SL_Woodland";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -810,7 +894,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SL_Desert";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -854,7 +938,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_SL_Winter";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -898,7 +982,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Medic_Urban";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -942,7 +1026,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Medic_Woodland";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -986,7 +1070,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Medic_Desert";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -1010,8 +1094,8 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Top_Winter.paa",
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Winter\53rd_Rework_SL_Top_Winter.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Winter\53rd_Rework_Medic_Armor_Winter.paa",
 		};
 		class ItemInfo: UniformItem
@@ -1024,13 +1108,13 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Top_Winter.paa",
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Winter\53rd_Rework_SL_Top_Winter.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Winter\53rd_Rework_Medic_Armor_Winter.paa",
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Medic_Winter";
-			containerClass="Supply150";
+			containerClass="Supply100";
 			mass=80;
 		};
 	};
@@ -1098,7 +1182,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Woodland.paa"
 		};
 	};
-	class 53rd_Hephaestus_Rifleman_CH252_Woodland_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Hephaestus_Rifleman_CH252_Woodland_Visor: HaloInf_Marine_WDL_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
@@ -1139,7 +1223,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Desert.paa"
 		};
 	};
-	class 53rd_Hephaestus_Rifleman_CH252_Desert_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Hephaestus_Rifleman_CH252_Desert_Visor: HaloInf_Marine_WDL_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
@@ -1180,7 +1264,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Helmets\53rd_Rework_Rifleman_Helmet_Winter.paa"
 		};
 	};
-	class 53rd_Hephaestus_Rifleman_CH252_Winter_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Hephaestus_Rifleman_CH252_Winter_Visor: HaloInf_Marine_WDL_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
@@ -1201,7 +1285,7 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 		};
 	};
 	//Medic
-	class 53rd_Hephaestus_CH252_Visor_MV: HaloInf_Marine_WDL_NV_headgear
+	class 53rd_Hephaestus_CH252_Visor_MV: HaloInf_Marine_WDL_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=2;
@@ -1243,14 +1327,15 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 	};
 
 /// Apollo
-	class 53rd_Apollo_CH252_Visor_MV: HaloInf_Marine_WDL_headgear
+//URBAN MODELS
+class 53rd_Apollo_CH252_Visor_MV_Urban: HaloInf_Marine_WDL_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Apollo Helmet (Yes Visor)";
+		displayName="[53rd] Apollo Helmet Urban (Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1263,14 +1348,14 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
 		};
 	};
-	class 53rd_Apollo_CH252_Visor_MV_DP: HaloInf_Marine_WDL_headgear
+	class 53rd_Apollo_CH252_Visor_MV_Urban_DP: HaloInf_Marine_WDL_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=1;
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Apollo Helmet (Yes Visor) DP";
+		displayName="[53rd] Apollo Helmet Urban (Visor) DP";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1283,14 +1368,14 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
 		};
 	};
-	class 53rd_Apollo_CH252_Visor_MNV: HaloInf_Marine_WDL_headgear
+	class 53rd_Apollo_CH252_Visor_MNV_Urban: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Apollo Helmet  (No Visor)";
+		displayName="[53rd] Apollo Helmet Urban (No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1303,14 +1388,14 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
 		};
 	};
-	class 53rd_Apollo_CH252_Visor_MNV_DP: HaloInf_Marine_WDL_headgear
+	class 53rd_Apollo_CH252_Visor_MNV_Urban_DP: HaloInf_Marine_WDL_NV_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=1;
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Apollo Helmet  (No Visor) DP";
+		displayName="[53rd] Apollo Helmet Urban (No Visor) DP";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -1321,6 +1406,87 @@ class 53rd_Apollo_uniform_MSR_Rifleman_Urban: Uniform_Base
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Helmet_W_Visor_co.paa"
+		};
+	};
+/// WINTER MODELS
+	class 53rd_Apollo_CH252_Visor_MV_Win: HaloInf_Marine_WDL_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Apollo Helmet Winter (Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_Helmet_W_Visor_co.paa"
+		};
+	};
+	class 53rd_Apollo_CH252_Visor_MV_Win_DP: HaloInf_Marine_WDL_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Apollo Helmet Winter (Visor) DP";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_Helmet_W_Visor_co.paa"
+		};
+	};
+	class 53rd_Apollo_CH252_Visor_MNV_Win: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Apollo Helmet Winter  (No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_Helmet_W_Visor_co.paa"
+		};
+	};
+	class 53rd_Apollo_CH252_Visor_MNV_Win_DP: HaloInf_Marine_WDL_NV_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Apollo Helmet Winter  (No Visor) DP";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Winterized_Helmet_W_Visor_co.paa"
 		};
 	};
 };
@@ -1345,9 +1511,9 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_top_AS_co.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Rework_RFM_Armor_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Apollo\53rd_Apollo_Army_Urban_AS_co.paa",
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_Apollo_uniform_MSR_Rifleman_Urban";
@@ -1918,7 +2084,7 @@ class cfgvehicles
 			hiddenSelectionsTextures[]=
 			{
 			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\53rd_Hephaestus_Army_top_AS_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Urban\53rd_Rework_Rifleman_Pants_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Urban\53rd_Rework_Medic_Armor_Urban.paa",
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
@@ -1949,7 +2115,7 @@ class cfgvehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Top_Woodland.paa",
+		"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Top_Woodland",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Pants_Woodland.paa",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Woodland\53rd_Rework_Medic_Armor_Woodland.paa",
 		};
@@ -1981,7 +2147,7 @@ class cfgvehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Desert\53rd_Rework_Rifleman_Top_Desert.paa",
+		"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Desert\53rd_Rework_SL_Top_Desert.paa",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Desert\53rd_Rework_Rifleman_Pants_Desert.paa",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Desert\53rd_Rework_Medic_Armor_Desert.paa",
 		};
@@ -2013,8 +2179,8 @@ class cfgvehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-		"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Winter\53rd_Rework_SL_Armor_Winter.paa",
-		"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
+		"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Winter\53rd_Rework_SL_Top_Winter.paa",
+        "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Winter\53rd_Rework_Rifleman_Pants_Winter.paa",
 		"53rd_SC_aux\Armor\Hephaestus Armor\Medic\Medic_Winter\53rd_Rework_Medic_Armor_Winter.paa",
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
