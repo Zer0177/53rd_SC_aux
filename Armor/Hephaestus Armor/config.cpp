@@ -38,6 +38,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
+#include "xtdGear.hpp"
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
