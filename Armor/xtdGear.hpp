@@ -322,25 +322,25 @@ class XtdGearInfos
 		};
         
         //Atlas Helmets
-        class 53rd_Ranger_CH252_NV
+        class 53rd_Atlas_CH252
 		{
 		model = "Atlashelms";
 		Type = "NormalV";
         Camo = "Urban";
 		};
-		class 53rd_Ranger_CH252_MD:53rd_Ranger_CH252_NV
+		class 53rd_Ranger_CH252_MD:53rd_Atlas_CH252
 		{
         model = "Atlashelms";
 		Type = "MedicV";
         Camo = "Urban";
 		};
-		class 53rd_Ranger_CH252_NML
+		class 53rd_Atlas_CH252_NV
 		{
 		model = "Atlashelms";
 		Type = "Normal";
         Camo = "Urban";
 		};
-		class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear:53rd_Ranger_CH252_NML
+		class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear:53rd_Atlas_CH252_NV
 		{
         model = "Atlashelms";
 		Type = "Medic";

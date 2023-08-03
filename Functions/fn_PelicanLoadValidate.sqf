@@ -3,29 +3,35 @@ _veh = _this select 1;
 _loaded = false;
 	
 switch true do {
-		
-	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2" or _veh isKindOf "53rd_Scorpion" or _veh isKindOf "53rd_Scorpion_125" or _veh isKindOf "53rd_Grizzly" or _veh isKindOf "53rd_M875_SPH") : 
+
+	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2" or _veh isKindOf "53rd_Scorpion" or _veh isKindOf "53rd_Scorpion_125" or _veh isKindOf "53rd_Grizzly" or _veh isKindOf "53rd_M875_SPH"): 
 	{
 		_veh attachTo [_pelican,[0,-9, -4]];
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_M808S") : 
+	case (_veh isKindOf "OPTRE_M808S" or _veh isKindOf "TG_Wolverine_GDI_01") : 
 	{
-		_veh attachTo [_pelican,[0,-9, -4]];
+		_veh attachTo [_pelican,[0,-9, -1.5]];
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "53rd_Merkava_BB"):
-    {
-		_veh attachTo [_pelican,[0,-8,-0.30]];
-		_veh setDir 180;
-		_loaded = true;
-    };
 	case (_veh isKindOf "53rd_IFV76_A"):
 	{
 		_veh attachTo [_pelican,[0,-6,-4]]; 
 		_loaded = true;  
+	};
+	    case (_veh isKindOf "TG_Hover_MLRS_GDI_01") : 
+	{
+		_veh attachTo [_pelican,[0,-9, -3]];
+		_veh setDir 180;
+		_loaded = true;
+	};
+	    case (_veh isKindOf "TG_Juggernaut_GLI_01") : 
+	{
+		_veh attachTo [_pelican,[0,-9, -8]];
+		_veh setDir 180;
+		_loaded = true;
 	};
     case (_veh isKindOf "53rd_UNSC_hornet") : 
 	{
