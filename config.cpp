@@ -25,10 +25,6 @@ class CfgPatches {
 			"53rd_MA32GL",
 			"H_HelmetCrew_B",
 			"53rd_HelmetCrew_B",
-			"53rd_Ranger_CH252_NML",
-			"53rd_Ranger_CH252_NV",
-			"53rd_Ranger_CH252_MD",
-			"53rd_Ranger_CH252_MD_NV",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

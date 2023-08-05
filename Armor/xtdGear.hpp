@@ -256,7 +256,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "LoneWulf";
 		};
-		class 53rd_Atlas_LoneWulf_Custom_Helmet_SN
+		class 53rd_Atlas_LoneWulf_Custom_Helmet_SN:53rd_Atlas_LoneWulf_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Snow";
@@ -276,7 +276,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Serpent";
 		};
-		class 53rd_Atlas_Serpent_Custom_Helmet_SN
+		class 53rd_Atlas_Serpent_Custom_Helmet_SN:53rd_Atlas_Serpent_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Snow";
@@ -296,7 +296,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Tsuki";
 		};
-		class 53rd_Atlas_Tsuki_Custom_Helmet_SN
+		class 53rd_Atlas_Tsuki_Custom_Helmet_SN:53rd_Atlas_Tsuki_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Snow";
@@ -316,7 +316,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Texas";
 		};
-		class 53rd_Atlas_Texas_Custom_Helmet_SN
+		class 53rd_Atlas_Texas_Custom_Helmet_SN:53rd_Atlas_Texas_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Snow";
@@ -332,7 +332,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "LoneWulf";
 		};
-		class 53rd_Atlas_LoneWulf_Armor_SN
+		class 53rd_Atlas_LoneWulf_Armor_SN:53rd_Atlas_LoneWulf_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Snow";
@@ -352,7 +352,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Serpent";
 		};
-		class 53rd_Atlas_Serpent_Armor_SN
+		class 53rd_Atlas_Serpent_Armor_SN:53rd_Atlas_Serpent_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Snow";
@@ -372,7 +372,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Tsuki";
 		};
-		class 53rd_Atlas_Tsuki_Armor_SN
+		class 53rd_Atlas_Tsuki_Armor_SN:53rd_Atlas_Tsuki_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Snow";
@@ -392,7 +392,7 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Texas";
 		};
-		class 53rd_Atlas_Texas_Armor_SN
+		class 53rd_Atlas_Texas_Armor_SN:53rd_Atlas_Texas_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Snow";
@@ -400,25 +400,25 @@ class XtdGearInfos
 		};
         
         //Atlas Helmets
-        class 53rd_Ranger_CH252_NV
+        class 53rd_Atlas_CH252
 		{
 		model = "Atlashelms";
 		Type = "NormalV";
         Camo = "Urban";
 		};
-		class 53rd_Ranger_CH252_MD:53rd_Ranger_CH252_NV
+		class 53rd_Ranger_CH252_MD: 53rd_Atlas_CH252
 		{
         model = "Atlashelms";
 		Type = "MedicV";
         Camo = "Urban";
 		};
-		class 53rd_Ranger_CH252_NML
+		class 53rd_Atlas_CH252_NV
 		{
 		model = "Atlashelms";
 		Type = "Normal";
         Camo = "Urban";
 		};
-		class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear:53rd_Ranger_CH252_NML
+		class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear:53rd_Atlas_CH252_NV
 		{
         model = "Atlashelms";
 		Type = "Medic";

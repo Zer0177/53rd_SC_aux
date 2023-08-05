@@ -1,12 +1,12 @@
 class CfgPatches {
-    class 53rd_ODST {
+    class 53th_ODST {
         units[] = 
         {
             ""
         };
         weapons[] = 
         {
-            "53rd_CH252D_Base"
+            ""
         };
         requiredVersion = 0.100000;
         requiredAddons[] = {};
@@ -32,7 +32,7 @@ class cfgWeapons
 	{
 		author="Article 2 Studios";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
-		displayName="M52A Body Armor (Heavy) [Woodland]";
+	displayName="[53rd] M52A Body Armor (Heavy) [Woodland]";
 		hiddenSelections[]=
 		{
 			"camo",
