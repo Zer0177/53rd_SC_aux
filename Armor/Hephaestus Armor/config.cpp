@@ -7,18 +7,6 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-		"53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor",
-		"53rd_Hephaestus_Rifleman_CH252_Urban",
-		"53rd_Hephaestus_CH252_Visor",
-		"53rd_Hephaestus_CH252_Visor_dp",
-		"53rd_Hephaestus_CH252_Visor_MV",
-		"53rd_Hephaestus_CH252_Visor_MNV",
-		"53rd_Hephaestus_Rifleman_CH252_Woodland_No_Visor",
-		"53rd_Hephaestus_Rifleman_CH252_Woodland_Visor",
-		"53rd_Hephaestus_Rifleman_CH252_Desert_No_Visor",
-		"53rd_Hephaestus_Rifleman_CH252_Desert_Visor",
-		"53rd_Hephaestus_Rifleman_CH252_Winter_No_Visor",
-		"53rd_Hephaestus_Rifleman_CH252_Winter_Visor",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

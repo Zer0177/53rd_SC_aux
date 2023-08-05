@@ -6,13 +6,6 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-			"53rd_haloinfodst_U_uniform",
-			"53rd_Ranger_CH252_NML",
-			"53rd_Ranger_CH252_NV",
-			"53rd_Ranger_CH252_MD",
-			"53rd_Ranger_CH252_MD_NV",
-			"Ranger_Scout",
-			"Ranger_Scout_SN",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -58,7 +51,6 @@ class cfgWeapons
 	{
 		author="Body&Scarecrow";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Atlas Helmet (NV)";
@@ -67,7 +59,7 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"Camo1",
-			"_Visor"
+			"_Visor",
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -78,7 +70,6 @@ class cfgWeapons
 	{
 		author="Body&Scarecrow";
 		scope=1;
-		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas Helmet dp (NV)";
@@ -87,7 +78,7 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"Camo1",
-			"_Visor"
+			"_Visor",
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -98,7 +89,6 @@ class cfgWeapons
 	{
 		author="Body&Scarecrow";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Atlas Helmet";
@@ -136,7 +126,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -152,7 +141,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -168,7 +156,6 @@ class cfgWeapons
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Atlas Medic (NV)";
@@ -244,8 +231,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Medic\53rd_Atlas_Rework__Medic_Helmet.paa"
 		};
 	};
-};
-
+}; 
 class cfgvehicles
 {	
 };

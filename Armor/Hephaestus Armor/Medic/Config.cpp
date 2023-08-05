@@ -7,10 +7,6 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-		"53rd_Hephaestus_uniform_MSR_Medic_Urban",
-		"53rd_Hephaestus_uniform_MSR_Medic_Woodland",
-		"53rd_Hephaestus_uniform_MSR_Medic_Desert",
-		"53rd_Hephaestus_uniform_MSR_Medic_Winter",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

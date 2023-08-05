@@ -7,22 +7,6 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-			"53rd_Atlas_LoneWulf_Armor",
-			"53rd_Atlas_LoneWulf_Armor_SN",
-			"53rd_Atlas_Serpent_Armor",
-			"53rd_Atlas_Serpent_Armor_SN",
-			"53rd_Atlas_Texas_Armor",
-			"53rd_Atlas_Texas_Armor_SN",
-			"53rd_Atlas_Serpent_Armor",
-			"53rd_Atlas_Serpent_Armor_SN",
-			"53rd_LoneWulf_V",
-			"53rd_LoneWulf_SN_V",
-			"53rd_Serpent_V",
-			"53rd_Serpent_SN_V",
-			"53rd_Tsuki_V",
-			"53rd_Tsuki_SN_V",		
-			"53rd_Texas_V",
-			"53rd_Texas_SN_V",				
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
@@ -61,9 +45,7 @@ class cfgWeapons
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
 	class TCF_Reach_Scout_Helmet;
-	class MA_TGE_InvisVest;
-	
-//Rifleman 
+	//Custom Armor
 	class 53rd_Atlas_LoneWulf_Armor: Uniform_Base
 	{
 		author="Tsuki";
@@ -173,7 +155,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Top.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\\Serpent\Urban\Serpent_Custom_Top.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Armor.paa" 
 		};
@@ -423,6 +405,279 @@ class cfgWeapons
 			mass=80;
 		};
 	};
+		//Custom Helmets
+	class 53rd_Atlas_LoneWulf_Custom_Helmet: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (LoneWulf / Urban)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Helmet.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (LoneWulf / Urban) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Helmet.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (LoneWulf / Snow)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Helmet_SN.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (LoneWulf / Snow) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Helmet_SN.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Serpent_Custom_Helmet: HaloInf_Marine_WDL_headgear 
+	{ 
+		author="Tsuki"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		displayName="[53rd] Custom Helmet (Serpent / Urban)"; 
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa"; 
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d"; 
+		hiddenSelections[]= 
+		{ 
+			"Camo1", 
+			"_Visor" 
+		}; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Helmet.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Serpent_Custom_Helmet_dp: HaloInf_Marine_WDL_headgear 
+	{ 
+		author="Tsuki"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		displayName="[53rd] Custom Helmet (Serpent / Urban) dp"; 
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa"; 
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d"; 
+		hiddenSelections[]= 
+		{ 
+			"Camo1", 
+			"_Visor" 
+		}; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Helmet.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Serpent_Custom_Helmet_SN: HaloInf_Marine_WDL_headgear 
+	{ 
+		author="Tsuki"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		displayName="[53rd] Custom Helmet (Serpent / Snow)"; 
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa"; 
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d"; 
+		hiddenSelections[]= 
+		{ 
+			"Camo1", 
+			"_Visor" 
+		}; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Helmet_SN.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Serpent_Custom_Helmet_SN_dp: HaloInf_Marine_WDL_headgear 
+	{ 
+		author="Tsuki"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		displayName="[53rd] Custom Helmet (Serpent / Snow) dp"; 
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa"; 
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d"; 
+		hiddenSelections[]= 
+		{ 
+			"Camo1", 
+			"_Visor" 
+		}; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Helmet_SN.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Tsuki_Custom_Helmet: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Tsuki / Urban)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Urban\Tsuki_Custom_Helmet.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Tsuki_Custom_Helmet_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Tsuki / Urban) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Urban\Tsuki_Custom_Helmet.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Tsuki_Custom_Helmet_SN: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Tsuki / Snow)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Snow\Tsuki_Custom_Helmet_SN.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Tsuki_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Tsuki / Snow) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Snow\Tsuki_Custom_Helmet_SN.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Urban)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Helmet.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa" 
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Urban) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Helmet.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet_SN: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeCurator=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Snow)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Helmet_SN.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1; 
+		scopeCurator=1; 
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Snow) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Helmet_SN.paa", 
+			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+		}; 
+	}; 
 };
 
 //Rifleman 2

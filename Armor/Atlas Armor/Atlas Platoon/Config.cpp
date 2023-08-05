@@ -7,10 +7,6 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-			"53rd_Atlas_PL_uniform",
-			"53rd_Atlas_PL_uniform_SN",
-			"Ranger_PL_Scout",
-			"Ranger_PL_Scout_SN",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};

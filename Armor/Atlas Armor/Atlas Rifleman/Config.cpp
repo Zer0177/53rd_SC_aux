@@ -7,8 +7,6 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-			"53rd_Atlas_Y_uniform",
-			"53rd_Atlas_Gold_uniform_SN",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};

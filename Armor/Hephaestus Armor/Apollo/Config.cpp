@@ -6,17 +6,6 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-		"53rd_Apollo_uniform_MSR_Rifleman_Woodland",
-		"53rd_Apollo_uniform_MSR_Rifleman_Desert",
-		"53rd_Apollo_uniform_MSR_Rifleman_Urban",
-		"53rd_Apollo_uniform_MSR_Rifleman_Winter",
-		"53rd_Apollo_CH252_Visor_MNV",
-		"53rd_Apollo_CH252_Visor_MV",
-		"53rd_Apollo_CH252_Visor_MNV_Urban",
-		"53rd_Apollo_CH252_Visor_MNV_Win",
-		"53rd_Apollo_CH252_Visor_MV_Urban",
-		"53rd_Apollo_CH252_Visor_MV_Win",
-		
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

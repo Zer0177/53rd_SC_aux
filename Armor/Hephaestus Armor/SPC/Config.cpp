@@ -7,10 +7,6 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-		"53rd_Hephaestus_uniform_MSR_SPC_Urban",
-		"53rd_Hephaestus_uniform_MSR_SPC_WDL",
-		"53rd_Hephaestus_uniform_MSR_SPC_DES",
-		"53rd_Hephaestus_uniform_MSR_SPC_WTR",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};

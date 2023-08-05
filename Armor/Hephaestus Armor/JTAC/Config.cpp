@@ -8,10 +8,6 @@ class CfgPatches
         };
 		weapons[] = 
         {
-		"53rd_Hephaestus_uniform_MSR_JTAC_Urban",
-		"53rd_Hephaestus_uniform_MSR_JTAC_Woodland",
-		"53rd_Hephaestus_uniform_MSR_JTAC_Desert",
-		"53rd_Hephaestus_uniform_MSR_JTAC_Winter",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
