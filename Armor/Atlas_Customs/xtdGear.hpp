@@ -11,13 +11,23 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
 				};
 				class Snow
 				{
@@ -96,18 +106,30 @@ class XtdGearModels
             class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
 				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
 				class Snow
 				{
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-                };
-            };
+				};
+			};
         };
 		class AtlasCustomArmors
 		{
@@ -118,13 +140,23 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
 				};
 				class Snow
 				{
@@ -168,13 +200,23 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
 				{
 					label = "Urban";
 					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
 				};
 				class Snow
 				{
@@ -219,6 +261,12 @@ class XtdGearInfos
 		model = "AtlasCustomHelms";
 		Camo = "Snow";
 		Person = "LoneWulf";
+		};
+		class 53rd_Atlas_LoneWulf_Custom_Helmet_DS
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Desert";
+		Person = "LoneWulf";
 		}; 
 		
 		//Serpent
@@ -232,6 +280,12 @@ class XtdGearInfos
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Snow";
+		Person = "Serpent";
+		};
+		class 53rd_Atlas_Serpent_Custom_Helmet_DS
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Desert";
 		Person = "Serpent";
 		}; 
 		
@@ -248,6 +302,12 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Tsuki";
 		}; 
+		class 53rd_Atlas_Tsuki_Custom_Helmet_DS
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Desert";
+		Person = "Tsuki";
+		};
 		
 		//Texas
 		class 53rd_Atlas_Texas_Custom_Helmet
@@ -278,6 +338,12 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "LoneWulf";
 		};
+		class 53rd_Atlas_LoneWulf_Armor_DS
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Desert";
+		Person = "LoneWulf";
+		};
 		
 		//Serpent
 		class 53rd_Atlas_Serpent_Armor
@@ -292,6 +358,12 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Serpent";
 		};
+		class 53rd_Atlas_Serpent_Armor_DS
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Desert";
+		Person = "Serpent";
+		};
 		
 		//Tsuki
 		class 53rd_Atlas_Tsuki_Armor
@@ -304,6 +376,12 @@ class XtdGearInfos
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Snow";
+		Person = "Tsuki";
+		};
+		class 53rd_Atlas_Tsuki_Armor_DS
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Desert";
 		Person = "Tsuki";
 		};
 		
@@ -360,7 +438,13 @@ class XtdGearInfos
         model = "Atlashelms";
         Type = "Scout";
         Camo = "Snow";
-        }
+        };
+		class Ranger_Scout_DS
+        {
+        model = "Atlashelms";
+        Type = "Scout";
+        Camo = "Desert";
+        };
         
         //Platoon Helmet
 		class Ranger_PL_Scout
@@ -374,6 +458,12 @@ class XtdGearInfos
         model = "Atlashelms";
         Type = "Scout_PL";
         Camo = "Snow";
+        };
+		class Ranger_PL_Scout_DS
+        {
+        model = "Atlashelms";
+        Type = "Scout_PL";
+        Camo = "Desert";
         };
         
         //Atlas Team Armor
@@ -390,6 +480,12 @@ class XtdGearInfos
 		Camo = "Snow";
 		Type = "Command";
 		};
+		class 53rd_Atlas_PL_uniform_DS
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Desert";
+		Type = "Command";
+		};
         
         //Gold
 		class 53rd_Atlas_Y_uniform
@@ -402,6 +498,12 @@ class XtdGearInfos
 		{
 		model = "AtlasTeamArmors";
 		Camo = "Snow";
+		Type = "Gold";
+		};
+		class 53rd_Atlas_Gold_uniform_DS
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Desert";
 		Type = "Gold";
 		};
 	};
