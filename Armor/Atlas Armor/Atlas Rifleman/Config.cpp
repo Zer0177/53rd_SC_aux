@@ -181,6 +181,50 @@ class cfgWeapons
 			mass=80;
 		};
 	};
+	class 53rd_Atlas_Gold_uniform_WD: Uniform_Base
+	{
+		author="Tsuki";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd]  Atlas - Uniform (Gold / Woodland)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Top_WD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Armor_WD.paa"  
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Top_WD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Armor_WD.paa"   
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Atlas_Yellow_WD_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
 	class Ranger_Scout_SN: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
@@ -210,6 +254,22 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Helmet_DS.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+		};
+	};
+	class Ranger_Scout_WD: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Atlas Scout (Gold / Woodland)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Helmet_WD.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
 		};
 	};
@@ -299,6 +359,37 @@ class cfgvehicles
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Top_DS.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Armor_DS.paa" 
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_Atlas_PL_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
+	class 53rd_Atlas_Yellow_WD_V: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger - Platoon V";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Top_WD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Armor_WD.paa" 
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_Atlas_PL_uniform";

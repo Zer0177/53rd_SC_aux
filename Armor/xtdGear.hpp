@@ -268,6 +268,12 @@ class XtdGearInfos
 		Camo = "Desert";
 		Person = "LoneWulf";
 		}; 
+		class 53rd_Atlas_LoneWulf_Custom_Helmet_WD
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Woodland";
+		Person = "LoneWulf";
+		}; 
 		
 		//Serpent
 		class 53rd_Atlas_Serpent_Custom_Helmet
@@ -288,6 +294,12 @@ class XtdGearInfos
 		Camo = "Desert";
 		Person = "Serpent";
 		}; 
+		class 53rd_Atlas_Serpent_Custom_Helmet_WD
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Woodland";
+		Person = "Serpent";
+		}; 
 		
 		//Tsuki
 		class 53rd_Atlas_Tsuki_Custom_Helmet
@@ -306,6 +318,12 @@ class XtdGearInfos
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Desert";
+		Person = "Tsuki";
+		};
+		class 53rd_Atlas_Tsuki_Custom_Helmet_WD
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Woodland";
 		Person = "Tsuki";
 		};
 		
@@ -344,6 +362,12 @@ class XtdGearInfos
 		Camo = "Desert";
 		Person = "LoneWulf";
 		};
+		class 53rd_Atlas_LoneWulf_Armor_WD
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Woodland";
+		Person = "LoneWulf";
+		};
 		
 		//Serpent
 		class 53rd_Atlas_Serpent_Armor
@@ -364,6 +388,12 @@ class XtdGearInfos
 		Camo = "Desert";
 		Person = "Serpent";
 		};
+		class 53rd_Atlas_Serpent_Armor_WD
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Woodland";
+		Person = "Serpent";
+		};
 		
 		//Tsuki
 		class 53rd_Atlas_Tsuki_Armor
@@ -382,6 +412,12 @@ class XtdGearInfos
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Desert";
+		Person = "Tsuki";
+		};
+		class 53rd_Atlas_Tsuki_Armor_WD
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Woodland";
 		Person = "Tsuki";
 		};
 		
@@ -445,6 +481,12 @@ class XtdGearInfos
         Type = "Scout";
         Camo = "Desert";
         };
+		class Ranger_Scout_WD
+        {
+        model = "Atlashelms";
+        Type = "Scout";
+        Camo = "Woodland";
+        };
         
         //Platoon Helmet
 		class Ranger_PL_Scout
@@ -464,6 +506,12 @@ class XtdGearInfos
         model = "Atlashelms";
         Type = "Scout_PL";
         Camo = "Desert";
+        };
+		class Ranger_PL_Scout_WD
+        {
+        model = "Atlashelms";
+        Type = "Scout_PL";
+        Camo = "Woodland";
         };
         
         //Atlas Team Armor
@@ -486,6 +534,12 @@ class XtdGearInfos
 		Camo = "Desert";
 		Type = "Command";
 		};
+		class 53rd_Atlas_PL_uniform_WD
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Woodland";
+		Type = "Command";
+		};
         
         //Gold
 		class 53rd_Atlas_Y_uniform
@@ -504,6 +558,12 @@ class XtdGearInfos
 		{
 		model = "AtlasTeamArmors";
 		Camo = "Desert";
+		Type = "Gold";
+		};
+		class 53rd_Atlas_Gold_uniform_WD
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Woodland";
 		Type = "Gold";
 		};
 	};
