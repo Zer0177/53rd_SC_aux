@@ -156,7 +156,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Desert\Atlas_Desert_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_DS.paa" 
 		};
 		class ItemInfo: UniformItem
@@ -170,7 +170,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Desert\Atlas_Desert_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_DS.paa"  
 			};
 			uniformModel="-";
@@ -221,6 +221,51 @@ class cfgWeapons
 			uniformModel="-";
 			uniformType = "Neopren";
 			uniformClass="53rd_LoneWulf_WD_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	
+	class 53rd_Atlas_LoneWulf_Armor_AD: Uniform_Base
+	{
+		author="Tsuki";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (LoneWulf / Arid)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Armor_AD.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Armor_AD.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_LoneWulf_AD_V";
 			containerClass="Supply150";
 			mass=80;
 		};
@@ -336,7 +381,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Desert\Atlas_Desert_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Armor_DS.paa" 
 		};
 		class ItemInfo: UniformItem
@@ -350,7 +395,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Desert\Atlas_Desert_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Armor_DS.paa"   
 			};
 			uniformModel="-";
@@ -401,6 +446,51 @@ class cfgWeapons
 			uniformModel="-";
 			uniformType = "Neopren";
 			uniformClass="53rd_Serpent_WD_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	
+	class 53rd_Atlas_Serpent_Armor_AD: Uniform_Base
+	{
+		author="Tsuki";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Serpent / Arid)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Armor_AD.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Armor_AD.paa"   
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Serpent_AD_V";
 			containerClass="Supply150";
 			mass=80;
 		};
@@ -516,7 +606,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Desert\Tsuki_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Desert\Atlas_Desert_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Desert\Tsuki_Custom_Armor_DS.paa" 
 		};
 		class ItemInfo: UniformItem
@@ -530,7 +620,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Desert\Tsuki_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Desert\Atlas_Desert_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Desert\Tsuki_Custom_Armor_DS.paa"  
 			};
 			uniformModel="-";
@@ -581,6 +671,51 @@ class cfgWeapons
 			uniformModel="-";
 			uniformType = "Neopren";
 			uniformClass="53rd_Tsuki_WD_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	
+	class 53rd_Atlas_Tsuki_Armor_AD: Uniform_Base
+	{
+		author="Tsuki";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Tsuki / Arid)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Armor_AD.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Armor_AD.paa"  
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Tsuki_AD_V";
 			containerClass="Supply150";
 			mass=80;
 		};
@@ -804,6 +939,38 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_AD: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (LoneWulf / Arid)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Helmet_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+		};
+	};
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_AD_dp: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (LoneWulf / Arid) (Dp)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Helmet_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+		};
+	};
 	class 53rd_Atlas_Serpent_Custom_Helmet: HaloInf_Marine_WDL_headgear
 	{
 		author="Tsuki";
@@ -964,6 +1131,46 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Helmet_WD.paa"
 		};
 	};
+	class 53rd_Atlas_Serpent_Custom_Helmet_AD: HaloInf_Marine_WDL_headgear
+	{
+		author="Tsuki";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Custom Helmet (Serpent / Arid)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Helmet_AD.paa"
+		};
+	};
+	class 53rd_Atlas_Serpent_Custom_Helmet_AD_dp: HaloInf_Marine_WDL_headgear
+	{
+		author="Tsuki";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Custom Helmet (Serpent / Arid) dp";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Helmet_AD.paa"
+		};
+	};
 	class 53rd_Atlas_Tsuki_Custom_Helmet: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
@@ -1089,6 +1296,38 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Woodland\Tsuki_Custom_Helmet_WD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+		};
+	};
+	class 53rd_Atlas_Tsuki_Custom_Helmet_AD: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (Tsuki / Arid)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Helmet_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+		};
+	};
+	class 53rd_Atlas_Tsuki_Custom_Helmet_AD_dp: TCF_Reach_Scout_Helmet
+	{
+		dlc="53rd";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=1;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (Tsuki / Arid) (Dp)";
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Helmet_AD.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
@@ -1286,6 +1525,37 @@ class cfgvehicles
 				"ItemRadio"
 			};
 	};
+	class 53rd_LoneWulf_AD_V: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger - Platoon V";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Arid\LoneWulf_Custom_Armor_AD.paa" 
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_Atlas_PL_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
 	class 53rd_Serpent_V: haloinf_Marine_Soldier_base_F
 	{
 			scope=2;
@@ -1410,6 +1680,37 @@ class cfgvehicles
 				"ItemRadio"
 			};
 	};
+	class 53rd_Serpent_AD_V: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger - Platoon V";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Arid\Serpent_Custom_Armor_AD.paa" 
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_Atlas_PL_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
 	class 53rd_Tsuki_V: haloinf_Marine_Soldier_base_F
 	{
 			scope=2;
@@ -1521,6 +1822,37 @@ class cfgvehicles
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Woodland\Tsuki_Custom_Top_WD.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Woodland\Tsuki_Custom_Armor_WD.paa" 
+			};
+			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+			uniformClass="53rd_Atlas_PL_uniform";
+			uniformType = "Neopren";
+			linkedItems[]=
+			{
+				"HaloInf_Marine_WDL_UNSC_headgear",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"ItemRadio"
+			};
+	};
+	class 53rd_Tsuki_AD_V: haloinf_Marine_Soldier_base_F
+	{
+			scope=2;
+			scopeCurator=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Ranger - Platoon V";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Top_AD.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Arid_Pants.paa",
+			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Arid\Tsuki_Custom_Armor_AD.paa" 
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_Atlas_PL_uniform";
