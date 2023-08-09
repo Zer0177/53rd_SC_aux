@@ -1,4 +1,5 @@
 class CfgFunctions
+
 {
     class F53rd 
     { 
@@ -7,6 +8,13 @@ class CfgFunctions
             class PelicanMaglockLoad
             { 
                 file = "53rd_SC_aux\Functions\fn_PelicanLoadValidate.sqf"; 
+            }; 
+        };
+		class CarryallMagLock 
+		{ 
+            class CarryallMaglockLoad
+            { 
+                file = "53rd_SC_aux\Functions\fn_CarryallLoadValidate.sqf"; 
             }; 
         };
         class ACE_Compat

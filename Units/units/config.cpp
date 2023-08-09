@@ -1,4 +1,4 @@
-class CfgPatches
+/*class CfgPatches
 {
 	class 53rd_units
 	{
@@ -48,7 +48,7 @@ class cfgVehicles
 			"OPTRE_UNSC_Units\Army\data\uniform_b_marine_co.paa"
 		};
 	};
-    */
+    
 	class OPTRE_UNSC_Marine_Soldier_Rifleman_AR;
 	class 53rd_rifleman_Hephaestus_unit: OPTRE_UNSC_Marine_Soldier_Rifleman_AR
 	{
