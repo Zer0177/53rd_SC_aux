@@ -1646,33 +1646,33 @@ class CfgVehicles
 					textToolTip="<t color='#DF3A01'>Release Maglock";
 					userActionID=7;
 				};
-				class PelLift_LoadVehicle_V2
+				class Optre_PelLift_LoadVehicle
 				{
-					condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
-					displayName="<t color='#00BF00'>Maglock Cargo";
-					displayNameDefault="<t color='#00BF00'>Maglock Cargo";
-					onlyForPlayer=0;
-					position="cargo_door_handle";
-					priority=2;
-					radius=15;
-					showWindow=0;
-					statement="0 = [this,vehicle player] spawn F53rd_fnc_CarryallMaglockLoad";
-					textToolTip="<t color='#00BF00'>Maglock Cargo";
 					userActionID=6;
-				};
-				class PelLift_UnLoadVehicle_V2
-				{
-					condition="(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
 					displayName="<t color='#DF3A01'>Release Maglock";
 					displayNameDefault="<t color='#DF3A01'>Release Maglock";
-					onlyForPlayer=0;
+					textToolTip="Load Vehicle";
 					position="cargo_door_handle";
-					priority=3;
-					radius=5;
 					showWindow=0;
-					statement="0 = [this] spawn V_FZ_fnc_PelicanUnLoadValidate;";
-					textToolTip="<t color='#DF3A01'>Release Maglock";
+					radius=15;
+					priority=2;
+					onlyForPlayer=0;
+					condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""53rd_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+					statement="0 = [this,vehicle player] spawn F53rd_fnc_CarryallMaglockLoad;";
+				};
+				class Optre_PelLift_UnLoadVehicle
+				{
 					userActionID=7;
+					displayName="Unload Vehicle / Supply Pods";
+					displayNameDefault="Unload Vehicle / Supply Pods";
+					textToolTip="Unload Vehicle / Supply Pods";
+					position="cargo_door_handle";
+					showWindow=0;
+					radius=5;
+					priority=3;
+					onlyForPlayer=0;
+					condition="(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""53rd_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+					statement="0 = [this] spawn OPTRE_fnc_PelicanUnLoadValidate;";
 				};
 				class FullAirbrakeEngageFast
 				{
