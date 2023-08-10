@@ -152,9 +152,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Top_Woodland.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Pants_Woodland.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Armor_Woodland.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Armor_Woodland.paa",
 		};
 		class ItemInfo: UniformItem
 		{
@@ -166,9 +166,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Top_Woodland.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Pants_Woodland.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Armor_Woodland.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Armor_Woodland.paa",
 			};
 			uniformType = "Neopren";
 			uniformClass="53rd_Hephaestus_Infantry_Veh_Rifleman_WDL";
@@ -305,9 +305,9 @@ class cfgvehicles
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Top_Woodland.paa",
             "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Pants_Woodland.paa",
-            "53rd_SC_aux\Armor\Hephaestus Armor\SL\SL_Woodland\53rd_Rework_SL_Armor_Woodland.paa",
+            "53rd_SC_aux\Armor\Hephaestus Armor\Rifleman\Rifleman_Woodland\53rd_Rework_Rifleman_Armor_Woodland.paa",
 			};
 			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 			uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_WDL";
