@@ -10,11 +10,18 @@ class CfgFunctions
                 file = "53rd_SC_aux\Functions\fn_PelicanLoadValidate.sqf"; 
             }; 
         };
-		class CarryallMagLock 
+		class PelicanMagLockV2
 		{ 
-            class CarryallMaglockLoad
+            class PelicanMaglockLoadV2
             { 
-                file = "53rd_SC_aux\Functions\fn_CarryallLoadValidate.sqf"; 
+                file = "53rd_SC_aux\Functions\fn_PelicanLoadValidateV2.sqf"; 
+            }; 
+        };
+		class CarryallMagunload 
+		{ 
+            class CarryallMaglockunload
+            { 
+                file = "53rd_SC_aux\Functions\fn_CarryallUnLoadValidate.sqf"; 
             }; 
         };
         class ACE_Compat

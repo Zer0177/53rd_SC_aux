@@ -1,4 +1,4 @@
-/*class CfgPatches
+class CfgPatches
 {
 	class 53rd_units
 	{
@@ -33,7 +33,7 @@
 };
 class cfgVehicles
 {
-    /*
+    class OPTRE_UNSC_Army_Soldier_WDL;
 	class OPTRE_UNSC_Marine_Soldier: OPTRE_UNSC_Army_Soldier_WDL
 	{
 		dlc="OPTRE";
