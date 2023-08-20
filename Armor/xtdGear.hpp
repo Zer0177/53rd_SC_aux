@@ -11,7 +11,7 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow","Arid"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -34,16 +34,16 @@ class XtdGearModels
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
-				class Arid
-				{
-					label = "Arid";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
 			};
 			class Person
 			{
 				label = "Person";
-				values[] = {"LoneWulf","Serpent","Tsuki","Texas"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas"};
+				class Hellfire
+				{
+					label = "Hellfire";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class LoneWulf
 				{
 					label = "LoneWulf";
@@ -75,7 +75,7 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"Normal","NormalV","Medic","MedicV","Scout","Scout_PL"};
+				values[] = {"Normal","NormalV","Medic","MedicV","Scout_Gold","Scout_Purple","Scout_PL"};
 				class Normal
 				{
 					label = "Normal";
@@ -96,9 +96,14 @@ class XtdGearModels
 					label = "Medic Visor";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Scout
+				class Scout_Gold
 				{
-					label = "Scout";
+					label = "Scout Gold";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Scout_Purple
+				{
+					label = "Scout Purple";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Scout_PL
@@ -111,7 +116,7 @@ class XtdGearModels
             class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow","Arid"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -133,11 +138,6 @@ class XtdGearModels
 				{
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-				class Arid
-				{
-					label = "Arid";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
 				};
 			};
         };
@@ -150,7 +150,7 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow","Arid"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -173,16 +173,16 @@ class XtdGearModels
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
-				class Arid
-				{
-					label = "Arid";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
 			};
 			class Person
 			{
 				label = "Person";
-				values[] = {"LoneWulf","Serpent","Tsuki","Texas"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas"};
+				class Hellfire
+				{
+					label = "Hellfire";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class LoneWulf
 				{
 					label = "LoneWulf";
@@ -215,7 +215,7 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow","Arid"};
+				values[] = {"Urban","Woodland","Desert","Snow"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -238,25 +238,25 @@ class XtdGearModels
 					label = "Snow";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
-				class Arid
-				{
-					label = "Arid";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
 			};
 			class Type
 			{
 				label = "Type";
-				values[] = {"Command","Gold"};
+				values[] = {"Command","Gold","Purple"};
 				class Command
 				{
 					label = "Command";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+					image = "#(rgb,254,50,178)color(0.0000,0.8000,0.2980,0.0039)";
 				};
-				class Serpent
+				class Gold
 				{
 					label = "Gold";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+					image = "#(rgb,255,215,0)color(0.0000,0.1490,0.8078,0.1373)";
+				};
+				class Purple
+				{
+					label = "Purple";
+					image = "#(rgb,255,215,0)color(0.0000,0.1490,0.8078,0.1373)";
 				};
 			};
 		};
@@ -268,6 +268,32 @@ class XtdGearInfos
     class CfgWeapons 
     {
 		//helmets
+		
+		//Hellfire
+		class 53rd_Atlas_Hellfire_Custom_Helmet
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Urban";
+		Person = "Hellfire";
+		};
+		class 53rd_Atlas_Hellfire_Custom_Helmet_SN:53rd_Atlas_Hellfire_Custom_Helmet
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Snow";
+		Person = "Hellfire";
+		};
+		class 53rd_Atlas_Hellfire_Custom_Helmet_DS
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Desert";
+		Person = "Hellfire";
+		}; 
+		class 53rd_Atlas_Hellfire_Custom_Helmet_WD
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Woodland";
+		Person = "Hellfire";
+		}; 
 		
 		//LoneWulf
 		class 53rd_Atlas_LoneWulf_Custom_Helmet
@@ -294,12 +320,6 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Person = "LoneWulf";
 		}; 
-		class 53rd_Atlas_LoneWulf_Custom_Helmet_AD
-		{
-		model = "AtlasCustomHelms";
-		Camo = "Arid";
-		Person = "LoneWulf";
-		};
 		
 		//Serpent
 		class 53rd_Atlas_Serpent_Custom_Helmet
@@ -326,12 +346,6 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Person = "Serpent";
 		}; 
-		class 53rd_Atlas_Serpent_Custom_Helmet_AD
-		{
-		model = "AtlasCustomHelms";
-		Camo = "Arid";
-		Person = "Serpent";
-		};
 		
 		//Tsuki
 		class 53rd_Atlas_Tsuki_Custom_Helmet
@@ -358,12 +372,6 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Person = "Tsuki";
 		};
-		class 53rd_Atlas_Tsuki_Custom_Helmet_AD
-		{
-		model = "AtlasCustomHelms";
-		Camo = "Arid";
-		Person = "Tsuki";
-		};
 		
 		//Texas
 		class 53rd_Atlas_Texas_Custom_Helmet
@@ -380,6 +388,32 @@ class XtdGearInfos
 		};
 
 		//Armors
+		
+		//Hellfire
+		class 53rd_Atlas_Hellfire_Armor
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Urban";
+		Person = "Hellfire";
+		};
+		class 53rd_Atlas_Hellfire_Armor_SN:53rd_Atlas_Hellfire_Armor
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Snow";
+		Person = "Hellfire";
+		};
+		class 53rd_Atlas_Hellfire_Armor_DS
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Desert";
+		Person = "Hellfire";
+		};
+		class 53rd_Atlas_Hellfire_Armor_WD
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Woodland";
+		Person = "Hellfire";
+		};
 		
 		//LoneWulf
 		class 53rd_Atlas_LoneWulf_Armor
@@ -404,12 +438,6 @@ class XtdGearInfos
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Woodland";
-		Person = "LoneWulf";
-		};
-		class 53rd_Atlas_LoneWulf_Armor_AD
-		{
-		model = "AtlasCustomArmors";
-		Camo = "Arid";
 		Person = "LoneWulf";
 		};
 		
@@ -438,12 +466,7 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Person = "Serpent";
 		};
-		class 53rd_Atlas_Serpent_Armor_AD
-		{
-		model = "AtlasCustomArmors";
-		Camo = "Arid";
-		Person = "Serpent";
-		};
+
 		
 		//Tsuki
 		class 53rd_Atlas_Tsuki_Armor
@@ -468,12 +491,6 @@ class XtdGearInfos
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Woodland";
-		Person = "Tsuki";
-		};
-		class 53rd_Atlas_Tsuki_Armor_AD
-		{
-		model = "AtlasCustomArmors";
-		Camo = "Arid";
 		Person = "Tsuki";
 		};
 		
@@ -522,32 +539,52 @@ class XtdGearInfos
 		class Ranger_Scout
 		{
 		model = "Atlashelms";
-		Type = "Scout";
+		Type = "Scout_Gold";
         Camo = "Urban";
 		};
         class Ranger_Scout_SN
         {
         model = "Atlashelms";
-        Type = "Scout";
+        Type = "Scout_Gold";
         Camo = "Snow";
         };
 		class Ranger_Scout_DS
         {
         model = "Atlashelms";
-        Type = "Scout";
+        Type = "Scout_Gold";
         Camo = "Desert";
         };
 		class Ranger_Scout_WD
         {
         model = "Atlashelms";
-        Type = "Scout";
+        Type = "Scout_Gold";
         Camo = "Woodland";
         };
-		class Ranger_Scout_AD
+		
+		//Purple
+		class Ranger_Purple_Scout
+		{
+		model = "Atlashelms";
+		Type = "Scout_Purple";
+        Camo = "Urban";
+		};
+        class Ranger_Purple_Scout_SN
         {
         model = "Atlashelms";
-        Type = "Scout";
-        Camo = "Arid";
+        Type = "Scout_Purple";
+        Camo = "Snow";
+        };
+		class Ranger_Purple_Scout_DS
+        {
+        model = "Atlashelms";
+        Type = "Scout_Purple";
+        Camo = "Desert";
+        };
+		class Ranger_Purple_Scout_WD
+        {
+        model = "Atlashelms";
+        Type = "Scout_Purple";
+        Camo = "Woodland";
         };
         
         //Platoon Helmet
@@ -574,12 +611,6 @@ class XtdGearInfos
         model = "Atlashelms";
         Type = "Scout_PL";
         Camo = "Woodland";
-        };
-		class Ranger_PL_Scout_AD
-        {
-        model = "Atlashelms";
-        Type = "Scout_PL";
-        Camo = "Arid";
         };
         
         //Atlas Team Armor
@@ -608,12 +639,6 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Type = "Command";
 		};
-		class 53rd_Atlas_PL_uniform_AD
-		{
-		model = "AtlasTeamArmors";
-		Camo = "Arid";
-		Type = "Command";
-		};
         
         //Gold
 		class 53rd_Atlas_Y_uniform
@@ -640,11 +665,31 @@ class XtdGearInfos
 		Camo = "Woodland";
 		Type = "Gold";
 		};
-		class 53rd_Atlas_Gold_uniform_AD
+		
+		 //Purple
+		class 53rd_Atlas_Purple_uniform
 		{
 		model = "AtlasTeamArmors";
-		Camo = "Arid";
-		Type = "Gold";
+		Camo = "Urban";
+		Type = "Purple";
+		};
+		class 53rd_Atlas_Purple_uniform_SN
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Snow";
+		Type = "Purple";
+		};
+		class 53rd_Atlas_Purple_uniform_DS
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Desert";
+		Type = "Purple";
+		};
+		class 53rd_Atlas_Purple_uniform_WD
+		{
+		model = "AtlasTeamArmors";
+		Camo = "Woodland";
+		Type = "Purple";
 		};
 	};
 };
