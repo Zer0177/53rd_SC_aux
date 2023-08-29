@@ -37,7 +37,7 @@ class cfgWeapons
             "camo",
             "camo2",
             "camo3",
-            "H_Collar",
+            //"H_Collar",
             "H_Ghillie"
         };
         hiddenSelectionsTextures[] = 
@@ -76,7 +76,7 @@ class cfgWeapons
 				"camo",
 				"camo2",
 				"camo3",
-				"H_Collar",
+				//"H_Collar",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
@@ -104,7 +104,7 @@ class cfgWeapons
             "camo",
             "camo2",
             "camo3",
-            "H_Collar",
+            //"H_Collar",
             "H_Ghillie"
         };
         hiddenSelectionsTextures[] = 
@@ -137,7 +137,7 @@ class cfgWeapons
 				"camo",
 				"camo2",
 				"camo3",
-				"H_Collar",
+				//"H_Collar",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
@@ -180,7 +180,7 @@ class cfgWeapons
     {
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Desert)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
@@ -192,7 +192,7 @@ class cfgWeapons
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Desert)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
@@ -204,7 +204,7 @@ class cfgWeapons
     {
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Woodland)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
@@ -216,7 +216,7 @@ class cfgWeapons
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Woodland)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
@@ -228,7 +228,7 @@ class cfgWeapons
     {
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Winter)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
@@ -240,11 +240,108 @@ class cfgWeapons
     {
         scope = 1;
         scopeArsenal = 1;
-        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Urban)";
+        displayName = "[53rd] Vac Sealed Helmet (Rifleman / Winter)";
         author = "53rd AUX TEAM";
         hiddenSelectionsTextures[] = 
         {
 			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Snow.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+    //Medic
+    	class 53rd_Helmet_Vac_Sealed_Medic_Urban : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Urban_Medic.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Urban_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Urban)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Urban_Medic.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Desert : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Desert_Medic.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Desert_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Desert)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Desert_Medic.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Woodland : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Woodland_Medic.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Woodland_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Woodland)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Woodland_Medic.paa",
+			"optre_unsc_units\army\data\helmet_visor_ca.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Winter : 53rd_Sealed_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Winter)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Snow_Medic.paa",
+			"53rd_SC_aux\tex\Hephaestus Armor\53rd_Hephaestus_Visor_Silver.paa"
+		};
+    };
+	class 53rd_Helmet_Vac_Sealed_Medic_Winter_dp : 53rd_Sealed_Base_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[53rd] Vac Sealed Helmet (Medic / Winter)";
+        author = "53rd AUX TEAM";
+        hiddenSelectionsTextures[] = 
+        {
+			"53rd_SC_aux\Armor\Hephaestus Armor\Sealed Helmets\53rd_Gen2_CH252_Snow_Medic.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
