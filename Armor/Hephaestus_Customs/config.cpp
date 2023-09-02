@@ -1583,7 +1583,7 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 		};
     };
     //Cherry 
-	class 53rd_OP_Cherry_UB:OPTRE_UNSC_Operator_Helmet
+	/*class 53rd_OP_Cherry_UB:OPTRE_UNSC_Operator_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
@@ -1680,7 +1680,7 @@ class 53rd_Custom_Armor_Joker_Woodland : 53rd_Armor_SL
 			};
 		};
 		
-    /*Hellfire
+    Hellfire
     class 53rd_Custom_Armor_Hellfire_Desert : 53rd_Armor_TL
 	{ 
 		scope = 2;
