@@ -14,11 +14,12 @@ class CfgVehicles
 	class 53rd_Wyvern: O_T_VTOL_02_vehicle_F
 	{
 		author="1Lt. Body";
-		displayName="$53rd Wyvren";
+	displayName="[53rd] Wyvren";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		armor=50;
+		side=1
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		crew="53rd_Volare_airmen_unit";
