@@ -14,7 +14,7 @@ class CfgVehicles
 	class 53rd_Wyvern: O_T_VTOL_02_vehicle_F
 	{
 		author="1Lt. Body";
-	displayName="[53rd] Wyvren";
+		displayName="[53rd] Wyvren";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -29,9 +29,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_CO.paa",
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_CO.paa",
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_CO.paa",
+			"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT01_CO.paa",
+			"53rd_SC_aux\Vehicles\Wyvern\53_VTOL_02_EXT02_CO.paa",
+			"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT03_L_CO.paa",
 			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"
 		};
 		class UserActions
