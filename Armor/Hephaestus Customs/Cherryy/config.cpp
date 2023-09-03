@@ -39,7 +39,6 @@ class cfgWeapons
     //Helmets
 	class 53rd_OP_Cherry_UB:OPTRE_UNSC_Operator_Helmet
     {
-		{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Urban)";
@@ -49,11 +48,9 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Helmet_Cherry_Urban.paa",
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Visor_Cherry.paa"
 			};
-		};
     };
 	class 53rd_OP_Cherry_DS:OPTRE_UNSC_Operator_Helmet
 	{
-        {
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Desert)";
@@ -63,11 +60,9 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Helmet_Cherry_Desert.paa",
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Visor_Cherry.paa"
 			};
-		};
-    }:
+    };
 	class 53rd_OP_Cherry_WN:OPTRE_UNSC_Operator_Helmet
 	{
-        {
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Snow)";
@@ -77,11 +72,9 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Helmet_Cherry_Snow.paa",
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Visor_Cherry.paa"
 			};
-		};
     };
 	class 53rd_OP_Cherry_WD:OPTRE_UNSC_Operator_Helmet
 	{
-        {
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Cherry / Woodland)";
@@ -91,7 +84,6 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Helmet_Cherry_Woodland.paa",
 				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Helmet\53rd_Custom_Visor_Cherry.paa"
 			};
-		};
     };
     //Armor
 	class 53rd_Hephaestus_Custom_MSR_Cherryy_Urban: Uniform_Base
@@ -266,135 +258,136 @@ class cfgWeapons
 		};
 	};
 class cfgvehicles
-{
-	class haloinf_Marine_Soldier_base_F;
-	//Urban
-	class 53rd_Hephaestus_Custom_Veh_Cherryy_Urban: haloinf_Marine_Soldier_base_F
 	{
-			scope=2;
-			scopeCurator=0;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Hephaestus Rifleman Armor (Urban)";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Urban.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Urban.paa",
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_Urban";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	//Desert
-	class 53rd_Hephaestus_Custom_Veh_Cherryy_Desert: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=0;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Hephaestus Rifleman Armor (Desert)";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Desert.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Desert.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Desert.paa",
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Hephaestus_uniform_MSR_Riflema_Des";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	//Woodland
-	class 53rd_Hephaestus_Custom_Veh_Cherryy_Woodland: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=0;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Hephaestus Rifleman Armor (Woodland)";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Woodland.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Woodland.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Woodland.paa",
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_WDL";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	//Winter
-	class 53rd_Hephaestus_Custom_Veh_Cherryy_Winter: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=0;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Hephaestus Rifleman Armor (Woodland)";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Winter.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Winter.paa",
-            "53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Winter.paa",
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_WTR";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
+		class haloinf_Marine_Soldier_base_F;
+		//Urban
+		class 53rd_Hephaestus_Custom_Veh_Cherryy_Urban: haloinf_Marine_Soldier_base_F
+		{
+				scope=2;
+				scopeCurator=0;
+				scopeArsenal=2;
+				side=1;
+				displayName="[53rd] Hephaestus Rifleman Armor (Urban)";
+				hiddenSelections[]=
+				{
+					"Camo1",
+					"Camo2",
+					"Camo3"
+				};
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Urban.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Urban.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Urban.paa",
+				};
+				model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+				uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_Urban";
+				uniformType = "Neopren";
+				linkedItems[]=
+				{
+					"HaloInf_Marine_WDL_UNSC_headgear",
+					"ItemMap",
+					"ItemCompass",
+					"ItemWatch",
+					"ItemRadio"
+				};
+		};
+		//Desert
+		class 53rd_Hephaestus_Custom_Veh_Cherryy_Desert: haloinf_Marine_Soldier_base_F
+		{
+				scope=2;
+				scopeCurator=0;
+				scopeArsenal=2;
+				side=1;
+				displayName="[53rd] Hephaestus Rifleman Armor (Desert)";
+				hiddenSelections[]=
+				{
+					"Camo1",
+					"Camo2",
+					"Camo3"
+				};
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Desert.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Desert.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Desert.paa",
+				};
+				model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+				uniformClass="53rd_Hephaestus_uniform_MSR_Riflema_Des";
+				uniformType = "Neopren";
+				linkedItems[]=
+				{
+					"HaloInf_Marine_WDL_UNSC_headgear",
+					"ItemMap",
+					"ItemCompass",
+					"ItemWatch",
+					"ItemRadio"
+				};
+		};
+		//Woodland
+		class 53rd_Hephaestus_Custom_Veh_Cherryy_Woodland: haloinf_Marine_Soldier_base_F
+		{
+				scope=2;
+				scopeCurator=0;
+				scopeArsenal=2;
+				side=1;
+				displayName="[53rd] Hephaestus Rifleman Armor (Woodland)";
+				hiddenSelections[]=
+				{
+					"Camo1",
+					"Camo2",
+					"Camo3"
+				};
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Woodland.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Woodland.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Woodland.paa",
+				};
+				model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+				uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_WDL";
+				uniformType = "Neopren";
+				linkedItems[]=
+				{
+					"HaloInf_Marine_WDL_UNSC_headgear",
+					"ItemMap",
+					"ItemCompass",
+					"ItemWatch",
+					"ItemRadio"
+				};
+		};
+		//Winter
+		class 53rd_Hephaestus_Custom_Veh_Cherryy_Winter: haloinf_Marine_Soldier_base_F
+		{
+				scope=2;
+				scopeCurator=0;
+				scopeArsenal=2;
+				side=1;
+				displayName="[53rd] Hephaestus Rifleman Armor (Woodland)";
+				hiddenSelections[]=
+				{
+					"Camo1",
+					"Camo2",
+					"Camo3"
+				};
+				hiddenSelectionsTextures[]=
+				{
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Top\Cherryy_Top_Winter.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Pants\Cherryy_Pants_Winter.paa",
+				"53rd_SC_aux\Armor\Hephaestus Customs\Cherryy\Armor\Cherryy_Armor_Winter.paa",
+				};
+				model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+				uniformClass="53rd_Hephaestus_uniform_MSR_Rifleman_WTR";
+				uniformType = "Neopren";
+				linkedItems[]=
+				{
+					"HaloInf_Marine_WDL_UNSC_headgear",
+					"ItemMap",
+					"ItemCompass",
+					"ItemWatch",
+					"ItemRadio"
+				};
+		};
 	};
 };
 
