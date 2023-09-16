@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Air_Pelican {
-		units[] = {"53rd_Pelican","53rd_Pelican_SOCOM","53rd_UNSC_D77_TC_Pelican","53rd_UNSC_D77_FL_Pelican","53rd_Pelican_FL"};
+		units[] = {"53rd_Pelican","53rd_Pelican_SOCOM","53rd_UNSC_D77_TC_Pelican","53rd_UNSC_D77_FL_Pelican","53rd_Pelican_FL","53rd_Carryyall"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
