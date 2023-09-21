@@ -550,7 +550,7 @@ class 53rd_Custom_Armor_Panzer_Woodland : 53rd_Custom_Base_Armor_Panzer
 			"optre_unsc_units\army\data\odst_armor_co.paa"
 		};
 	};
-	
+/*	
 	//Axe
 	class 53rd_Custom_Helmet_Vac_Sealed_Axe_Desert : 53rd_Sealed_Base
     {
@@ -652,7 +652,7 @@ class 53rd_Custom_Armor_Panzer_Woodland : 53rd_Custom_Base_Armor_Panzer
 			"optre_unsc_units\army\data\helmet_visor_ca.paa"
 		};
     };
-
+*/
 //Ryuu
 
 class 53rd_Custom_Base_Armor_Ryuu: 53rd_Armor_Rifleman
