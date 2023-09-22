@@ -129,7 +129,7 @@ class 53rd_InvisVest: MA_TGE_InvisVest
 	class 53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
-		scope=2;
+		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
@@ -149,7 +149,7 @@ class 53rd_InvisVest: MA_TGE_InvisVest
 	class 53rd_Hephaestus_CH252_Visor: HaloInf_Marine_WDL_headgear
 	{
 		author="Cherri&Scarecrow";
-		scope=2;
+		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
@@ -171,7 +171,7 @@ class 53rd_InvisVest: MA_TGE_InvisVest
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
-		scopeCurator=0;
+		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Hephaestus Helmet (Woodland / No Visor)";

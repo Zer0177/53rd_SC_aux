@@ -49,25 +49,6 @@ class cfgWeapons
 		{
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
 		};
-		class ItemInfo: HeadgearItem
-		{
-            mass=1;
-            class HitpointsProtectionInfo
-            {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-                class Head
-                {
-                    hitPointName="HitHead";
-                    armor=40;
-                    passThrough=0.1;
-                };
-            };
-		};
 	};
 	class 53rd_Rifleman_Helmet_Base_Visor: HaloInf_Marine_WDL_headgear
 	{
@@ -86,25 +67,6 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-            mass=1;
-            class HitpointsProtectionInfo
-            {
-				class Face
-				{
-					armor=20;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-                class Head
-                {
-                    hitPointName="HitHead";
-                    armor=40;
-                    passThrough=0.1;
-                };
-            };
 		};
 	}
 	class 53rd_Rifleman_Helmet_Winter_NVisor: 53rd_Rifleman_Helmet_Base_NVisor
