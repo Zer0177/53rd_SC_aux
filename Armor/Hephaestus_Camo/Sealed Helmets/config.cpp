@@ -8,6 +8,9 @@ class CfgPatches {
         {
             "53rd_Rifleman_Helmet_Wintere_Visor",
 			"53rd_Rifleman_Helmet_Winter_NVisor",
+			"53rd_Rifleman_Helmet_Desert_NVisor",
+			"53rd_Rifleman_Helmet_Desert_Visor",
+			
 			
         };
 		requiredVersion = 0.100000;
@@ -69,6 +72,9 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
 		};
 	}
+///////////////////////////////////////////////////////////////
+//                 WINTER CAMO                              //
+/////////////////////////////////////////////////////////////
 	class 53rd_Rifleman_Helmet_Winter_NVisor: 53rd_Rifleman_Helmet_Base_NVisor
 	{
 		author="Cherryy&Scarecrow";
@@ -109,6 +115,57 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
 		};
 	};
+///////////////////////////////////////////////////////////////
+//                 DESERT CAMO                              //
+/////////////////////////////////////////////////////////////
+	class 53rd_Rifleman_Helmet_Desert_NVisor: 53rd_Rifleman_Helmet_Base_NVisor
+	{
+		author="Cherryy&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Camo Helmet (Desert / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Desert.paa"
+		};
+	};
+	class 53rd_Rifleman_Helmet_Desert_Visor: 53rd_Rifleman_Helmet_Base_Visor
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Camo Helmet (Desert / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Desert.paa"
+		};
+	};
+	
+	
+	
+	
+	
+	
+/////////////////////////////////////////////////////////SEALED HELMETS///////////////////////////////////////////////////////////////////////////////////////////////
+
 	class 53rd_Sealed_Base : VES_CH252_MAR_Vacuum
     {
         scope = 1;
