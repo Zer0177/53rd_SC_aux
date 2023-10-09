@@ -16,6 +16,7 @@ class CfgPatches {
 };
 class cfgWeapons 
 {
+	#include "..\xtdGear.hpp"	
     class ItemInfo;
     class UniformItem;
 	class VestItem;

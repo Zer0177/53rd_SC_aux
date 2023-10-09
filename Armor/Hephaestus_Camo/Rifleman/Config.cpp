@@ -11,6 +11,8 @@ class CfgPatches {
 				"53rd_Uniform_DS",
 				"53rd_Uniform_UB",
 				"53rd_Uniform_WD",
+				"53rd_Rifleman_Helmet_Urban_No_Visor",
+				"53rd_Rifleman_Helmet_Urban_Visor",
 				"53rd_Rifleman_Helmet_Woodland_No_Visor",
 				"53rd_Rifleman_Helmet_Woodland_Visor",
 				"53rd_Rifleman_Helmet_Desert_No_Visor",
@@ -34,7 +36,7 @@ class cfgWeapons
 	
 	
 	/////HELMETS/////
-	class 53rd_Hephaestus_Rifleman_CH252_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Rifleman_Helmet_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=1;
@@ -54,7 +56,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_Hephaestus_CH252_Visor: HaloInf_Marine_WDL_headgear
+	class 53rd_Rifleman_Helmet_Urban_Visor: HaloInf_Marine_WDL_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=1;

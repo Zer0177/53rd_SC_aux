@@ -16,6 +16,7 @@
 		addonRootClass="OPTRE_UNSC_Units";
 	};
 };
+#include "..\xtdGear.hpp"
 class cfgWeapons
 {
     class HeadgearItem;
