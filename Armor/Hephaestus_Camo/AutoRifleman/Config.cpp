@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 53rd_Hephaestus_Camo_Armor 
+	class 53rd_Hephaestus_Camo_Armor_Autorifleman
 	{
 			units[] = 
 			{
@@ -7,16 +7,16 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_SN",
-				"53rd_Uniform_DS",
-				"53rd_Uniform_UB",
-				"53rd_Uniform_WD",
+				"53rd_Uniform_AR_SN",
+				"53rd_Uniform_AR_WD",
+				"53rd_Uniform_AR_UB",
+				"53rd_Uniform_AR_DS",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
 	};
 };
-	
+#include "..\xtdGear.hpp"
 class cfgWeapons
 {
 	class Uniform_Base;
@@ -93,7 +93,7 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-		class 53rd_Uniform_AR_WD: 53rd_U_Base_AR_uniform
+	class 53rd_Uniform_AR_WD: 53rd_U_Base_AR_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -133,7 +133,7 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-		class 53rd_Uniform_AR_UB: 53rd_U_Base_AR_uniform
+	class 53rd_Uniform_AR_UB: 53rd_U_Base_AR_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -173,7 +173,7 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-		class 53rd_Uniform_AR_DS: 53rd_U_Base_AR_uniform
+	class 53rd_Uniform_AR_DS: 53rd_U_Base_AR_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -189,7 +189,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
 		};
@@ -203,7 +203,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
 			};
@@ -421,7 +421,7 @@ class CfgVehicles
 	class 53rd_AR_Snow_Camo_Test: 53rd_AR_base_F
 	{
 		scope=2;
-		displayName="[53rd] Winter AutoRifleman";
+		displayName="[53rd] Winter AutoRifleman V";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -437,10 +437,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Uniform_AR_SN";
 	};
-		class 53rd_AR_Woodland_Camo_Test: 53rd_AR_base_F
+	class 53rd_AR_Woodland_Camo_Test: 53rd_AR_base_F
 	{
 		scope=2;
-		displayName="[53rd] Woodland AutoRifleman";
+		displayName="[53rd] Woodland AutoRifleman V";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -456,10 +456,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Uniform_AR_WD";
 	};
-		class 53rd_AR_Urban_Camo_Test: 53rd_AR_base_F
+	class 53rd_AR_Urban_Camo_Test: 53rd_AR_base_F
 	{
 		scope=2;
-		displayName="[53rd] Urban AutoRifleman";
+		displayName="[53rd] Urban AutoRifleman V";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -475,10 +475,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Uniform_AR_UB";
 	};
-		class 53rd_AR_Desert_Camo_Test: 53rd_AR_base_F
+	class 53rd_AR_Desert_Camo_Test: 53rd_AR_base_F
 	{
 		scope=2;
-		displayName="[53rd] Desert AutoRifleman";
+		displayName="[53rd] Desert AutoRifleman V";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -489,7 +489,7 @@ class CfgVehicles
 		{
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\AutoRiflemann\53rd_AutoRifleman_Armor_Desert_co.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Uniform_AR_DS";
