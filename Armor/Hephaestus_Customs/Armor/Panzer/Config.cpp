@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 53rd_Custom_Armor_Body
+	class 53rd_Custom_Armor_Panzer
 	{
 			units[] = 
 			{
@@ -11,14 +11,14 @@ class CfgPatches {
 				"53rd_Uniform_DS",
 				"53rd_Uniform_UB",
 				"53rd_Uniform_WD",
-				"53rd_Body_Helmet_Urban_No_Visor",
-				"53rd_Body_Helmet_Urban_Visor",
-				"53rd_Body_Helmet_Woodland_No_Visor",
-				"53rd_Body_Helmet_Woodland_Visor",
-				"53rd_Body_Helmet_Desert_No_Visor",
-				"53rd_Body_Helmet_Desert_Visor",
-				"53rd_Body_Helmet_Winter_No_Visor",
-				"53rd_Body_Helmet_Winter_Visor",
+				"53rd_Panzer_Helmet_Urban_No_Visor",
+				"53rd_Panzer_Helmet_Urban_Visor",
+				"53rd_Panzer_Helmet_Woodland_No_Visor",
+				"53rd_Panzer_Helmet_Woodland_Visor",
+				"53rd_Panzer_Helmet_Desert_No_Visor",
+				"53rd_Panzer_Helmet_Desert_Visor",
+				"53rd_Panzer_Helmet_Winter_No_Visor",
+				"53rd_Panzer_Helmet_Winter_Visor",
 				
 				
 				
@@ -35,14 +35,14 @@ class cfgWeapons
 	
 	
 	/////HELMETS/////
-	class 53rd_Body_Helmet_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Panzer_Helmet_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Urban / No Visor)";
+		displayName="[53rd] Panzer Helmet (Urban / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -52,17 +52,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_Body_Helmet_Urban_Visor: HaloInf_Marine_WDL_headgear
+	class 53rd_Panzer_Helmet_Urban_Visor: HaloInf_Marine_WDL_headgear
 	{
 		author="Cherri&Scarecrow";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Urban / Visor)";
+		displayName="[53rd] Panzer Helmet (Urban / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -72,18 +72,18 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Urban.paa"
 		};
 	};
 	//Woodland
-	class 53rd_Body_Helmet_Woodland_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Panzer_Helmet_Woodland_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Woodland / No Visor)";
+		displayName="[53rd] Panzer Helmet (Woodland / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -93,17 +93,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Woodland.paa"
 		};
 	};
-	class 53rd_Body_Helmet_Woodland_Visor: HaloInf_Marine_WDL_headgear //works
+	class 53rd_Panzer_Helmet_Woodland_Visor: HaloInf_Marine_WDL_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Woodland / Visor)";
+		displayName="[53rd] Panzer Helmet (Woodland / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -113,18 +113,18 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Woodland.paa"
 		};
 	};
 	//Desert
-	class 53rd_Body_Helmet_Desert_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Panzer_Helmet_Desert_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Desert / No Visor)";
+		displayName="[53rd] Panzer Helmet (Desert / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -134,17 +134,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Desert.paa"
 		};
 	};
-	class 53rd_Body_Helmet_Desert_Visor: HaloInf_Marine_WDL_headgear //works
+	class 53rd_Panzer_Helmet_Desert_Visor: HaloInf_Marine_WDL_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Desert / Visor)";
+		displayName="[53rd] Panzer Helmet (Desert / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -154,18 +154,18 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Desert.paa"
 		};
 	};
 	//Winter
-	class 53rd_Body_Helmet_Winter_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
+	class 53rd_Panzer_Helmet_Winter_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Winter / No Visor)";
+		displayName="[53rd] Panzer Helmet (Winter / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -175,17 +175,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Winter.paa"
 		};
 	};
-	class 53rd_Body_Helmet_Winter_Visor: HaloInf_Marine_WDL_headgear //works
+	class 53rd_Panzer_Helmet_Winter_Visor: HaloInf_Marine_WDL_headgear //works
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Body Helmet (Winter / Visor)";
+		displayName="[53rd] Panzer Helmet (Winter / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -195,7 +195,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Body\53rd_Body_Helmet_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Panzer\53rd_Panzer_Helmet_Winter.paa"
 		};
 	};
 	class haloinfmar_U_WDL_uniform: Uniform_Base
@@ -208,7 +208,7 @@ class cfgWeapons
 		scope=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Rifleman Base ";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\A3\characters_f\data\ui\icon_U_BasicPanzer_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelectionsTextures[]=
 		{
@@ -231,13 +231,13 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Body_SN: 53rd_U_Base_uniform
+	class 53rd_Panzer_SN: 53rd_U_Base_uniform
 	{
 		author="Scarecrow";
 		scope=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Winter Body";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Winter Panzer";
+		picture="\A3\characters_f\data\ui\icon_U_BasicPanzer_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -247,9 +247,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Winter.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -261,9 +261,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Winter.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_Snow_Camo_Test";
@@ -271,13 +271,13 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Body_WD: 53rd_U_Base_uniform
+	class 53rd_Panzer_WD: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Woodland Body";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Woodland Panzer";
+		picture="\A3\characters_f\data\ui\icon_U_BasicPanzer_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -287,9 +287,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Woodland.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Woodland.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -301,9 +301,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Woodland.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Woodland.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_Woodland_Camo_Test";
@@ -311,13 +311,13 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Body_UB: 53rd_U_Base_uniform
+	class 53rd_Panzer_UB: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Urban Body";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Urban Panzer";
+		picture="\A3\characters_f\data\ui\icon_U_BasicPanzer_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -327,9 +327,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Urban.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -341,9 +341,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Urban.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_Urban_Camo_Test";
@@ -351,13 +351,13 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Body_DS: 53rd_U_Base_uniform
+	class 53rd_Panzer_DS: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Desert Body";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Desert Panzer";
+		picture="\A3\characters_f\data\ui\icon_U_BasicPanzer_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -367,9 +367,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Desert.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -381,7 +381,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
 			};
@@ -438,7 +438,7 @@ class CfgVehicles
 				passThrough=0.80000001;
 				radius=0.23999999;
 				explosionShielding=1;
-				visual="injury_body";
+				visual="injury_Panzer";
 				minimalHit=0.0099999998;
 				depends="0";
 			};
@@ -450,7 +450,7 @@ class CfgVehicles
 				passThrough=0.80000001;
 				radius=0.16;
 				explosionShielding=1;
-				visual="injury_body";
+				visual="injury_Panzer";
 				minimalHit=0.0099999998;
 			};
 			class HitDiaphragm: HitAbdomen
@@ -461,7 +461,7 @@ class CfgVehicles
 				passThrough=0.80000001;
 				radius=0.18000001;
 				explosionShielding=6;
-				visual="injury_body";
+				visual="injury_Panzer";
 				minimalHit=0.0099999998;
 			};
 			class HitChest: HitDiaphragm
@@ -472,18 +472,18 @@ class CfgVehicles
 				passThrough=0.80000001;
 				radius=0.18000001;
 				explosionShielding=6;
-				visual="injury_body";
+				visual="injury_Panzer";
 				minimalHit=0.0099999998;
 			};
-			class HitBody: HitChest
+			class HitPanzer: HitChest
 			{
 				armor=1000;
 				material=-1;
-				name="body";
+				name="Panzer";
 				passThrough=1;
 				radius=0;
 				explosionShielding=6;
-				visual="injury_body";
+				visual="injury_Panzer";
 				minimalHit=0.0099999998;
 				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
 			};
@@ -527,13 +527,13 @@ class CfgVehicles
 			{
 				armor=1000;
 				material=-1;
-				name="body";
+				name="Panzer";
 				passThrough=1;
 				radius=0;
 				explosionShielding=1;
 				visual="";
 				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitPanzer - 0.25) max 0)) * 2";
 			};
 			class HitLeftArm
 			{
@@ -608,12 +608,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Winter.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Body_SN";
+		uniformClass="53rd_Panzer_SN";
 	};
 		class 53rd_Woodland_Camo_Test: 53rd_base_F
 	{
@@ -627,12 +627,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Woodland.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Woodland.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Body_WD";
+		uniformClass="53rd_Panzer_WD";
 	};
 		class 53rd_Urban_Camo_Test: 53rd_base_F
 	{
@@ -646,12 +646,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Urban.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Body_UB";
+		uniformClass="53rd_Panzer_UB";
 	};
 		class 53rd_Desert_Camo_Test: 53rd_base_F
 	{
@@ -665,12 +665,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Panzer\53rd_Panzer_Armor_Desert.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Body_DS";
+		uniformClass="53rd_Panzer_DS";
 	};
 
 };
