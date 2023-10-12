@@ -1,4 +1,4 @@
-class CfgPatches {
+/*class CfgPatches {
 	class 53rd_Custom_Armor_Cherry
 	{
 			units[] = 
@@ -7,10 +7,6 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_SN",
-				"53rd_Uniform_DS",
-				"53rd_Uniform_UB",
-				"53rd_Uniform_WD",
 				"53rd_Cherry_Helmet_Urban_No_Visor",
 				"53rd_Cherry_Helmet_Urban_Visor",
 				"53rd_Cherry_Helmet_Woodland_No_Visor",

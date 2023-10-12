@@ -7,10 +7,10 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_SN",
-				"53rd_Uniform_DS",
-				"53rd_Uniform_UB",
-				"53rd_Uniform_WD",
+				"53rd_Body_SN",
+				"53rd_Body_WD",
+				"53rd_Body_UB",
+				"53rd_Body_DS",
 				"53rd_Body_Helmet_Urban_No_Visor",
 				"53rd_Body_Helmet_Urban_Visor",
 				"53rd_Body_Helmet_Woodland_No_Visor",
@@ -266,7 +266,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Winter.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Snow_Camo_Test";
+			uniformClass="53rd_Snow_Camo_Body";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -306,7 +306,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Woodland.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Woodland_Camo_Test";
+			uniformClass="53rd_Woodland_Camo_Body";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -346,7 +346,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Body\53rd_Body_Armor_Urban.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Urban_Camo_Test";
+			uniformClass="53rd_Urban_Camo_Body";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -386,7 +386,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Desert_Camo_Test";
+			uniformClass="53rd_Desert_Camo_Body";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -596,7 +596,7 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Snow_Camo_Test: 53rd_base_F
+	class 53rd_Snow_Camo_Body: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Winter Rifleman";
@@ -615,7 +615,7 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Body_SN";
 	};
-		class 53rd_Woodland_Camo_Test: 53rd_base_F
+		class 53rd_Woodland_Camo_Body: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Woodland Rifleman";
@@ -634,7 +634,7 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Body_WD";
 	};
-		class 53rd_Urban_Camo_Test: 53rd_base_F
+		class 53rd_Urban_Camo_Body: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Urban Rifleman";
@@ -653,7 +653,7 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Body_UB";
 	};
-		class 53rd_Desert_Camo_Test: 53rd_base_F
+		class 53rd_Desert_Camo_Body: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Desert Rifleman";

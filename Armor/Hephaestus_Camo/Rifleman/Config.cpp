@@ -7,10 +7,10 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_SN",
-				"53rd_Uniform_DS",
-				"53rd_Uniform_UB",
-				"53rd_Uniform_WD",
+				"53rd_Rifleman_SN",
+				"53rd_Rifleman_DS",
+				"53rd_Rifleman_UB",
+				"53rd_Rifleman_WD",
 				"53rd_Rifleman_Helmet_Urban_No_Visor",
 				"53rd_Rifleman_Helmet_Urban_Visor",
 				"53rd_Rifleman_Helmet_Woodland_No_Visor",
@@ -19,6 +19,7 @@ class CfgPatches {
 				"53rd_Rifleman_Helmet_Desert_Visor",
 				"53rd_Rifleman_Helmet_Winter_No_Visor",
 				"53rd_Rifleman_Helmet_Winter_Visor",
+				"53rd_InvisVest",
 				
 				
 				
@@ -33,8 +34,83 @@ class cfgWeapons
 	class Uniform_Base;
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
+	class MA_TGE_InvisVest;
+	class VestItem;
 	
-	
+	class 53rd_InvisVest: MA_TGE_InvisVest
+	{
+		author="Scarecrow";
+		scope=2;
+		displayName="[53rd] Invisible Vest";
+		picture="\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
+		model="\Halo_marine_02\null.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Invis Vest\Vest\null_CA.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\Halo_marine_02\null.p3d";
+			containerClass="Supply120";
+			mass=80;
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=35;
+					passThrough=0.5;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=35;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Hands
+				{
+					hitpointName="HitHands";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=35;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+				};
+			};
+		};
+	};
 	/////HELMETS/////
 	class 53rd_Rifleman_Helmet_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
@@ -232,7 +308,7 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Uniform_SN: 53rd_U_Base_uniform
+	class 53rd_Rifleman_SN: 53rd_U_Base_uniform
 	{
 		author="Scarecrow";
 		scope=2;
@@ -267,12 +343,12 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Snow_Camo_Test";
+			uniformClass="53rd_Snow_Camo_Rifleman";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Uniform_WD: 53rd_U_Base_uniform
+	class 53rd_Rifleman_WD: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -307,12 +383,12 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Woodland_Camo_Test";
+			uniformClass="53rd_Woodland_Camo_Rifleman";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Uniform_UB: 53rd_U_Base_uniform
+	class 53rd_Rifleman_UB: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -347,12 +423,12 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Urban_Camo_Test";
+			uniformClass="53rd_Urban_Camo_Rifleman";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Uniform_DS: 53rd_U_Base_uniform
+	class 53rd_Rifleman_DS: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -387,7 +463,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Desert_Camo_Test";
+			uniformClass="53rd_Desert_Camo_Rifleman";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -597,7 +673,7 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Snow_Camo_Test: 53rd_base_F
+	class 53rd_Snow_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Winter Rifleman";
@@ -614,9 +690,9 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Uniform_SN";
+		uniformClass="53rd_Rifleman_SN";
 	};
-		class 53rd_Woodland_Camo_Test: 53rd_base_F
+		class 53rd_Woodland_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Woodland Rifleman";
@@ -633,9 +709,9 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Uniform_WD";
+		uniformClass="53rd_Rifleman_WD";
 	};
-		class 53rd_Urban_Camo_Test: 53rd_base_F
+		class 53rd_Urban_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Urban Rifleman";
@@ -652,9 +728,9 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Uniform_Ub";
+		uniformClass="53rd_Rifleman_UB";
 	};
-		class 53rd_Desert_Camo_Test: 53rd_base_F
+		class 53rd_Desert_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Desert Rifleman";
@@ -671,7 +747,7 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Uniform_DS";
+		uniformClass="53rd_Rifleman_DS";
 	};
 
 };

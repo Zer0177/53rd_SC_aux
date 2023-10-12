@@ -665,7 +665,7 @@ class XtdGearInfos
 		Visor = "Yes";
 		};
 		
-				///Beanies
+		///Beanies
 		class 53rd_Beanie_Urban
 		{
 		model = "HephaestusCamoHelmets";
@@ -721,7 +721,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Desert";
-		Type = "Beanies";
+		Type = "Booines";
 		Visor = "No";
 		};
 		class 53rd_Boonie_Winter:53rd_Boonie_Urban
@@ -1992,74 +1992,46 @@ class XtdGearInfos
 		Visor = "Yes";
 		};
 		
-		/*//Apollo Armor
-		class 53rd_Apollo_uniform_MSR_Rifleman_Urban
-		{
-		model = "HephaestusMSRArmors";
-		Section = "Apollo";
-		Camo = "Urban";
-		Type = "Rifleman";
-		};
-		class 53rd_Apollo_uniform_MSR_Rifleman_Woodland: 53rd_Apollo_uniform_MSR_Rifleman_Urban
-		{
-		model = "HephaestusMSRArmors";
-		Section = "Apollo";
-		Camo = "Woodland";
-		Type = "Rifleman";
-		};
-		class 53rd_Apollo_uniform_MSR_Rifleman_Desert: 53rd_Apollo_uniform_MSR_Rifleman_Urban
-		{
-		model = "HephaestusMSRArmors";
-		Section = "Apollo";
-		Camo = "Desert";
-		Type = "Rifleman";
-		};
-		class 53rd_Apollo_uniform_MSR_Rifleman_Winter: 53rd_Apollo_uniform_MSR_Rifleman_Urban
-		{
-		model = "HephaestusMSRArmors";
-		Section = "Apollo";
-		Camo = "Snow";
-		Type = "Rifleman";
-		};*/
+		//Apollo Armor
 		
 		//Hephaestus Armors
 		//Urban
-		class 53rd_Uniform_UB
+		class 53rd_Rifleman_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Urban";
 		Type = "Rifleman";
 		};
-		class 53rd_Uniform_Medic_UB:53rd_Uniform_UB
+		class 53rd_Uniform_Medic_UB:53rd_Rifleman_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Urban";
 		Type = "Medic";
 		};
-		class 53rd_Uniform_JTAC_UB:53rd_Uniform_UB
+		class 53rd_Uniform_JTAC_UB:53rd_Rifleman_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Urban";
 		Type = "JTAC";
 		};
-		class 53rd_Uniform_GL_UB:53rd_Uniform_UB
+		class 53rd_Uniform_GL_UB:53rd_Rifleman_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Urban";
 		Type = "Grenadier";
 		};
-		class 53rd_Uniform_AR_UB:53rd_Uniform_UB
+		class 53rd_Uniform_AR_UB:53rd_Rifleman_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Urban";
 		Type = "Autorifleman";
 		};
-		class 53rd_Uniform_AT_UB:53rd_Uniform_UB
+		class 53rd_Uniform_AT_UB:53rd_Rifleman_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
@@ -2068,42 +2040,42 @@ class XtdGearInfos
 		};
 		
 		//Desert
-		class 53rd_Uniform_DS
+		class 53rd_Rifleman_DS
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Desert";
 		Type = "Rifleman";
 		};
-		class 53rd_Uniform_Medic_DS:53rd_Uniform_DS
+		class 53rd_Uniform_Medic_DS:53rd_Rifleman_DS
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Desert";
 		Type = "Medic";
 		};
-		class 53rd_Uniform_JTAC_DS:53rd_Uniform_DS
+		class 53rd_Uniform_JTAC_DS:53rd_Rifleman_DS
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Desert";
 		Type = "JTAC";
 		};
-		class 53rd_Uniform_GL_DS:53rd_Uniform_DS
+		class 53rd_Uniform_GL_DS:53rd_Rifleman_DS
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Desert";
 		Type = "Grenadier";
 		};
-		class 53rd_Uniform_AR_DS:53rd_Uniform_DS
+		class 53rd_Uniform_AR_DS:53rd_Rifleman_DS
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Desert";
 		Type = "Autorifleman";
 		};
-		class 53rd_Uniform_AT_DS:53rd_Uniform_DS
+		class 53rd_Uniform_AT_DS:53rd_Rifleman_DS
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
@@ -2112,42 +2084,42 @@ class XtdGearInfos
 		};
 		
 		//Woodland
-		class 53rd_Uniform_WD
+		class 53rd_Rifleman_WD
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Woodland";
 		Type = "Rifleman";
 		};
-		class 53rd_Uniform_Medic_WD:53rd_Uniform_WD
+		class 53rd_Uniform_Medic_WD:53rd_Rifleman_WD
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Woodland";
 		Type = "Medic";
 		};
-		class 53rd_Uniform_JTAC_WD:53rd_Uniform_WD
+		class 53rd_Uniform_JTAC_WD:53rd_Rifleman_WD
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Woodland";
 		Type = "JTAC";
 		};
-		class 53rd_Uniform_GL_WD:53rd_Uniform_WD
+		class 53rd_Uniform_GL_WD:53rd_Rifleman_WD
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Woodland";
 		Type = "Grenadier";
 		};
-		class 53rd_Uniform_AR_WD:53rd_Uniform_WD
+		class 53rd_Uniform_AR_WD:53rd_Rifleman_WD
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Woodland";
 		Type = "Autorifleman";
 		};
-		class 53rd_Uniform_AT_WD:53rd_Uniform_WD
+		class 53rd_Uniform_AT_WD:53rd_Rifleman_WD
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
@@ -2156,42 +2128,42 @@ class XtdGearInfos
 		};
 		
 		//Winter
-		class 53rd_Uniform_SN
+		class 53rd_Rifleman_SN
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Winter";
 		Type = "Rifleman";
 		};
-		class 53rd_Uniform_Medic_SN:53rd_Uniform_SN
+		class 53rd_Uniform_Medic_SN:53rd_Rifleman_SN
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Winter";
 		Type = "Medic";
 		};
-		class 53rd_Uniform_JTAC_SN:53rd_Uniform_SN
+		class 53rd_Uniform_JTAC_SN:53rd_Rifleman_SN
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Winter";
 		Type = "JTAC";
 		};
-		class 53rd_Uniform_GL_SN:53rd_Uniform_SN
+		class 53rd_Uniform_GL_SN:53rd_Rifleman_SN
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Winter";
 		Type = "Grenadier";
 		};
-		class 53rd_Uniform_AR_SN:53rd_Uniform_SN
+		class 53rd_Uniform_AR_SN:53rd_Rifleman_SN
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
 		Camo = "Winter";
 		Type = "Autorifleman";
 		};
-		class 53rd_Uniform_AT_SN:53rd_Uniform_SN
+		class 53rd_Uniform_AT_SN:53rd_Rifleman_SN
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Hephaestus";
