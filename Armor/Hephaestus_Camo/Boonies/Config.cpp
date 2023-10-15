@@ -11,6 +11,7 @@
 		{};
 	};
 };
+#include "..\..\xtdGear.hpp"	
 class cfgWeapons
 {
     class HeadgearItem;

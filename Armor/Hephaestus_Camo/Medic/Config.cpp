@@ -7,16 +7,12 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_Medic_SN",
-				"53rd_Uniform_Medic_WD",
-				"53rd_Uniform_Medic_UB",
-				"53rd_Uniform_Medic_DS",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
 	};
 };
-	
+#include "..\..\xtdGear.hpp"	
 class cfgWeapons
 {
 	class Uniform_Base;

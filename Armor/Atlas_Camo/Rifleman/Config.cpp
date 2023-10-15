@@ -7,33 +7,17 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_A_Rifleman_SN",
-				"53rd_A_Rifleman_DS",
-				"53rd_A_Rifleman_UB",
-				"53rd_A_Rifleman_WD",
-				"53rd_A_Rifleman_Helmet_Urban_No_Visor",
-				"53rd_A_Rifleman_Helmet_Urban_Visor",
-				"53rd_A_Rifleman_Helmet_Woodland_No_Visor",
-				"53rd_A_Rifleman_Helmet_Woodland_Visor",
-				"53rd_A_Rifleman_Helmet_Desert_No_Visor",
-				"53rd_A_Rifleman_Helmet_Desert_Visor",
-				"53rd_A_Rifleman_Helmet_Winter_No_Visor",
-				"53rd_A_Rifleman_Helmet_Winter_Visor",
-				
-				
-				
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
 	};
 };
-#include "..\xtdGear.hpp"	
+#include "..\..\xtdGear.hpp"	
 class cfgWeapons
 {
 	class Uniform_Base;
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
-	
 	/////HELMETS/////
 	class 53rd_A_Rifleman_Helmet_Urban_No_Visor: HaloInf_Marine_WDL_NV_headgear //works
 	{
@@ -52,7 +36,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Urban.paa"
 		};
 	};
 	class 53rd_A_Rifleman_Helmet_Urban_Visor: HaloInf_Marine_WDL_headgear
@@ -72,7 +56,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Urban.paa"
 		};
 	};
 	//Woodland
@@ -93,7 +77,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Woodland.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Woodland.paa"
 		};
 	};
 	class 53rd_A_Rifleman_Helmet_Woodland_Visor: HaloInf_Marine_WDL_headgear //works
@@ -113,7 +97,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Woodland.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Woodland.paa"
 		};
 	};
 	//Desert
@@ -134,7 +118,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Desert.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Desert.paa"
 		};
 	};
 	class 53rd_A_Rifleman_Helmet_Desert_Visor: HaloInf_Marine_WDL_headgear //works
@@ -154,7 +138,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Desert.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Desert.paa"
 		};
 	};
 	//Winter
@@ -175,7 +159,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Winter.paa"
 		};
 	};
 	class 53rd_A_Rifleman_Helmet_Winter_Visor: HaloInf_Marine_WDL_headgear //works
@@ -195,26 +179,28 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Helmet_Winter.paa"
 		};
 	};
+	
+///////////////ARMOR///////////
 	class haloinfmar_U_WDL_uniform: Uniform_Base
 	{
 		class ItemInfo;
 	};
 	class 53rd_U_Base_uniform: haloinfmar_U_WDL_uniform
 	{
-		author="B";
+		author="Body";
 		scope=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Rifleman Base ";
+		displayName="[53rd] Atlas Rifleman Base ";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Winter_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -231,9 +217,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
+	
 	class 53rd_A_Rifleman_SN: 53rd_U_Base_uniform
 	{
-		author="Scarecrow";
+		author="Body";
 		scope=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Atlas Winter Rifleman";
@@ -247,9 +234,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Winter_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -261,9 +248,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Winter_co.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_A_Snow_Camo_Rifleman";
@@ -273,7 +260,7 @@ class cfgWeapons
 	};
 	class 53rd_A_Rifleman_WD: 53rd_U_Base_uniform
 	{
-		author="53rd Mod Team";
+		author="Body";
 		scope=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Atlas Woodland Rifleman";
@@ -287,9 +274,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Woodland_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Woodland_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -301,9 +288,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Woodland_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Woodland_co.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_A_Woodland_Camo_Rifleman";
@@ -313,7 +300,7 @@ class cfgWeapons
 	};
 	class 53rd_A_Rifleman_UB: 53rd_U_Base_uniform
 	{
-		author="53rd Mod Team";
+		author="Body";
 		scope=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Atlas Urban Rifleman";
@@ -327,9 +314,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Urban_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Urban_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -341,9 +328,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Urban_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Urban_co.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_A_Urban_Camo_Rifleman";
@@ -367,9 +354,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Desert_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Desert_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -381,9 +368,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Desert_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Desert_co.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_A_Desert_Camo_Rifleman";
@@ -596,6 +583,8 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
 		};
 	};
+	
+		
 	class 53rd_A_Snow_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
@@ -608,14 +597,14 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Winter_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_A_Rifleman_SN";
 	};
-		class 53rd_A_Woodland_Camo_Rifleman: 53rd_base_F
+	class 53rd_A_Woodland_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Atlas Woodland Rifleman";
@@ -627,14 +616,14 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Woodland_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Woodland_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_A_Rifleman_WD";
 	};
-		class 53rd_A_Urban_Camo_Rifleman: 53rd_base_F
+	class 53rd_A_Urban_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Atlas Urban Rifleman";
@@ -646,14 +635,14 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Urban_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Urban_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_A_Rifleman_UB";
 	};
-		class 53rd_A_Desert_Camo_Rifleman: 53rd_base_F
+	class 53rd_A_Desert_Camo_Rifleman: 53rd_base_F
 	{
 		scope=2;
 		displayName="[53rd] Atlas Desert Rifleman";
@@ -665,9 +654,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Desert_co.paa",
 			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Armor_Desert_co.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_A_Rifleman_DS";

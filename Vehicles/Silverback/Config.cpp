@@ -32,8 +32,8 @@ class CfgVehicles
 			crew="53rd_crewman_unit";
 			hiddenSelections[] =
 			{
-				"Camo1",
-				"Camo2",
+				//"Camo1",
+				//"Camo2",
 				"clan",
 				"clan_text",
 				"insignia",
@@ -59,9 +59,9 @@ class CfgVehicles
 					author="DemonicOnPc & edited by Body";
 					textures[]=
 					{
-						"53rd_SC_aux\Vehicles\Silverback\53rd_hull_co.paa",
-						"53rd_SC_aux\Vehicles\Silverback\53rd_Hood_co.paa",
-						"53rd_SC_aux\Vehicles\Silverback\53rd_Truck_Hull_co.paa",
+					"53rd_SC_aux\Vehicles\Silverback\53rd_hull_co.paa",
+					"53rd_SC_aux\Vehicles\Silverback\53rd_Hood_co.paa",
+					"53rd_SC_aux\Vehicles\Silverback\53rd_Truck_Hull_co.paa",
 					};
 				};
 			};
@@ -93,11 +93,11 @@ class CfgVehicles
 				"insignia",
 
 				//Added Selections
-			  "_Ammobox",
-				"_Axe",
-				"_Cans",
-				"_FireExtinguisher",
-				"_Shovel"
+				//"_Ammobox",
+				//"_Axe",
+				//"_Cans",
+				//"_FireExtinguisher",
+				//"_Shovel"
 			};
 			hiddenSelectionsTextures[] = 
 			{ 				
@@ -113,9 +113,9 @@ class CfgVehicles
 					author="DemonicOnPc & edited by Body";
 					textures[]=
 					{
-						"53rd_SC_aux\Vehicles\Silverback\53rd_hull_co.paa",
-						"53rd_SC_aux\Vehicles\Silverback\53rd_Hood_co.paa",
-						"53rd_SC_aux\Vehicles\Silverback\53rd_Truck_Hull_co.paa",
+					"53rd_SC_aux\Vehicles\Silverback\53rd_hull_co.paa",
+					"53rd_SC_aux\Vehicles\Silverback\53rd_Hood_co.paa",
+					"53rd_SC_aux\Vehicles\Silverback\53rd_Truck_Hull_co.paa",
 					};
 				};
 			};
@@ -143,11 +143,11 @@ class CfgVehicles
 			"insignia",
 
 			//Added Selections
-			"_Ammobox",
-			"_Axe",
-			"_Cans",
-			"_FireExtinguisher",
-			"_Shovel"
+			//"_Ammobox",
+			//"_Axe",
+			//"_Cans",
+			//"_FireExtinguisher",
+			//"_Shovel"
 		};
 		hiddenSelectionsTextures[] = 
 		{ 				

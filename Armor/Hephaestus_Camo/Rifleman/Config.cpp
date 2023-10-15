@@ -28,7 +28,7 @@ class CfgPatches {
 			requiredAddons[] = {};
 	};
 };
-#include "..\xtdGear.hpp"	
+#include "..\..\xtdGear.hpp"		
 class cfgWeapons
 {
 	class Uniform_Base;
@@ -51,7 +51,8 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel="\Halo_marine_02\null.p3d";
-			containerClass="Supply120";
+			vestType = "Rebreather";
+			containerClass="Supply100";
 			mass=80;
 			class HitpointsProtectionInfo
 			{

@@ -7,16 +7,12 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_JTAC_SN",
-				"53rd_Uniform_JTAC_WD",
-				"53rd_Uniform_JTAC_UB",
-				"53rd_Uniform_JTAC_DS",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
 	};
 };
-#include "..\xtdGear.hpp"	
+#include "..\..\xtdGear.hpp"	
 class cfgWeapons
 {
 	class Uniform_Base;

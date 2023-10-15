@@ -7,16 +7,13 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
-				"53rd_Uniform_AT_SN",
-				"53rd_Uniform_AT_WD",
-				"53rd_Uniform_AT_UB",
-				"53rd_Uniform_AT_DS",
+
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
 	};
 };
-#include "..\xtdGear.hpp"
+#include "..\..\xtdGear.hpp"	
 class cfgWeapons
 {
 	class Uniform_Base;
