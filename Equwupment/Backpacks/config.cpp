@@ -171,7 +171,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Desert.paa",
-			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -192,7 +192,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Woodland.paa",
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Pouches.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 		hiddenSelections[]=
 		{
