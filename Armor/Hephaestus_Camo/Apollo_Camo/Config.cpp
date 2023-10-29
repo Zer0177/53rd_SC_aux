@@ -186,7 +186,7 @@ class cfgWeapons
 	//ARMOR
 		class 53rd_U_Base_uniform: haloinfmar_U_WDL_uniform
 	{
-		author="B";
+		author="Cherryy";
 		scope=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Rifleman Base ";
@@ -216,7 +216,7 @@ class cfgWeapons
 	//Winter
 	class 53rd_Apollo_SN: 53rd_U_Base_uniform
 	{
-		author="Scarecrow";
+		author="Cherryy";
 		scope=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Apollo Winter";
@@ -231,7 +231,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
 		};
 		class ItemInfo: ItemInfo
@@ -245,11 +245,284 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
 			};
 			uniformModel="-";
 			uniformClass="53rd_Apollo_Snow";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+	class 53rd_Apollo_UB: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Urban";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Urban.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Urban.paa"
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Urban";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+	class 53rd_Apollo_WD: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Woodland";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Woodland.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Woodland.paa"
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Woodland";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+	class 53rd_Apollo_DS: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Desert";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Desert.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Desert.paa"
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Desert";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+	//No Shoulders
+		class 53rd_Apollo_UB_NS: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Urban (No Shoulders)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Urban_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Urban_co.paa",
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Urban_NS";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+		class 53rd_Apollo_WD_NS: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Woodland (No Shoulders)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Woodland_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Woodland_co.paa",
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Woodland_NS";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+		class 53rd_Apollo_DS_NS: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Desert (No Shoulders)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Desert_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Desert_co.paa",
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Desert_NS";
+			containerClass="Supply90";
+			mass=80;
+		};
+	};
+		class 53rd_Apollo_WT_NS: 53rd_U_Base_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		allowedSlots[]={901};
+		displayName="[53rd] Apollo Winter (No Shoulders)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
+			};
+			uniformModel="-";
+			uniformClass="53rd_Apollo_Winter_NS";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -454,16 +727,128 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
 		};
 	};
-	//Winter
-	class 53rd_Apollo_Snow: 53rd_base_F
+	//Urban
+	class 53rd_Apollo_Urban: 53rd_base_F
 	{
 		scope=2;
-		displayName="[53rd] Apollo Winter";
+		displayName="[53rd] Apollo Urban";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Urban.paa"
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_UB";
+	};
+	class 53rd_Apollo_Woodland: 53rd_base_F
+	{
+		scope=2;
+		displayName="[53rd] Apollo Woodland";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Woodland.paa"
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_WD";
+	};
+	class 53rd_Apollo_Desert: 53rd_base_F
+	{
+		scope=2;
+		displayName="[53rd] Apollo Desert";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Desert.paa"
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_DS";
+	};
+	//No Shoulders
+		class 53rd_Apollo_Urban_NS: 53rd_base_F
+	{
+		scope=2;
+		displayName="[53rd] Apollo Urban (No Shoulders)";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Urban_co.paa",
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_UB_NS";
+	};
+		class 53rd_Apollo_Desert_NS: 53rd_base_F
+	{
+		scope=2;
+		displayName="[53rd] Apollo Desert (No Shoulders)";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Desert_co.paa",
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_DS_NS";
+	};
+		class 53rd_Apollo_Woodland_NS: 53rd_base_F
+	{
+		scope=2;
+		displayName="[53rd] Apollo Woodland (No Shoulders)";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Woodland_co.paa",
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_WD_NS";
+	};
+		class 53rd_Apollo_Winter_NS: 53rd_base_F
+	{
+		scope=2;
+		displayName="[53rd] Apollo Winter (No Shoulders)";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -473,10 +858,9 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Apollo_SN";
+		uniformClass="53rd_Apollo_WT_NS";
 	};
 };
